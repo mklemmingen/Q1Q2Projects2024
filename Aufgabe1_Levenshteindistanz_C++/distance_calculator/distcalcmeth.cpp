@@ -1,11 +1,11 @@
 
-'''
+/*
 distcalc takes two pointers for strings and 
 calculates the levensteindistance between them
 as an int that gets returned
 
 MKL. 2024
-'''
+*/
 int dist_calc(const std::string & word1, const std::string & word2) {
 
     //creating a matrix with the size of the two words

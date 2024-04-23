@@ -1,7 +1,7 @@
 #include <iostream>
 #include "distcalcmeth.h"
 
-'''
+/*
 This is a terminal-based c++ program that takes two words and
 calculates the levenhstein distance between them.
 
@@ -11,7 +11,7 @@ the letters to lowercase.
 It uses the methods in file 'distcalcmeth.cpp' to calculate the distance.
 
 MKL. 2024
-'''
+*/
 int main() {
 	
 	// receiving the words from the user
@@ -46,12 +46,12 @@ int main() {
 	return 0;
 }
 
-'''
+/*
 checking if the words contain only latin letters.
 takes the string of the words and returns a boolean value.
 
 MKL. 2024
-'''
+*/
 bool check_latin(std::string word) {
 	for (int i = 0; i < word.length(); i++) {
 		if (word[i] < 65 || word[i] > 122 || (word[i] > 90 && word[i] < 97)) {
@@ -62,12 +62,12 @@ bool check_latin(std::string word) {
 }
 
 
-'''
+/*
 turning a word into lowercase using the ASCII values 
 and the pointer to the string.
 
 MKL. 2024
-'''
+*/
 void to_lowercase(std::string* word) {
 	for (int i = 0; i < word->length(); i++) {
 		if ((*word)[i] >= 65 && (*word)[i] <= 90) {
