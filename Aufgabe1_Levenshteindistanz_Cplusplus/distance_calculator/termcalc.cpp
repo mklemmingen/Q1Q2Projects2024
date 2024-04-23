@@ -1,5 +1,5 @@
 #include <iostream>
-#include "distcalcmeth.h"
+#include "distcalc.h"
 
 // Function prototypes
 bool check_latin(std::string word);
@@ -20,7 +20,7 @@ int main() {
 
 	std::string word1, word2;
 
-	std::bool allowed = false;
+	bool allowed = false;
 	while (!allowed) {
 
 		// receiving both words, 
@@ -44,7 +44,7 @@ int main() {
 	to_lowercase(&word1);
 	to_lowercase(&word2);
 
-	std::cout << "The Levenhstein distance between " << word1 << " and " << word2 << " is: " << dist_calc(word1, word2) << std::endl;
+	std::cout << "The Levenhstein distance between " << word1 << " and " << word2 << " is: " << calc_dist_int(word1, word2) << std::endl;
 	return 0;
 }
 

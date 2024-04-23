@@ -1,3 +1,5 @@
+#include <vector>
+#include <string>
 
 /*
 distcalc takes two strings and 
@@ -6,7 +8,7 @@ as an int that gets returned
 
 MKL. 2024
 */
-int dist_calc(const std::string word1, const std::string word2) {
+int calc_dist_int(const std::string word1, const std::string word2) {
 
     //creating a matrix with the size of the two words
     std::vector<std::vector<int>> matrix(word2.size() + 1, std::vector<int>(word1.size() + 1));
