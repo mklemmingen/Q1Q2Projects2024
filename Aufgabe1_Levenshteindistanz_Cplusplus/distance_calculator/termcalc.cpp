@@ -1,24 +1,26 @@
 #include <iostream>
 #include "distcalcmeth.h"
 
+// Function prototypes
+bool check_latin(std::string word);
+void to_lowercase(std::string* word);
+
 /*
 This is a terminal-based c++ program that takes two words and
 calculates the levenhstein distance between them.
 
 It only accepts latin-script words. It automatically convertes all 
-the letters to lowercase.
+the letters to lowercase.                      
 
 It uses the methods in file 'distcalcmeth.cpp' to calculate the distance.
 
 MKL. 2024
 */
 int main() {
-	
-	// receiving the words from the user
 
 	std::string word1, word2;
 
-	std:bool allowed = false;
+	std::bool allowed = false;
 	while (!allowed) {
 
 		// receiving both words, 
@@ -42,7 +44,7 @@ int main() {
 	to_lowercase(&word1);
 	to_lowercase(&word2);
 
-	std::cout << "The Levenhstein distance between " << word1 << " and " << word2 << " is: " << dist_calc(&word1, &word2) << std::endl;
+	std::cout << "The Levenhstein distance between " << word1 << " and " << word2 << " is: " << dist_calc(word1, word2) << std::endl;
 	return 0;
 }
 
