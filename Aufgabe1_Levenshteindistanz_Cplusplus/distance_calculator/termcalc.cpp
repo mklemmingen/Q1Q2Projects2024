@@ -41,10 +41,14 @@ int main() {
 	bool allowed = false;
 	while (!allowed) {
 
-		std::cout << "Would you like to print the matrix after the calculation? (y/n):";
+		std::cout << "Would you like to print the matrix after the calculation? (Y/n):";
 		char answer;
 		std::cin >> answer;
 		if (answer == 'n') {
+			allowed = true;
+		}
+		else if(answer == '\n'){
+			print_matrix = true;
 			allowed = true;
 		}
 		else if (answer == 'y') {

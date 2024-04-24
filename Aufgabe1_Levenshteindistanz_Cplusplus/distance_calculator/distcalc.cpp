@@ -6,11 +6,16 @@
 /*
 distcalc takes two strings and 
 calculates the levensteindistance between them
-as an int that gets returned
+as an int that gets returned.
+
+print_matrix is an optional parameter that can be set to true to print out the calculation matrix.
+
+takes a list of unkown-characters that always need a distance of 0 added.
 
 MKL. 2024
 */
-int calc_dist_int(const std::string word1, const std::string word2, bool print_matrix = false) {
+int calc_dist_int(const std::string word1, const std::string word2, bool print_matrix = false,
+                 std::vector<std::pair<char, char>> change_special_chars = {}) {
 
     //creating a matrix with the size of the two words
     std::vector<std::vector<int>> matrix(word2.size() + 1, std::vector<int>(word1.size() + 1));
@@ -21,17 +26,20 @@ int calc_dist_int(const std::string word1, const std::string word2, bool print_m
     for (size_t i = 0; i <= word2.size(); ++i)
         matrix[i][0] = i;
 
-    //iterating over matrix, filling as we go dynamically
+    // iterating over matrix, filling as we go dynamically. 
+    // If the letters are the same, the distance is 0, else 1.
+    // if either the word1 or the word2 character is in the list of change_special_characters, the distance is a 0, since it could be the same. 
+
     for (size_t i = 1; i <= word2.size(); ++i) {
         for (size_t j = 1; j <= word1.size(); ++j) {
-            // checking surroundings and adding 1 if the letters are different
-            if (word1[j - 1] == word2[i - 1])
-                matrix[i][j] = matrix[i - 1][j - 1];
-            else
-                matrix[i][j] = std::min({ matrix[i - 1][j - 1], matrix[i - 1][j], matrix[i][j - 1] }) + 1;
+            int cost = (word1[j - 1] == word2[i - 1] ? 0 : 1);
+            if (std::find(change_special_chars.begin(), change_special_chars.end(), std::make_pair(word1[j - 1], word2[i - 1])) != change_special_chars.end())
+                cost = 0;
+            matrix[i][j] = std::min({matrix[i - 1][j] + 1, matrix[i][j - 1] + 1, matrix[i - 1][j - 1] + cost});
         }
     }
 
+    
     if (print_matrix)
     {
         //printing the matrix
