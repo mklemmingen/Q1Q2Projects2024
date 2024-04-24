@@ -36,9 +36,28 @@ int main() {
 		
 	}
 
+	bool print_matrix = false;
+
+	bool allowed = false;
+	while (!allowed) {
+
+		std::cout << "Would you like to print the matrix after the calculation? (y/n):";
+		char answer;
+		std::cin >> answer;
+		if (answer == 'n') {
+			allowed = true;
+		}
+		else if (answer == 'y') {
+			print_matrix = true;
+			allowed = true;
+		}
+		else {
+			std::cout << "ERROR: Please enter 'y' or 'n'." << std::endl;
+	}
+
 	to_lowercase(&word1);
 	to_lowercase(&word2);
 
-	std::cout << "The Levenhstein distance between " << word1 << " and " << word2 << " is: " << calc_dist_int(word1, word2) << std::endl;
+	std::cout << "The Levenhstein distance between " << word1 << " and " << word2 << " is: " << calc_dist_int(word1, word2, print_matrix) << std::endl;
 	return 0;
 }

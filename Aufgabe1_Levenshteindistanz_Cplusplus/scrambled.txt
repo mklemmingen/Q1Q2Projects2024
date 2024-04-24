@@ -1,0 +1,1749 @@
+Blue Elem?ntal lBat?|{U}|1|Instant|37
+Clone|{3}{U}|4|Creature — Shapeshifter|15
+Crystal Rdo|{1}|1|Artifact|4
+Darkpac?|{B}{B}{B}|3|Sorcery|1
+Dingus Eg?|{4}|4|Artifact|48
+Darogn Whelp|{2}{R}{R}|4|Creature — Dragon|40
+Dra?n ?ower|{U}{U}|2|Sorcery|37
+Drudg??Skeelon?s|{1}{B}|2|Creature — Skeleton|56
+Funguasur|{3}{G}|4|Creature — Fungus Lizard|42
+Holy Armor|{W}|1|Enchantment — Aura|5
+Howl fr?m Beyond|{X}{B}|1|Instant|21
+Ill?sinoary Mask|{2}|2|Artifact|59
+Inivsbiility|{U}{U}|2|Enchantment — Aura|31
+Ivor? Cup|{1}|1|Artifact|44
+Ja?e Moonlith|{4}|4|Artifact|40
+Lance|{W}|1|Enchantment — Aura|52
+Lifetap|{U}{U}|2|Enchantment|45
+Light?in gBolt|{R}|1|Instant|57
+Lo?d of Atlantis|{U}{U}|2|Creature — Merfolk|51
+Me?a Pe?saus|{1}{W}|2|Creature — Pegasus|45
+Mo?s's Goblin aRide?r|{R}|1|Creature — Goblin|48
+Pahnta?malT er?ani|{U}{U}|2|Enchantment — Aura|8
+Raise Daed|{B}|1|Sorcery|51
+Sa?rifiec|{B}|1|Instant|58
+StoneG iant|{2}{R}{R}|4|Creature — Giant|39
+Stream o fLif?|{X}{G}|1|Sorcery|49
+?Trror|{1}{B}|2|Instant|16
+Time Valut|{2}|2|Artifact|57
+Verduran E?cahntrses|{1}{G}{G}|3|Creature — Human Druid|57
+Veteran Bodygaurd|{3}{W}{W}|5|Creature — Human|38
+Warp ?r?iafct|{B}{B}|2|Enchantment — Aura|23
+Wa?er Elmeentla|{3}{U}{U}|5|Creature — Elemental|9
+Weakenss|{B}|1|Enchantment — Aura|51
+lAi Baba|{R}|1|Creature — Human Rogue|1
+B?azarof? Baghadd|1|1|Land|50
+Cuombajj ?itches|{B}{B}|2|Creature — Human Wizard|17
+Fishilver O?l|{1}{U}|2|Enchantment — Aura|5
+eMrhcan tShip|{U}|1|Creature — Human|60
+Ol? Man of the ?ea|{1}{U}{U}|3|Creature — Djinn|34
+Piety|{2}{W}|3|Instant|25
+Repen?ant? ?a?ksmith|{1}{W}|2|Creature — Human|35
+tSone-Throwign D?vil?|{B}|1|Creature — Devil|22
+Wyluli Wolf|{1}{G}|2|Creature — Wolf|53
+Dwarven?Weaponmstih|{1}{R}|2|Creature — Dwarf Artificer|19
+Phyerx?an Gre??mns|{2}{B}|3|Creature — Gremlin|29
+Triskleoin|{6}|6|Artifact Creature — Construct|39
+XeincP olteregist|{1}{B}{B}|3|Creature — Spirit|36
+Adun Okaenshi?ld|{B}{R}{G}|3|Legendary Creature — Human Knight|19
+??rathi eBrserk?r|{2}{R}{R}{R}|5|Creature — Human Berserker|44
+Beassto f Bogardan|{4}{R}|5|Creature — Beast|44
+B?a?k? ana Bat?ery|{4}|4|Artifact|54
+?lu eanMa Battery|{4}|4|Artifact|17
+Chai?s?ofMe?phisotpheels|{1}{B}|2|Enchantment|17
+Coocon|{G}|1|Enchantment — Aura|49
+riCsonm Kobolds|{0}|0|Creature — Kobold|13
+Eq?in??|{W}|1|Enchantment — Aura|49
+Hype?ion ?lakcsimth|{1}{R}{R}|3|Creature — Human Artificer|40
+Jux?a?soe|{3}{U}|4|Sorcery|17
+K?s?mir th? oLne Wolf|{4}{W}{U}|6|Legendary Creature — Human Warrior|51
+Ko?old Drill?Sergeant|{1}{R}|2|Creature — Kobold Soldier|38
+L?n dTax|{W}|1|Enchantment|58
+arMhalut Elsd?agon|{3}{R}{R}{G}|6|Legendary Creature — Elf Warrior|54
+Moss oMns?tr|{3}{G}{G}|5|Creature — Elemental|41
+N?trh Star|{4}|4|Artifact|40
+??va Pentac?e|{4}|4|Artifact|2
+Pi?ie Queen|{2}{G}{G}|4|Creature — Faerie|7
+Psy?ihc P?rge|{U}|1|Sorcery|47
+Ramie?? ?eiPetro|{3}{U}{B}{B}|6|Legendary Creature — Human Pirate|18
+eRevr?eratino|{2}{U}{U}|4|Instant|17
+Ring of Immotrals|{5}|5|Artifact|38
+S?afarer's Quay|1|1|Land|48
+Shield ?all|{1}{W}|2|Instant|11
+Spinal Villain|{2}{R}|3|Creature — Beast|27
+Takklemaggot|{2}{B}{B}|4|Enchantment — Aura|24
+The W?etch?d|{3}{B}{B}|5|Creature — Demon|47
+Time Ele?ent?l|{2}{U}|3|Creature — Elemental|41
+Tundra ?olves|{W}|1|Creature — Wolf|4
+Undert?w|{2}{U}|3|Enchantment|56
+Utname?W ilds|{2}{G}|3|Sorcery|44
+Wi?te?Mana Battery|{4}|4|Artifact|4
+W?od Elemental|{3}{G}|4|Creature — Elemental|33
+Exorcis?|{W}{W}|2|Creature — Human Cleric|54
+Golbin Cavs?|{1}{R}{R}|3|Enchantment — Aura|2
+Goblin Wizard|{2}{R}{R}|4|Creature — Goblin Wizard|46
+Mars? Viepr|{3}{G}|4|Creature — Snake|51
+aRg Ma?|{2}{B}{B}|4|Creature — Human Minion|36
+So?r?w's Pat?|1|1|Land|29
+Spitting Slug|{1}{G}{G}|3|Creature — Slug|16
+?weo? fo C??eia?l|{2}|2|Artifact|58
+Wormwo?? T?eefol?|{3}{G}{G}|5|Creature — Treefolk|48
+BrssaclawO rcs|{2}{R}|3|Creature — Orc|17
+Bre?ding Pit|{3}{B}|4|Enchantment|28
+De?if's?Coen|{0}|0|Artifact|18
+Farrelite P?iest|{1}{W}{W}|3|Creature — Human Cleric|31
+?ymn ot Tourach|{B}{B}|2|Sorcery|30
+Initiates of?theE bon Hand|{B}|1|Creature — Cleric|5
+Ringo f Renewal|{5}|5|Artifact|43
+S?dn S?lso|1|1|Land|21
+Arena|1|1|Land|25
+Merfolk Me?mei?st|{1}{U}|2|Creature — Merfolk Wizard|40
+Arrest|{2}{W}|3|Enchantment — Aura|14
+oCnsum epS?rit|{X}{1}{B}|2|Sorcery|17
+Dreg?a?ngler|{1}{B}{G}|3|Creature — Plant Zombie|32
+Sca?egnign Ozo?|{1}{G}|2|Creature — Ooze|57
+Mgaister o ?Worth|{4}{W}{B}|6|Creature — Angel|46
+Agneli??Skirmish?r|{4}{W}{W}|6|Creature — Angel|48
+Raks?sa a?izi?r|{2}{B}{G}{U}|5|Creature — Cat Demon|11
+Dragoncsale Gen?ral|{3}{W}|4|Creature — Human Warrior|40
+F?amruesh?Rider|{4}{R}|5|Creature — Human Warrior|31
+lA?hma?rre?t?High ?Abie?r|{5}{U}{U}|7|Legendary Creature — Sphinx|31
+Valrouos Satnce|{1}{W}|2|Instant|60
+Drea ?Defile?|{6}{B}|7|Creature — Eldrazi|4
+Adarka ?rent?nel|{5}|5|Artifact Creature — Soldier|49
+Aegis ?f hteM eek|{3}|3|Artifact|30
+Blniking Spii?t|{3}{W}|4|Creature — Spirit|47
+Bone? hama?|{2}{R}{R}|4|Creature — Giant Shaman|34
+aCll t? Arms|{1}{W}|2|Enchantment|12
+Centaur Arch?r|{1}{R}{G}|3|Creature — Centaur Archer|54
+Di?b?lic V?i?on|{U}{B}|2|Sorcery|8
+F?ameS pirit|{4}{R}|5|Creature — Elemental Spirit|2
+lFare|{2}{R}|3|Instant|21
+Fo?k fo the P?nes|{4}{G}|5|Creature — Dryad|19
+?Gacia ?Creavsses|{2}{R}|3|Enchantment|60
+Goblin L?re|{3}|3|Artifact|41
+Gob?inM ut?nt|{2}{R}{R}|4|Creature — Goblin Mutant|52
+GoblinS ????nm|{3}{R}|4|Creature — Goblin|12
+Hem?tit??Talisman|{2}|2|Artifact|37
+Ice lFoe|1|1|Land|4
+Iceuqake|{1}{B}{B}|3|Sorcery|35
+Krovkian?Fetish|{2}{B}|3|Enchantment — Aura|8
+?roivkan Socreer?|{2}{U}|3|Creature — Human Wizard|32
+Krovi?an? amipre|{3}{B}{B}|5|Creature — Vampire|48
+Lim-ûD?lsCo hotr|{1}{B}{B}|3|Creature — Zombie|26
+?i-mDûls'H ex|{1}{B}|2|Enchantment|13
+oL?t?O?edr ofJ?arkeld|{2}{W}{W}|4|Creature — Human Knight|34
+Malcahie tTalisma?|{2}|2|Artifact|9
+Monsono|{2}{R}{G}|4|Enchantment|54
+uMdsl?de|{2}{R}|3|Enchantment|12
+Msuiican|{2}{U}|3|Creature — Human Wizard|24
+Nacre Tals?man|{2}|2|Artifact|18
+Orcish?Librarian|{1}{R}|2|Creature — Orc|58
+Pola rKrak?n|{8}{U}{U}{U}|11|Creature — Kraken|5
+oPx|{B}{B}{B}|3|Sorcery|45
+Rya of Commadn|{3}{U}|4|Instant|16
+Se?zures|{1}{B}|2|Enchantment — Aura|58
+Snow Fortress|{5}|5|Artifact Creature — Wall|28
+Sn?w? ound|{2}{W}|3|Creature — Hound|40
+Staf? of t?? Ages|{3}|3|Artifact|7
+Stonehands|{2}{R}|3|Enchantment — Aura|27
+Tim eBomb|{4}|4|Artifact|37
+rUza'?B au?le|{0}|0|Artifact|20
+Vl?dt|1|1|Land|53
+Walknig?aWl?|{4}|4|Artifact Creature — Wall|9
+Wh?te Scarba|{W}|1|Enchantment — Aura|57
+Ambush Party|{4}{R}|5|Creature — Human Rogue|25
+A?aba Bodyguadr|{3}{R}|4|Creature — Minotaur|55
+Baki's Cruse|{2}{U}{U}|4|Sorcery|6
+Chian ?tassi|{U}|1|Instant|54
+Didge?idoo|{1}|1|Artifact|27
+Drudge Sp?el|{B}{B}|2|Enchantment|9
+Dry Spell|{1}{B}|2|Sorcery|39
+Fero?'sB an|{6}|6|Artifact|18
+??lk o??An-Hvava|{G}|1|Creature — Human|29
+Koskun aFlls|{2}{B}{B}|4|World Enchantment|21
+?es ?Facoln|{1}{W}|2|Creature — Bird|33
+Orcis? Mnie|{1}{R}{R}|3|Enchantment — Aura|49
+Prmia? Orde?|{2}{G}{G}|4|Enchantment|54
+R??e?al|{2}{G}|3|Sorcery|50
+Trade Caravan|{W}|1|Creature — Human Nomad|50
+Bladuvian Dead|{3}{B}|4|Creature — Zombie|13
+Choas Harleqi?n|{2}{R}{R}|4|Creature — Human|10
+Cnotaigon|{3}{B}{B}|5|Instant|8
+Froce of Will|{3}{U}{U}|5|Instant|59
+eHlm of Oebdi?nce|{4}|4|Artifact|15
+Inhe?itance|{W}|1|Enchantment|30
+Kejlodran Outpsot|1|1|Land|6
+Lirbaryo f Lat-Na?|{4}{U}|5|Sorcery|10
+Nobl? ?teeds|{2}{W}|3|Enchantment|37
+P?y??xina Boon|{2}{B}|3|Enchantment — Aura|5
+Ritu?l of theM achine|{2}{B}{B}|4|Sorcery|20
+Slo?Grail|{3}|3|Artifact|38
+St?rm?Cauldron|{5}|5|Artifact|30
+StormC?row|{1}{U}|2|Creature — Bird|39
+T?o?ado|{4}{G}|5|Enchantment|1
+Wil dAsethi?|{2}{W}|3|Creature — Bird|48
+Yav?maay?Ants|{2}{G}{G}|4|Creature — Insect|28
+Su?por|{2}{B}|3|Sorcery|33
+Dsimiss|{2}{U}{U}|4|Instant|45
+Gaae's B?es?sng|{1}{G}|2|Sorcery|31
+?ana eLak|{1}{U}|2|Instant|26
+Skirk?Marauder|{1}{R}|2|Creature — Goblin|11
+Glacial R?a|{1}{R}|2|Instant — Arcane|45
+Surging Flame|{1}{R}|2|Instant|20
+Shichiu?kuij? Dra?gn|{6}{R}{R}{R}|9|Summon — Dragon|34
+Fra??ranl xaElta?ion|{U}{U}{U}{U}|4|Sorcery|39
+A?a?rm|{1}{W}|2|Instant|11
+Amber Prison|{4}|4|Artifact|53
+uAs?ic?o?s?Ancest?r|{3}{W}|4|Creature — Human Cleric|42
+Blind Fury|{2}{R}{R}|4|Instant|10
+uBildre's Bane|{X}{X}{R}|1|Sorcery|20
+C?ariot oft h? uSn|{3}|3|Artifact|17
+Curse dTotme|{2}|2|Artifact|10
+Di?rwater Wra?hi|{3}{B}|4|Creature — Wraith|13
+?ner?yV ro?tx|{3}{U}{U}|5|Enchantment|25
+Final Fortune|{R}{R}|2|Instant|10
+Gb?ln? Elite Ifnantry|{1}{R}|2|Creature — Goblin Warrior|1
+L?r ?foP rey|{2}{G}{G}|4|Instant|43
+Maro|{2}{G}{G}|4|Creature — Elemental|49
+?elesseS piri?|{3}{W}{W}|5|Creature — Angel Spirit|17
+Pat?gi aGo?em|{4}|4|Artifact Creature — Golem|51
+Pea?r?Drgaon|{4}{W}{W}|6|Creature — Dragon|17
+P?isamtic Boon|{X}{W}{U}|2|Instant|57
+Restless ?ea?|{1}{B}|2|Creature — Skeleton|17
+Shdoaw Guildmag?|{B}|1|Creature — Human Wizard|52
+S??Di?am?nd|{2}|2|Artifact|4
+Superior ?umber?|{G}{G}|2|Sorcery|47
+Talruum ??ontaur|{2}{R}{R}|4|Creature — Minotaur Berserker|15
+Te?eri' sDrake|{2}{U}|3|Creature — Drake|23
+eTlim'oTr'? ?dict|{R}|1|Instant|22
+?rbogr Panthe?|{2}{B}|3|Creature — Nightstalker Cat|21
+a?rd ?o Lights|{W}{W}|2|Enchantment — Aura|34
+Zhalfi?i nCommanedr|{2}{W}|3|Creature — Human Knight|51
+Ovinoma?c?r|{2}{U}|3|Creature — Human Wizard|8
+lBank??tof Nigth|{1}{B}{B}|3|Enchantment|22
+Fierlbsat|{4}{R}{R}|6|Instant|2
+Goblni Recruiter|{1}{R}|2|Creature — Goblin|17
+Gosasme?rCh?ins|{W}{W}|2|Enchantment|47
+Inferna?H arvet?|{1}{B}|2|Sorcery|13
+Juju Bublbe|{1}|1|Artifact|22
+?agm? Mi??|{1}|1|Artifact|58
+Sun Cla?p|{1}{W}|2|Enchantment — Aura|60
+Suq'Ata? nacer|{2}{R}|3|Creature — Human Knight|2
+Thre? Wishse|{1}{U}{U}|3|Instant|43
+?ir?g?le of War|{1}|1|Artifact|11
+?ampiricT utor|{B}|1|Instant|47
+War?ror's Honor|{2}{W}|3|Instant|50
+WatesproutD jinn|{2}{U}{U}|4|Creature — Djinn|21
+Blessed Reversal|{1}{W}|2|Instant|32
+Bu?ni?g Colak|{R}|1|Sorcery|46
+Cr?el Fate|{4}{U}|5|Sorcery|33
+Fruit?o?|{G}|1|Sorcery|5
+H?lkin gGb?lin|{1}{R}|2|Creature — Goblin|23
+Jungle Li?n|{G}|1|Creature — Cat|23
+Natur?l Spring|{3}{G}{G}|5|Sorcery|25
+Rgaing Cougar|{2}{R}|3|Creature — Cat|25
+Willow Dryad|{G}|1|Creature — Dryad|42
+Golbin aWrchief?vAatar|1|1|Vanguard|12
+Lzyo?da, the Blood?Witch Avatar|1|1|Vanguard|1
+?aster?of ?h e?il dHunt?Avatar|1|1|Vanguard|57
+aRshka Gol?dn Cub Avatar|1|1|Vanguard|54
+Selenia|1|1|Vanguard|58
+Sisay|1|1|Vanguard|17
+Sq??e|1|1|Vanguard|16
+Stalki?g Tiger?vAa?ar|1|1|Vanguard|25
+Aboroth|{4}{G}{G}|6|Creature — Elemental|55
+A?gelic Renew?l|{1}{W}|2|Enchantment|1
+Avizoa|{3}{U}|4|Creature — Jellyfish|60
+eBnalish Mis??onary|{W}|1|Creature — Human Cleric|16
+Cirlcnig?Vultures|{B}|1|Creature — Bird|45
+Desperate?a?mbit|{R}|1|Instant|22
+Downr??ft|{2}{G}|3|Enchantment|21
+Ftaal Blow|{B}|1|Instant|31
+eHat Stroke|{2}{R}|3|Enchantment|3
+Hi?den Horrro|{1}{B}{B}|3|Creature — Horror|47
+Lava H?u?ds|{2}{R}{R}|4|Creature — Hound|14
+Marax?s ofK ?ld|{4}{R}{R}|6|Legendary Creature — Human Warrior|43
+Peac?keepe?|{2}{W}|3|Creature — Human|38
+eSrenity|{1}{W}|2|Enchantment|57
+oTlarian ?erpent|{5}{U}{U}|7|Creature — Serpent|9
+Re?e?nnt|{4}{B}|5|Creature — Spirit|36
+L uuB, ?aster-a?A-rms|{5}{R}|6|Legendary Creature — Human Soldier Warrior|1
+Silent Spectre|{4}{B}{B}|6|Creature — Specter|35
+Loust Bloom|1|1|Artifact|39
+Demigdo ofR?evenge|{B/R}{B/R}{B/R}{B/R}{B/R}|5|Creature — Spirit Avatar|32
+Bood??ord of Vaasogth|{3}{B}{B}|5|Creature — Vampire Warrior|49
+Can?ivalHe lsltede|{4}{B}{R}|6|Creature — Nightmare Horse|10
+?reasury T?rlul|{4}{W}{B}|6|Creature — Thrull|7
+Idnule?nt Tormentor|{3}{B}{B}|5|Creature — Demon|16
+Herald ?f Anafenza|{W}|1|Creature — Human Soldier|9
+Kheur Lich ?ord|{3}{B}{G}{U}|6|Creature — Zombie Wizard|47
+Narse,tE?lnightened Msater|{3}{U}{R}{W}|6|Legendary Creature — Human Monk|27
+Teum? As?ednnayc|{G}{U}{R}|3|Enchantment|2
+Trail of Myseryt|{1}{G}|2|Enchantment|24
+Bruta lHordehceif|{3}{B}|4|Creature — Orc Warrior|7
+Ojutai? Sou? of Winter|{5}{W}{U}|7|Legendary Creature — Dragon|28
+Rally?the Ancestosr|{X}{W}{W}|2|Instant|3
+Anfaenza,?Ki-nTree ?pirit|{W}{W}|2|Legendary Creature — Spirit Soldier|56
+Su?scorc??Reg?tn|{3}{W}{W}|5|Creature — Dragon|12
+Li?aina, eH???ic?l Hae?er|{1}{B}{B}|3|Legendary Creature — Human Cleric|31
+Mizzimu Meddler|{2}{U}|3|Creature — Vedalken Wizard|29
+Ta?ent o fth Tee?epath|{2}{U}{U}|4|Sorcery|53
+Traig c?rroganec|{3}{W}{W}|5|Sorcery|13
+Akuom Hellkiet|{4}{R}{R}|6|Creature — Dragon|6
+lBigth Heredr|{5}|5|Creature — Eldrazi Processor|40
+Canopy Vista|1|1|Land — Forest Plains|39
+Kiora, Matser of the epDths|{2}{G}{U}|4|Planeswalker — Kiora|9
+Alt?r of Dementia|{2}|2|Artifact|11
+Blood?Pet|{B}|1|Creature — Thrull|20
+rBoken aFll|{2}{G}|3|Enchantment|53
+CalderaL aek|1|1|Land|32
+C?onw?of Flmaes|{R}|1|Enchantment — Aura|45
+?auth iMind?rpepr|{3}{B}|4|Creature — Dauthi Minion|30
+F?laamrid|{1}{U}{U}|3|Creature — Squid Beast|10
+Gerrard's Batt?e rCy|{W}|1|Enchantment|21
+Helm ofP ossess?on|{4}|4|Artifact|6
+Jackal Pup|{R}|1|Creature — Hound|45
+Kindle|{1}{R}|2|Instant|37
+Ligh tof Day|{3}{W}|4|Enchantment|34
+Marble T?tan|{3}{W}|4|Creature — Giant|21
+Natur'es Reo?lt|{3}{G}{G}|5|Enchantment|2
+Phryxeai? Gri?oire|{3}|3|Artifact|46
+Pnicher Beetl?s|{2}{G}|3|Creature — Insect|38
+Pr?cognition|{4}{U}|5|Enchantment|48
+Propaganda|{2}{U}|3|Enchantment|49
+Raelit ?Ancohr|{1}{G}|2|Instant|17
+Reanimate|{B}|1|Sorcery|45
+Recycle|{4}{G}{G}|6|Enchantment|49
+Rootwat?? Diver|{U}|1|Creature — Merfolk|28
+Scragnoth|{4}{G}|5|Creature — Beast|8
+???shrou dR?ng?r|{G}|1|Creature — Elf|25
+??ltar? Cr?sader|{2}{W}|3|Creature — Soltari Knight|5
+Wall o? ?iffu?ion|{1}{R}|2|Creature — Wall|38
+uDt? Cra?ler|{R}|1|Creature — Insect|17
+nI?ruderA larm|{2}{U}|3|Enchantment|16
+Invasion Plans|{2}{R}|3|Enchantment|17
+oM xDia?ond|{0}|0|Artifact|15
+Po?tcullis|{4}|4|Artifact|35
+Provkoe|{1}{G}|2|Instant|32
+Rebound|{1}{U}|2|Instant|58
+Samite B??ss?ng|{W}|1|Enchantment — Aura|9
+Scapegaot|{W}|1|Instant|37
+Sky?hroud Arhcer|{G}|1|Creature — Elf Archer|39
+Volra?t'sS haepshiftre|{1}{U}{U}|3|Creature — Shapeshifter|46
+Vloarth's ?Srognhlo?|1|1|Legendary Land|42
+bAyssal ?giht?atlker|{3}{B}|4|Creature — Nightstalker|38
+Angleo f Fury|{4}{W}{W}|6|Creature — Angel|10
+rAmored Galleo?|{4}{U}|5|Creature — Human Pirate|34
+Goblin Firset?r?rt|{R}|1|Creature — Goblin|53
+Harmony of N?ture|{2}{G}|3|Sorcery|38
+O?re Taskmatser|{3}{R}|4|Creature — Ogre|18
+?gre War?ior|{3}{R}|4|Creature — Ogre Warrior|49
+Pr?dato?y?Nih?ts?alke?|{3}{B}{B}|5|Creature — Nightstalker|40
+Rall? the Tro?sp|{W}|1|Instant|21
+aRev?ous Rats|{1}{B}|2|Creature — Rat|38
+S?e?m? atapul?|{3}{W}{W}|5|Creature — Human Soldier|51
+y?lvna Bsailisk|{3}{G}{G}|5|Creature — Basilisk|29
+Talas?Explore?|{1}{U}|2|Creature — Human Pirate Scout|7
+iVndciate|{1}{W}{B}|3|Sorcery|44
+Mni'ds Deisre|{4}{U}{U}|6|Sorcery|19
+G?blin?eWled?|{R}|1|Creature — Goblin Artificer|9
+H?nna, Sh?p'?N avig?otr|{1}{W}{U}|3|Legendary Creature — Human Artificer|41
+El?sh N?rn, Garnd?Cenobite|{5}{W}{W}|7|Legendary Creature — Praetor|55
+Du?lcas?er ??ge|{1}{R}{R}|3|Creature — Human Wizard|22
+?quilibrium|{1}{U}{U}|3|Enchantment|56
+Mana B?each|{2}{U}|3|Enchantment|1
+Oath of Scholars|{3}{U}|4|Enchantment|42
+?ay??rd?Suo?|{2}{U}{U}|4|Creature — Spirit|44
+Wh?ptognu eFr?g|{2}{U}|3|Creature — Frog|50
+Anarchits|{4}{R}|5|Creature — Human Wizard|5
+?lowstone Flood|{3}{R}|4|Sorcery|59
+Mogg Assassn?|{2}{R}|3|Creature — Goblin Assassin|1
+Parox?sm|{1}{R}|2|Enchantment — Aura|17
+Sabertooth W?ver?|{4}{R}|5|Creature — Drake|47
+S?l?ding Salamandre|{2}{R}|3|Creature — Salamander|52
+Elve? Palis?d?|{G}|1|Enchantment|43
+Skyshroud War?Beast|{1}{G}|2|Creature — Beast|41
+Mi?ldses Automa?on|{4}|4|Artifact Creature — Construct|9
+W?rkohrse|{6}|6|Artifact Creature — Horse|7
+Lexiv?re|{3}{W}|4|Summon — Beast|54
+SexA ppela|{W}|1|Instant|51
+Cl?m-I-Am|{2}{U}|3|Summon — Clamfolk|9
+Car?bo?r? Car?pa?c|{5}{G}|6|Enchant Creature|14
+Growt?hpSurt|{1}{G}|2|Instant|35
+Squirrel Fram|{2}{G}|3|Enchantment|56
+C?oas Confetti|{4}|4|Artifact|41
+G?ant Fan|{4}|4|Artifact|35
+Jac??in-?he?Mox|{0}|0|Artifact|10
+?Saut?a o?t he Ages|{4}|4|Artifact|37
+Songtsitcher|{W}|1|Creature — Human Cleric|8
+Annlu|{U}|1|Instant|48
+Catalog|{2}{U}|3|Instant|46
+Hibernation|{2}{U}|3|Instant|24
+La?n??|{1}{U}|2|Enchantment — Aura|51
+Lil?nig Re??rin|{1}{U}|2|Enchantment|24
+PnderellD ra?k|{3}{U}|4|Creature — Drake|37
+Tel?eathy|{U}|1|Enchantment|54
+Veil? dSrepent|{2}{U}|3|Enchantment|36
+A??ssal Hroror|{4}{B}{B}|6|Creature — Horror|46
+Be?ulo|{2}{B}{B}|4|Sorcery|56
+Dark ?atchling|{4}{B}{B}|6|Creature — Horror|28
+Looming ?hade|{2}{B}|3|Creature — Shade|28
+Parasitc iBond|{3}{B}|4|Enchantment — Aura|16
+?ec?u?ive Wight|{3}{B}|4|Creature — Zombie Minion|2
+Spi?ndF ulke|{2}{B}|3|Creature — Worm Horror|19
+aVmpirci ?mrbac?|{2}{B}{B}|4|Enchantment — Aura|45
+?ebulid|{B}|1|Creature — Horror|7
+Wicth Engin?|{5}{B}|6|Creature — Horror|42
+Yawgmtoh's dEict|{1}{B}|2|Enchantment|47
+Acdiic?Soil|{2}{R}|3|Sorcery|52
+Brand|{R}|1|Instant|60
+Brava?o|{1}{R}|2|Enchantment — Aura|43
+aF?u Ltin?|{X}{R}{R}|2|Instant|5
+Goblin aWr uBgg?|{1}{R}|2|Creature — Goblin|34
+u?tmaneuve?|{X}{R}|1|Instant|27
+Socrai Wrmu|{4}{R}|5|Creature — Wurm|55
+cSrap|{2}{R}|3|Instant|24
+Shiv' sEmbrace|{2}{R}{R}|4|Enchantment — Aura|56
+Hidden Ancients|{1}{G}|2|Enchantment|6
+Venomuos Fangs|{2}{G}|3|Enchantment — Aura|47
+i?ldDo gs|{G}|1|Creature — Hound|17
+?Brrin's ?odex|{4}|4|Artifact|47
+Lifleien|{5}|5|Artifact|24
+Noetic Sa?els|{4}|4|Artifact|9
+Phyreiax nCo?ossus|{7}|7|Artifact Creature — Golem|31
+Purging cSythe|{5}|5|Artifact|9
+Bru? tof Eneryg|{W}|1|Instant|22
+eDvotu aHrpi?t|{W}|1|Creature — Human|15
+Hope and Glory|{1}{W}|2|Instant|43
+Plnaar Coll?ase|{1}{W}|2|Enchantment|1
+Aura Flxu|{2}{U}|3|Enchantment|8
+Te?he?dr Skirge|{2}{B}|3|Creature — Imp|35
+Im?ending Disaster|{1}{R}|2|Enchantment|20
+Damping E?n?ne|{4}|4|Artifact|52
+Rin go?G ?x|{3}|3|Artifact|38
+Treet? pVlialge|1|1|Land|37
+Eig?tfo?dM a?z|{2}{W}|3|Instant|33
+hSu Foot Slode?rs|{2}{W}|3|Creature — Human Soldier|27
+?u eMgn, Wu General|{3}{U}{U}|5|Legendary Creature — Human Soldier|26
+Sun Ce,Yo ungCo ?querre|{3}{U}{U}|5|Legendary Creature — Human Soldier|25
+Wu Warsh?p|{2}{U}|3|Creature — Human Soldier|42
+Stone Caatpult|{4}{B}|5|Creature — Human Soldier|21
+Wei?Infanrty|{1}{B}|2|Creature — Human Soldier|23
+Wie Night aRider?|{2}{B}{B}|4|Creature — Human Soldier|43
+Young Wei Recruits|{1}{B}|2|Creature — Human Soldier|35
+Zhang Lioa,H ero ?f Hefie|{4}{B}{B}|6|Legendary Creature — Human Soldier|10
+Burnin?F ?el??|{4}{R}|5|Sorcery|13
+Cont??l of th? Cuort|{1}{R}|2|Sorcery|15
+oDng Zhou, the Tyran?|{4}{R}|5|Legendary Creature — Human Soldier|29
+oZdiac Goat|{R}|1|Creature — Goat|40
+S?oils o? ?ictory|{2}{G}|3|Sorcery|5
+Zodi?c Rbabit|{G}|1|Creature — Rabbit|35
+Feldgling Osprey|{U}|1|Creature — Bird|9
+Rayne, Acade?y Ch?ncellr?|{2}{U}|3|Legendary Creature — Human Wizard|47
+Scent of Brine|{1}{U}|2|Instant|36
+eTlepathi? Spie?|{2}{U}|3|Creature — Human Wizard|57
+Treacheyr|{3}{U}{U}|5|Enchantment — Aura|60
+Body Snatcher|{2}{B}{B}|4|Creature — Minion|12
+Ph?rexian ?oniotr|{3}{B}|4|Creature — Skeleton|57
+Soul?eFast|{3}{B}{B}|5|Sorcery|54
+A?eehr Sti?g|{3}{R}|4|Enchantment|27
+Flmae Jet|{1}{R}|2|Sorcery|55
+Reclkess Abandon|{R}|1|Sorcery|16
+Elivsh Lokootu|{G}|1|Creature — Elf|39
+M??tan'isD ecree|{3}{G}|4|Sorcery|42
+?latrops|{3}|3|Artifact|19
+Masticore|{4}|4|Artifact Creature — Masticore|52
+Scryi?g Glass|{2}|2|Artifact|54
+Thran ?y?mao|{4}|4|Artifact|22
+Ro?al Falcon|{1}{W}|2|Creature — Bird|17
+P??de?fo?Lions|{3}{G}{G}|5|Creature — Cat|7
+Charm Peddler|{W}|1|Creature — Human Spellshaper|57
+?rsobsow Inf?ntr?|{1}{W}|2|Creature — Human Soldier Archer|31
+Nigh?wind Glidre|{2}{W}|3|Creature — Human Rebel|33
+Ramosian Commander|{2}{W}{W}|4|Creature — Human Rebel|54
+Ram?isa? eSrgeant|{W}|1|Creature — Human Rebel|46
+Soo?h?ng ?alm|{1}{W}|2|Instant|28
+Cowadric?|{3}{U}{U}|5|Enchantment|50
+De??dration|{3}{U}|4|Enchantment — Aura|58
+Port ?nspcetor|{1}{U}|2|Creature — Human|1
+Trade oRu?es|{1}{U}|2|Enchantment|47
+Alley Gifrters|{1}{B}{B}|3|Creature — Human Mercenary|18
+C?teran Su?mons|{B}|1|Sorcery|14
+Pr?meval Shambelr|{4}{B}|5|Creature — Horror Mercenary|53
+Qu?gmireL amprey|{2}{B}|3|Creature — Fish|31
+Rosue|{1}{B}|2|Instant|55
+SkulikngF?uigtvie|{2}{B}|3|Creature — Horror Mercenary|13
+Blood ouHnd|{2}{R}|3|Creature — Hound|34
+Blodo Oa?h|{3}{R}|4|Instant|44
+Cavern ?rawler|{2}{R}|3|Creature — Insect|51
+Kyren ?lider|{1}{R}|2|Creature — Goblin|17
+Uphlil Btat?e|{2}{R}|3|Enchantment|6
+lCear teh Land|{2}{G}|3|Sorcery|59
+Clo?cetiveU nocnscouis|{4}{G}{G}|6|Sorcery|32
+D?epwood Wlove?ine|{G}|1|Creature — Wolverine|25
+La?d Garnt|{1}{G}|2|Sorcery|9
+Ruhs?oo? Dry?d|{1}{G}|2|Creature — Dryad|54
+Spo?at?eosu ?e?eration|{3}{G}|4|Sorcery|57
+Hor? of Plenty|{6}|6|Artifact|34
+Hcikor yWoodlot|1|1|Land|17
+?a d?untie|{2}{B}|3|Creature — Goblin Shaman|58
+Kr?s? nW?crhief|{2}{G}|3|Creature — Beast|34
+Terminate|{B}{R}|2|Instant|8
+Go?lin Legionn?ir?|{R}{W}|2|Creature — Goblin Soldier|23
+Mgmaa ?et|{1}{R}|2|Instant|9
+Pillar of ?lame|{R}|1|Sorcery|52
+Enr?oa?hing Wastes|1|1|Land|29
+Rosat|{1}{R}|2|Sorcery|1
+Nissa's Pilg?image|{2}{G}|3|Sorcery|56
+Netter en-Dal|{W}|1|Creature — Human Spellshaper|51
+Sivvis' Valor|{2}{W}|3|Instant|53
+Voice of Tr?h?|{3}{W}|4|Creature — Angel|33
+P?a?r?ax Tide|{2}{U}{U}|4|Enchantment|32
+Seal of Removal|{U}|1|Enchantment|52
+M?nd Slash|{1}{B}{B}|3|Enchantment|37
+Mgog Toa?y|{1}{R}|2|Creature — Goblin|39
+H?r?es? Mage|{G}|1|Creature — Human Spellshaper|14
+Saprolign Clsuetr|{1}{G}|2|Enchantment|19
+Skyshroud S?ntin?l|{2}{G}|3|Creature — Elf|28
+Stampede Driver|{G}|1|Creature — Human Spellshaper|22
+Blebe's Armro|{3}|3|Artifact|55
+Bel?e's Por???|{5}|5|Artifact|52
+Rejvuen?toin Cha?emr|{3}|3|Artifact|25
+Mag?ta the Lion|{3}{W}{W}|5|Legendary Creature — Human Spellshaper|42
+Ae?xi? ZephyrM age|{3}{U}{U}|5|Legendary Creature — Human Spellshaper|31
+Mana aVpor?|{1}{U}|2|Sorcery|8
+Grele' Csaress|{1}{B}|2|Enchantment — Aura|1
+Infer?al Gene?is|{4}{B}{B}|6|Enchantment|35
+Palgue Wind|{7}{B}{B}|9|Sorcery|32
+Rebel?Ifnromer|{2}{B}|3|Creature — Human Mercenary Rebel|25
+Latulla,K ?ldon ?vreseer|{3}{R}{R}|5|Legendary Creature — Human Spellshaper|15
+Latull?'? Orders|{1}{R}|2|Enchantment — Aura|6
+Ridglenie ?gR?r|{2}{R}|3|Creature — Beast|14
+?ar?h?Boa|{G}|1|Creature — Snake|10
+Squrire lraWngler|{2}{G}{G}|4|Creature — Human Druid|21
+?rims?n co??y?e|{1}{W}|2|Creature — Human Cleric|58
+Protcteive Sphe??|{2}{W}|3|Enchantment|44
+Rout|{3}{W}{W}|5|Sorcery|11
+Saimte Minitsration|{1}{W}|2|Instant|3
+Sunscape?Apprenti?e|{W}|1|Creature — Human Wizard|51
+Cry?tal Spray|{2}{U}|3|Instant|44
+Dream Thrshu|{1}{U}|2|Creature — Bird|33
+M?tahtra nAersotat|{2}{U}{U}|4|Creature — Metathran|32
+??t|{U}|1|Instant|43
+Raibno wCo?w|{3}{U}|4|Creature — Bird|36
+S? yWe?vre|{1}{U}|2|Creature — Metathran Wizard|21
+?Anhi?iate|{3}{B}{B}|5|Instant|38
+Desp?arte Research|{1}{B}|2|Sorcery|38
+Do orD ie|{1}{B}|2|Sorcery|21
+Mournin?|{1}{B}|2|Enchantment — Aura|32
+Tia?ted?Well|{2}{B}|3|Enchantment — Aura|43
+?i?htning Dart|{1}{R}|2|Instant|33
+Obliter?te|{6}{R}{R}|8|Sorcery|12
+Aggrs??i?e Ureg|{1}{G}|2|Instant|1
+Lln??war Elite|{G}|1|Creature — Elf|23
+MigthW evaer|{1}{G}|2|Creature — Human Wizard|17
+?estock|{3}{G}{G}|5|Sorcery|51
+Sc?uti?g Trek|{1}{G}|2|Sorcery|43
+?erepn?i?e Kvau|{4}{G}|5|Creature — Kavu|21
+tSa?kingA s?as?in|{1}{U}{B}|3|Creature — Human Assassin|39
+lAl?y Glome|{6}|6|Artifact Creature — Golem|31
+Ph?rexianA lt?r|{3}|3|Artifact|43
+Ph?reiaxn Lens|{3}|3|Artifact|43
+S?a?he?lC ameo|{3}|3|Artifact|54
+iTger?ye Cameo|{3}|3|Artifact|52
+Hobble|{2}{W}|3|Enchantment — Aura|51
+?arch of Souls|{4}{W}|5|Sorcery|58
+Pollen Re?edy|{W}|1|Instant|37
+Srpuri???Deployment|{3}{W}|4|Instant|33
+?hitfing Sky|{2}{U}|3|Enchantment|38
+eDath Bomb|{3}{B}|4|Instant|22
+Nighst?ape Battlem?g?|{2}{B}|3|Creature — Zombie Wizard|58
+Noxiou??Vapros|{1}{B}{B}|3|Sorcery|30
+Phyrexian Scuat|{3}{B}|4|Creature — Zombie|21
+Plan?s?akler's F?ry|{2}{R}|3|Enchantment|48
+Gaea' s?erlad|{1}{G}|2|Creature — Elf|24
+Sa??o?th?oLno|{2}{W}{U}|4|Creature — Bird|3
+Shivan Wurm|{3}{R}{G}|5|Creature — Wurm|37
+Sete lLea Pfala?in|{4}{G}{W}|6|Creature — Elf Knight|3
+Dromar's Cave??|1|1|Land — Lair|26
+Mortify|{1}{W}{B}|3|Instant|31
+eNgate|{1}{U}|2|Instant|18
+iBtuminous Blast|{3}{B}{R}|5|Instant|31
+Coalition Flag|{W}|1|Enchantment — Aura|37
+Manac?es of eDcya|{1}{W}|2|Enchantment — Aura|12
+Spcetral Lynx|{1}{W}|2|Creature — Cat Spirit|52
+Grav eDefiler|{3}{B}|4|Creature — Zombie|50
+Lsat C??es?|{2}{B}|3|Sorcery|16
+?esoaltion Ginat|{2}{R}{R}|4|Creature — Giant|36
+Raakv?lver|{2}{R}|3|Creature — Volver|26
+A?a Disciple|{G}|1|Creature — Human Wizard|58
+Bog Gnarr|{4}{G}|5|Creature — Beast|24
+KvauMa ulre|{4}{G}{G}|6|Creature — Kavu|16
+Urbo?g Elf|{1}{G}|2|Creature — Elf Druid|58
+Con?ume Strength|{1}{B}{G}|3|Instant|25
+Last Stand|{W}{U}{B}{R}{G}|5|Sorcery|13
+Prophe?ic oB?t|{3}{U}{R}|5|Instant|39
+uPtrid Warr?or|{W}{B}|2|Creature — Zombie Soldier Warrior|31
+?u?cksi?ev?? agger|{1}{U}{R}|3|Enchantment — Aura|41
+E?blaz?ned oGlem|{2}|2|Artifact Creature — Golem|12
+Caves?of ??ilos|1|1|Land|26
+Ce?se-Fir?|{2}{W}|3|Instant|37
+Ki?tar's rat?W|{4}{W}{W}|6|Sorcery|6
+Mystic?Crusade?|{1}{W}{W}|3|Creature — Human Nomad Mystic|18
+Mystic Zealo?|{3}{W}|4|Creature — Human Nomad Mystic|18
+Pianna,N moad Captain|{1}{W}{W}|3|Legendary Creature — Human Nomad|2
+Pilgrim ofJ ustice|{2}{W}|3|Creature — Human Cleric|55
+Spher?eof T?tuh|{3}{W}|4|Enchantment|47
+Concentra?e|{2}{U}{U}|4|Sorcery|29
+Dematerialize|{3}{U}|4|Sorcery|40
+Thnki Tank|{2}{U}|3|Enchantment|14
+Unif?ingT heryo|{1}{U}|2|Enchantment|38
+B?o?dcurdler|{1}{B}|2|Creature — Horror|7
+Execute|{2}{B}|3|Instant|17
+Gha?lty Demies|{B}|1|Instant|12
+Zom?ie In?e?tatino|{1}{B}|2|Enchantment|29
+C?hnce Encounetr|{2}{R}{R}|4|Enchantment|40
+Dwarv?n Grunt|{R}|1|Creature — Dwarf|41
+Lav aBlistre|{1}{R}|2|Sorcery|18
+Mudhloe|{2}{R}|3|Instant|20
+Rites of nit?iation|{R}|1|Instant|15
+S?vage ?irecat|{3}{R}{R}|5|Creature — Elemental Cat|23
+Seiz? teh Dya|{3}{R}|4|Sorcery|49
+Shower?o fCoals|{3}{R}{R}|5|Sorcery|40
+Therm?l B?ast|{4}{R}|5|Instant|34
+T??mleb|{1}{R}|2|Sorcery|2
+Druid Lyrsit|{G}|1|Creature — Human Druid|1
+Elephnat ?mbush|{2}{G}{G}|4|Instant|52
+G?ioll aTit?a|{3}{G}{G}|5|Creature — Ape|27
+K?osan Beats|{3}{G}|4|Creature — Squirrel Beast|2
+Na??uko Mentor|{2}{G}|3|Creature — Insect Druid|20
+aDrkwtaer Egg|{1}|1|Artifact|56
+Babraria? Ring|1|1|Land|45
+Cetnaru Ga?den|1|1|Land|14
+Sk?cloud Exapnse|1|1|Land|45
+T?anscende?c?|{3}{W}{W}{W}|6|Enchantment|53
+Cephali dSa?e|{3}{U}|4|Creature — Cephalid|42
+Churning Eddy|{3}{U}|4|Sorcery|20
+oCmpuli?on|{1}{U}|2|Enchantment|32
+Go??tlyWi?ngs|{1}{U}|2|Enchantment — Aura|30
+Fcaeless Butcher|{2}{B}{B}|4|Creature — Nightmare Horror|41
+Suo? Scouger|{4}{B}|5|Creature — Nightmare Horror|24
+C??ckling ?lub|{R}|1|Enchantment — Aura|53
+r?aze dFirecta|{5}{R}{R}|7|Creature — Elemental Cat|32
+lFaming Gambit|{X}{R}|1|Instant|44
+L?nhgorn Firbeeast|{2}{R}|3|Creature — Elemental Ox Beast|60
+Overmaster|{R}|1|Sorcery|43
+Nantuko Blighctuttre|{2}{G}|3|Creature — Insect Druid|9
+T?itn?d Fiedl|1|1|Land|56
+Cagemial|{1}{W}|2|Enchantment — Aura|24
+?oma dMyh?maker|{2}{W}|3|Creature — Human Nomad Cleric|10
+rPismatic Str?nds|{2}{W}|3|Instant|27
+Spirit Cainr|{2}{W}|3|Enchantment|21
+Arcan?eTeachings|{2}{R}|3|Enchantment — Aura|17
+nIfectious ?age|{1}{R}|2|Enchantment — Aura|57
+Swelter|{3}{R}|4|Sorcery|46
+S?irilng a?ndstorm|{3}{R}|4|Sorcery|37
+Epi ?S?rug?le|{2}{G}{G}|4|Enchantment|45
+Grizzly Fate|{3}{G}{G}|5|Sorcery|36
+Kros?n Rcelamation|{1}{G}|2|Instant|44
+Krosan Wayfarer|{G}|1|Creature — Human Druid|57
+Hunting Gruonds|{G}{W}|2|Enchantment|41
+Korasn Veger|1|1|Land|27
+uAirficat?no|{2}{W}{W}|4|Enchantment|40
+Cahin of Slience|{1}{W}|2|Instant|36
+Circ?e of Solace|{3}{W}|4|Enchantment|26
+Insp?rit|{2}{W}|3|Instant|47
+Nova?Cleri?|{W}|1|Creature — Human Cleric|48
+Unified ?triek|{W}|1|Instant|34
+Waethere? Wayaref?|{W}|1|Creature — Human Nomad Cleric|15
+?hkoing?Tt?hers|{3}{U}|4|Instant|6
+?Dsruptive Pitmag?|{2}{U}|3|Creature — Human Wizard|18
+Ixd?o? ,Rela?t?yScul?tor|{3}{U}{U}|5|Legendary Creature — Human Wizard|14
+Pe?r ?er?urs?|{3}{U}|4|Sorcery|2
+R???die B?l?ogist|{1}{U}|2|Creature — Human Wizard|13
+Cove r?f Dark?ess|{1}{B}|2|Enchantment|25
+CruelR evival|{4}{B}|5|Instant|15
+Death Match|{3}{B}|4|Enchantment|56
+Dirg? of??rea?|{2}{B}|3|Sorcery|52
+Ebonblade Ra??er|{2}{B}|3|Creature — Human Cleric|29
+Frighthsrodu ?ourier|{2}{B}|3|Creature — Zombie|13
+?ead G?mes|{3}{B}{B}|5|Sorcery|60
+vOresol dCemet?ry|{1}{B}|2|Enchantment|8
+Walking Desceration|{2}{B}|3|Creature — Zombie|23
+Witehri?g ?ex|{B}|1|Enchantment — Aura|28
+Wret?hed A?urd?|{1}{B}|2|Creature — Zombie Frog Beast|48
+Brihgtstone Rtiual|{R}|1|Instant|2
+Buthcre rOgg|{4}{R}{R}{R}|7|Creature — Orgg|46
+Commadno aRid|{2}{R}|3|Instant|44
+?m?ermga??Gobln?|{3}{R}|4|Creature — Goblin Wizard|15
+?Gbl?n Seldder|{R}|1|Creature — Goblin|7
+Mana Echeos|{2}{R}{R}|4|Enchantment|12
+Pin?onit vAa?lnche|{3}{R}{R}|5|Instant|52
+SkirkP ro?pectro|{R}|1|Creature — Goblin|25
+Skittish Valesk|{6}{R}|7|Creature — Beast|47
+irBc?lroe Rangers|{G}|1|Creature — Elf Druid|3
+Elvish ?Pthc?tter|{3}{G}|4|Creature — Elf Scout|48
+E?pols?ve Veegattion|{3}{G}|4|Sorcery|1
+Krosan Gruodnhsaker|{4}{G}{G}{G}|7|Creature — Beast|55
+Lerey ?ogbeast|{2}{G}|3|Creature — Beast|34
+Silo?,s Rogue Elemental|{3}{G}{G}{G}|6|Legendary Creature — Elemental|28
+Snarling nUd?rk?|{2}{G}{G}|4|Creature — Beast|17
+Towreig? Baloth|{6}{G}{G}|8|Creature — Beast|34
+Seclud?d Setppe|1|1|Land|60
+?evn Envy?|{U}|1|Creature — Bird Soldier|6
+Demroplasm|{2}{U}|3|Creature — Shapeshifter|28
+Riptdie ?angler|{1}{U}|2|Creature — Beast|24
+GempalmI nciner?to?|{2}{R}|3|Creature — Goblin|59
+Goblin Firebug|{1}{R}|2|Creature — Goblin|42
+Evli?s Soultl?ler|{3}{G}{G}|5|Creature — Elf Mutant|2
+Quick Sliver|{1}{G}|2|Creature — Sliver|33
+Aevn Farseer|{1}{W}|2|Creature — Bird Soldier|33
+Wipe Cl?an|{1}{W}|2|Instant|39
+?ragon Wnigs|{1}{U}|2|Enchantment — Aura|10
+Detah's-Head Buzz?rd|{1}{B}{B}|3|Creature — Bird|23
+?nrage|{X}{R}|1|Instant|46
+Spark Spray|{R}|1|Instant|47
+Sulfuric orV?ex|{1}{R}{R}|3|Enchantment|48
+Br?ak Asun?er|{2}{G}{G}|4|Sorcery|31
+Dievrget ?Growht|{G}|1|Instant|36
+Tre?top ?cout|{G}|1|Creature — Elf Scout|24
+Wierwood Symbiote|{G}|1|Creature — Insect|5
+Woocdloaker|{5}{G}|6|Creature — Elf|23
+Ghos?-LitR aid?r|{2}{R}|3|Creature — Spirit|24
+Auriok tSeelshape?|{1}{W}|2|Creature — Human Soldier|7
+Aurik ?Transf?xe?|{W}|1|Creature — Human Scout|6
+Lenoni Skyhunter|{W}{W}|2|Creature — Cat Knight|6
+Loxdoon ?uinsher|{3}{W}|4|Creature — Elephant Soldier|1
+Broodstar|{8}{U}{U}|10|Creature — Beast|17
+?oriok Scavenegr|{3}{B}|4|Creature — Human Rogue|19
+p?oi?so ft ?e Vau?t|{B}|1|Instant|16
+Forg eArmor|{4}{R}|5|Instant|18
+Grab hte Reins|{3}{R}|4|Instant|44
+MassH ysteria|{R}|1|Enchantment|56
+Megatog|{4}{R}{R}|6|Creature — Atog|35
+Firesrhiek?r|{3}|3|Artifact — Equipment|12
+Lifespar kSpelb?omb|{1}|1|Artifact|46
+Lox?odn Warhammer|{3}|3|Artifact — Equipment|45
+Malachite Gol?m|{6}|6|Artifact Creature — Golem|44
+?eurok Hove?sail|{1}|1|Artifact — Equipment|21
+Psychogenic Proeb|{2}|2|Artifact|25
+Ru?t Eleme?tal|{4}|4|Artifact Creature — Elemental|43
+??yth? ?o the?Wret?hed|{2}|2|Artifact — Equipment|33
+Spel?we?e?r ?Hlix|{3}|3|Artifact|21
+ySnod ?a?c?um|{1}|1|Artifact|10
+Wiazrd R?plica|{3}|3|Artifact Creature — Wizard|45
+?linkmoth?We?l|1|1|Land|33
+Tr?e of Talse|1|1|Artifact Land|12
+Auiork Glaivemas?e?|{W}|1|Creature — Human Soldier|15
+?oulscour|{7}{W}{W}{W}|10|Sorcery|36
+S?telshaerp Appern?iec|{2}{W}{W}|4|Creature — Human Soldier|45
+Rehsape|{X}{U}{U}|2|Sorcery|35
+Murderuso Spoils|{5}{B}|6|Instant|19
+Shrievlign ?ot|{2}{B}{B}|4|Instant|39
+iVridian Aoclyte|{G}|1|Creature — Elf Shaman|46
+?iridi?? eaZlot|{G}{G}|2|Creature — Elf Warrior|27
+Chim?ircE?gg|{3}|3|Artifact|40
+Darktsele ?ru?e|{2}|2|Artifact|32
+Drill-Skimemr|{4}|4|Artifact Creature — Thopter|31
+My? ?Lndshaper|{3}|3|Artifact Creature — Myr|28
+Spawning Pti|{2}|2|Artifact|12
+Auriok S?lvagers|{3}{W}|4|Creature — Human Soldier|3
+Retlaatie|{2}{W}{W}|4|Instant|2
+Disruption Aur?|{2}{U}|3|Enchantment — Aura|23
+Hoverguard Sweeeprs|{6}{U}{U}|8|Creature — Drone|3
+Sp?ctral Sihft|{1}{U}|2|Instant|46
+Moriok Rigger|{2}{B}|3|Creature — Human Rogue Rigger|39
+Krrak-l?an Orge|{3}{R}{R}|5|Creature — Ogre|18
+Rain of?Ru??|{3}{R}{R}|5|Instant|3
+B??nger? f teh Geren Daw?|{7}{G}{G}|9|Creature — Bringer|21
+TelJ-ilad ?usitce|{1}{G}|2|Instant|50
+Virdiai? Scout|{3}{G}|4|Creature — Elf Warrior Scout|35
+Blastin gSt?aion|{3}|3|Artifact|51
+Door ot Nothingness|{5}|5|Artifact|9
+Ensouled Scimitar|{3}|3|Artifact — Equipment|23
+Grniding ?tatoin|{2}|2|Artifact|18
+Healer's Headderss|{2}|2|Artifact — Equipment|31
+Snucru?he?|{9}|9|Artifact Creature — Construct|56
+Bush?iTen?refoot|{W}|1|Creature — Human Soldier|55
+Ca?lt o Glroy|{1}{W}|2|Instant|3
+Devoted eRat?ner|{W}|1|Creature — Human Samurai|29
+oHl dthe?Line|{1}{W}{W}|3|Instant|3
+Ind?oitable i?ll|{1}{W}|2|Enchantment — Aura|18
+Kami of the Painted Road|{4}{W}|5|Creature — Spirit|35
+Ki?s?ne Blademstaer|{2}{W}|3|Creature — Fox Samurai|40
+Smaurai En?orec??|{4}{W}{W}|6|Creature — Human Samurai|55
+Cut ?he T?thrse|{2}{U}{U}|4|Sorcery|60
+Hisoka's Gu?ad|{1}{U}|2|Creature — Human Wizard|4
+Petal sof I?igsth|{4}{U}|5|Sorcery — Arcane|32
+Reweaev|{5}{U}|6|Instant — Arcane|57
+Sire of the Sotm?|{4}{U}{U}|6|Creature — Spirit|26
+Midn?gt hCovenant|{1}{B}|2|Enchantment — Aura|28
+Nzemui Sohrt?ang|{1}{B}|2|Creature — Rat Rogue|10
+Ember-F?st Zubera|{1}{R}|2|Creature — Zubera Spirit|26
+Hea?th Kami|{1}{R}|2|Creature — Spirit|32
+Hon?en o? ?Ifinite R?eg|{2}{R}|3|Legendary Enchantment — Shrine|39
+Uncontr??albl? Anger|{2}{R}{R}|4|Enchantment — Aura|36
+Buodk aG?adener|{1}{G}|2|Creature — Human Monk|13
+Kashi-?irbe Warroirs|{3}{G}{G}|5|Creature — Snake Warrior|6
+?i??-Strnu?g?oto|{6}|6|Artifact|5
+Jade Idol|{4}|4|Artifact|33
+Konda's Bnane?|{2}|2|Legendary Artifact — Equipment|48
+Long-Fo?g?oten?Go??i|{3}|3|Artifact|31
+aT?s??as?, the Dragon's Fang|{6}|6|Legendary Artifact — Equipment|58
+Tneza, Godo's ??ul|{3}|3|Legendary Artifact — Equipment|14
+Minamo, ?c?ho? at a?te?s' Eged|1|1|Legendary Land|21
+tAinlya Igpya|{5}{W}|6|Eaturecray — Igpay|10
+Emcee|{2}{W}|3|Creature — Human Rogue|60
+Little Girl|{hw}|0.5|Creature — Human Child|37
+Artful Looert|{2}{U}|3|Creature — Human Wizard|7
+Carniv?rous?Deta-hPar?to|{1}{U}|2|Creature — Bird|26
+Bad As?|{2}{B}{B}|4|Creature — Donkey Zombie|3
+F?re?el ltoA r?s|{1}{B}{B}|3|Enchantment|8
+??r?kng ?Siff|{1}{B}|2|Creature — Mummy|30
+Dumb sAs|{2}{R}|3|Creature — Donkey Barbarian|52
+B-I-N?GO-|{1}{G}|2|Creature — Hound|5
+F?t ?ss|{4}{G}|5|Creature — Donkey Shaman|12
+Ou ra?rket???sear?h Shows Tha? Plaer?sL?ike eRal?y Long Car? ?ame sSo WeM dae t?siC a?? ot?Have?the Abso?ute Long?s? CardN ame Ever ?le?entla|{1}{G}{G}|3|Creature — Elemental|14
+Shoe Tree|{4}{G}|5|Creature — Treefolk|60
+Ukta?b Kong|{5}{G}{G}{G}|8|Creature — Ape|23
+Rare?B-Gone|{2}{B}{R}|4|Sorcery|57
+Why|{1}{G}|2|Instant|25
+Urza'sH o Ttub|{2}|2|Artifact|10
+Split?Tali Miok|{1}{W}|2|Creature — Fox Cleric|8
+Call?wJ ushi|{1}{U}{U}|3|Creature — Human Wizard|31
+Jettin? Glaskstie|{4}{U}{U}|6|Creature — Spirit|4
+Minamo'? Me?dling|{2}{U}{U}|4|Instant|31
+Her'os ?e?sie|{1}{B}|2|Instant|12
+Ogre Maaruder|{1}{B}{B}|3|Creature — Ogre Warrior|34
+iSckening Sohal|{X}{B}{B}|2|Instant — Arcane|40
+???kR aidre|{1}{R}|2|Creature — Goblin Warrior|54
+Cu?ni?g Bandt?|{1}{R}{R}|3|Creature — Human Warrior|2
+Azamuik, T?eacheyrI?n?arnate|{1}{R}{R}|3|Legendary Creature — Spirit|24
+Fumiko the??owblood|{2}{R}{R}|4|Legendary Creature — Human Samurai|56
+Ishi-I?hi, Ak?i Cr?cksoht|{1}{R}|2|Legendary Creature — Goblin Warrior|60
+Harbinger ofS pr??n|{4}{G}|5|Creature — Spirit|26
+?urtian of ?ight|{1}{W}|2|Instant|25
+Nikko-Onna|{2}{W}|3|Creature — Spirit|40
+Kiri-Onna|{4}{U}|5|Creature — Spirit|39
+?ec?etekepe?|{3}{U}|4|Creature — Spirit|34
+Death Denie?|{X}{B}{B}|2|Instant — Arcane|5
+Death of a Thousand S?insg|{4}{B}|5|Instant — Arcane|59
+xEl?e into D?r??ess|{4}{B}|5|Sorcery|8
+Hnad?of Cruelty|{B}{B}|2|Creature — Human Samurai|44
+Kuon, Ogre Ascenda?t|{B}{B}{B}|3|Legendary Creature — Ogre Monk|53
+Godo?s Irregulars|{R}|1|Creature — Human Warrior|19
+Inner Fier|{3}{R}|4|Sorcery|30
+Dens? Canoyp|{1}{G}|2|Enchantment|57
+aSsyaa, Or?chi Ascendant|{1}{G}{G}|3|Legendary Creature — Snake Monk|27
+Sasaya?s Essenec|{1}{G}{G}|3|Legendary Enchantment|60
+Sh?ien of?Life's Roar|{1}{G}|2|Creature — Spirit|1
+S?ampe?ing Serow|{2}{G}{G}|4|Creature — Antelope Beast|8
+Wine of Blood and Iron|{3}|3|Artifact|37
+Mikokoro,?Ce?ter?o? the Se?|1|1|Legendary Land|33
+?ourei rHaw?|{1}{W}|2|Creature — Bird|37
+Dr?mad Purebr?d|{4}{W}|5|Creature — Camel Beast|15
+Lea?vN oT raec|{1}{W}|2|Instant|21
+ThreeD ramse|{4}{W}|5|Sorcery|11
+Zephyr Spirit|{5}{U}|6|Creature — Spirit|25
+Cligning Dakrnses|{1}{B}|2|Enchantment — Aura|15
+Helldoz?e|{3}{B}{B}{B}|6|Creature — Zombie Giant|54
+??st Gasp|{1}{B}|2|Instant|29
+?ammefrist ?Gatn|{4}{R}{R}|6|Creature — Giant Warrior|17
+Mn?imoil|{4}{R}|5|Enchantment|16
+?abertoot?A lely C?t|{1}{R}{R}|3|Creature — Cat|60
+War-Torch Gob?in|{R}|1|Creature — Goblin Warrior|27
+Gahtr? Courage|{G}|1|Instant|33
+l?utcho f the?Und?rcity|{1}{U}{U}{B}|4|Instant|16
+Dimir Cutpur??|{1}{U}{B}|3|Creature — Spirit|20
+Midnleech Mass|{5}{U}{B}{B}|8|Creature — Horror|50
+Rally ?heR gihteous|{1}{R}{W}|3|Instant|25
+Bloodle?te? Quill|{3}|3|Artifact|49
+?l?ss?G?lem|{5}|5|Artifact Creature — Golem|11
+?pectral eSacrhlgi?t|{3}|3|Artifact|25
+?rera?ion|{1}|1|Artifact|14
+aClciderm|{2}{W}{W}|4|Creature — Beast|2
+Yixli? Jalier|{1}{B}|2|Creature — Zombie Wizard|16
+To Arms!|{1}{W}|2|Instant|33
+??therplasm|{2}{U}{U}|4|Creature — Illusion|5
+Hatc?ingP la?n|{1}{U}|2|Enchantment|14
+Steamocre W?rid|{3}{U}|4|Creature — Weird|44
+Train ofT hought|{1}{U}|2|Sorcery|47
+Cyrpwt?i?lgn|{3}{B}|4|Enchantment|42
+G?or-Cla ???lodsclae|{3}{R}|4|Creature — Viashino Warrior|27
+Ogre Saavnt|{4}{R}|5|Creature — Ogre Wizard|55
+Predatory F?cus|{3}{G}{G}|5|Sorcery|48
+Conju?r'es Ban|{W}{B}|2|Sorcery|12
+?uen-?rood Nephilim|{B}{R}{G}{W}|4|Creature — Nephilim|16
+G?lectr?de|{1}{U}{R}|3|Creature — Weird|28
+Ink-Trea?er N?phl?im|{R}{G}{W}{U}|4|Creature — Nephilim|5
+eLap of Flame|{U}{R}|2|Instant|36
+O?zhv ?Guild?a?e|{W/B}{W/B}|2|Creature — Human Wizard|12
+P?trah?dro?|{3}{U/R}|4|Creature — Weird|37
+??zzimu Tr?ns?eliqu?a|{3}|3|Artifact|35
+Serra Avenger|{W}{W}|2|Creature — Angel|2
+Steeling Stance|{1}{W}{W}|3|Instant|58
+Govenr?the?Guildless|{5}{U}|6|Sorcery|43
+C?yp? Champion|{3}{B}|4|Creature — Zombie|58
+Drekavac|{1}{B}|2|Creature — Beast|51
+Entropi ??idolon|{3}{B}|4|Creature — Spirit|4
+gnI?ran tBlsis|{1}{R}|2|Instant|25
+Ex?eirm?nt Kraj|{2}{G}{G}{U}{U}|6|Legendary Creature — Ooze Mutant|22
+?obhobble rRats|{B}{R}|2|Creature — Rat|47
+Overru?l|{X}{W}{U}|2|Instant|15
+R?kdos uAgermgea|{B}{B}{R}|3|Creature — Human Wizard|16
+Sky Hussr?|{3}{W}{U}|5|Creature — Human Knight|8
+wTisntrike|{3}{B}{R}|5|Instant|21
+Dvo?scape|{3}{W/U}{W/U}{W/U}|6|Enchantment|1
+Bound|{3}{B}{G}|5|Instant|22
+Crime|{3}{W}{B}|5|Sorcery|31
+Suppyl|{X}{G}{W}|2|Sorcery|2
+Rakdos Sg?net|{2}|2|Artifact|8
+Blood?Crytp|1|1|Land — Swamp Mountain|4
+aHllowed Fonuta??|1|1|Land — Plains Island|17
+Ad?krar Valykrie|{4}{W}{W}|6|Snow Creature — Angel|60
+?ötunO wl Keepre|{2}{W}|3|Creature — Giant|42
+Sun's Bo?nty|{1}{W}|2|Instant|1
+Adarkar W?nfdorm|{4}{U}|5|Snow Creature — Illusion|43
+Rimefeathre Olw|{5}{U}{U}|7|Snow Creature — Bird|44
+Rimeiwnd rCy?mancer|{3}{U}|4|Creature — Human Wizard|45
+Vexing Sph?nx|{1}{U}{U}|3|Creature — Sphinx|19
+Phob?an Phantams|{1}{B}{B}|3|Creature — Illusion|27
+Karplusan ??notaru|{2}{R}{R}|4|Creature — Minotaur Warrior|24
+rBoodn?iS auri?n|{2}{G}{G}|4|Creature — Lizard|11
+Karplu?an?Str?der|{3}{G}|4|Creature — Yeti|25
+Borale Shlef|1|1|Snow Land|27
+?n?ght of the Holy Nimb?s|{W}{W}|2|Creature — Human Rebel Knight|5
+Outrdie? en?Kor|{2}{W}|3|Creature — Kor Rebel Knight|53
+Pentacrh Paladin|{2}{W}{W}{W}|5|Creature — Human Knight|15
+Tempora? Isolat?o?|{1}{W}|2|Enchantment — Aura|42
+Wat?her Sliver|{3}{W}|4|Creature — Sliver|52
+Bewilder|{2}{U}|3|Instant|36
+rDeam Stakler|{1}{U}|2|Creature — Illusion|35
+Praad?x aH?e|{2}{U}|3|Enchantment — Aura|14
+Riftwing Cloudskate|{3}{U}{U}|5|Creature — Illusion|4
+cS?eech?ng Sliver|{U}|1|Creature — Sliver|26
+ThinkT icew|{1}{U}|2|Instant|16
+Basal ??iv?r|{2}{B}|3|Creature — Sliver|36
+Demonic Collus?on|{3}{B}{B}|5|Sorcery|53
+eSngir oNsfeart?|{3}{B}{B}|5|Creature — Vampire|28
+Skitte?in?M ons?rosi?t|{3}{B}{B}|5|Creature — Horror|39
+Skluk?ng Knight|{2}{B}|3|Creature — Zombie Knight|6
+S?dden Sopi?ing|{1}{B}{B}|3|Instant|37
+T?ndril? of Corr??tino|{3}{B}|4|Instant|5
+Bogar?d? Hellkite|{6}{R}{R}|8|Creature — Dragon|27
+Ingite Me?ories|{4}{R}|5|Sorcery|49
+Padirc Dragon|{4}{R}{R}|6|Creature — Dragon|31
+Sedge Slvier|{2}{R}|3|Creature — Sliver|45
+Glas sAsp|{1}{G}{G}|3|Creature — Snake|39
+oMlder|{X}{G}|1|Instant|14
+Primla Forcemage|{2}{G}|3|Creature — Elf Shaman|27
+Scry b?ang?r|{1}{G}|2|Creature — Faerie|40
+Thelon of Hvaewnood|{G}{G}|2|Legendary Creature — Elf Druid|22
+T?elonite Hermit|{3}{G}|4|Creature — Elf Shaman|10
+nUyar? Bese|{G}{G}{G}|3|Creature — Insect|54
+Stonebrwo? Krosa?H ero|{3}{R}{G}|5|Legendary Creature — Centaur Warrior|9
+?locwko?k Hydar|{5}|5|Artifact Creature — Hydra|44
+Hive?toen|{2}|2|Artifact|58
+Gems?one C?verns|1|1|Legendary Land|8
+Frutcikae El?mental|{1}{G}{G}|3|Creature — Elemental|18
+S?ason?s ?eatings|{R}{R}{R}{R}|4|Sorcery|37
+Saltblsat|{3}{W}{W}|5|Sorcery|19
+S?rra's Boon|{2}{W}|3|Enchantment — Aura|33
+?t?nc?ola?re|{2}{W}|3|Creature — Gargoyle|10
+S??pe rarPs?a?e|{1}{U}{U}|3|Creature — Illusion|36
+Dash Hpose|{B}{B}|2|Instant|7
+Timbe?m?re|{3}{G}|4|Creature — Elemental Horse|9
+Ca?tery Sl?ver|{R}{W}|2|Creature — Sliver|29
+Da?kheart Sliver|{B}{G}|2|Creature — Sliver|49
+Marsha?in g?ry|{1}{W}{W}|3|Sorcery|28
+Sam?te?Ce?ser-Beare?|{W}|1|Creature — Human Rebel Cleric|20
+Da?break Croo?et|{W}{W}|2|Enchantment — Aura|43
+Lucent?Liminid|{3}{W}{W}|5|Enchantment Creature — Elemental|59
+Laeden Fists|{2}{U}|3|Enchantment — Aura|24
+Ma?l?trmo Djinn|{7}{U}|8|Creature — Djinn|29
+Pact ofN ?gation|{0}|0|Instant|23
+Ar??num ?insg|{1}{U}|2|Enchantment — Aura|44
+?arcomoe?a|{1}{U}|2|Creature — Illusion|41
+Sracomit? My?|{2}{U}|3|Artifact Creature — Myr|31
+Fetser?ng March|{3}{B}{B}|5|Sorcery|5
+S?imia? Spcet?r|{2}{B}{B}|4|Creature — Specter|49
+Sk?rk Ridge Ehxumer|{1}{B}|2|Creature — Zombie Spellshaper|23
+?o??stalk?e|{6}{B}{B}|8|Creature — Demon|30
+Arc lB?de|{3}{R}{R}|5|Sorcery|5
+??cure gof Khe?Ri??gse|{6}{R}{R}|8|Creature — Dragon|15
+aRv?gin??Ri?twurm|{1}{G}{G}|3|Creature — Wurm|18
+p?rot uSwarm|{1}{G}|2|Instant|57
+Utopia Mcyno|{G}|1|Creature — Fungus|20
+aBru,???st of Krosa|{3}{G}{G}|5|Legendary Creature — Human Druid|26
+Centa?? Omenreader|{3}{G}|4|Snow Creature — Centaur Shaman|46
+M?raga?daP etrogylph?|{3}{G}|4|Enchantment|22
+Nessian Cousrer|{2}{G}|3|Creature — Centaur Warrior|52
+Sliver Leigon|{W}{U}{B}{R}{G}|5|Legendary Creature — Sliver|45
+Dyra?A rbor|1|1|Land Creature — Forest Dryad|58
+r?avne Cairns|1|1|Land|49
+?emnite|{0}|0|Artifact Creature — Construct|47
+iDregraf h?oul|{B}|1|Creature — Zombie|58
+Killin? aWve|{X}{B}|1|Sorcery|26
+Zameck G?i?dmage|{G}{U}|2|Creature — Elf Wizard|39
+Squeclhi?g L?e?ehs|{2}{B}{B}|4|Creature — Leech|57
+Di??tae of ?rupihx|{1}{U}{U}|3|Enchantment|17
+?ori?nE ,Ruin??iver|{1}{U}{R}|3|Legendary Creature — Merfolk Wizard|17
+Btatl? Mas?ery|{2}{W}|3|Enchantment — Aura|43
+?urge of Thougthwef?|{1}{W}|2|Tribal Instant — Kithkin|31
+Benthcioer|{6}{U}|7|Creature — Elemental|42
+Inkafthom Dviesr|{3}{U}{U}|5|Creature — Merfolk Soldier|29
+Sli?erig?l dAept|{1}{U}|2|Creature — Merfolk Wizard|33
+Silvergill Douser|{1}{U}|2|Creature — Merfolk Wizard|29
+?ings ?f Velis Vle|{1}{U}|2|Tribal Instant — Shapeshifter|20
+Ciar nWandeerr|{4}{B}|5|Creature — Shapeshifter|52
+Fina lRveels|{4}{B}|5|Sorcery|7
+Knuckleboen W?tch|{B}|1|Creature — Goblin Shaman|41
+P?owes? of th? Fair|{1}{B}|2|Tribal Enchantment — Elf|30
+Quil?S-linger Boggart|{3}{B}|4|Creature — Goblin Warrior|25
+Wraren Pliferesr|{4}{B}|5|Creature — Goblin Rogue|13
+Inecn?iary Com?nad|{3}{R}{R}|5|Sorcery|9
+Nee??e Drop|{R}|1|Instant|1
+Smokebraiedr|{1}{R}|2|Creature — Elemental Shaman|51
+rBiarhr?n|{3}{G}|4|Creature — Elemental|22
+Ch?g?elni gTitan|{4}{G}|5|Creature — Shapeshifter|6
+Elvish P?om?nade|{3}{G}|4|Tribal Sorcery — Elf|43
+?lyvan Echoe?|{G}|1|Enchantment|53
+?Gdodck? ?eg|{G}{W}|2|Legendary Creature — Kithkin Advisor|7
+Wydwen, the Bitig?Gnlae|{2}{U}{B}|4|Legendary Creature — Faerie Wizard|31
+Rings o ?Brightheart?|{3}|3|Artifact|3
+?Wnd?rer's????g|{1}|1|Artifact|11
+eScl?ded Geln|1|1|Land|39
+Windbrisk ?eights|1|1|Land|24
+Satf ??f Nin|{6}|6|Artifact|12
+Dictate of the Twi nodsG|{3}{R}{R}|5|Enchantment|40
+Preemnient Cpatain|{2}{W}|3|Creature — Kithkin Soldier|52
+Stony?roko?Schoolmastre|{2}{W}|3|Creature — Merfolk Wizard|4
+Wegi?t of Cosnc?ence|{1}{W}|2|Enchantment — Aura|52
+In kDissol?er|{1}{U}|2|Creature — Merfolk Wizard|26
+Inspired Sprite|{3}{U}|4|Creature — Faerie Wizard|59
+Notori?su Thor?g|{3}{U}|4|Tribal Sorcery — Rogue|2
+tSo?ybro?kB?annr?et|{1}{U}|2|Creature — Merfolk Wizard|1
+Thiev?s' Fo?utne|{2}{U}|3|Tribal Instant — Rogue|27
+eFstrecreep|{1}{B}|2|Creature — Elemental|10
+Moresl?T?etf|{2}{B}{B}|4|Tribal Sorcery — Rogue|2
+Night?haed cShemers|{4}{B}|5|Creature — Faerie Wizard|44
+Prickyl Boggart|{B}|1|Creature — Goblin Rogue|42
+?queakign Pei Gurbfello?s|{3}{B}|4|Creature — Goblin Shaman|12
+Wa?ren W?irdi?g|{1}{B}|2|Tribal Sorcery — Goblin|51
+uLnk Er?ant|{5}{R}|6|Creature — Giant Warrior|47
+Rivals' Duel|{3}{R}|4|Sorcery|25
+Vegnf?ul Fi?ebr?nd|{3}{R}|4|Creature — Elemental Warrior|26
+a?r-Spike Changeling|{3}{R}|4|Creature — Shapeshifter|37
+Am?assador Oka|{3}{G}|4|Creature — Treefolk Warrior|4
+Hnu?nig?Tirad|{3}{G}|4|Tribal Sorcery — Elf|18
+Lys Alaa? B?wamtsr?|{2}{G}|3|Creature — Elf Archer|58
+R?is? fo ht Veines?eed|{3}{G}|4|Enchantment — Aura|50
+Winnower P??rol|{2}{G}|3|Creature — Elf Warrior|43
+?loak and Dagger|{2}|2|Tribal Artifact — Rogue Equipment|28
+Resplendent?Mentor|{4}{W}|5|Creature — Kithkin Cleric|42
+tr?ip?Bare|{W}|1|Instant|37
+Twiligh? Shepherd|{3}{W}{W}{W}|6|Creature — Angel|2
+Wo?lee?h?r|{5}{W}|6|Creature — Elemental|43
+Bitign Tteher|{4}{U}|5|Enchantment — Aura|57
+Knacksaw Cliuqe|{3}{U}|4|Creature — Faerie Rogue|13
+Corwd?of Cinde?s|{3}{B}|4|Creature — Elemental|39
+?id?ightB anshee|{3}{B}{B}{B}|6|Creature — Spirit|6
+R?te of Consump??on|{1}{B}|2|Sorcery|56
+iSckle Ripper|{1}{B}|2|Creature — Elemental Warrior|13
+Embre?Gale|{3}{R}|4|Sorcery|15
+?nitmidator Initait?|{R}|1|Creature — Goblin Shaman|57
+Punct?re Bolt|{1}{R}|2|Instant|12
+aRgeR efelction|{4}{R}{R}|6|Enchantment|37
+Toil to Renown|{1}{G}|2|Sorcery|25
+?oodfall P?im?s|{5}{G}{G}{G}|8|Creature — Treefolk Shaman|47
+Thistle?ow nLiege|{1}{W/U}{W/U}{W/U}|4|Creature — Kithkin Knight|24
+Dream Sa?va?e|{U/B}|1|Instant|17
+O?an's aGtewa?den|{U/B}|1|Creature — Faerie Soldier|10
+Embe?strkie Du?|{1}{B/R}|2|Creature — Elemental Warrior Shaman|16
+Manaofrg? inCder|{B/R}|1|Creature — Elemental Shaman|12
+Medicine Runner|{1}{G/W}|2|Creature — Elf Cleric|23
+Rekin?|{1}{G/W}|2|Instant|59
+aSfehold Duo|{3}{G/W}|4|Creature — Elf Warrior Shaman|48
+eSe?cardle Witch|{G/W}|1|Creature — Elf Shaman|11
+?uadrlon of oSlus|{5}|5|Artifact|31
+Heap D???|{1}|1|Artifact Creature — Scarecrow|59
+Trip Noose|{2}|2|Artifact|11
+Re?muenbt ?liss|{2}{W}|3|Enchantment — Aura|51
+Id?igo Faerie|{1}{U}|2|Creature — Faerie Wizard|5
+Sanity Girnding|{U}{U}{U}|3|Sorcery|51
+Crmublin? Ashes|{1}{B}|2|Enchantment|2
+Flame? ab|{R}|1|Sorcery|17
+Dusk?al? Wurm|{5}{G}{G}|7|Creature — Wurm|56
+Marshdrinke rGiant|{3}{G}{G}|5|Creature — Giant Warrior|24
+Reagl o?rce|{4}{G}{G}{G}|7|Creature — Elemental|44
+?vres?rik?|{3}{W/B}{W/B}|5|Creature — Elemental Spirit|29
+Noxios uHat?hl?ng|{3}{B/G}|4|Creature — Elemental|30
+Rise of the?Hobg?bl?ns|{R/W}{R/W}|2|Enchantment|41
+Murkfiedn Lieg?|{2}{G/U}{G/U}{G/U}|5|Creature — Horror|11
+S?arec?one|{3}|3|Artifact Creature — Scarecrow|21
+Maris'is Twincl?ws|{2}{R/W}{G}|4|Creature — Cat Warrior|20
+Naya Sojourners|{2}{R}{G}{W}|5|Creature — Elf Shaman|49
+Gole?'sH eart|{2}|2|Artifact|48
+nIvi?cibel Hymn|{6}{W}{W}|8|Sorcery|55
+Knihgt oft?e hSkyward E?e|{1}{W}|2|Creature — Human Knight|38
+Cahtarti cAdept|{U}|1|Creature — Human Wizard|12
+??n?lcok Ob?|{3}{U}|4|Artifact|3
+Proto?atter Powd?e|{2}{U}|3|Artifact|45
+Drgescae pZombie|{1}{B}|2|Creature — Zombie|8
+Shore S?apper|{2}{B}|3|Creature — Beast|22
+Ske?etal Ka??ari|{4}{B}|5|Creature — Bird Skeleton|35
+C?ucible?of?Fire|{3}{R}|4|Enchantment|43
+T?orn-Thr?sh Viash?n?|{3}{R}|4|Creature — Viashino Warrior|53
+Ba?rhcin goBlt|{1}{R}{G}|3|Instant|44
+C?rri?o T?hash|{2}{B}{R}{G}|5|Creature — Viashino Warrior|35
+Clar?on U?timatum|{G}{G}{W}{W}{W}{U}{U}|7|Sorcery|15
+??ftD?uelist|{W}{U}|2|Creature — Human Rogue|27
+Grixis Charm|{U}{B}{R}|3|Instant|35
+Sedarxis Spectre|{U}{B}{R}|3|Creature — Specter|4
+?ei?e Myst?cs|{4}{W}|5|Creature — Bird Wizard|7
+Sce?e?ro f Dmoniacne|{1}{W}{W}|3|Artifact|38
+Wall?of Rveerence|{3}{W}|4|Creature — Spirit Wall|35
+r?otnline Sage|{2}{U}|3|Creature — Human Wizard|2
+Corrpu?ed Roots|{B}|1|Enchantment — Aura|30
+Drag Down|{2}{B}|3|Instant|56
+Girxis laSvedrvi?r|{5}{B}|6|Creature — Zombie Giant|59
+?alvage Slashre|{1}{B}|2|Artifact Creature — Human Rogue|3
+lBoodhall Ooze|{R}|1|Creature — Ooze|1
+aCnoyn Minotaur|{3}{R}|4|Creature — Minotaur Warrior|12
+V?raciuos? ragon|{3}{R}{R}|5|Creature — Dragon|13
+Gluttonous Slime|{2}{G}|3|Creature — Ooze|1
+Saclelum Ar?hers|{2}{G}|3|Creature — Elf Archer|32
+Sproe Burst|{3}{G}|4|Sorcery|22
+?poc?l?spe Hdyra|{X}{R}{G}|2|Creature — Hydra|9
+Bloo? Tyrant|{4}{U}{B}{R}|7|Creature — Vampire|26
+Gil?spire vAe?ger|{G}{W}{U}|3|Creature — Human Soldier|23
+Sykward?Ey e??ohpet?|{3}{G}{W}{U}|6|Creature — Human Wizard|8
+Arm?llar ?Spher?|{2}|2|Artifact|38
+?emon|1|1|Creature — Demon|44
+Ethersowrn ??eSldmaeg|{1}{W}{U}|3|Artifact Creature — Vedalken Wizard|13
+Mi?t??in Boredrpo?t|{1}{U}{B}|3|Artifact|59
+?emo?spien Whip|{B}{R}|2|Artifact — Equipment|41
+Kathrai Bmober|{1}{B}{R}|3|Creature — Bird Shaman|43
+M?sotrou? Carabid|{3}{B}{R}|5|Creature — Insect|15
+Godt?acke? of Jund|{1}{R}{G}|3|Creature — Elf Shaman|28
+Val?y eRanent|{4}{R}{G}|6|Creature — Beast|54
+Violent Outb?ust|{1}{R}{G}|3|Instant|58
+E?listed Wurm|{4}{G}{W}|6|Creature — Wurm|25
+Knotv?ne ?a?adin|{G}{W}|2|Creature — Human Knight|58
+Le?nin Armo?guard|{2}{G}{W}|4|Creature — Cat Soldier|38
+Skc??lw T?rsa?|{3}{U}{R}|5|Artifact Creature — Viashino Warrior|11
+Putrid ?eech|{B}{G}|2|Creature — Zombie Leech|35
+Unscyhte, i?ller?of Kings|{U}{B}{B}{R}|4|Legendary Artifact — Equipment|34
+Trace of Aubndance|{R/W}{G}|2|Enchantment — Aura|15
+Veetran?Swordsmith|{2}{W}|3|Creature — Human Soldier|5
+iDsorient|{3}{U}|4|Instant|53
+lSeep|{2}{U}{U}|4|Sorcery|4
+?coly?e o? ?athird|{B}|1|Creature — Human Cleric|16
+Child of N?ght|{1}{B}|2|Creature — Vampire|52
+Buri?ng Iqnuir?|{R}|1|Sorcery|56
+Vi?ahin?S pearhunt?r|{2}{R}|3|Creature — Viashino Warrior|47
+??ambleC reeper|{4}{G}|5|Creature — Elemental|25
+Dealdy?Relcuse|{1}{G}|2|Creature — Spider|47
+Windstorm|{X}{G}|1|Instant|47
+?o?tboun ?rCag|1|1|Land|8
+TheEo ? ?og|1|1|Plane — Equilor|53
+The Hipopdrome|1|1|Plane — Segovia|11
+sIle fo Vesu?a|1|1|Plane — Dominaria|7
+L?anwoar|1|1|Plane — Dominaria|48
+Raven' ??un|1|1|Plane — Shadowmoor|26
+Vels Viel|1|1|Plane — Lorwyn|58
+Devout Light?astre|{W}{W}{W}|3|Creature — Kor Cleric|36
+Iona, Sh?eld fo Emeria|{6}{W}{W}{W}|9|Legendary Creature — Angel|27
+Ko? Ho?kmas?er|{2}{W}|3|Creature — Kor Soldier|24
+Steppe Lynx|{W}|1|Creature — Cat|5
+Merfol? Saestalkres|{3}{U}|4|Creature — Merfolk Scout|9
+Sphinx o? Lost rTuths|{3}{U}{U}|5|Creature — Sphinx|59
+Windride? Ee?|{3}{U}|4|Creature — Fish|9
+Klaitas,B lodochief?of Gh?t|{5}{B}{B}|7|Legendary Creature — Vampire Warrior|29
+Sadisti cS?crament|{B}{B}{B}|3|Sorcery|7
+C?andr??Albaze|{4}{R}{R}|6|Planeswalker — Chandra|1
+??blin ??h?tcu?ter|{1}{R}|2|Creature — Goblin Scout|60
+Laabva?l Tra?|{6}{R}{R}|8|Instant — Trap|14
+Molte? Raa?ger|{2}{R}|3|Creature — Elemental|49
+Obisdian Fireheart|{1}{R}{R}{R}|4|Creature — Elemental|52
+Runef?lre Trap|{4}{R}{R}|6|Instant — Trap|47
+Se?smic S?ud?er|{1}{R}|2|Instant|11
+Giagnt?form|{3}{G}{G}|5|Enchantment — Aura|34
+TimbermwaLa rva|{3}{G}|4|Creature — Beast|57
+TurntimberBa sliisk|{1}{G}{G}|3|Creature — Basilisk|34
+?xpedition Map|{1}|1|Artifact|38
+Sotn?wor kPmua|{3}|3|Artifact Creature — Cat Ally|2
+?sit yRainforest|1|1|Land|6
+iPranha Marsh|1|1|Land|3
+Tunrtimber Gro??|1|1|Land|57
+Archon of Redempiton|{3}{W}{W}|5|Creature — Archon|2
+D?ipel|{U}|1|Instant|2
+pSell Contortio?|{2}{U}|3|Instant|40
+Vapor Snare|{4}{U}|5|Enchantment — Aura|14
+Scrib Nibblers|{2}{B}|3|Creature — Rat|13
+Baa?ar Trader|{1}{R}|2|Creature — Goblin|20
+Grotag Thrasher|{4}{R}|5|Creature — Lizard|22
+Tuktuk Scarpepr|{3}{R}|4|Creature — Goblin Artificer Ally|6
+Slingb?wT ?ap|{3}{G}|4|Instant — Trap|51
+Amu?et foV igor|{1}|1|Artifact|56
+Hedron Ro?er|{4}|4|Artifact Creature — Construct|32
+Razor Bo??erang|{3}|3|Artifact — Equipment|18
+rDe? dStatuary|1|1|Land|12
+Sejir iSteppe|1|1|Land|41
+Siktetring Invasio?|{7}|7|Tribal Sorcery — Eldrazi|9
+Hyean U?mra|{W}|1|Enchantment — Aura|28
+Lumio?u? Wkae|{2}{W}|3|Enchantment — Aura|17
+aMmomt? Umbar|{4}{W}|5|Enchantment — Aura|60
+??a?-Death Experience|{2}{W}{W}{W}|5|Enchantment|3
+Champi?n'? rDake|{1}{U}|2|Creature — Drake|57
+Drake Umbr?|{4}{U}|5|Enchantment — Aura|4
+Guard? oma?oa|{2}{U}|3|Creature — Jellyfish|41
+La? Ba?e|{2}{U}{U}|4|Instant|18
+Lighthosue hC?onologist|{1}{U}|2|Creature — Human Wizard|52
+Merfolk Observer|{1}{U}|2|Creature — Merfolk Rogue|40
+Renegaed? opp?lganger|{1}{U}|2|Creature — Shapeshifter|6
+See B?yond|{1}{U}|2|Sorcery|28
+rTaining Grounds|{U}|1|Enchantment|34
+Conuse mthe Meek|{3}{B}{B}|5|Instant|26
+Cropsehatch|{3}{B}{B}|5|Sorcery|37
+Essecen Feed|{5}{B}|6|Sorcery|60
+Grotag Siege-Runenr|{1}{R}|2|Creature — Goblin Rogue|45
+uLstf or War|{2}{R}|3|Enchantment — Aura|59
+Grwoth Spa??|{2}{G}|3|Sorcery|23
+iLving?Dest?ny|{3}{G}|4|Instant|6
+Might of ?he?Mass?s|{G}|1|Instant|11
+Ralem sUncahrted|{2}{G}|3|Instant|7
+Sarkahn t?e Mad|{3}{B}{R}|5|Planeswalker — Sarkhan|31
+??dron ?atrxi|{4}|4|Artifact — Equipment|41
+Behold?the Power of Destruction|1|1|Scheme|52
+A Displa?yof My Dak? owPer|1|1|Scheme|22
+Eevry aLs t?estige?Shall ?ot|1|1|Scheme|36
+Feed the Machine|1|1|Scheme|54
+Look Skywar? a?d Dspeair|1|1|Scheme|46
+?yU ndead Hrode ?wakens|1|1|Ongoing Scheme|1
+Reamls Befittig?nMy Majetsy|1|1|Scheme|29
+Th?V er? Soli ShlalS?hkae|1|1|Ongoing Scheme|53
+W?ic hof Y??uBurns Brightes??|1|1|Scheme|15
+Your?aFte I? Thr?ce Sealde|1|1|Scheme|1
+Ajani'sM an?ra|{1}{W}|2|Enchantment|45
+eAther Adept|{1}{U}{U}|3|Creature — Human Wizard|43
+hPnatom Beast|{3}{U}|4|Creature — Illusion Beast|11
+Redire?t|{U}{U}|2|Instant|51
+N?thr eHorror|{3}{B}|4|Creature — Horror|40
+?hand???s Spitfire|{2}{R}|3|Creature — Elemental|28
+Cyclpos ?alda?tor|{1}{R}{R}{R}|4|Creature — Cyclops Warrior|51
+Fauna Sha??n|{1}{G}|2|Creature — Elf Shaman|50
+Shape Anwe|{3}{U}|4|Sorcery|15
+?onatgious?Nim|{2}{B}|3|Creature — Zombie|15
+Ba?ra?e Ogre|{3}{R}{R}|5|Creature — Ogre Warrior|52
+Fr?orvore|{2}{R}|3|Creature — Beast|43
+Klduotah?Re?irth|{R}|1|Sorcery|36
+Bl?gth Mamba|{1}{G}|2|Creature — Snake|13
+Blunt teh Assalut|{3}{G}|4|Instant|8
+Geenssi W?ae|{X}{G}{G}{G}|3|Sorcery|10
+??i??ian Re??l|{1}{G}{G}|3|Enchantment|51
+iWthstand eDath|{G}|1|Instant|22
+Vens??, the oSjourner|{3}{W}{U}|5|Planeswalker — Venser|35
+Copr?e C?r|{4}|4|Artifact Creature — Hound|32
+Da?ksteel Senti?e?|{6}|6|Artifact Creature — Golem|15
+olGden ?rn|{1}|1|Artifact|56
+Horizon Sp?llbomb|{1}|1|Artifact|17
+Molt?n-Ta?l Mat?icore|{4}|4|Artifact Creature — Masticore|56
+Nim Dea??ma?nel|{2}|2|Artifact — Equipment|42
+Pr?toty?e Portla|{4}|4|Artifact|48
+R??orfiel ?Threhser|{7}|7|Artifact Creature — Construct|2
+V??shok eRlpic?|{3}|3|Artifact Creature — Berserker|44
+Secahrom eoaCs?|1|1|Land|14
+Fuel for the Cuase|{2}{U}{U}|4|Instant|53
+S?ire Serpent|{4}{U}|5|Creature — Serpent|29
+M?rbid Pluned?|{1}{B}{B}|3|Sorcery|29
+Ph?re?axn?Crusader|{1}{B}{B}|3|Creature — Zombie Knight|45
+Gnathoasur|{4}{R}{R}|6|Creature — Lizard|47
+?Tngl Meanits|{2}{G}{G}|4|Creature — Insect|56
+yMr ??rbine|{5}|5|Artifact|3
+?eace Stri?er|{4}|4|Artifact Creature — Construct|12
+piSneo fI sh Sah|{7}|7|Artifact|19
+Tita Fnoreg|{3}|3|Artifact|50
+Wa??epRort|{3}{W}|4|Instant|8
+Mortis Dog?|{3}{B}|4|Creature — Hound|25
+Inva?er?Pa?asite|{3}{R}{R}|5|Creature — Insect|47
+Rgae Extrac?ro|{4}{R/P}|5|Artifact|5
+Whipflare|{1}{R}|2|Sorcery|33
+Meilra, Syvlok?Outcast|{1}{G}|2|Legendary Creature — Human Scout|59
+Gremiln Mine|{1}|1|Artifact|56
+Shr?n?o f Bounldess Grothw|{3}|3|Artifact|31
+Shrin?? f Pierci?g Vision|{2}|2|Artifact|20
+Se?llsikte|{2}|2|Artifact Creature — Horror|44
+Phy?ei?x's Core|1|1|Land|23
+Crescendo of War|{3}{W}|4|Enchantment|6
+Trbiut? ot the Wild|{1}{G}|2|Instant|12
+Nin, th eaPi? rA?sit|{U}{R}|2|Legendary Creature — Vedalken Wizard|8
+Alabaster ?ag?|{1}{W}|2|Creature — Human Wizard|58
+Gaurdians' P?edge|{1}{W}{W}|3|Instant|51
+C?as? Drkae|{4}{U}|5|Creature — Drake|26
+Bl?ordageV ampire|{2}{B}|3|Creature — Vampire|42
+Drifting hSade|{3}{B}|4|Creature — Shade|50
+Ts?te? f Blood|{B}|1|Sorcery|60
+F?ry?orn Hellkite|{4}{R}{R}{R}|7|Creature — Dragon|44
+Gorehor?Mniont?ur?|{2}{R}{R}|4|Creature — Minotaur Warrior|2
+W?l lof T?rches|{1}{R}|2|Creature — Wall|24
+Glae?cove?S?oct?|{G}|1|Creature — Elf Scout|43
+Gho??ly Possessoin|{2}{W}|3|Enchantment — Aura|6
+Rebuke|{2}{W}|3|Instant|31
+Batltegr?und G?ist|{4}{U}|5|Creature — Spirit|19
+nIes?tileA berration|1|1|Creature — Human Insect|4
+Sen?ory Dpreivait?n|{U}|1|Enchantment — Aura|57
+Corpse ?nuge|{2}{B}|3|Instant|30
+Cu?se of Obi?vion|{3}{B}|4|Enchantment — Aura Curse|37
+?ead Weight|{B}|1|Enchantment — Aura|36
+Gr??some Defro?tiy|{B}|1|Enchantment — Aura|22
+Mor?rtu Bnashee|{3}{B}{B}|5|Creature — Spirit|40
+T?phoid?Ra?s|{B}|1|Creature — Rat|5
+Unbur?al iRtes|{4}{B}|5|Sorcery|48
+Waklnig C?rpse|{1}{B}|2|Creature — Zombie|13
+WildbloodP ack|1|4|Creature — Werewolf|43
+Terroro fK ?ui?P ass|1|3|Creature — Werewolf|33
+aRkish Heri|{2}{R}|3|Creature — Vampire|16
+Torme?ted Pa?iah|{3}{R}|4|Creature — Human Warrior Werewolf|26
+Ni?htfla Plre?ator|1|3|Creature — Werewolf|38
+H?llowhegne ?caven???|{3}{G}{G}|5|Creature — Elemental|8
+MoldgrafM ons?rosi?y|{4}{G}{G}{G}|7|Creature — Insect|16
+Spide??Spwainng|{4}{G}|5|Sorcery|30
+Trvael?Preparatinos|{1}{G}|2|Sorcery|34
+Woodl?a? Sletuh|{3}{G}|4|Creature — Human Scout|10
+G?is to Sfaint rT?ft|{1}{W}{U}|3|Legendary Creature — Spirit Cleric|44
+Cellar Door|{2}|2|Artifact|15
+?emonmai lHauebrk|{4}|4|Artifact — Equipment|26
+Geistcatcher? s?ig|{6}|6|Artifact Creature — Construct|54
+hGulocaller'sB?e?l|{1}|1|Artifact|54
+?n??hcanter?s Pike|{2}|2|Artifact — Equipment|30
+Traveler's Amlute|{1}|1|Artifact|19
+I?oltaed? hapel|1|1|Land|28
+Mooranld Hantu|1|1|Land|19
+Woo?land Cmeetery|1|1|Land|20
+Sanctuar yCat|{W}|1|Creature — Cat|7
+Thalia ,Guardian of Thra?en|{1}{W}|2|Legendary Creature — Human Soldier|12
+D?ngeon Geists|{2}{U}{U}|4|Creature — Spirit|9
+raGvepurge|{2}{B}|3|Instant|28
+Skis?dgaF layre|{1}{B}|2|Creature — Human Cleric|59
+U?dyin? Evil|{B}|1|Instant|16
+Werewolf ?nsaacker|1|1|Creature — Werewolf|3
+Blood Feu?|{4}{R}{R}|6|Sorcery|32
+Hc?kln?g?Fie?ds|{2}{R}|3|Creature — Devil|2
+Moonveil Dr?o?n|{3}{R}{R}{R}|6|Creature — Dragon|21
+rWac??with Ma???ss|{3}{R}|4|Sorcery|11
+Lo?s in t?hW ?dos|{3}{G}{G}|5|Enchantment|21
+Monocsar?rd Wer?owfl|1|1|Creature — Werewolf|26
+WildH unger|{2}{G}|3|Instant|10
+Wol?fitet ?Captiv?|{G}|1|Creature — Human Werewolf|53
+Ravgae ro? the Fells|1|1|Creature — Werewolf|53
+M?st?Ra?en|{2}{U}{U}|4|Creature — Bird|38
+Sot?en?Godos|{3}{U}|4|Sorcery|33
+Death Wind|{X}{B}|1|Instant|12
+Grave Excahnge|{4}{B}{B}|6|Sorcery|39
+Human Fr?ilt?|{B}|1|Instant|57
+Pre?ator's Gambit|{B}|1|Enchantment — Aura|31
+Have?gul??ampire|{3}{R}|4|Creature — Vampire|17
+Heirs o? Stromikrk|{2}{R}{R}|4|Creature — Vampire|22
+Hou?d ?f Griseb?rand|{2}{R}{R}|4|Creature — Elemental Hound|38
+??ounded|{1}{G}|2|Enchantment — Aura|28
+Natuarl?En?|{2}{G}|3|Instant|49
+?o??ir?Si?verheart|{3}{G}{G}|5|Creature — Wolf Warrior|31
+Angel's oTmb|{3}|3|Artifact|25
+aH?nted Guardian|{2}|2|Artifact Creature — Construct|35
+?ron's Dominion|1|1|Plane — New Phyrexia|22
+Qui?csilver Sea|1|1|Plane — Mirrodin|54
+Dow?por?|{1}{U}|2|Instant|27
+Coewr?in Fear|{1}{B}{B}|3|Instant|60
+rDagon Htac?lign|{1}{R}|2|Creature — Dragon|57
+Firewing Phoenix|{3}{R}|4|Creature — Phoenix|46
+Preda?ory Rampage|{3}{G}{G}|5|Sorcery|58
+Prc?nit? Capt?in|{W}{W}|2|Creature — Human Soldier|18
+Auuqs Seted|{3}{U}|4|Creature — Beast|35
+Cr??stown ?ourier|{1}{U}|2|Creature — Vedalken|49
+Stab Wound|{2}{B}|3|Enchantment — Aura|6
+Bellow? Lizard|{R}|1|Creature — Lizard|51
+Gute?rsnipe|{2}{R}|3|Creature — Goblin Shaman|20
+Hor?calelr's Cha?t|{7}{G}|8|Sorcery|47
+?enta?r Healer|{1}{G}{W}|3|Creature — Centaur Cleric|42
+Essence ?ackl?sh|{2}{U}{R}|4|Instant|25
+?aard's Orders|{2}{B}{G}|4|Sorcery|45
+Rix Maadi uGildmage|{B}{R}|2|Creature — Human Shaman|16
+Slag?hetr Gmaes|{2}{B}{R}|4|Sorcery|19
+iNvmagusE elmetnal|{U/R}|1|Creature — Elemental|52
+Chr?mati? Lantern|{3}|3|Artifact|41
+zA?ruis ?iuldg?te|1|1|Land — Gate|26
+R?kdos Gu?ldgaet|1|1|Land — Gate|58
+Dutfiul Thrull|{W}|1|Creature — Thrull|5
+Kignht Wathc|{4}{W}|5|Sorcery|43
+Dilu?ian P?imordial|{5}{U}{U}|7|Creature — Avatar|8
+Rapid Hybridizat?on|{U}|1|Instant|3
+Ho?ro??of hte?Dmi|{4}{B}|5|Creature — Horror|52
+eS?ul?rhlaP rimord?al|{5}{B}{B}|7|Creature — Avatar|55
+mS?g Eemletnal|{4}{B}{B}|6|Creature — Elemental|53
+Craklcing Pe?im?eer|{1}{R}|2|Enchantment|54
+Ripsc?le Pe???tor|{4}{R}{R}|6|Creature — Lizard|51
+Aadptvie ?anp?aw|{4}{G}|5|Creature — Lizard Beast|5
+Alpha ?tAho?ity|{1}{G}|2|Enchantment — Aura|8
+Ooz? Fl?x|{3}{G}|4|Enchantment|20
+Execution?r' ?Swing|{W}{B}|2|Instant|10
+G???nd ?ssau?l|{R}{G}|2|Sorcery|51
+Gru?l R?gbeeast|{5}{R}{G}|7|Creature — Beast|28
+iMnd Gridn|{X}{U}{B}|2|Sorcery|1
+Paranoid?elDusio??|{U}{B}|2|Sorcery|59
+Arrowso?f Jusitce|{2}{R/W}|3|Instant|31
+eDta?cult Rogue|{1}{U/B}{U/B}|3|Creature — Human Rogue|24
+rAmore dTra?sport|{3}|3|Artifact Creature — Construct|50
+Gruul Keyr?ne|{3}|3|Artifact|48
+Sun?pire aGte?eeper?|{3}{W}|4|Creature — Human Soldier|51
+Bnae Alley Blackgua?r|{1}{B}|2|Creature — Human Rogue|58
+Cr?? tIncu?sion|{2}{B}|3|Instant|38
+Maze Ab?minatino|{5}{B}|6|Creature — Elemental|57
+Advent of the uWrm|{1}{G}{G}{W}|4|Instant|32
+Darg?ohsift|{1}{U}{R}|3|Instant|19
+Drwno i? ?ilth|{B}{G}|2|Sorcery|18
+Gruul ?a rC?ant|{2}{R}{G}|4|Enchantment|52
+Obzeadts' A?d|{3}{W}{B}|5|Sorcery|7
+R?store the Peace|{1}{W}{U}|3|Instant|33
+Spike eJster|{B}{R}|2|Creature — Goblin Warrior|37
+Dr?ty|{2}{G}|3|Sorcery|12
+?rou?le|{2}{R}|3|Sorcery|43
+?olgrai Cluestoen|{3}|3|Artifact|16
+Angelic Accord|{3}{W}|4|Enchantment|4
+Daw?s?irek Paladni|{3}{W}{W}|5|Creature — Human Knight|60
+?Dv?ut Invocatin?|{6}{W}|7|Sorcery|56
+?ismiss ?nto r?eam|{6}{U}|7|Enchantment|8
+I?lusionray Armor|{4}{U}|5|Enchantment — Aura|10
+Jace's ?i?dseeker|{4}{U}{U}|6|Creature — Fish Illusion|48
+Ti?ebinedr Mage|{U}{U}|2|Creature — Merfolk Wizard|60
+Corpse aHuler|{1}{B}|2|Creature — Human Rogue|9
+Dark Prphoecy|{B}{B}{B}|3|Enchantment|44
+Burning Earth|{3}{R}|4|Enchantment|53
+Cylcops yTra??|{5}{R}|6|Creature — Cyclops|37
+rDgao? Egg|{2}{R}|3|Creature — Dragon|2
+F?lshpu?per ?Gant|{5}{R}{R}|7|Creature — Giant|60
+Savae? Summ?nin?|{G}|1|Instant|11
+Spr?emound|{3}{G}{G}|5|Creature — Fungus|19
+V?racoius Wurm|{1}{G}|2|Creature — Wurm|16
+Guardai nfot h eAgse|{7}|7|Artifact Creature — Golem|37
+Decorated Griff?n|{4}{W}|5|Creature — Griffin|14
+Evangel ?f Helodi|{4}{W}{W}|6|Creature — Human Cleric|41
+Scholar ?f Atr?oes|{2}{W}|3|Creature — Human Cleric|19
+?i?en? Art?san|{3}{W}{W}|5|Creature — Giant|37
+B?eachn?g Hippocamp|{3}{U}|4|Creature — Horse Fish|20
+Dakr ?etrayal|{B}|1|Instant|7
+Felhide Mni?taur|{2}{B}|3|Creature — Minotaur|16
+Read ?he Bones|{2}{B}|3|Sorcery|35
+?it?n ofE t?enal Fri?|{5}{R}|6|Creature — Giant|42
+Satyr Piepr|{2}{G}|3|Creature — Satyr Rogue|16
+KrgaamW arcaller|{3}{B}{R}|5|Creature — Minotaur Warrior|41
+Pharika's Mender|{3}{B}{G}|5|Creature — Gorgon|55
+Poli? Crushe?|{2}{R}{G}|4|Creature — Cyclops|51
+Splelheat rCihmrea|{1}{U}{R}|3|Creature — Chimera|29
+?team Augury|{2}{U}{R}|4|Instant|10
+T?plem o? Sil?nce|1|1|Land|32
+?ivine rSpiri?|{4}{U}|5|Creature — Spirit|10
+?l??iso?ist's Gmaibt|{2}{U}{U}|4|Instant|3
+Toixc Deluge|{2}{B}|3|Sorcery|8
+Sudden Demis?|{X}{R}|1|Sorcery|28
+Brimaz, King of Ore?ko?|{1}{W}{W}|3|Legendary Creature — Cat Soldier|21
+Flitt?rsetp Eidolno|{1}{U}|2|Enchantment Creature — Spirit|48
+FloodtideS ?rpetn|{4}{U}|5|Creature — Serpent|4
+e?eltis Atsronomer|{1}{U}|2|Creature — Human Wizard|22
+Vortex El?m?ntal|{U}|1|Creature — Elemental|53
+Forsaekn Drifters|{3}{B}|4|Creature — Zombie|10
+Archet??p of gAgressio?|{1}{R}{R}|3|Enchantment Creature — Human Warrior|50
+iL?htning Volley|{3}{R}|4|Instant|8
+Phraagax?iG?nt|{4}{R}|5|Creature — Giant|22
+Arhcetyep of Enduarnce|{6}{G}{G}|8|Enchantment Creature — Boar|21
+oCurser of Kruphi?|{1}{G}{G}|3|Enchantment Creature — Centaur|36
+Templ?eofM?ailce|1|1|Land|5
+?empel of Pe?lt?|1|1|Land|18
+?mra?ent of ?yx|{2}{W}|3|Enchantment — Aura|50
+Font o?V gi?r|{1}{W}|2|Enchantment|15
+Nyx-?leece Ram|{1}{W}|2|Enchantment Creature — Sheep|33
+rCys?tlline Nauitlus|{2}{U}|3|Enchantment Creature — Nautilus|54
+War-?ing?Srin?|{2}{U}|3|Creature — Siren Soldier|21
+Gnarled cSarhdie|{B}|1|Enchantment Creature — Minotaur|40
+Ritual of th ?Retrneud|{3}{B}|4|Instant|45
+Eidloon fo?th eGreat?Rveel|{R}{R}|2|Enchantment Creature — Spirit|12
+W?ldfire C?rberus|{4}{R}|5|Creature — Hound|9
+Desce?riotn Plagu?|{3}{G}|4|Sorcery|12
+R?venou?L eurcoocta|{3}{G}|4|Creature — Beast|47
+Disci?le of Dece?t|{U}{B}|2|Creature — Human Rogue|12
+K?ran?s, God o f?So?ms|{3}{U}{R}|5|Legendary Enchantment Creature — God|54
+?Scre tSum?oning|1|1|Conspiracy|19
+Unexp?cte dPotenti?l|1|1|Conspiracy|20
+Marchs?a' sEim?sary|{3}{U}|4|Creature — Human Rogue|41
+Plea fo? Pow??|{3}{U}|4|Sorcery|27
+Dakc Fadyen|{1}{U}{R}|3|Planeswalker — Dack|31
+W?odv?ne Elemental|{4}{G}{W}|6|Creature — Elemental|23
+Cogwork Lirbarain|{4}|4|Artifact Creature — Construct|27
+Dantuless? iver Marshal|{1}{W}|2|Creature — Human Soldier|54
+?rSapho ?f??e Masss?|{5}{W}{W}|7|Creature — Angel|43
+Coral?Barrier|{2}{U}|3|Creature — Wall|36
+DiffusionS liver|{1}{U}|2|Creature — Sliver|23
+Plyoomrphist's? est|{1}{U}{U}|3|Instant|21
+En?l?ss Obedinece|{4}{B}{B}|6|Sorcery|3
+Le?ch?ng lSiver|{1}{B}|2|Creature — Sliver|33
+Necromance'rs As???ta?n|{2}{B}|3|Creature — Zombie|37
+Witc'hs Fmialiar|{2}{B}|3|Creature — Frog|60
+Belligerent Sliver|{2}{R}|3|Creature — Sliver|24
+Brood Keeper|{3}{R}|4|Creature — Human Shaman|24
+uB??ing ?ng?r|{4}{R}|5|Enchantment — Aura|26
+Kird Ciheftain|{3}{R}|4|Creature — Ape|33
+Feral I?cr?aation|{8}{G}|9|Sorcery|52
+Hun?er's Ambush|{2}{G}|3|Instant|16
+V??e?eft|{G}|1|Enchantment — Aura|14
+Y?ian, the?Wa?deerr?Bad?|{2}{G}|3|Legendary Creature — Human Rogue|30
+?live rHivlerod|{W}{U}{B}{R}{G}|5|Legendary Creature — Sliver|36
+?r?afn? Memenot|{1}|1|Artifact|35
+Soul of Ne wPhyrexi?|{6}|6|Artifact Creature — Avatar|21
+ndE ?ostiliitse|{3}{W}{W}|5|Sorcery|49
+?eat of Resist?nce|{1}{W}|2|Instant|37
+Kill Shto|{2}{W}|3|Instant|30
+iSegecr?ft|{3}{W}|4|Enchantment — Aura|7
+Embodimen??f opSrnig|{U}|1|Creature — Elemental|31
+G?ciaal ?t?lker|{5}{U}|6|Creature — Elemental|26
+Sidisi's Pet|{3}{B}|4|Creature — Zombie Ape|13
+Burn??way|{4}{R}|5|Instant|4
+oHotin gMadnrills|{5}{G}|6|Creature — Ape|14
+Sagu ?rcher|{4}{G}|5|Creature — Naga Archer|17
+Abza?nG?ied|{3}{W}{B}{G}|6|Creature — Human Warrior|12
+Bea???C ompani?n|{2}{G}{U}{R}|5|Creature — Human Warrior|49
+eTmru Chamr|{G}{U}{R}|3|Instant|28
+Jzaal o?ldmane|{2}{W}{W}|4|Legendary Creature — Cat Warrior|43
+Stormsurge Kraken|{3}{U}{U}|5|Creature — Kraken|39
+Ghouclaller Gisa|{3}{B}{B}|5|Legendary Creature — Human Wizard|11
+Infe?nal O?feri?g|{4}{B}|5|Sorcery|60
+??oil sof Blood|{B}|1|Instant|7
+Song of the Dryads|{2}{G}|3|Enchantment — Aura|19
+oWlfcaller'sH wo?|{3}{G}|4|Enchantment|53
+Reali?y ?ihft|{1}{U}|2|Instant|50
+Wirte into Being|{2}{U}|3|Sorcery|11
+Arahsi nWa? eaB?t|{5}{G}{G}|7|Creature — Beast|32
+Monaster? Siege|{2}{U}|3|Enchantment|24
+iWllo f the?Naga|{4}{U}{U}|6|Instant|32
+rOc uSreshot|{3}{B}|4|Creature — Orc Archer|53
+Break Throug??te Lhine|{1}{R}|2|Enchantment|5
+Mob Rule|{4}{R}{R}|6|Sorcery|42
+Va?ltberakre|{3}{R}|4|Creature — Orc Rogue|32
+Battlefrn?t?Krsu?ok|{4}{G}|5|Creature — Beast|53
+Profuond Journey|{5}{W}{W}|7|Sorcery|44
+Sandts?rm?hCargr?|{4}{W}|5|Creature — Beast|50
+Palac eFaml?iar|{1}{U}|2|Creature — Bird|60
+Tai?am?s tSrike|{3}{U}|4|Sorcery|8
+Hand of Silumgar|{1}{B}|2|Creature — Human Warrior|2
+?inister of Pain|{2}{B}|3|Creature — Human Shaman|23
+Silumgar Butcher|{4}{B}|5|Creature — Zombie Djinn|8
+?olagha?S torms?gner|{R}|1|Creature — Human Shaman|54
+Lose Cal?|{3}{R}|4|Sorcery|21
+M?gmtaic?h???m|{1}{R}|2|Sorcery|49
+Va??la?ie|{4}{R}|5|Sorcery|60
+D?omok'asG ift|{4}{G}|5|Instant|34
+Cunni?? Breezedanc?e|{4}{W}{U}|6|Creature — Dragon|33
+Endu?ing S?alelord|{4}{G}{W}|6|Creature — Dragon|45
+Gat? Sam?ehr|{3}|3|Artifact — Equipment|44
+?nointer of Champi?ns|{W}|1|Creature — Human Cleric|3
+Cleric of the?Forwa?d?Or?r?|{1}{W}|2|Creature — Human Cleric|9
+Consu'ls Lieutenat?|{W}{W}|2|Creature — Human Soldier|50
+Enshrodunig Mist|{W}|1|Instant|13
+Apsi??ng?Aeron?ut|{3}{U}|4|Creature — Human Artificer|31
+Deadbridg? Sham?n|{2}{B}|3|Creature — Elf Shaman|55
+Tiante?R meedy|{2}{B}|3|Enchantment|49
+Fla???hadow C?nujring|{3}{R}|4|Enchantment|59
+Mamg?ti? Insig?t|{R}|1|Sorcery|1
+?ubterraenan ?octu|{1}{R}|2|Creature — Goblin Scout|43
+nAimist's wAaekn?ng|{X}{G}|1|Sorcery|60
+TheG raet Aurora|{6}{G}{G}{G}|9|Sorcery|35
+Thunde?clap yWvern|{2}{W}{U}|4|Creature — Drake|49
+Th?owi?g Knife|{2}|2|Artifact — Equipment|44
+Reterat to Kazna?u|{2}{G}|3|Enchantment|39
+?EdraziS pawn|1|1| Creature — Eldrazi Spawn|30
+Ban?oef Baal Ged|{7}|7|Creature — Eldrazi|55
+Coastal Discovery|{3}{U}|4|Sorcery|12
+Windrider Partol|{3}{U}{U}|5|Creature — Merfolk Wizard|36
+Silent Ski?m?r|{3}{B}|4|Creature — Eldrazi Drone|8
+Demo'?? Grsap|{4}{B}|5|Sorcery|34
+u?Tn ?gi?n?s|{4}{R}|5|Instant|51
+iFr?m?nlt e?a?e|{2}{R}|3|Creature — Human Shaman Ally|49
+Re?kless Cohort|{1}{R}|2|Creature — Human Warrior Ally|16
+S???terskullR ecruit|{3}{R}{R}|5|Creature — Giant Warrior Ally|12
+?olcanic pUhavea?|{3}{R}|4|Instant|5
+Callt h?S cions|{2}{G}|3|Sorcery|2
+Patlde Crushr?|{4}{G}{G}{G}|7|Creature — Beast|38
+SnappngiGn ?alid|{1}{G}|2|Creature — Beast|6
+Resolute Bl?dema?ter|{3}{R}{W}|5|Creature — Human Soldier Ally|28
+Salb Ha?me?|{2}|2|Artifact — Equipment|59
+?ligh?ed Cata?a?t|1|1|Land|52
+Blighted Stepep|1|1|Land|3
+Sh??lded?yb Faiht|{1}{W}{W}|3|Enchantment — Aura|31
+Giagntoplasm|{3}{U}|4|Creature — Shapeshifter|16
+Corpse Augur|{3}{B}|4|Creature — Zombie Wizard|33
+Wretc?ed ?onflunece|{3}{B}{B}|5|Instant|14
+Awakent?he ?ky Tyra?t|{3}{R}|4|Enchantment|59
+Skullwinder|{2}{G}|3|Creature — Snake|22
+Sa??ston? raOcle|{7}|7|Artifact Creature — Sphinx|22
+Deceivero fF orm|{6}{C}|7|Creature — Eldrazi|38
+Endbringer|{5}{C}|6|Creature — Eldrazi|40
+Ko?ilek,t?he rGet? Ditosriton|{8}{C}{C}|10|Legendary Creature — Eldrazi|50
+a?lker of t?e ?astes|{4}{C}|5|Creature — Eldrazi|19
+Eldrz?i iDsplac?e|{2}{W}|3|Creature — Eldrazi|13
+Cal? the Gatewatch|{2}{W}|3|Sorcery|9
+Wall of Re?urgence|{2}{W}|3|Creature — Wall|22
+Abs?ruseI tnerfernece|{2}{U}|3|Instant|48
+K?zilk?es hSri?ker|{2}{B}|3|Creature — Eldrazi Drone|13
+Drana's Chosen|{3}{B}|4|Creature — Vampire Shaman Ally|10
+Stalking Drnoe|{1}{G}|2|Creature — Eldrazi Drone|17
+El?mental Urpising|{1}{G}|2|Instant|19
+??lvanA dvo?ate|{1}{G}|2|Creature — Elf Druid Ally|14
+Zendikar ?esuregnt|{5}{G}{G}|7|Enchantment|47
+Minmdeltre|{1}{U}{B}|3|Creature — Eldrazi Drone|52
+?tonef??eg Matserwrok|{1}|1|Artifact — Equipment|32
+irrMorpool|1|1|Land|21
+Tim?r? Go?eg|1|1|Land|19
+Por evOer teh Pa?es|{3}{U}{U}|5|Sorcery|9
+Declarati???in Stone|{1}{W}|2|Sorcery|12
+Emissray of?th??S?e?p?ess|{4}{W}|5|Creature — Spirit|10
+Ethereal Gu?dance|{2}{W}|3|Sorcery|19
+Wesvtale Cul? Leader|1|2|Creature — Human Cleric|18
+oHpe Against Hope|{2}{W}|3|Enchantment — Aura|53
+Iqnus?it?'rs ?x|{3}{W}|4|Creature — Ox|21
+Nepahlia Moondr?k?s|{5}{U}{U}|7|Creature — Drake|17
+Silent Obse?v?r|{3}{U}|4|Creature — Spirit|34
+Falke?arht Gorge?|{R}|1|Creature — Vampire Berserker|17
+Geier Reach Bnadi?|{2}{R}|3|Creature — Human Rogue Werewolf|1
+Ravenuos Bl?odseeker|{1}{R}|2|Creature — Vampire Berserker|23
+Ski? Sheddre|1|1|Creature — Insect Horror|39
+Voldaren ?u?list|{3}{R}|4|Creature — Vampire Warrior|11
+u?tumnal Gloom|{2}{G}|3|Enchantment|53
+Clpi Winsg|{1}{G}|2|Instant|30
+Krlal?nho?de Howler|1|2|Creature — Werewolf|37
+?imber S?redd?r|1|2|Creature — Werewolf|43
+W?rewolf of Acinent Hunger|1|5|Creature — Werewolf|25
+?ecn?d ?raves?|{2}{G}{G}|4|Instant|3
+rTavers e?h eUvle?wald|{G}|1|Sorcery|57
+Vetera nCathar|{1}{G}|2|Creature — Human Soldier|8
+Watc?er?i? t? hWeb|{4}{G}|5|Creature — Spider|16
+Ash?mtuh Bl?de|1|1|Artifact — Equipment|27
+Thraebn Gargoyl?|{1}|1|Artifact Creature — Gargoyle|38
+iWcker Wt?ch|{3}|3|Artifact Creature — Scarecrow|26
+Cohkde Et?sary|1|1|Land|17
+Forsaken Snacturay|1|1|Land|12
+Soten Quaryr|1|1|Land|56
+Courageou sOur?ide?|{3}{W}|4|Creature — Human Scout|36
+Ironclad Slayer|{2}{W}|3|Creature — Human Warrior|13
+S?lfle? sSp?rti|{1}{W}|2|Creature — Spirit Cleric|44
+Sigard'a? Adi|{W}|1|Enchantment|11
+Spcerta ?Reserves|{3}{W}|4|Sorcery|26
+Curi?us Houm?ucl?s|{1}{U}|2|Creature — Homunculus|43
+Vroacious Redar?|1|2|Creature — Eldrazi Homunculus|28
+F?tru?es' Favor|{3}{U}|4|Instant|40
+Scour teh Labor?aory|{4}{U}{U}|6|Instant|50
+?aunted Dead|{3}{B}|4|Creature — Zombie|22
+Pr?ign Q?estions|{2}{B}|3|Sorcery|53
+Ruthl?ss Disposla|{4}{B}|5|Sorcery|1
+Conduit fo Stroms|{2}{R}|3|Creature — Werewolf Horror|6
+Galvanic Bomb?rdmnet|{R}|1|Instant|36
+Insaitabl eoGrgers|{2}{R}{R}|4|Creature — Vampire Berserker|56
+Otherworldly Outb?rst|{R}|1|Instant|14
+Erupting Deradwolf|1|4|Creature — Eldrazi Werewolf|36
+T?er?o-Alchemist|{1}{R}|2|Creature — Human Shaman|33
+Gnar?wo?d rDyad|{G}|1|Creature — Dryad Horror|49
+Ishk?nah, Grafwidow|{4}{G}|5|Legendary Creature — Spider|43
+Spiirt of?th eHnut|{1}{G}{G}|3|Creature — Wolf Spirit|59
+aT?gleclaw Werewol?|{2}{G}{G}|4|Creature — Werewolf Horror|13
+Adriaan's Vlaor|1|1|Conspiracy|51
+I?ne?diary Dsisent|1|1|Conspiracy|44
+Messenge? J?as|{4}{U}|5|Creature — Bird|51
+?arrulosu S?co?ahnt|{2}{B}|3|Creature — Human Advisor|41
+aMrhceas's De?eer|{3}{B}|4|Enchantment|29
+Garbage F?re|{2}{R}|3|Instant|43
+Regal Bheemoth|{4}{G}{G}|6|Creature — Lizard|15
+Split?ing lSime|{3}{G}{G}|5|Creature — Ooze|43
+An?e??f oIvneniton|{3}{W}{W}|5|Creature — Angel|25
+Av?ary Mehacnic|{1}{W}|2|Creature — Dwarf Artificer|14
+Trusty ?Cmpanion|{1}{W}|2|Creature — Hyena|23
+Mi?siter o ?Iqnuiries|{U}|1|Creature — Vedalken Advisor|24
+Veadlken Blade?a?ter|{2}{U}|3|Creature — Vedalken Soldier|33
+Dukha?? S?avenger|{5}{B}|6|Creature — Crocodile|37
+Pr?khata Club Security|{3}{B}|4|Creature — Aetherborn Warrior|59
+Tidy Conculsino|{3}{B}{B}|5|Instant|40
+WeaponcraftE?tnhuisats|{2}{B}|3|Creature — Aetherborn Artificer|3
+Chand?a, T?rch? fD?efiance|{2}{R}{R}|4|Planeswalker — Chandra|23
+Comb?s?ible Ge?rhulk|{4}{R}{R}|6|Artifact Creature — Construct|22
+Giant ?pe??acle|{1}{R}|2|Enchantment — Aura|6
+R?ni?us rGemlin|{R}|1|Creature — Gremlin|34
+Ar?hitec? of t?e U?tamed|{2}{G}|3|Creature — Elf Artificer Druid|7
+Bloss?onig Defense|{G}|1|Instant|34
+F?irgro??ds Trupmeter|{2}{G}|3|Creature — Elephant|47
+Tak? Dow?|{G}|1|Sorcery|46
+Cloudbla?e?|{3}{W}{U}|5|Creature — Human Scout|18
+?Atherflux Reservoir|{4}|4|Artifact|25
+Aetherworks Marve?|{4}|4|Legendary Artifact|23
+Bastion Masodton|{5}|5|Artifact Creature — Elephant|32
+Electrosa?tic Pmmueler|{3}|3|Artifact Creature — Construct|23
+Fili?er eFamiliar|{3}|3|Artifact Creature — Fox|49
+Ghirapur Or?rry|{4}|4|Artifact|24
+Inventor's Goggles|{1}|1|Artifact — Equipment|24
+?neegade Freig?ter|{3}|3|Artifact — Vehicle|19
+?nspiring Vant?eg|1|1|Land|35
+?errain Elemetnla|{1}{G}|2|Creature — Elemental|59
+Faerie Artisnas|{3}{U}|4|Creature — Faerie Artificer|11
+Primev?l?Proe?ctor|{10}{G}|11|Creature — Avatar|50
+Stoenhoof Cihetafin|{7}{G}|8|Creature — Centaur Warrior|21
+Akiri, L?n-?elinger|{R}{W}|2|Legendary Creature — Kor Soldier Ally|9
+Brue sTar,l Boor?h? eHrde?|{2}{R}{W}|4|Legendary Creature — Human Ally|34
+Ssaki? ?heU nyie?ding|{B}{R}{G}{W}|4|Legendary Creature — Human Soldier|21
+Sylvan Relcamation|{3}{G}{W}|5|Instant|28
+Ash? arren?|1|1|Land|59
+Aethr?geode Mine?|{1}{W}|2|Creature — Dwarf Scout|48
+Call fo? ?niyt|{3}{W}{W}|5|Enchantment|28
+To?t?er Arres?|{2}{W}|3|Enchantment|17
+R?vesre Engineer|{3}{U}{U}|5|Sorcery|13
+Wi?h ?f Invention|{X}{U}{U}{U}|3|Instant|44
+Faatl Push|{B}|1|Instant|30
+?e?geflu Rbeel|{2}{B}|3|Creature — Aetherborn Warrior|25
+Aehter Ch?ae?|{1}{R}|2|Creature — Human Artificer|42
+Frn?lt?ie Rebel|{2}{R}|3|Creature — Human Warrior|18
+Kari Ze?s'? xp?rtise|{1}{R}{R}|3|Sorcery|40
+Scrappe ?rhamipon|{3}{R}|4|Creature — Human Artificer|30
+eAther Hedrre|{3}{G}|4|Creature — Elf Artificer Druid|34
+Lifercaft Cava?ry|{4}{G}|5|Creature — Elf Warrior|57
+R?negad? R?llie?|{1}{G}{W}|3|Creature — Human Warrior|2
+Crackdow? ?ons??uct|{4}|4|Artifact Creature — Construct|21
+?areed?i? Dragtser|{3}|3|Artifact — Vehicle|29
+??plement of Ma?cie|{2}|2|Artifact|40
+Ir?nt?ead Crsuher|{4}|4|Artifact — Vehicle|37
+Mtea?lci Miimc|{2}|2|Artifact Creature — Shapeshifter|55
+Universal Solvent|{1}|1|Artifact|14
+WatchfluA utomaton|{3}|3|Artifact Creature — Construct|33
+p?ire of In?sdtyr|1|1|Land|57
+T?ezeret, aMstre of Metla|{4}{U}{B}|6|Planeswalker — Tezzeret|56
+Giedon's Int?rven?ion|{2}{W}{W}|4|Enchantment|23
+Regal C?racal|{3}{W}{W}|5|Creature — Cat|29
+Aven Initiat?|{3}{U}|4|Creature — Bird Warrior|57
+Cnesor|{1}{U}|2|Instant|7
+Cr?pticS erepnt|{5}{U}{U}|7|Creature — Serpent|4
+Gal?s?rkie|{2}{U}|3|Instant|4
+Labyri?h? Guar?ina|{1}{U}|2|Creature — Illusion Warrior|3
+Seeke?ro?fIns?gth|{1}{U}|2|Creature — Human Wizard|13
+r?T?l o? nKowledge|{3}{U}|4|Enchantment|16
+Vizier of Tu?bli?g Snads|{2}{U}|3|Creature — Human Cleric|35
+Archfiend ofI fn?i|{3}{B}{B}|5|Creature — Demon|20
+Blg?ht?e Bta|{2}{B}|3|Creature — Zombie Bat|1
+Faith of the Devoted|{2}{B}|3|Enchantment|23
+Final Rewadr|{4}{B}|5|Instant|26
+Minotaur Srueshot|{2}{R}|3|Creature — Minotaur Archer|9
+Pursue ??ory|{3}{R}|4|Instant|18
+Colossapeed|{4}{G}|5|Creature — Insect|42
+?Sed eWknae?s|{G}|1|Instant|28
+?rail o? Strentgh|{2}{G}|3|Enchantment|10
+Decimator Beetle|{3}{B}{G}|5|Creature — Insect|38
+?eave rof Currents|{1}{G}{U}|3|Creature — Naga Druid|35
+Bnotu's Mn???en?|{3}|3|Legendary Artifact|15
+?n?d eKhop???|{1}|1|Artifact — Equipment|2
+uSnc?orc?ed Desert|1|1|Land — Desert|52
+Companion fo the Trials|{2}{W}|3|Creature — Bird Soldier|16
+iLliana,D eath Wileder|{5}{B}{B}|7|Planeswalker — Liliana|18

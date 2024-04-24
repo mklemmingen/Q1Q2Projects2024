@@ -1,6 +1,7 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include <iostream>
 
 /*
 distcalc takes two strings and 
@@ -9,7 +10,7 @@ as an int that gets returned
 
 MKL. 2024
 */
-int calc_dist_int(const std::string word1, const std::string word2) {
+int calc_dist_int(const std::string word1, const std::string word2, bool print_matrix = false) {
 
     //creating a matrix with the size of the two words
     std::vector<std::vector<int>> matrix(word2.size() + 1, std::vector<int>(word1.size() + 1));
@@ -28,6 +29,17 @@ int calc_dist_int(const std::string word1, const std::string word2) {
                 matrix[i][j] = matrix[i - 1][j - 1];
             else
                 matrix[i][j] = std::min({ matrix[i - 1][j - 1], matrix[i - 1][j], matrix[i][j - 1] }) + 1;
+        }
+    }
+
+    if (print_matrix)
+    {
+        //printing the matrix
+        for (size_t i = 0; i <= word2.size(); ++i) {
+            for (size_t j = 0; j <= word1.size(); ++j) {
+                std::cout << matrix[i][j] << " ";
+            }
+            std::cout << std::endl;
         }
     }
 

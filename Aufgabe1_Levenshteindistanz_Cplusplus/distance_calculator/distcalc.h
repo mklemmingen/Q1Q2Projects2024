@@ -5,7 +5,7 @@
 
 #include <string>
 
-int calc_dist_int(const std::string word1, const std::string word2);
+int calc_dist_int(const std::string word1, const std::string word2, bool print_matrix = false);
 
 #endif
 
