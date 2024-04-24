@@ -15,7 +15,9 @@ takes a list of unkown-characters that always need a distance of 0 added.
 MKL. 2024
 */
 int calc_dist_int(const std::string word1, const std::string word2, bool print_matrix = false,
-                 std::vector<std::pair<char, char>> change_special_chars = {}) {
+                 std::vector<std::pair<char, char>> change_special_chars = {},
+                 bool transposition = false,
+                 int transposition_cost = 1) {
 
     //creating a matrix with the size of the two words
     std::vector<std::vector<int>> matrix(word2.size() + 1, std::vector<int>(word1.size() + 1));
@@ -36,6 +38,15 @@ int calc_dist_int(const std::string word1, const std::string word2, bool print_m
             if (std::find(change_special_chars.begin(), change_special_chars.end(), std::make_pair(word1[j - 1], word2[i - 1])) != change_special_chars.end())
                 cost = 0;
             matrix[i][j] = std::min({matrix[i - 1][j] + 1, matrix[i][j - 1] + 1, matrix[i - 1][j - 1] + cost});
+
+            if(transposition){
+                // using transposition according to damerau-levenshteiin (if current letter is the same as the previous letter of the other word, we can skip it.)
+                // assuming cost of transposition is same as cost of substitution.
+                if (i > 1 && j > 1 && word1[j - 1] == word2[i - 2] && word1[j - 2] == word2[i - 1]) 
+                {
+                matrix[i][j] = std::min(matrix[i][j], matrix[i - 2][j - 2] + cost);
+                }
+            }
         }
     }
 

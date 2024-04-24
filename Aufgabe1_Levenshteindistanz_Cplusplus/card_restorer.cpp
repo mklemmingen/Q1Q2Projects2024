@@ -35,11 +35,20 @@ struct Card {
 std::vector<Card> create_card_list(std::string filename);
 void write_card_list(std::vector<Card> cards, std::string filename);
 void compare_and_change(std::vector<Card>* corrupt, std::vector<Card>* reference);
-bool compare_for_switched_arounds(std::string* corrupt_name, std::vector<Card>* reference);
+void find_jaro_winkler_distance(std::string* corrupt_name, std::vector<Card>* reference, double percentage);
+double calc_jaro_winkler(const std::string& s1, const std::string& s2);
 
 int main() {
 
-    std::cout << "Card Restorer" << std::endl;
+
+    std::cout << "\n _____               _  ______          _                      \n"
+    "/  __ \\             | | | ___ \\        | |                     \n"
+    "| /  \\/ __ _ _ __ __| | | |_/ /___  ___| |_ ___  _ __ ___ _ __ \n"
+    "| |    / _` | '__/ _` | |    // _ \\/ __| __/ _ \\| '__/ _ \\ '__|\n"
+    "| \\__/\\ (_| | | | (_| | | |\\ \\  __/\\__ \\ || (_) | | |  __/ |   \n"
+    " \\____/\\__,_|_|  \\__,_| \\_| \\_\\___||___/\\__\\___/|_|  \\___|_|   \n"
+    "\n" << std::endl;
+
     std::cout << "Restoring the corrupted card deck" << std::endl;
     std::cout << "-------------" << std::endl;
 
@@ -50,11 +59,13 @@ int main() {
     std::cout << "Reading the reference card deck from a file..." << std::endl;
     // reading the reference card deck from a file
     std::vector<Card> reference = create_card_list("reference.txt");
-
+    
     std::cout << "Restoring the corrupted card deck..." << std::endl;
+    std::cout << "-------------" << std::endl;
     // comparing the corrupted card deck to the reference card deck
     compare_and_change(&cards, &reference);
 
+    std::cout << "-------------" << std::endl;
     std::cout << "Writing the corrected card deck to a file..." << std::endl;
     // writing the corrected card deck to a file
     write_card_list(cards, "corrected.txt");
@@ -139,69 +150,148 @@ void compare_and_change(std::vector<Card>* corrupt, std::vector<Card>* reference
     // unknown characters are "?"
     std::vector<std::pair<char, char>> unknown_chars = { {'?', '?'} };
 
+    // ------------------- USER INPUT BEGIN -------------------
+    // getting the needed percentage similarity for the distance calculator
+    std::cout << "Enter the percentage similarity needed for the distance calculator:  ";
+    double percentage;
+    // making sure the number is between 0 and 100
+    do {
+        std::cin >> percentage;
+    } while (percentage < 0 || percentage > 100);
+
+    // seeing if user wants to use transposition for the distance calculator
+    std::cout << "Do you want to use transposition for the levenshtein calculator? (y/n): ";
+    bool use_transposition;
+    char choice_transposition;
+    do
+    {
+        std::cin >> choice_transposition;
+    } while (choice_transposition != 'y' && choice_transposition != 'n');
+
+    std::string algo_abrev;
+    if(choice_transposition == 'y'){
+        algo_abrev = "DL";
+        use_transposition = true;
+    }
+    else{
+        algo_abrev = "LS";
+        use_transposition = false;
+    }
+
+    int transposition_cost = 1;
+    if(use_transposition){
+    // getting the transposition cost for the distance calculator
+    std::cout << "Enter the transposition cost for the levenshtein calculator: ";
+    std::cin >> transposition_cost;
+    }
+
+    // choosing the bool value for using jaro-winkler similarity or not
+    std::cout << "Do you want to use Jaro-Winkler similarity to find fits under your selected percentage? (y/n): ";
+    bool use_jaro_winkler;
+    char choice;
+    do
+    {
+        std::cin >> choice;
+    } while (choice != 'y' && choice != 'n');
+
+    if(choice == 'y'){
+        use_jaro_winkler = true;
+    }
+    else{
+        use_jaro_winkler = false;
+    }
+    std::cout << "-------------" << std::endl;
+
+    // ------------------- USER INPUT END -------------------
+
     for (Card& corrupt_card : *corrupt) {
         bool found = false;
         std::string closest_card;
         int closest_dist = 1000;
         for (Card& reference_card : *reference) {
-            int found_dist = calc_dist_int(corrupt_card.name, reference_card.name, false, unknown_chars);
-            if (found_dist < closest_dist) {
-                closest_dist = found_dist;
-                closest_card = reference_card.name;
-            }
-            if (calc_dist_int(corrupt_card.name, reference_card.name, false, unknown_chars) < corrupt_card.name.size() * 0.2675) {
-                std::cout << "Found under 26,75% : Corrupted card: " << corrupt_card.name << " | Reference card: " << reference_card.name << std::endl;
+            // getting distance between corrupt card and reference card
+            int found_dist = calc_dist_int(corrupt_card.name, reference_card.name, false, unknown_chars, use_transposition, transposition_cost);
+
+            // checking if distance is under the choosen percentage of the length of the corrupt name
+            if (found_dist < corrupt_card.name.size() * (percentage/100.0)) {
+                std::cout << algo_abrev << ": Found under " << percentage << "% : Corrupted card: " << corrupt_card.name << " | Reference card: " << reference_card.name << std::endl;
                 corrupt_card.name = reference_card.name;
                 found = true;
                 break;
             }
-        }
-        if (!found) {
-            // either we use the closest card, which would result in a lot of wrong names, or we check again using a strategy that includes
-            // not only corrupted ("?") characters but also length of name as well as letters having switched up to three places to either side. 
 
-            // if a switch has happened in compare_for_switched_arounds, we print the result, if not, print and choose closest levensthein distance card
-            std::string old_name = corrupt_card.name;
-            if(!compare_for_switched_arounds(&corrupt_card.name, reference)) {
-                std::cout << "None under 26,75% : Corrupted card: " << old_name << " | Reference card: " << closest_card << std::endl;
-                corrupt_card.name = closest_card;
+            // checking if new closest distance
+            if (found_dist < closest_dist) {
+                closest_dist = found_dist;
+                closest_card = reference_card.name;
+            }
+        }
+
+        if (!found) {
+            if(use_jaro_winkler){
+                // using jaro-winkler similarity to find the closest card
+                find_jaro_winkler_distance(&corrupt_card.name, reference, percentage);
             } else {
-                std::cout << "Letters Scrambled : Corrupted card: " << old_name << " | Reference card: " << corrupt_card.name << std::endl;
+            std::cout << algo_abrev << ": None under  " << percentage << "% : Corrupted card: " << corrupt_card.name << " | Reference card: " << closest_card << std::endl;
+            corrupt_card.name = closest_card;
             }
         }
     }
 }
 
 /*
-takes a pointer to a string and a pointer to a vector of cards as input.
-the string is a corrupt name from which the levenshtein distance was not sufficient to determine a close relative. 
-we therefore go through the reference cards again and check if the corrupt name has a close relative with under 26,75% if we
-- switch two letters around every other letter. We do not switch around "?" characters, as they are unknown and we hypothesise that these were not switched around.
+using a jaro_winkler similarity algorithm to find the closest card to the corrupt name.
 
-returns true if a close relative was found, false if not.
+takes the corrupt name as pointer and a pointer to a vector of cards that serve as reference, and a percentage.
 
-At worst, this could be a O(n^2) operation, but we can optimize it by checking the length of the names first.
+if the jaro-winkler similarity is under the percentage, the name is replaced with the closest card.
 
 MKL. 2024
 */
-bool compare_for_switched_arounds(std::string* corrupt_name, std::vector<Card>* reference) {
-    std::string name = *corrupt_name;
-    std::vector<std::pair<char, char>> unknown_chars = { {'?', '?'} };
+void find_jaro_winkler_distance(std::string* corrupt_name, std::vector<Card>* reference, double percentage) {
+
+    bool found;
+    std::string closest_card;
+    double closest_dist = 0.0;
 
     for (Card& reference_card : *reference) {
-        std::string ref_name = reference_card.name;
-        for (int i = 0; i < name.size(); i++) {
-            for (int j = 0; j < name.size(); j++) {
-                if (i != j) {
-                    std::string temp = ref_name;
-                    std::swap(temp[i], temp[j]);
-                    if (calc_dist_int(name, temp, false, unknown_chars) < name.size() * 0.2675) {
-                        *corrupt_name = ref_name;
-                        return true;
-                    }
-                }
-            }
+        double found_dist = calc_jaro_winkler(*corrupt_name, reference_card.name);
+        if (found_dist < (percentage/100)) {
+            std::cout << "JW: Found under " << percentage << "% : Corrupted card: " << *corrupt_name << " | Reference card: " << reference_card.name << std::endl;
+            *corrupt_name = reference_card.name;
+            return;;
+        }
+        if (found_dist > closest_dist) {
+            closest_dist = found_dist;
+            closest_card = reference_card.name;
         }
     }
-    return false;
+
+    if(!found){
+        std::cout << "JW: None under " << percentage << "% : Corrupted card: " << *corrupt_name << " | Reference card: " << std::endl;
+    }
+}
+
+/*
+method that calculates the jaro-winkler similiarity between two strings
+
+returns double value of the similarity between 1 (no simi. at all) and 0 (exact match)
+
+MKL. 2024
+*/
+double calc_jaro_winkler(const std::string& s1, const std::string& s2) {
+    // Jaro-Winkler similarity algorithm
+    // https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance
+    // https://rosettacode.org/wiki/Jaro-Winkler_distance#C.2B.2B
+
+    double jaro_dist = 0.0;
+
+    // if the strings are equal, the distance is 0
+    if (s1 == s2) {
+        return 0.0;
+    }
+    
+
+
+    return jaro_dist;
 }
