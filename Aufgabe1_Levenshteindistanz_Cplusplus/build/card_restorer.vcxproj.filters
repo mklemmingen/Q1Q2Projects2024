@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Forge\INF3_REPOS\aufgaben-repo-inf3-sose14\Aufgabe1_Levenshteindistanz_Cplusplus\card_restorer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Forge\INF3_REPOS\aufgaben-repo-inf3-sose14\Aufgabe1_Levenshteindistanz_Cplusplus\distance_calculator\strtool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Forge\INF3_REPOS\aufgaben-repo-inf3-sose14\Aufgabe1_Levenshteindistanz_Cplusplus\distance_calculator\distcalc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Forge\INF3_REPOS\aufgaben-repo-inf3-sose14\Aufgabe1_Levenshteindistanz_Cplusplus\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A56AC1F0-55EF-335C-9128-AA3C50256308}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

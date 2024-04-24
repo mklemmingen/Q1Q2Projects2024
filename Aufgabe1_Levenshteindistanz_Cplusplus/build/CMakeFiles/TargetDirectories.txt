@@ -1,0 +1,3 @@
+C:/Users/Forge/INF3_REPOS/aufgaben-repo-inf3-sose14/Aufgabe1_Levenshteindistanz_Cplusplus/build/CMakeFiles/card_restorer.dir
+C:/Users/Forge/INF3_REPOS/aufgaben-repo-inf3-sose14/Aufgabe1_Levenshteindistanz_Cplusplus/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Forge/INF3_REPOS/aufgaben-repo-inf3-sose14/Aufgabe1_Levenshteindistanz_Cplusplus/build/CMakeFiles/ZERO_CHECK.dir
