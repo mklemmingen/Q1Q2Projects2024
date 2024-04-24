@@ -17,8 +17,8 @@ int main() {
 
 	std::string word1, word2;
 
-	bool allowed = false;
-	while (!allowed) {
+	bool allowed_words = false;
+	while (!allowed_words) {
 
 		// receiving both words
 
@@ -27,36 +27,37 @@ int main() {
 		std::cout << "Enter the second word: ";
 		std::cin >> word2;
 
-		allowed = true;
+		allowed_words = true;
 
 		if (!check_latin(word1) || !check_latin(word2)) {
 			std::cout << "ERROR: The words should contain only latin letters." << std::endl;
-			allowed = false;
+			allowed_words = false;
 		}
 		
 	}
 
 	bool print_matrix = false;
 
-	bool allowed = false;
-	while (!allowed) {
+	bool allowed_print = false;
+	while (!allowed_print) {
 
 		std::cout << "Would you like to print the matrix after the calculation? (Y/n):";
 		char answer;
 		std::cin >> answer;
 		if (answer == 'n') {
-			allowed = true;
+			allowed_print = true;
 		}
 		else if(answer == '\n'){
 			print_matrix = true;
-			allowed = true;
+			allowed_print = true;
 		}
 		else if (answer == 'y') {
 			print_matrix = true;
-			allowed = true;
+			allowed_print = true;
 		}
 		else {
 			std::cout << "ERROR: Please enter 'y' or 'n'." << std::endl;
+		}
 	}
 
 	to_lowercase(&word1);

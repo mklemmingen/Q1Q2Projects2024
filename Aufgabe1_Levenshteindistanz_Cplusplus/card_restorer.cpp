@@ -101,9 +101,12 @@ MKL. 2024
 */
 void compare_and_change(std::vector<Card>* corrupt, std::vector<Card>* reference) {
 
+    // unknown characters are "?"
+    std::vector<std::pair<char, char>> unknown_chars = { {'?', '?'} };
+
     for (Card& corrupt_card : *corrupt) {
         for (Card& reference_card : *reference) {
-            if (calc_dist_int(corrupt_card.name, reference_card.name) < corrupt_card.name.size() * 0.2675) {
+            if (calc_dist_int(corrupt_card.name, reference_card.name, false, unknown_chars) < corrupt_card.name.size() * 0.2675) {
                 corrupt_card.name = reference_card.name;
             }
         }
