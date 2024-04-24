@@ -125,9 +125,9 @@ void write_card_list(std::vector<Card> cards, std::string filename) {
 }
 
 /*
-comparing a list of cards (corrupt) to another list (reference) to find partner with LD smaller 
-than 26,75% of the length of the corrupt name. 
-replacing the corrupted cards name with the reference name.
+comparing a list of cards (corrupt) to another list (reference) to find partner 
+when LD smaller than 26,75% of the length of the corrupt name -> add name.
+if none found, the smallest distance is taken and the name is replaced with the reference name.
 
 takes two pointers to the lists of cards as input.
 
@@ -139,14 +139,25 @@ void compare_and_change(std::vector<Card>* corrupt, std::vector<Card>* reference
     std::vector<std::pair<char, char>> unknown_chars = { {'?', '?'} };
 
     for (Card& corrupt_card : *corrupt) {
+        bool found = false;
+        std::string closest_card;
+        int closest_dist = 1000;
         for (Card& reference_card : *reference) {
-            if (calc_dist_int(corrupt_card.name, reference_card.name, false, unknown_chars) < corrupt_card.name.size() * 0.2675) {
-                std::cout << "Corrupted card: " << corrupt_card.name << " | Reference card: " << reference_card.name << std::endl;
-                corrupt_card.name = reference_card.name;
+            int found_dist = calc_dist_int(corrupt_card.name, reference_card.name, false, unknown_chars);
+            if (found_dist < closest_dist) {
+                closest_dist = found_dist;
+                closest_card = reference_card.name;
             }
+            if (calc_dist_int(corrupt_card.name, reference_card.name, false, unknown_chars) < corrupt_card.name.size() * 0.2675) {
+                std::cout << "Found under 26,75% : Corrupted card: " << corrupt_card.name << " | Reference card: " << reference_card.name << std::endl;
+                corrupt_card.name = reference_card.name;
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            std::cout << "None under 26,75% : Corrupted card: " << corrupt_card.name << " | Reference card: " << closest_card << std::endl;
+            corrupt_card.name = closest_card;
         }
     }
 }
-
-
-

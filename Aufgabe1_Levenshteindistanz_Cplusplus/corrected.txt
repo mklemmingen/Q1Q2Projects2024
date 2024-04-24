@@ -1,4 +1,4 @@
-Red Elemental Blast | {U} | 1 |  | 0
+Blue Elemental Blast | {U} | 1 |  | 0
 Clone | {3}{U} | 4 |  | 0
 Crystal Rod | {1} | 1 |  | 0
 Darkpact | {B}{B}{B} | 3 |  | 0
@@ -49,7 +49,7 @@ Adun Okaenshi?ld | {B}{R}{G} | 3 |  | 0
 ??rathi eBrserk?r | {2}{R}{R}{R} | 5 |  | 0
 Beassto f Bogardan | {4}{R} | 5 |  | 0
 B?a?k? ana Bat?ery | {4} | 4 |  | 0
-Black Mana Battery | {4} | 4 |  | 0
+Blue Mana Battery | {4} | 4 |  | 0
 Chai?s?ofMe?phisotpheels | {1}{B} | 2 |  | 0
 Coocon | {G} | 1 |  | 0
 riCsonm Kobolds | {0} | 0 |  | 0
@@ -77,7 +77,7 @@ Time Ele?ent?l | {2}{U} | 3 |  | 0
 Tundra ?olves | {W} | 1 |  | 0
 Undertow | {2}{U} | 3 |  | 0
 Utname?W ilds | {2}{G} | 3 |  | 0
-Black Mana Battery | {4} | 4 |  | 0
+White Mana Battery | {4} | 4 |  | 0
 W?od Elemental | {3}{G} | 4 |  | 0
 Exorcis? | {W}{W} | 2 |  | 0
 Golbin Cavs? | {1}{R}{R} | 3 |  | 0
@@ -108,7 +108,7 @@ Raks?sa a?izi?r | {2}{B}{G}{U} | 5 |  | 0
 Dragoncsale Gen?ral | {3}{W} | 4 |  | 0
 F?amruesh?Rider | {4}{R} | 5 |  | 0
 lA?hma?rre?t?High ?Abie?r | {5}{U}{U} | 7 |  | 0
-Valorous Charge | {1}{W} | 2 |  | 0
+Valorous Stance | {1}{W} | 2 |  | 0
 Drea ?Defile? | {6}{B} | 7 |  | 0
 Adarka ?rent?nel | {5} | 5 |  | 0
 Aegis ?f hteM eek | {3} | 3 |  | 0
@@ -121,7 +121,7 @@ F?ameS pirit | {4}{R} | 5 |  | 0
 lFare | {2}{R} | 3 |  | 0
 Fo?k fo the P?nes | {4}{G} | 5 |  | 0
 ?Gacia ?Creavsses | {2}{R} | 3 |  | 0
-Goblin Lore | {3} | 3 |  | 0
+Goblin Lyre | {3} | 3 |  | 0
 Gob?inM ut?nt | {2}{R}{R} | 4 |  | 0
 GoblinS ????nm | {3}{R} | 4 |  | 0
 Hematite Talisman | {2} | 2 |  | 0
@@ -175,7 +175,7 @@ eHlm of Oebdi?nce | {4} | 4 |  | 0
 Inheritance | {W} | 1 |  | 0
 Kejlodran Outpsot | 1 | 1 |  | 0
 Lirbaryo f Lat-Na? | {4}{U} | 5 |  | 0
-Noble Stand | {2}{W} | 3 |  | 0
+Noble Steeds | {2}{W} | 3 |  | 0
 P?y??xina Boon | {2}{B} | 3 |  | 0
 Ritual of the Machine | {2}{B}{B} | 4 |  | 0
 Slo?Grail | {3} | 3 |  | 0
@@ -209,7 +209,7 @@ Maro | {2}{G}{G} | 4 |  | 0
 ?elesseS piri? | {3}{W}{W} | 5 |  | 0
 Pat?gi aGo?em | {4} | 4 |  | 0
 Pea?r?Drgaon | {4}{W}{W} | 6 |  | 0
-Prismatic Lens | {X}{W}{U} | 2 |  | 0
+Prismatic Boon | {X}{W}{U} | 2 |  | 0
 Restless ?ea? | {1}{B} | 2 |  | 0
 Shdoaw Guildmag? | {B} | 1 |  | 0
 S??Di?am?nd | {2} | 2 |  | 0
@@ -270,7 +270,7 @@ oTlarian ?erpent | {5}{U}{U} | 7 |  | 0
 Re?e?nnt | {4}{B} | 5 |  | 0
 L uuB, ?aster-a?A-rms | {5}{R} | 6 |  | 0
 Silent Spectre | {4}{B}{B} | 6 |  | 0
-Lotus Blossom | 1 | 1 |  | 0
+Lotus Bloom | 1 | 1 |  | 0
 Demigdo ofR?evenge | {B/R}{B/R}{B/R}{B/R}{B/R} | 5 |  | 0
 Bood??ord of Vaasogth | {3}{B}{B} | 5 |  | 0
 Can?ivalHe lsltede | {4}{B}{R} | 6 |  | 0
@@ -370,7 +370,7 @@ Lexiv?re | {3}{W} | 4 |  | 0
 SexA ppela | {W} | 1 |  | 0
 Cl?m-I-Am | {2}{U} | 3 |  | 0
 Car?bo?r? Car?pa?c | {5}{G} | 6 |  | 0
-Growth Spasm | {1}{G} | 2 |  | 0
+Growth Spurt | {1}{G} | 2 |  | 0
 Squirrel Farm | {2}{G} | 3 |  | 0
 Chaos Confetti | {4} | 4 |  | 0
 Giant Fan | {4} | 4 |  | 0
@@ -448,7 +448,7 @@ Body Snatcher | {2}{B}{B} | 4 |  | 0
 Ph?rexian ?oniotr | {3}{B} | 4 |  | 0
 Soul?eFast | {3}{B}{B} | 5 |  | 0
 A?eehr Sti?g | {3}{R} | 4 |  | 0
-Flame Jab | {1}{R} | 2 |  | 0
+Flame Jet | {1}{R} | 2 |  | 0
 Reckless Abandon | {R} | 1 |  | 0
 Elivsh Lokootu | {G} | 1 |  | 0
 M??tan'isD ecree | {3}{G} | 4 |  | 0
@@ -538,7 +538,7 @@ Desperate Research | {1}{B} | 2 |  | 0
 Do or Die | {1}{B} | 2 |  | 0
 Mournin? | {1}{B} | 2 |  | 0
 Tia?ted?Well | {2}{B} | 3 |  | 0
-Lightning Bolt | {1}{R} | 2 |  | 0
+Lightning Dart | {1}{R} | 2 |  | 0
 Obliterate | {6}{R}{R} | 8 |  | 0
 Aggrs??i?e Ureg | {1}{G} | 2 |  | 0
 Lln??war Elite | {G} | 1 |  | 0
@@ -548,8 +548,8 @@ Scouting Trek | {1}{G} | 2 |  | 0
 ?erepn?i?e Kvau | {4}{G} | 5 |  | 0
 tSa?kingA s?as?in | {1}{U}{B} | 3 |  | 0
 lAl?y Glome | {6} | 6 |  | 0
-Phyrexian Totem | {3} | 3 |  | 0
-Phyrexian Arena | {3} | 3 |  | 0
+Phyrexian Altar | {3} | 3 |  | 0
+Phyrexian Lens | {3} | 3 |  | 0
 S?a?he?lC ameo | {3} | 3 |  | 0
 Tigereye Cameo | {3} | 3 |  | 0
 Hobble | {2}{W} | 3 |  | 0
@@ -560,14 +560,14 @@ Shifting Sky | {2}{U} | 3 |  | 0
 Death Bomb | {3}{B} | 4 |  | 0
 Nighst?ape Battlem?g? | {2}{B} | 3 |  | 0
 Noxiou??Vapros | {1}{B}{B} | 3 |  | 0
-Phyrexian Totem | {3}{B} | 4 |  | 0
+Phyrexian Altar | {3}{B} | 4 |  | 0
 Planeswalker's Fury | {2}{R} | 3 |  | 0
 Gaea' s?erlad | {1}{G} | 2 |  | 0
 Sa??o?th?oLno | {2}{W}{U} | 4 |  | 0
 Shivan Wurm | {3}{R}{G} | 5 |  | 0
 Sete lLea Pfala?in | {4}{G}{W} | 6 |  | 0
 Dromar's Cave?? | 1 | 1 |  | 0
-Fortify | {1}{W}{B} | 3 |  | 0
+Mortify | {1}{W}{B} | 3 |  | 0
 eNgate | {1}{U} | 2 |  | 0
 Bituminous Blast | {3}{B}{R} | 5 |  | 0
 Coalition Flag | {W} | 1 |  | 0
@@ -610,7 +610,7 @@ Mudhloe | {2}{R} | 3 |  | 0
 Rites of Initiation | {R} | 1 |  | 0
 S?vage ?irecat | {3}{R}{R} | 5 |  | 0
 Seiz? teh Dya | {3}{R} | 4 |  | 0
-Shower of Sparks | {3}{R}{R} | 5 |  | 0
+Shower of Coals | {3}{R}{R} | 5 |  | 0
 Thermal Blast | {4}{R} | 5 |  | 0
 T??mleb | {1}{R} | 2 |  | 0
 Druid Lyrsit | {G} | 1 |  | 0
@@ -642,17 +642,17 @@ Prismatic Strands | {2}{W} | 3 |  | 0
 Spirit Cairn | {2}{W} | 3 |  | 0
 Arcan?eTeachings | {2}{R} | 3 |  | 0
 nIfectious ?age | {1}{R} | 2 |  | 0
-Shelter | {3}{R} | 4 |  | 0
+Swelter | {3}{R} | 4 |  | 0
 S?irilng a?ndstorm | {3}{R} | 4 |  | 0
 Epi ?S?rug?le | {2}{G}{G} | 4 |  | 0
 Grizzly Fate | {3}{G}{G} | 5 |  | 0
-Sylvan Reclamation | {1}{G} | 2 |  | 0
+Krosan Reclamation | {1}{G} | 2 |  | 0
 Krosan Wayfarer | {G} | 1 |  | 0
 Hunting Grounds | {G}{W} | 2 |  | 0
 Korasn Veger | 1 | 1 |  | 0
 uAirficat?no | {2}{W}{W} | 4 |  | 0
 Chain of Silence | {1}{W} | 2 |  | 0
-Circle of Flame | {3}{W} | 4 |  | 0
+Circle of Solace | {3}{W} | 4 |  | 0
 Inspirit | {2}{W} | 3 |  | 0
 Nova?Cleri? | {W} | 1 |  | 0
 Unified Strike | {W} | 1 |  | 0
@@ -662,7 +662,7 @@ Waethere? Wayaref? | {W} | 1 |  | 0
 Ixd?o? ,Rela?t?yScul?tor | {3}{U}{U} | 5 |  | 0
 Pe?r ?er?urs? | {3}{U} | 4 |  | 0
 R???die B?l?ogist | {1}{U} | 2 |  | 0
-Touch of Darkness | {1}{B} | 2 |  | 0
+Cover of Darkness | {1}{B} | 2 |  | 0
 Cruel Revival | {4}{B} | 5 |  | 0
 Death Match | {3}{B} | 4 |  | 0
 Dirg? of??rea? | {2}{B} | 3 |  | 0
@@ -736,7 +736,7 @@ Wiazrd R?plica | {3} | 3 |  | 0
 Blinkmoth Well | 1 | 1 |  | 0
 Tree of Tales | 1 | 1 |  | 0
 Auiork Glaivemas?e? | {W} | 1 |  | 0
-Sunscour | {7}{W}{W}{W} | 10 |  | 0
+Soulscour | {7}{W}{W}{W} | 10 |  | 0
 S?telshaerp Appern?iec | {2}{W}{W} | 4 |  | 0
 Rehsape | {X}{U}{U} | 2 |  | 0
 Murderous Spoils | {5}{B} | 6 |  | 0
@@ -747,7 +747,7 @@ Chim?ircE?gg | {3} | 3 |  | 0
 Darktsele ?ru?e | {2} | 2 |  | 0
 Drill-Skimemr | {4} | 4 |  | 0
 My? ?Lndshaper | {3} | 3 |  | 0
-Spawning Pool | {2} | 2 |  | 0
+Spawning Pit | {2} | 2 |  | 0
 Auriok S?lvagers | {3}{W} | 4 |  | 0
 Retlaatie | {2}{W}{W} | 4 |  | 0
 Disruption Aur? | {2}{U} | 3 |  | 0
@@ -836,7 +836,7 @@ Godo?s Irregulars | {R} | 1 |  | 0
 Inner Fire | {3}{R} | 4 |  | 0
 Dense Canopy | {1}{G} | 2 |  | 0
 aSsyaa, Or?chi Ascendant | {1}{G}{G} | 3 |  | 0
-Erayo's Essence | {1}{G}{G} | 3 |  | 0
+Sasaya's Essence | {1}{G}{G} | 3 |  | 0
 Sh?ien of?Life's Roar | {1}{G} | 2 |  | 0
 S?ampe?ing Serow | {2}{G}{G} | 4 |  | 0
 Wine of Blood and Iron | {3} | 3 |  | 0
@@ -948,7 +948,7 @@ Hive?toen | {2} | 2 |  | 0
 Gemstone Caverns | 1 | 1 |  | 0
 Frutcikae El?mental | {1}{G}{G} | 3 |  | 0
 Season's Beatings | {R}{R}{R}{R} | 4 |  | 0
-Sandblast | {3}{W}{W} | 5 |  | 0
+Saltblast | {3}{W}{W} | 5 |  | 0
 S?rra's Boon | {2}{W} | 3 |  | 0
 ?t?nc?ola?re | {2}{W} | 3 |  | 0
 S??pe rarPs?a?e | {1}{U}{U} | 3 |  | 0
@@ -1049,11 +1049,11 @@ Bitign Tteher | {4}{U} | 5 |  | 0
 Knacksaw Cliuqe | {3}{U} | 4 |  | 0
 Corwd?of Cinde?s | {3}{B} | 4 |  | 0
 ?id?ightB anshee | {3}{B}{B}{B} | 6 |  | 0
-Vile Consumption | {1}{B} | 2 |  | 0
+Rite of Consumption | {1}{B} | 2 |  | 0
 iSckle Ripper | {1}{B} | 2 |  | 0
 Embre?Gale | {3}{R} | 4 |  | 0
 ?nitmidator Initait? | {R} | 1 |  | 0
-Puncture Blast | {1}{R} | 2 |  | 0
+Puncture Bolt | {1}{R} | 2 |  | 0
 aRgeR efelction | {4}{R}{R} | 6 |  | 0
 Toil to Renown | {1}{G} | 2 |  | 0
 ?oodfall P?im?s | {5}{G}{G}{G} | 8 |  | 0
@@ -1145,7 +1145,7 @@ Buri?ng Iqnuir? | {R} | 1 |  | 0
 Vi?ahin?S pearhunt?r | {2}{R} | 3 |  | 0
 ??ambleC reeper | {4}{G} | 5 |  | 0
 Dealdy?Relcuse | {1}{G} | 2 |  | 0
-Sandstorm | {X}{G} | 1 |  | 0
+Windstorm | {X}{G} | 1 |  | 0
 ?o?tboun ?rCag | 1 | 1 |  | 0
 TheEo ? ?og | 1 | 1 |  | 0
 The Hipopdrome | 1 | 1 |  | 0
@@ -1179,14 +1179,14 @@ Piranha Marsh | 1 | 1 |  | 0
 Turntimber Grove | 1 | 1 |  | 0
 Archon of Redempiton | {3}{W}{W} | 5 |  | 0
 D?ipel | {U} | 1 |  | 0
-Spatial Contortion | {2}{U} | 3 |  | 0
+Spell Contortion | {2}{U} | 3 |  | 0
 Vapor Snag | {4}{U} | 5 |  | 0
 Scrib Nibblers | {2}{B} | 3 |  | 0
 Baa?ar Trader | {1}{R} | 2 |  | 0
 Grotag Thrasher | {4}{R} | 5 |  | 0
 Tuktuk Scarpepr | {3}{R} | 4 |  | 0
 Slingb?wT ?ap | {3}{G} | 4 |  | 0
-Amulet of Quoz | {1} | 1 |  | 0
+Amulet of Vigor | {1} | 1 |  | 0
 Hedron Ro?er | {4} | 4 |  | 0
 Razor Bo??erang | {3} | 3 |  | 0
 rDe? dStatuary | 1 | 1 |  | 0
@@ -1340,7 +1340,7 @@ Wol?fitet ?Captiv? | {G} | 1 |  | 0
 Ravgae ro? the Fells | 1 | 1 |  | 0
 M?st?Ra?en | {2}{U}{U} | 4 |  | 0
 Sot?en?Godos | {3}{U} | 4 |  | 0
-Death Ward | {X}{B} | 1 |  | 0
+Death Wind | {X}{B} | 1 |  | 0
 Grave Exchange | {4}{B}{B} | 6 |  | 0
 Human Frailty | {B} | 1 |  | 0
 Pre?ator's Gambit | {B} | 1 |  | 0
@@ -1365,7 +1365,7 @@ Cr??stown ?ourier | {1}{U} | 2 |  | 0
 Stab Wound | {2}{B} | 3 |  | 0
 Bellow? Lizard | {R} | 1 |  | 0
 Gute?rsnipe | {2}{R} | 3 |  | 0
-Ghoulcaller's Bell | {7}{G} | 8 |  | 0
+Horncaller's Chant | {7}{G} | 8 |  | 0
 ?enta?r Healer | {1}{G}{W} | 3 |  | 0
 Essence Backlash | {2}{U}{R} | 4 |  | 0
 Jarad's Orders | {2}{B}{G} | 4 |  | 0
@@ -1419,7 +1419,7 @@ Jace's ?i?dseeker | {4}{U}{U} | 6 |  | 0
 Ti?ebinedr Mage | {U}{U} | 2 |  | 0
 Corpse aHuler | {1}{B} | 2 |  | 0
 Dark Prophecy | {B}{B}{B} | 3 |  | 0
-Boiling Earth | {3}{R} | 4 |  | 0
+Burning Earth | {3}{R} | 4 |  | 0
 Cylcops yTra?? | {5}{R} | 6 |  | 0
 rDgao? Egg | {2}{R} | 3 |  | 0
 F?lshpu?per ?Gant | {5}{R}{R} | 7 |  | 0
@@ -1434,7 +1434,7 @@ Scholar ?f Atr?oes | {2}{W} | 3 |  | 0
 B?eachn?g Hippocamp | {3}{U} | 4 |  | 0
 Dark Betrayal | {B} | 1 |  | 0
 Felhide Mni?taur | {2}{B} | 3 |  | 0
-Read the Runes | {2}{B} | 3 |  | 0
+Read the Bones | {2}{B} | 3 |  | 0
 ?it?n ofE t?enal Fri? | {5}{R} | 6 |  | 0
 Satyr Piepr | {2}{G} | 3 |  | 0
 KrgaamW arcaller | {3}{B}{R} | 5 |  | 0
@@ -1454,7 +1454,7 @@ e?eltis Atsronomer | {1}{U} | 2 |  | 0
 Vortex El?m?ntal | {U} | 1 |  | 0
 Forsaekn Drifters | {3}{B} | 4 |  | 0
 Archet??p of gAgressio? | {1}{R}{R} | 3 |  | 0
-Lightning Bolt | {3}{R} | 4 |  | 0
+Lightning Volley | {3}{R} | 4 |  | 0
 Phraagax?iG?nt | {4}{R} | 5 |  | 0
 Arhcetyep of Enduarnce | {6}{G}{G} | 8 |  | 0
 oCurser of Kruphi? | {1}{G}{G} | 3 |  | 0
@@ -1501,7 +1501,7 @@ Y?ian, the?Wa?deerr?Bad? | {2}{G} | 3 |  | 0
 ?r?afn? Memenot | {1} | 1 |  | 0
 Soul of Ne wPhyrexi? | {6} | 6 |  | 0
 ndE ?ostiliitse | {3}{W}{W} | 5 |  | 0
-Feat of Resistance | {1}{W} | 2 |  | 0
+Gleam of Resistance | {1}{W} | 2 |  | 0
 Kill Shot | {2}{W} | 3 |  | 0
 iSegecr?ft | {3}{W} | 4 |  | 0
 Embodimen??f opSrnig | {U} | 1 |  | 0
@@ -1517,7 +1517,7 @@ Jzaal o?ldmane | {2}{W}{W} | 4 |  | 0
 Stormsurge Kraken | {3}{U}{U} | 5 |  | 0
 Ghouclaller Gisa | {3}{B}{B} | 5 |  | 0
 Infernal Offering | {4}{B} | 5 |  | 0
-Song of Blood | {B} | 1 |  | 0
+Spoils of Blood | {B} | 1 |  | 0
 Song of the Dryads | {2}{G} | 3 |  | 0
 oWlfcaller'sH wo? | {3}{G} | 4 |  | 0
 Reali?y ?ihft | {1}{U} | 2 |  | 0
@@ -1562,7 +1562,7 @@ Th?owi?g Knife | {2} | 2 |  | 0
 Reterat to Kazna?u | {2}{G} | 3 |  | 0
 ?EdraziS pawn | 1 | 1 |  | 0
 Ban?oef Baal Ged | {7} | 7 |  | 0
-Ghastly Discovery | {3}{U} | 4 |  | 0
+Coastal Discovery | {3}{U} | 4 |  | 0
 Windrider Partol | {3}{U}{U} | 5 |  | 0
 Silent Ski?m?r | {3}{B} | 4 |  | 0
 Demo'?? Grsap | {4}{B} | 5 |  | 0
