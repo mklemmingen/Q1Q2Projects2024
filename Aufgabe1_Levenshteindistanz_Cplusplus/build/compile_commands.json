@@ -1,0 +1,20 @@
+[
+{
+  "directory": "C:/Users/Forge/INF3_REPOS/aufgaben-repo-inf3-sose14/Aufgabe1_Levenshteindistanz_Cplusplus/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -std=gnu++14 -o CMakeFiles\\card_restorer.dir\\card_restorer.cpp.obj -c C:\\Users\\Forge\\INF3_REPOS\\aufgaben-repo-inf3-sose14\\Aufgabe1_Levenshteindistanz_Cplusplus\\card_restorer.cpp",
+  "file": "C:/Users/Forge/INF3_REPOS/aufgaben-repo-inf3-sose14/Aufgabe1_Levenshteindistanz_Cplusplus/card_restorer.cpp",
+  "output": "CMakeFiles/card_restorer.dir/card_restorer.cpp.obj"
+},
+{
+  "directory": "C:/Users/Forge/INF3_REPOS/aufgaben-repo-inf3-sose14/Aufgabe1_Levenshteindistanz_Cplusplus/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -std=gnu++14 -o CMakeFiles\\card_restorer.dir\\distance_calculator\\strtool.cpp.obj -c C:\\Users\\Forge\\INF3_REPOS\\aufgaben-repo-inf3-sose14\\Aufgabe1_Levenshteindistanz_Cplusplus\\distance_calculator\\strtool.cpp",
+  "file": "C:/Users/Forge/INF3_REPOS/aufgaben-repo-inf3-sose14/Aufgabe1_Levenshteindistanz_Cplusplus/distance_calculator/strtool.cpp",
+  "output": "CMakeFiles/card_restorer.dir/distance_calculator/strtool.cpp.obj"
+},
+{
+  "directory": "C:/Users/Forge/INF3_REPOS/aufgaben-repo-inf3-sose14/Aufgabe1_Levenshteindistanz_Cplusplus/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -std=gnu++14 -o CMakeFiles\\card_restorer.dir\\distance_calculator\\distcalc.cpp.obj -c C:\\Users\\Forge\\INF3_REPOS\\aufgaben-repo-inf3-sose14\\Aufgabe1_Levenshteindistanz_Cplusplus\\distance_calculator\\distcalc.cpp",
+  "file": "C:/Users/Forge/INF3_REPOS/aufgaben-repo-inf3-sose14/Aufgabe1_Levenshteindistanz_Cplusplus/distance_calculator/distcalc.cpp",
+  "output": "CMakeFiles/card_restorer.dir/distance_calculator/distcalc.cpp.obj"
+}
+]

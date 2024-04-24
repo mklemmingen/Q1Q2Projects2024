@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "card_restorer",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "card_restorer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-card_restorer-Debug-65db7bd51d479c233437.json",
+					"name" : "card_restorer",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Forge/INF3_REPOS/aufgaben-repo-inf3-sose14/Aufgabe1_Levenshteindistanz_Cplusplus/build",
+		"source" : "C:/Users/Forge/INF3_REPOS/aufgaben-repo-inf3-sose14/Aufgabe1_Levenshteindistanz_Cplusplus"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

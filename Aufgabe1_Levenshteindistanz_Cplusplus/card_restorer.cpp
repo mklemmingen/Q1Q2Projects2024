@@ -32,20 +32,34 @@ struct Card {
     int amount;
 };
 
+std::vector<Card> create_card_list(std::string filename);
+void write_card_list(std::vector<Card> cards, std::string filename);
+void compare_and_change(std::vector<Card>* corrupt, std::vector<Card>* reference);
+
 int main() {
 
+    std::cout << "Card Restorer" << std::endl;
+    std::cout << "-------------" << std::endl;
+
+    std::cout << "Restoring the corrupted card deck..." << std::endl;
+
+    std::cout << "Reading the corrupted card deck from a file..." << std::endl;
     // reading the corrupted card deck from a file
     std::vector<Card> cards = create_card_list("corrupted.txt");
 
+    std::cout << "Reading the reference card deck from a file..." << std::endl;
     // reading the reference card deck from a file
     std::vector<Card> reference = create_card_list("reference.txt");
 
+    std::cout << "Restoring the corrupted card deck..." << std::endl;
     // comparing the corrupted card deck to the reference card deck
     compare_and_change(&cards, &reference);
 
+    std::cout << "Writing the corrected card deck to a file..." << std::endl;
     // writing the corrected card deck to a file
     write_card_list(cards, "corrected.txt");
 
+    std::cout << "The corrupted card deck has been restored." << std::endl;
 }
 
 /*
@@ -88,6 +102,7 @@ void write_card_list(std::vector<Card> cards, std::string filename) {
     for (Card card : cards) {
         file << card.name << " | " << card.manacost << " | " << card.cumulativemanacost << " | " << card.type << " | " << card.amount << std::endl;
     }
+    file.close();
 }
 
 /*
