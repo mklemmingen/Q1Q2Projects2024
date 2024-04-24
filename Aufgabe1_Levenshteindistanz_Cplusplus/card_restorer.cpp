@@ -35,6 +35,7 @@ struct Card {
 std::vector<Card> create_card_list(std::string filename);
 void write_card_list(std::vector<Card> cards, std::string filename);
 void compare_and_change(std::vector<Card>* corrupt, std::vector<Card>* reference);
+bool compare_for_switched_arounds(std::string* corrupt_name, std::vector<Card>* reference);
 
 int main() {
 
@@ -156,8 +157,51 @@ void compare_and_change(std::vector<Card>* corrupt, std::vector<Card>* reference
             }
         }
         if (!found) {
-            std::cout << "None under 26,75% : Corrupted card: " << corrupt_card.name << " | Reference card: " << closest_card << std::endl;
-            corrupt_card.name = closest_card;
+            // either we use the closest card, which would result in a lot of wrong names, or we check again using a strategy that includes
+            // not only corrupted ("?") characters but also length of name as well as letters having switched up to three places to either side. 
+
+            // if a switch has happened in compare_for_switched_arounds, we print the result, if not, print and choose closest levensthein distance card
+            std::string old_name = corrupt_card.name;
+            if(!compare_for_switched_arounds(&corrupt_card.name, reference)) {
+                std::cout << "None under 26,75% : Corrupted card: " << old_name << " | Reference card: " << closest_card << std::endl;
+                corrupt_card.name = closest_card;
+            } else {
+                std::cout << "Letters Scrambled : Corrupted card: " << old_name << " | Reference card: " << corrupt_card.name << std::endl;
+            }
         }
     }
+}
+
+/*
+takes a pointer to a string and a pointer to a vector of cards as input.
+the string is a corrupt name from which the levenshtein distance was not sufficient to determine a close relative. 
+we therefore go through the reference cards again and check if the corrupt name has a close relative with under 26,75% if we
+- switch two letters around every other letter. We do not switch around "?" characters, as they are unknown and we hypothesise that these were not switched around.
+
+returns true if a close relative was found, false if not.
+
+At worst, this could be a O(n^2) operation, but we can optimize it by checking the length of the names first.
+
+MKL. 2024
+*/
+bool compare_for_switched_arounds(std::string* corrupt_name, std::vector<Card>* reference) {
+    std::string name = *corrupt_name;
+    std::vector<std::pair<char, char>> unknown_chars = { {'?', '?'} };
+
+    for (Card& reference_card : *reference) {
+        std::string ref_name = reference_card.name;
+        for (int i = 0; i < name.size(); i++) {
+            for (int j = 0; j < name.size(); j++) {
+                if (i != j) {
+                    std::string temp = ref_name;
+                    std::swap(temp[i], temp[j]);
+                    if (calc_dist_int(name, temp, false, unknown_chars) < name.size() * 0.2675) {
+                        *corrupt_name = ref_name;
+                        return true;
+                    }
+                }
+            }
+        }
+    }
+    return false;
 }
