@@ -39,13 +39,12 @@ void compare_and_change(std::vector<Card>* corrupt, std::vector<Card>* reference
 int main() {
 
     std::cout << "Card Restorer" << std::endl;
+    std::cout << "Restoring the corrupted card deck" << std::endl;
     std::cout << "-------------" << std::endl;
-
-    std::cout << "Restoring the corrupted card deck..." << std::endl;
 
     std::cout << "Reading the corrupted card deck from a file..." << std::endl;
     // reading the corrupted card deck from a file
-    std::vector<Card> cards = create_card_list("corrupted.txt");
+    std::vector<Card> cards = create_card_list("scrambled.txt");
 
     std::cout << "Reading the reference card deck from a file..." << std::endl;
     // reading the reference card deck from a file
@@ -70,8 +69,12 @@ returns the list
 MKL. 2024
 */
 std::vector<Card> create_card_list(std::string filename) {
-
     std::ifstream file(filename);
+    if (!file) {
+        std::cerr << "Error: Could not open file " << filename << std::endl;
+        return {};
+    }
+
     std::string line;
     std::vector<Card> cards;
 
@@ -87,6 +90,11 @@ std::vector<Card> create_card_list(std::string filename) {
         Card card = { name, manacost, cumulativemanacost, type, amount };
         cards.push_back(card);
     }
+
+    if (cards.empty()) {
+        std::cout << "No cards were read from the file." << std::endl;
+    }
+
     return cards;
 }
 
@@ -99,10 +107,21 @@ MKL. 2024
 */
 void write_card_list(std::vector<Card> cards, std::string filename) {
     std::ofstream file(filename);
+    if (!file) {
+        std::cerr << "Error: Could not open file " << filename << std::endl;
+        return;
+    }
+
     for (Card card : cards) {
         file << card.name << " | " << card.manacost << " | " << card.cumulativemanacost << " | " << card.type << " | " << card.amount << std::endl;
     }
+    
     file.close();
+    if (file.fail()) {
+        std::cerr << "Error: Could not write to file " << filename << std::endl;
+    } else {
+        std::cout << "Successfully wrote to file " << filename << std::endl;
+    }
 }
 
 /*
@@ -122,6 +141,7 @@ void compare_and_change(std::vector<Card>* corrupt, std::vector<Card>* reference
     for (Card& corrupt_card : *corrupt) {
         for (Card& reference_card : *reference) {
             if (calc_dist_int(corrupt_card.name, reference_card.name, false, unknown_chars) < corrupt_card.name.size() * 0.2675) {
+                std::cout << "Corrupted card: " << corrupt_card.name << " | Reference card: " << reference_card.name << std::endl;
                 corrupt_card.name = reference_card.name;
             }
         }
