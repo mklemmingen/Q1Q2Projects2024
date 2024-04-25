@@ -30,13 +30,16 @@ struct Card {
     int cumulativemanacost;
     std::string type;
     int amount;
+
+    // map of letters and their frequency in the name
+    std::map<char, int> letter_freq;
 };
 
 std::vector<Card> create_card_list(std::string filename);
 void write_card_list(std::vector<Card> cards, std::string filename);
 void compare_and_change(std::vector<Card>* corrupt, std::vector<Card>* reference);
-void find_jaro_winkler_distance(std::string* corrupt_name, std::vector<Card>* reference, double percentage);
-double calc_jaro_winkler(const std::string& s1, const std::string& s2);
+void char_quantity_similarity(Card* corrupt_card, std::vector<Card>* reference, bool user_self_decided, int range);
+void check_correctness(std::string corrected_filename, std::string perfect_filename);
 
 int main() {
 
@@ -71,6 +74,20 @@ int main() {
     write_card_list(cards, "corrected.txt");
 
     std::cout << "The corrupted card deck has been restored." << std::endl;
+
+    // asking the user if he wants to check if the restored deck is correct
+    std::cout << "DEBUG: Do you want to check if the restored deck is correct? (y/n): ";
+    char choice;
+    do
+    {
+        std::cin >> choice;
+    } while (choice != 'y' && choice != 'n');
+
+    if(choice == 'y'){
+        check_correctness("corrected.txt", "perfectly_restored.txt");
+    }
+
+    return 0;
 }
 
 /*
@@ -101,6 +118,16 @@ std::vector<Card> create_card_list(std::string filename) {
         iss >> amount;
         Card card = { name, manacost, cumulativemanacost, type, amount };
         cards.push_back(card);
+
+        // creating a map of the letters and their frequency in the name
+        std::map<char, int> letter_freq;
+        for (char c : name) {
+            if (letter_freq.find(c) == letter_freq.end()) {
+                letter_freq[c] = 1;
+            } else {
+                letter_freq[c]++;
+            }
+        }
     }
 
     if (cards.empty()) {
@@ -185,22 +212,42 @@ void compare_and_change(std::vector<Card>* corrupt, std::vector<Card>* reference
     std::cin >> transposition_cost;
     }
 
-    // choosing the bool value for using jaro-winkler similarity or not
-    std::cout << "Do you want to use Jaro-Winkler similarity to find fits under your selected percentage? (y/n): ";
-    bool use_jaro_winkler;
+    // choosing the bool value for using char quantity similarity or not
+    std::cout << "Do you want to use an additional algorithm for checking character numbers to find fits above your selected percentage? (y/n): ";
+    bool use_similarity_algorithm;
     char choice;
     do
     {
         std::cin >> choice;
     } while (choice != 'y' && choice != 'n');
 
+    // declare variables for the user_self_decided and range
+    bool user_self_decided = false;
+    int range = 0;
+
     if(choice == 'y'){
-        use_jaro_winkler = true;
+        use_similarity_algorithm = true;
+
+        // checking if user wants to decide himself at multiple same similiarity cards which cards comes closest    
+        std::cout << "Do you want to decide yourself which card comes closest if multiple cards have the same similarity? (y/n): ";
+        bool user_self_decided;
+        char choice_self_decided;
+        do
+        {
+            std::cin >> choice_self_decided;
+        } while (choice_self_decided != 'y' && choice_self_decided != 'n'); 
+        if(choice_self_decided == 'y'){
+            user_self_decided = true;
+            // checking which range in int is allowed to be listed astray from the lowest for the user to choose from
+            std::cout << "Enter the range as integer at which names are allowed to be above the lowest distance in order to be listed: ";
+            std::cin >> range;
+        } else {
+            user_self_decided = false;
+        } 
     }
     else{
-        use_jaro_winkler = false;
+        use_similarity_algorithm = false;
     }
-    std::cout << "-------------" << std::endl;
 
     // ------------------- USER INPUT END -------------------
 
@@ -214,7 +261,7 @@ void compare_and_change(std::vector<Card>* corrupt, std::vector<Card>* reference
 
             // checking if distance is under the choosen percentage of the length of the corrupt name
             if (found_dist < corrupt_card.name.size() * (percentage/100.0)) {
-                std::cout << algo_abrev << ": Found under " << percentage << "% : Corrupted card: " << corrupt_card.name << " | Reference card: " << reference_card.name << std::endl;
+                std::cout << "-----\n" << algo_abrev << ": Found under " << percentage << "% :\nCorrupted card: " << corrupt_card.name << "\nReference card: " << reference_card.name << std::endl;
                 corrupt_card.name = reference_card.name;
                 found = true;
                 break;
@@ -228,11 +275,11 @@ void compare_and_change(std::vector<Card>* corrupt, std::vector<Card>* reference
         }
 
         if (!found) {
-            if(use_jaro_winkler){
-                // using jaro-winkler similarity to find the closest card
-                find_jaro_winkler_distance(&corrupt_card.name, reference, percentage);
+            if(use_similarity_algorithm){
+                // using similarity_algorithm to find a fitting card
+                char_quantity_similarity(&corrupt_card, reference, user_self_decided, range);
             } else {
-            std::cout << algo_abrev << ": None under  " << percentage << "% : Corrupted card: " << corrupt_card.name << " | Reference card: " << closest_card << std::endl;
+            std::cout << "-----\n" << algo_abrev << ": None under  " << percentage << "% :\nCorrupted card: " << corrupt_card.name << "\nReference card: " << closest_card << std::endl;
             corrupt_card.name = closest_card;
             }
         }
@@ -240,58 +287,104 @@ void compare_and_change(std::vector<Card>* corrupt, std::vector<Card>* reference
 }
 
 /*
-using a jaro_winkler similarity algorithm to find the closest card to the corrupt name.
+using a simple comparison of the strings by number of individual characters. 
 
-takes the corrupt name as pointer and a pointer to a vector of cards that serve as reference, and a percentage.
-
-if the jaro-winkler similarity is under the percentage, the name is replaced with the closest card.
+takes a pointer to the corrupt card, a pointer to the reference list and the percentage as input.
 
 MKL. 2024
 */
-void find_jaro_winkler_distance(std::string* corrupt_name, std::vector<Card>* reference, double percentage) {
+void char_quantity_similarity(Card* corrupt_card, std::vector<Card>* reference, bool user_self_decided = false, int range = 0){
+    // iterating over the reference cards to find the best fitting card by least number of characters different to map of corrupt card
 
-    bool found;
+    std::map<char, int> corrupt_letter_freq = corrupt_card->letter_freq;
     std::string closest_card;
-    double closest_dist = 0.0;
+    int smallest_dist = 1000;
+
+    // vector of all the cards that have the same distance to the corrupt card
+    std::vector<std::string> closest_cards;
 
     for (Card& reference_card : *reference) {
-        double found_dist = calc_jaro_winkler(*corrupt_name, reference_card.name);
-        if (found_dist < (percentage/100)) {
-            std::cout << "JW: Found under " << percentage << "% : Corrupted card: " << *corrupt_name << " | Reference card: " << reference_card.name << std::endl;
-            *corrupt_name = reference_card.name;
-            return;;
+        std::map<char, int> reference_letter_freq = reference_card.letter_freq;
+        int dist = 0;
+
+        // calculating the number of characters that are not the same in the two maps
+        // for all characters in the corrupt card freq list
+        // if the character of the corrupt card is a ?, we skip adding dist to the distance
+        for (std::pair<char, int> corrupt_char : corrupt_letter_freq) {
+            // if the character is in the reference card freq list (!= so end() is not reached)
+            if (reference_letter_freq.find(corrupt_char.first) != reference_letter_freq.end()) {
+                // add the difference in frequency to the distance (abs to make sure it is positive)
+                dist += std::abs(corrupt_char.second - reference_letter_freq[corrupt_char.first]);
+            } else {
+                if(corrupt_char.first == '?'){
+                    continue;
+                }
+                // if the character is not in the reference card freq list, and not a ?, add the frequency of the character in the corrupt card to the distance
+                dist += corrupt_char.second;
+            }
         }
-        if (found_dist > closest_dist) {
-            closest_dist = found_dist;
-            closest_card = reference_card.name;
+
+        // if we have the same distane as the smallest distance, we put the name of the card into a vector.
+        if (dist == smallest_dist) {
+            closest_cards.push_back(reference_card.name);
+        } else if (dist < smallest_dist) {
+            // if we have a new smallest distance, we clear the vector and put the name of the card into it.
+            closest_cards.clear();
+            closest_cards.push_back(reference_card.name);
+            smallest_dist = dist;
         }
     }
 
-    if(!found){
-        std::cout << "JW: None under " << percentage << "% : Corrupted card: " << *corrupt_name << " | Reference card: " << std::endl;
+    // if the vector only has one entry, we can immediately assign corrupt_card.name the closest_cards name. If there are multiple, 
+    // we use the already existing Levenstein calculator to find the closest LS card among the ones in the vector.
+    if (closest_cards.size() == 1) {
+        corrupt_card->name = closest_cards[0];
+    } else {
+        std::string closest_card;
+        int closest_dist = 1000;
+        for (std::string card : closest_cards) {
+            // giving the name of the corrupt card, the reference card, no print matrix, ? as unkwnown char, no transposition and transposition cost 1
+            int found_dist = calc_dist_int(corrupt_card->name, card, false, { {'?', '?'} }, false, 1);
+            if (found_dist < closest_dist) {
+                closest_dist = found_dist;
+                closest_card = card;
+            }
+        }
+
+        // print out the result
+        std::cout << "-----\nSA:   Closest Match :\nCorrupted card: " << corrupt_card->name << "\nReference card: " << closest_card << std::endl;
+        corrupt_card->name = closest_card;
     }
+
 }
 
 /*
-method that calculates the jaro-winkler similiarity between two strings
-
-returns double value of the similarity between 1 (no simi. at all) and 0 (exact match)
+This method takes a card deck that is known to be perfectly restored as txt 
+and the card deck file that has been restored by the programm
+and gives out a percentage of how much of the restored file was actually restored correctly.
 
 MKL. 2024
 */
-double calc_jaro_winkler(const std::string& s1, const std::string& s2) {
-    // Jaro-Winkler similarity algorithm
-    // https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance
-    // https://rosettacode.org/wiki/Jaro-Winkler_distance#C.2B.2B
+void check_correctness(std::string corrected_filename, std::string perfect_filename){
 
-    double jaro_dist = 0.0;
+    // reading the two files into vectors of cards
+    std::vector<Card> corrected_cards = create_card_list(corrected_filename);
 
-    // if the strings are equal, the distance is 0
-    if (s1 == s2) {
-        return 0.0;
+    std::vector<Card> perfect_cards = create_card_list(perfect_filename);
+
+    // the equivalent cards should always be at the same indice
+    int correct = 0;
+    int total = corrected_cards.size();
+
+    for(int i = 0; i < corrected_cards.size(); i++){
+        if(corrected_cards[i].name == perfect_cards[i].name){
+            correct++;
+        }
     }
-    
 
+    double percentage = (double)correct / (double)total * 100;
 
-    return jaro_dist;
+    std::cout << "------/nThe restored deck is " << std::fixed << std::setprecision(2) << percentage << "% correct.\n" << std::endl;
 }
+    
+    
