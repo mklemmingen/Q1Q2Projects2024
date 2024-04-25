@@ -209,7 +209,7 @@ void compare_and_change(std::vector<Card>* corrupt, std::vector<Card>* reference
     int transposition_cost = 1;
     if(use_transposition){
     // getting the transposition cost for the distance calculator
-    std::cout << "Enter the transposition cost for the levenshtein calculator: ";
+    std::cout << "Enter the transposition cost for the levenshtein calculator (Standard: 1): ";
     std::cin >> transposition_cost;
     }
 
@@ -240,7 +240,7 @@ void compare_and_change(std::vector<Card>* corrupt, std::vector<Card>* reference
         if(choice_self_decided == 'y'){
             user_self_decided = true;
             // checking which range in int is allowed to be listed astray from the lowest for the user to choose from
-            std::cout << "Enter the range as integer at which names are allowed to be above the lowest distance in order to be listed: ";
+            std::cout << "Enter the range as integer at which names are allowed to be above the lowest distance in order to be listed (suggested <= 3): ";
             std::cin >> range;
         } else {
             user_self_decided = false;
