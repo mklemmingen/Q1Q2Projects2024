@@ -428,6 +428,14 @@ void check_correctness(std::string corrected_filename, std::string perfect_filen
     int correct = 0;
     int total = corrected_cards.size();
 
+    // if an exception has occured, that a file doesnt have any more indices, throw error to output and end method
+
+    if(corrected_cards.size() != perfect_cards.size()){
+        std::cerr << "Error: The two files do not have the same amount of cards." << std::endl;
+        return;
+    }
+
+    // checking how many cards are the same
     for(int i = 0; i < corrected_cards.size(); i++){
         if(corrected_cards[i].name == perfect_cards[i].name){
             correct++;
