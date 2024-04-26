@@ -30,17 +30,27 @@ struct Card {
     int cumulativemanacost;
     std::string type;
     int amount;
+};
 
-    // map of letters and their frequency in the name
-    std::map<char, int> letter_freq;
+struct CloseCard
+{
+    std::string name;
+    double LS_Dist;
+    double SA_Dist;
+    double Accumulated_Dist;
 };
 
 std::vector<Card> create_card_list(std::string filename);
 void write_card_list(std::vector<Card> cards, std::string filename);
-void compare_and_change(std::vector<Card>* corrupt, std::vector<Card>* reference);
-void char_quantity_similarity(Card* corrupt_card, std::vector<Card>* reference, bool user_self_decided, int range);
+int char_quantity_similarity(std::string corrupt_card, std::string reference);
 void check_correctness(std::string corrected_filename, std::string perfect_filename);
-std::string user_decide(std::vector<std::string> cards);
+CloseCard user_decide(std::vector<CloseCard> cards);
+bool user_choose(std::string text_to_be_displayed);
+int user_choose_int(std::string text_to_be_displayed);
+double user_choose_double(std::string text_to_be_displayed);
+std::vector<char> user_choose_chars_vector(std::string text_to_be_displayed);
+void shoutout(std::string algo_abrev, std::string best_option, std::string corrupt_card_name, 
+                int LS_Dist, int SA_Dist, int Accumulated_Dist);
 
 int main() {
 
@@ -66,8 +76,304 @@ int main() {
     
     std::cout << "Restoring the corrupted card deck..." << std::endl;
     std::cout << "-------------" << std::endl;
-    // comparing the corrupted card deck to the reference card deck
-    compare_and_change(&cards, &reference);
+
+    // --------------------------------------------------------
+
+    // Idea for restructure (putting compare and change into either main and/or different methods) 
+
+    // get user input for the different user parameters, put them into variables
+
+    // declare all the variables that are needed for the user input, so that they are declared even if they end up in a if-statement
+
+    int insertion_weight;
+    int deletion_weight;
+    int substitution_weight;
+    int transposition_cost;
+    int range_SA;        
+    std::vector<char> unknown_chars;
+
+    // get: percentage needed
+
+    double percentage = user_choose_double("Enter the percentage similarity needed for the distance calculator:  ");
+
+    // print: .....
+    std::cout << "------------------------------------" << std::endl;
+
+    // get: transposition
+    bool use_transposition = user_choose("Do you want to use transposition for the levenshtein calculator?: ");
+
+    // get: do you want to change the weights for each operation of the Levenshtein Algo?
+    bool change_weights = user_choose("Do you want to change the weights for each operation of the Levenshtein Algo?: ");
+
+        if(change_weights){
+            std::cout <<"--------------- WEIGHTS ------------ " << std::endl;
+            // get: insertion
+            insertion_weight = user_choose_int("Enter the insertion weight for the levenshtein calculator: ");
+            // get: deletion
+            deletion_weight = user_choose_int("Enter the deletion weight for the levenshtein calculator: ");
+            // get: substitution? 
+            substitution_weight = user_choose_int("Enter the substitution weight for the levenshtein calculator: ");
+        }
+
+    if(use_transposition){
+        // if use_transposition 
+        // get: transposition cost
+        transposition_cost = user_choose_int("Enter the transposition cost for the levenshtein calculator: ");
+    }
+
+    std::cout << "------------------------------------" << std::endl;
+
+    // get: do you want to set unique characters who are universal and who never cost? (ex. "?")
+    bool use_unknown_chars = user_choose("Do you want to set unique characters who are universal and who never cost? (ex. '?'): ");
+
+        if(use_unknown_chars){
+
+            std::cout << "--------------- UNKWNOWN CHARS ---------------------" << std::endl;
+
+            // get: unknown chars as vector
+            unknown_chars = user_choose_chars_vector("Entering the unknown characters... ");
+
+            std::cout << "------------------------------------" << std::endl;
+            
+        }
+
+    // get: do you want to decide yourself what the best fit for a corrupted card is in the Levenshtein-Distance-Algorithm?
+
+    bool user_decision_LS = user_choose("Do you want to decide yourself what the best fit for a corrupted card is in the Levenshtein-Distance-Algorithm?: ");
+    
+    // get: do you want to use a range in which a reference word is still valid in the Levenshtein-Distance-Algorithm?
+
+    int range_LS = user_choose_int("Enter the range in which a reference word is still valid in the Levenshtein-Distance-Algorithm: ");
+    
+    // print: "------- Similarity Algorithm -------"
+
+    // do you want to use a similiarity algorithm to try and improve the result?
+
+    bool use_similarity_algorithm = user_choose("Do you want to use a similiarity algorithm (SA) to try and improve the result?: ");
+
+        // get: do you want to use a range in which cards are still valid to the shortest found distance?
+        if(use_similarity_algorithm){
+            // get: range
+            range_SA = user_choose_int("Enter the range in which cards are still valid to the shortest found distance in the SA: ");
+        }
+
+    // print: "------------------------------------"
+    std::cout << "------------------ START OF RESTORATION ------------------" << std::endl;
+
+    // set the correct algorithm abbreviation
+    std::string algo_abrev;
+    if(use_transposition){
+        algo_abrev = "DL";
+    } else {
+        algo_abrev = "LS";
+    }
+    if(use_similarity_algorithm){
+        algo_abrev += ":SA";
+    }
+
+    // -----------------
+
+    // loop over all reference cards with every corrupted card
+    for (Card& corrupt_card : cards) {
+        bool found = false;
+        
+        // map of all the close cards with "name : <distance_LS:distance_SA>"
+        std::map<std::string, int> close_cards_LS;
+
+        // SA map of all the close cards with "name : distance_SA"
+        std::map<std::string, int> close_cards_SA;
+
+        // close cards final
+        // the final close cards is a vector of structs with: name, LS_Dist, SA_Dist, Accumulated_Dist
+        std::vector<CloseCard> close_cards_final;
+
+
+        // int closest distance for LS
+        int closest_dist_LS = 1000;
+
+        // int closest distance for SA
+        int closest_dist_SA = 1000;
+
+        // loop through all reference cards
+        for (Card& reference_card : reference) {
+
+            // using the Levenshtein distance calculator first -----------------------
+            // getting distance between corrupt card and reference card
+            int found_dist_LS = calc_dist_int(corrupt_card.name, reference_card.name, false, unknown_chars, use_transposition, transposition_cost, 
+                                                insertion_weight, deletion_weight, substitution_weight);
+
+            // ------- SHORTCUT
+
+            // if the distance is 0, we can be sure that the card is the same and we can skip the rest of the loop
+            // if the distance is under the percentage (by length of word) we automatically assign it aswell
+
+            if(found_dist_LS == 0){
+                corrupt_card.name = reference_card.name;
+                shoutout(algo_abrev, reference_card.name, corrupt_card.name, found_dist_LS, 0, 0);
+                break;
+            } else if(found_dist_LS < (corrupt_card.name.length() * (percentage/100))){
+                corrupt_card.name = reference_card.name;
+                shoutout(algo_abrev, reference_card.name, corrupt_card.name, found_dist_LS, 0, 0);
+                break;
+            }
+
+            // -------
+
+            // checking if distance is new closest distance
+            if (found_dist_LS < closest_dist_LS) {
+                closest_dist_LS = found_dist_LS;
+                // add the name and distance to the map
+                close_cards_LS[reference_card.name] = found_dist_LS;
+                // remove all cards in map that are above new closest + range
+                for (auto it = close_cards_LS.begin(); it != close_cards_LS.end(); ) {
+                    if (it->second > (closest_dist_LS+range_LS)) {
+                        it = close_cards_LS.erase(it);
+                    } else {
+                        ++it;
+                    }
+                }
+            } else if (found_dist_LS <= (closest_dist_LS+range_LS)) {
+                // add card to list
+                close_cards_LS[reference_card.name] = found_dist_LS;
+            }
+
+            // using the SA algorithm if allowed --------------------------------------
+
+            if (use_similarity_algorithm){
+                // using similarity_algorithm to find a fitting card
+                int distance = char_quantity_similarity(corrupt_card.name, reference_card.name);
+
+                // same procedure as in the LS
+                if (distance < closest_dist_SA) {
+                    closest_dist_SA = distance;
+                    // add the name and distance to the map
+                    close_cards_SA[reference_card.name] = distance;
+                    // remove all cards in map that are above new closest + range
+                    for (auto it = close_cards_SA.begin(); it != close_cards_SA.end(); ) {
+                        if (it->second > (closest_dist_SA+range_SA)) {
+                            it = close_cards_SA.erase(it);
+                        } else {
+                            ++it;
+                        }
+                    }
+                } else if (distance <= (closest_dist_SA+range_SA)) {
+                    // add card to list
+                    close_cards_SA[reference_card.name] = distance;
+                }
+            }
+            // next reference card
+        }
+
+        // ------------------------- SORT -------------------------
+        // if user doesnt want the similarity algorithm, we only use the levenshtein distance map, sort it by distance into close_cards_final
+        // if he wants to, we sort both into one close_cards_final
+
+        // putting the LS Map into close_cards_final
+        // going over ls map
+
+        for(auto it = close_cards_LS.begin(); it != close_cards_LS.end(); ++it){
+        CloseCard close_card;
+        close_card.name = it->first;
+        close_card.LS_Dist = it->second;
+        close_card.SA_Dist = 0.0;
+        close_card.Accumulated_Dist = it->second;
+        close_cards_final.push_back(close_card);
+        }
+
+        if(!use_similarity_algorithm){
+            // sorting the card deck by accumulated distance (which is only LS, respectfully)
+
+            std::sort(close_cards_final.begin(), close_cards_final.end(), 
+            [](CloseCard a, CloseCard b) { return a.Accumulated_Dist < b.Accumulated_Dist; });
+
+        } else {
+            // if user wants to use the similarity algorithm, we additionally put in the SA Map at respective positions
+
+            // our SA is a : name : distance map
+            // iterating over the SA map
+
+            for(auto it = close_cards_SA.begin(); it != close_cards_SA.end(); it++){
+                // if the name is already in the LS map, we add the distance to the respective card
+                for(CloseCard& card : close_cards_final){
+                    if(card.name == it->first){
+                        card.SA_Dist = it->second;
+                        card.Accumulated_Dist = card.LS_Dist + card.SA_Dist;
+                    }
+                }
+            }
+
+            // sort the card deck by accumulated distance
+            // The lowest distance LS + SA is at the top and the highest at the bottom
+            std::sort(close_cards_final.begin(), close_cards_final.end(), 
+            [](CloseCard a, CloseCard b) { return a.Accumulated_Dist < b.Accumulated_Dist; });
+
+        }
+
+        // depending on if the user wants to decide for themself, we either
+        // print out options and let user decide, or choose the first one in the sorted map
+
+        if(user_decision_LS){
+            // print out the best options ( all of user_decide )
+
+            // declare that choosing is starting and what the corrupt card is:
+            std::cout << "!- Attention -!" << std::endl;
+            std::cout << "Choosing for corrupt card: " << corrupt_card.name << std::endl;
+
+            CloseCard best_option = user_decide(close_cards_final);
+
+            // shoutout
+            shoutout(algo_abrev, best_option.name, corrupt_card.name, best_option.LS_Dist, best_option.SA_Dist,
+            best_option.Accumulated_Dist);
+
+            // assign the string to the card
+            corrupt_card.name = best_option.name;
+        } else {
+            // choose the one with the lowest distance, if after it is another one with the same distance, use the first ( if there is ) 
+            // with the same starting character. If there is none with the same starting character, use the first one
+
+            int closest_dist = 1000;
+            std::string closest_card = "";
+
+            closest_dist = close_cards_final[0].Accumulated_Dist;
+
+            bool still_same_distance = true;
+            std::vector<CloseCard> same_distance_cards;
+               
+            while(still_same_distance){
+                for(CloseCard card : close_cards_final){
+                    if(card.Accumulated_Dist == closest_dist){
+                        same_distance_cards.push_back(card);
+                    } else {
+                        still_same_distance = false;
+                    }
+                }
+                closest_dist++;
+            }
+
+            // if there are multiple cards with the same distance, we choose the first one with the same starting character
+            // as the corrupt card
+
+            if(same_distance_cards.size() > 1){
+                for(CloseCard card : same_distance_cards){
+                    if(card.name[0] == corrupt_card.name[0]){
+
+                        // shoutout
+                        shoutout(algo_abrev, card.name, corrupt_card.name, card.LS_Dist, card.SA_Dist, card.Accumulated_Dist);
+                        closest_card = card.name;
+                        break;
+                    }
+                }
+            } else {    
+                // shoutout
+                shoutout(algo_abrev, closest_card, corrupt_card.name, 
+                same_distance_cards[0].LS_Dist, same_distance_cards[0].SA_Dist, same_distance_cards[0].Accumulated_Dist);
+                closest_card = same_distance_cards[0].name;
+            }
+        }
+        // next corrupt card
+    }
+
+    // --------------------------------------------------------
 
     std::cout << "-------------" << std::endl;
     std::cout << "Writing the corrected card deck to a file..." << std::endl;
@@ -119,16 +425,6 @@ std::vector<Card> create_card_list(std::string filename) {
         iss >> amount;
         Card card = { name, manacost, cumulativemanacost, type, amount };
         cards.push_back(card);
-
-        // creating a map of the letters and their frequency in the name
-        std::map<char, int> letter_freq;
-        for (char c : name) {
-            if (letter_freq.find(c) == letter_freq.end()) {
-                letter_freq[c] = 1;
-            } else {
-                letter_freq[c]++;
-            }
-        }
     }
 
     if (cards.empty()) {
@@ -165,249 +461,54 @@ void write_card_list(std::vector<Card> cards, std::string filename) {
 }
 
 /*
-comparing a list of cards (corrupt) to another list (reference) to find partner 
-when LD smaller than 26,75% of the length of the corrupt name -> add name.
-if none found, the smallest distance is taken and the name is replaced with the reference name.
-
-takes two pointers to the lists of cards as input.
-
-MKL. 2024
-*/
-void compare_and_change(std::vector<Card>* corrupt, std::vector<Card>* reference) {
-
-    // unknown characters are "?"
-    std::vector<std::pair<char, char>> unknown_chars = { {'?', '?'} };
-
-    // ------------------- USER INPUT BEGIN -------------------
-    // getting the needed percentage similarity for the distance calculator
-    std::cout << "Enter the percentage similarity needed for the distance calculator:  ";
-    double percentage;
-    // making sure the number is between 0 and 100
-    do {
-        std::cin >> percentage;
-    } while (percentage < 0 || percentage > 100);
-
-    // seeing if user wants to use transposition for the distance calculator
-    std::cout << "Do you want to use transposition for the levenshtein calculator? (y/n): ";
-    bool use_transposition;
-    char choice_transposition;
-    do
-    {
-        std::cin >> choice_transposition;
-    } while (choice_transposition != 'y' && choice_transposition != 'n');
-
-    std::string algo_abrev;
-    if(choice_transposition == 'y'){
-        algo_abrev = "DL";
-        use_transposition = true;
-    }
-    else{
-        algo_abrev = "LS";
-        use_transposition = false;
-    }
-
-    int transposition_cost = 1;
-    if(use_transposition){
-    // getting the transposition cost for the distance calculator
-    std::cout << "Enter the transposition cost for the levenshtein calculator (Standard: 1): ";
-    std::cin >> transposition_cost;
-    }
-
-    // choosing the bool value for using char quantity similarity or not
-    std::cout << "Do you want to use an additional algorithm for checking character numbers to find fits above your selected percentage? (y/n): ";
-    bool use_similarity_algorithm;
-    char choice;
-    do
-    {
-        std::cin >> choice;
-    } while (choice != 'y' && choice != 'n');
-
-    // declare variables for the user_self_decided and range
-    bool user_self_decided;
-    int range;
-
-    if(choice == 'y'){
-        use_similarity_algorithm = true;
-
-        // checking if user wants to decide himself at multiple same similiarity cards which cards comes closest    
-        std::cout << "Do you want to decide yourself which card comes closest if multiple cards have the same similarity? (y/n): ";
-        bool user_self_decided;
-        char choice_self_decided;
-        do
-        {
-            std::cin >> choice_self_decided;
-        } while (choice_self_decided != 'y' && choice_self_decided != 'n'); 
-        if(choice_self_decided == 'y'){
-            user_self_decided = true;
-            // checking which range in int is allowed to be listed astray from the lowest for the user to choose from
-            std::cout << "Enter the range as integer at which names are allowed to be above the lowest distance in order to be listed (suggested <= 3): ";
-            std::cin >> range;
-        } else {
-            user_self_decided = false;
-        } 
-    }
-    else{
-        use_similarity_algorithm = false;
-    }
-
-    // ------------------- USER INPUT END -------------------
-
-    for (Card& corrupt_card : *corrupt) {
-        bool found = false;
-        std::string closest_card;
-        int closest_dist = 1000;
-        for (Card& reference_card : *reference) {
-            // getting distance between corrupt card and reference card
-            int found_dist = calc_dist_int(corrupt_card.name, reference_card.name, false, unknown_chars, use_transposition, transposition_cost);
-
-            // checking if distance is under the choosen percentage of the length of the corrupt name
-            if (found_dist < corrupt_card.name.size() * (percentage/100.0)) {
-                std::cout << "-----\n" << algo_abrev << ": Found under " << percentage << "% :\nCorrupted card: " << corrupt_card.name << "\nReference card: " << reference_card.name << std::endl;
-                corrupt_card.name = reference_card.name;
-                found = true;
-                break;
-            }
-
-            // checking if new closest distance
-            if (found_dist < closest_dist) {
-                closest_dist = found_dist;
-                closest_card = reference_card.name;
-            }
-        }
-
-        if (!found) {
-            if(use_similarity_algorithm){
-                // using similarity_algorithm to find a fitting card
-                char_quantity_similarity(&corrupt_card, reference, user_self_decided, range);
-            } else {
-            std::cout << "-----\n" << algo_abrev << ": None under  " << percentage << "% :\nCorrupted card: " << corrupt_card.name << "\nReference card: " << closest_card << std::endl;
-            corrupt_card.name = closest_card;
-            }
-        }
-    }
-}
-
-/*
 using a simple comparison of the strings by number of individual characters. 
 
-takes a pointer to the corrupt card, a pointer to the reference list and the percentage as input.
+takes two strings
 
 MKL. 2024
 */
-void char_quantity_similarity(Card* corrupt_card, std::vector<Card>* reference, bool user_self_decided, int range){
-    // iterating over the reference cards to find the best fitting card by least number of characters different to map of corrupt card
+int char_quantity_similarity(std::string corrupt_card, std::string reference){
+    // comparing two strings by the number of individual characters and returning distance value
+    int distance = 0;
 
-    std::map<char, int> corrupt_letter_freq = corrupt_card->letter_freq;
-    int smallest_dist = 1000;
-
-    // map of all the close cards with "name : distance"
-    std::map<std::string, int> close_cards;
-
-    for (Card& reference_card : *reference) {
-        std::map<char, int> reference_letter_freq = reference_card.letter_freq;
-        int dist = 0;
-
-        // calculating the number of characters that are not the same in the two maps
-        // for all characters in the corrupt card freq list
-        // if the character of the corrupt card is a ?, we skip adding dist to the distance
-        for (std::pair<char, int> corrupt_char : corrupt_letter_freq) {
-            // if the character is in the reference card freq list (!= so end() is not reached)
-            if (reference_letter_freq.find(corrupt_char.first) != reference_letter_freq.end()) {
-                // add the difference in frequency to the distance (abs to make sure it is positive)
-                dist += std::abs(corrupt_char.second - reference_letter_freq[corrupt_char.first]);
-            } else {
-                if(corrupt_char.first == '?'){
-                    continue;
-                }
-                // if the character is not in the reference card freq list, and not a ?, add the frequency of the character in the corrupt card to the distance
-                dist += corrupt_char.second;
-            }
-        }
-
-        if (dist < smallest_dist) {
-            // if we have a new smallest distance, we go through the vector and remove any entries that have a distance larger than the new smallest distance + range
-            smallest_dist = dist;
-            
-            // for each card in the map, if the distance is larger than the smallest distance + range, we remove the card from the map
-            for (auto it = close_cards.begin(); it != close_cards.end(); ) {
-                if (it->second > (smallest_dist+range)) {
-                    it = close_cards.erase(it);
-                } else {
-                    ++it;
-                }
-            }
-            
-        } else if (dist <= (smallest_dist+range)) {
-            // if we have the same distance as the smallest distance or inside the range, we put the name : distance into the map
-            close_cards[reference_card.name] = dist;
-        }
+    // if the strings are the same, return 0
+    if(corrupt_card == reference){
+        return 0;
     }
 
-    // out of the created map of names : distance , we create a vector of only the names
-    std::vector<std::string> closest_cards;
-    for (auto it = close_cards.begin(); it != close_cards.end(); ++it) {
-        closest_cards.push_back(it->first);
+    // use a map to store: char -> count
+    std::map<char, int> corrupt_chars;
+    std::map<char, int> reference_chars;
+
+    // fill the maps with the characters and their count
+    for(char c : corrupt_card){
+        corrupt_chars[c]++;
     }
 
-    // if the vector only has one entry, we can immediately assign corrupt_card.name the closest_cards name. If there are multiple, 
-    // we use the already existing Levenstein calculator to find the closest LS card among the ones in the vector.
-    if (closest_cards.size() == 1) {
-        std::cout << "-----\nSA:   Closest Match :\nCorrupted card: " << corrupt_card->name << "\nReference card: " << closest_cards[0] << std::endl;
-        corrupt_card->name = closest_cards[0];
-    } else {
+    for(char c : reference){
+        reference_chars[c]++;
+    }
 
-        // we use the same principle as before with the similarity algorithm, but with the levenshtein calculator. 
-        // we only keep cards with distance smaller than the smallest distance + range
-
-        // map of all the cards with the new ls distance
-        std::map<std::string, int> close_ls_cards;
-
-        int closest_dist = 1000;
-        for (std::string card : closest_cards) {
-            // giving the name of the corrupt card, the reference card, no print matrix, ? as unkwnown char, no transposition and transposition cost 1
-            int found_dist = calc_dist_int(corrupt_card->name, card, false, { {'?', '?'} }, false, 1);
-
-            if (found_dist < closest_dist) {
-                closest_dist = found_dist;
-                for (auto it = close_ls_cards.begin(); it != close_ls_cards.end(); ) {
-                    if (it->second > (closest_dist+range)) {
-                        it = close_ls_cards.erase(it);
-                    } else {
-                        ++it;
-                    }
-                }
-            } else if (found_dist <= (closest_dist+range)) {
-                close_ls_cards[card] = found_dist;
-            }
-        }
-
-        // converting map close_ls_cards to vector
-        std::vector<std::string> closest_cards;
-        for (auto it = close_ls_cards.begin(); it != close_ls_cards.end(); ++it) {
-            closest_cards.push_back(it->first);
-        }
-
-        if(user_self_decided){
-            // depending on if the user wants to decide for themself, we either true: print out the closest cards and let the user decide, 
-            // or false: use the already existing Levenstein calculator to find the closest LS card among the ones in the vector.        
-            
-            std::cout << "-----\n SA: Decide by typing in the number of the card | Corrupted Card:  " << corrupt_card->name << std::endl;
-
-            // method that takes a vector of strings, prints them out and lets the user choose one by typing in the number of the card and returns the string of the card
-            std::string closest_card = user_decide(closest_cards);
-
-            // print out the result
-            std::cout << "SA:   Choosen Match :\nCorrupted card: " << corrupt_card->name << "\nReference card: " << closest_card << std::endl;
-            corrupt_card->name = closest_card;
-
+    // loop over the corrupt card map and check if the character is in the reference map
+    // if it is, add the difference of the two counts to the distance
+    // if it is not, add the count of the corrupt card to the distance
+    for(auto it = corrupt_chars.begin(); it != corrupt_chars.end(); it++){
+        if(reference_chars.find(it->first) != reference_chars.end()){
+            distance += abs(it->second - reference_chars[it->first]);
         } else {
-
-        // print out the result
-        std::cout << "-----\nSA:   Closest Match :\nCorrupted card: " << corrupt_card->name << "\nReference card: " << closest_cards[0] << std::endl;
-        corrupt_card->name = closest_cards[0];
-
+            distance += it->second;
         }
     }
+
+    // loop over the reference map and check if the character is in the corrupt map
+    // if it is not, add the count of the reference card to the distance
+    for(auto it = reference_chars.begin(); it != reference_chars.end(); it++){
+        if(corrupt_chars.find(it->first) == corrupt_chars.end()){
+            distance += it->second;
+        }
+    }
+
+    return distance;
 }
 
 /*
@@ -448,7 +549,7 @@ void check_correctness(std::string corrected_filename, std::string perfect_filen
 }
 
 /*
-user_decide is a simple method that takes a vector, prints out each of the indicies value one line by another in the terminal accompanied by a number like:
+user_decide is a simple method that takes a map of cards with a "string: <int:int>" prints out each of the indicies value one line by another in the terminal accompanied by a number like:
 1 | Banana
 2 | Oranges
 etc.
@@ -456,20 +557,104 @@ and letting the user choose a value inbetween this.
 Returns the string that is choosen. 
 MKL. 2024
 */
-std::string user_decide(std::vector<std::string> cards){
-    int i = 1;
-    for(std::string card : cards){
-        std::cout << i << " | " << card << std::endl;
-        i++;
+CloseCard user_decide(std::vector<CloseCard> cards){
+
+    // prints out options with 
+    // number | LS: LS_Dist | SA: SA_Dist | Accumulated_Dist | Name
+
+    for(int i = 0; i < cards.size(); i++){
+        std::cout << i+1 << " | LS: " << cards[i].LS_Dist << " SA: " << cards[i].SA_Dist << " Accu.Dist: " << cards[i].Accumulated_Dist << " | " << cards[i].name << std::endl;
     }
 
+    // let user choose a number
     int choice;
+
     do
     {
         std::cin >> choice;
-    } while (choice < 1 || choice > cards.size());
+    } while (choice < 1 && choice > cards.size());
 
     return cards[choice-1];
 }
+
+/*
+user choose is a method that displays a parameter given text and allows receiving either a 
+
+y  -> returns true
+or
+n  -> returns false
+
+MKL. 2024
+*/
+bool user_choose(std::string text_to_be_displayed){
+    std::cout << text_to_be_displayed << " (y|n)" << std::endl;
+    char choice;
+    do
+    {
+        std::cin >> choice;
+    } while (choice != 'y' && choice != 'n');
+
+    if(choice == 'y'){
+        return true;
+    } else {
+        return false;
+    }
+}
     
-    
+/*
+user_choose_int is a method that displays a parameter given text and allows receiving an integer
+
+MKL. 2024
+*/
+int user_choose_int(std::string text_to_be_displayed){
+    std::cout << text_to_be_displayed << std::endl;
+    int choice;
+    std::cin >> choice;
+    return choice;
+}
+
+/*
+user_choose_double is a method that displays a parameter given text and allows receiving a double
+
+MKL. 2024
+*/
+double user_choose_double(std::string text_to_be_displayed){
+    std::cout << text_to_be_displayed << std::endl;
+    double choice;
+    std::cin >> choice;
+    return choice;
+}
+
+/*
+shoutout correctly and in the same way formats out the shoutout for the user to see.
+MKL. 2024
+*/
+void shoutout(std::string algo_abrev, std::string best_option, std::string corrupt_card_name, int LS_Dist, int SA_Dist, int Accumulated_Dist){
+    std::cout << "  ---- Card restored ---  \n"
+    "  Algorithm: " << algo_abrev << "\n" <<
+    "  Corrupt Card: " << corrupt_card_name << "\n" <<
+    "  New Name: " << best_option << "\n" <<
+    "  LS: " << LS_Dist << " | SA: " << SA_Dist << " | Accu.Dist: " << Accumulated_Dist <<
+    "\n-----------------" << std::endl;
+}
+
+/*
+user choose chars vector lets the user input a series of char symbols. 
+First, they are asked how many they are going to input, then, they input as many 
+as before set
+MKL. 2024
+*/
+std::vector<char> user_choose_chars_vector(std::string text_to_be_displayed){
+    std::cout << text_to_be_displayed << std::endl;
+    int amount;
+    std::cout << "How many characters are you going to input?" << std::endl;
+    std::cin >> amount;
+    std::vector<char> chars;
+    for(int i = 0; i < amount; i++){
+        char c;
+        std::cout << "Enter character " << i+1 << ": ";
+        std::cin >> c;
+        chars.push_back(c);
+    }
+    return chars;
+}

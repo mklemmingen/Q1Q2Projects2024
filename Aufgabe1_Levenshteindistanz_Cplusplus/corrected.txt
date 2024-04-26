@@ -403,7 +403,7 @@ Bee Sting | {X}{R}{R} | 2 |  | 0
 Goblin War Drums | {1}{R} | 2 |  | 0
 Outmaneuver | {X}{R} | 1 |  | 0
 Sacrifice | {4}{R} | 5 |  | 0
-Scrap | {2}{R} | 3 |  | 0
+Snap | {2}{R} | 3 |  | 0
 Spinal Embrace | {2}{R}{R} | 4 |  | 0
 Hidden Ancients | {1}{G} | 2 |  | 0
 Venomous Vines | {2}{G} | 3 |  | 0
@@ -472,7 +472,7 @@ Close Quarters | {1}{B}{B} | 3 |  | 0
 Cateran Summons | {B} | 1 |  | 0
 Primal Surge | {4}{B} | 5 |  | 0
 Quagmire | {2}{B} | 3 |  | 0
-Rouse | {1}{B} | 2 |  | 0
+Rise | {1}{B} | 2 |  | 0
 Skull Fracture | {2}{B} | 3 |  | 0
 Blood Feud | {2}{R} | 3 |  | 0
 Blood Oath | {3}{R} | 4 |  | 0
@@ -494,7 +494,7 @@ Goblin Lore | {R}{W} | 2 |  | 0
 Magma Jet | {1}{R} | 2 |  | 0
 Pillar of Flame | {R} | 1 |  | 0
 Encroaching Wastes | 1 | 1 |  | 0
-Roast | {1}{R} | 2 |  | 0
+Moat | {1}{R} | 2 |  | 0
 Nissa's Pilgrimage | {2}{G} | 3 |  | 0
 Bitter Ordeal | {W} | 1 |  | 0
 Sivvi's Valor | {2}{W} | 3 |  | 0
@@ -560,7 +560,7 @@ Shifting Sky | {2}{U} | 3 |  | 0
 Death Bomb | {3}{B} | 4 |  | 0
 Night Dealings | {2}{B} | 3 |  | 0
 Noxious Vapors | {1}{B}{B} | 3 |  | 0
-Phyrexian Vault | {3}{B} | 4 |  | 0
+Phyrexian Altar | {3}{B} | 4 |  | 0
 Planeswalker's Fury | {2}{R} | 3 |  | 0
 Gaea's Cradle | {1}{G} | 2 |  | 0
 Sanctimony | {2}{W}{U} | 4 |  | 0
