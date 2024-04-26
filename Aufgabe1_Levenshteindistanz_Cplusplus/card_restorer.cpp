@@ -265,32 +265,18 @@ int main() {
         }
 
         // ------------------------- SORT -------------------------
-        // if user doesnt want the similarity algorithm, we only use the levenshtein distance map, sort it by distance into close_cards_final
-        // if he wants to, we sort both into one close_cards_final
 
         // putting the LS Map into close_cards_final
-        // going over ls map
-
-        for(auto it = close_cards_LS.begin(); it != close_cards_LS.end(); ++it){
-        CloseCard close_card;
-        close_card.name = it->first;
-        close_card.LS_Dist = it->second;
-        close_card.SA_Dist = 0.0;
-        close_card.Accumulated_Dist = it->second;
-        close_cards_final.push_back(close_card);
+        for(auto it = close_cards_LS.begin(); it != close_cards_LS.end(); it++){
+            CloseCard card;
+            card.name = it->first;
+            card.LS_Dist = it->second;
+            card.SA_Dist = 0;
+            close_cards_final.push_back(card);
         }
 
-        if(!use_similarity_algorithm){
-            // sorting the card deck by accumulated distance (which is only LS, respectfully)
-
-            std::sort(close_cards_final.begin(), close_cards_final.end(), 
-            [](CloseCard a, CloseCard b) { return a.Accumulated_Dist < b.Accumulated_Dist; });
-
-        } else {
-            // if user wants to use the similarity algorithm, we additionally put in the SA Map at respective positions
-
-            // our SA is a : name : distance map
-            // iterating over the SA map
+        if(use_similarity_algorithm){
+            // putting the SA Map into close_cards_final
 
             for(auto it = close_cards_SA.begin(); it != close_cards_SA.end(); it++){
                 // if the name is already in the LS map, we add the distance to the respective card
@@ -301,73 +287,51 @@ int main() {
                     }
                 }
             }
-
-            // sort the card deck by accumulated distance
-            // The lowest distance LS + SA is at the top and the highest at the bottom
-            std::sort(close_cards_final.begin(), close_cards_final.end(), 
-            [](CloseCard a, CloseCard b) { return a.Accumulated_Dist < b.Accumulated_Dist; });
-
         }
+
+        // we add up the distances of the LS and SA and put them into the Accumulated_Dist
+        for(CloseCard& card : close_cards_final){
+            card.Accumulated_Dist = card.LS_Dist + card.SA_Dist;
+        }
+
+        // sort the close_cards_final by the Accumulated_Dist
+        std::sort(close_cards_final.begin(), close_cards_final.end(), [](CloseCard a, CloseCard b) {
+            return a.Accumulated_Dist < b.Accumulated_Dist;
+        });
 
         // depending on if the user wants to decide for themself, we either
         // print out options and let user decide, or choose the first one in the sorted map
 
-        if(user_decision_LS){
-            // print out the best options ( all of user_decide )
+        if(!close_cards_final.empty()) {
+            // if close cards is empty, we dont have any options and we just keep the corrupt card
+            // however, we give out that this is an ERROR
 
-            // declare that choosing is starting and what the corrupt card is:
-            std::cout << "!- Attention -!" << std::endl;
-            std::cout << "Choosing for corrupt card: " << corrupt_card.name << std::endl;
+            std::cout << "ERROR: No close cards found for corrupt card: " << corrupt_card.name << std::endl;
+        }
+        else {
+            if(user_decision_LS){
+                // print out the best options ( all of user_decide )
 
-            CloseCard best_option = user_decide(close_cards_final);
+                // declare that choosing is starting and what the corrupt card is:
+                std::cout << "!- Attention -!" << std::endl;
+                std::cout << "Choosing for corrupt card: " << corrupt_card.name << std::endl;
 
-            // shoutout
-            shoutout(algo_abrev, best_option.name, corrupt_card.name, best_option.LS_Dist, best_option.SA_Dist,
-            best_option.Accumulated_Dist);
+                CloseCard best_option = user_decide(close_cards_final);
 
-            // assign the string to the card
-            corrupt_card.name = best_option.name;
-        } else {
-            // choose the one with the lowest distance, if after it is another one with the same distance, use the first ( if there is ) 
-            // with the same starting character. If there is none with the same starting character, use the first one
-
-            int closest_dist = 1000;
-            std::string closest_card = "";
-
-            closest_dist = close_cards_final[0].Accumulated_Dist;
-
-            bool still_same_distance = true;
-            std::vector<CloseCard> same_distance_cards;
-               
-            while(still_same_distance){
-                for(CloseCard card : close_cards_final){
-                    if(card.Accumulated_Dist == closest_dist){
-                        same_distance_cards.push_back(card);
-                    } else {
-                        still_same_distance = false;
-                    }
-                }
-                closest_dist++;
-            }
-
-            // if there are multiple cards with the same distance, we choose the first one with the same starting character
-            // as the corrupt card
-
-            if(same_distance_cards.size() > 1){
-                for(CloseCard card : same_distance_cards){
-                    if(card.name[0] == corrupt_card.name[0]){
-
-                        // shoutout
-                        shoutout(algo_abrev, card.name, corrupt_card.name, card.LS_Dist, card.SA_Dist, card.Accumulated_Dist);
-                        closest_card = card.name;
-                        break;
-                    }
-                }
-            } else {    
                 // shoutout
-                shoutout(algo_abrev, closest_card, corrupt_card.name, 
-                same_distance_cards[0].LS_Dist, same_distance_cards[0].SA_Dist, same_distance_cards[0].Accumulated_Dist);
-                closest_card = same_distance_cards[0].name;
+                shoutout(algo_abrev, best_option.name, corrupt_card.name, best_option.LS_Dist, best_option.SA_Dist,
+                best_option.Accumulated_Dist);
+
+                // assign the string to the card
+                corrupt_card.name = best_option.name;
+            } else {
+                // choose the one with the lowest distance
+
+                // shoutout
+                shoutout(algo_abrev, close_cards_final[0].name, corrupt_card.name, close_cards_final[0].LS_Dist, close_cards_final[0].SA_Dist, 
+                close_cards_final[0].Accumulated_Dist);
+
+                corrupt_card.name = close_cards_final[0].name;
             }
         }
         // next corrupt card
@@ -624,7 +588,7 @@ double user_choose_double(std::string text_to_be_displayed){
     std::cin >> choice;
     return choice;
 }
-
+ 
 /*
 shoutout correctly and in the same way formats out the shoutout for the user to see.
 MKL. 2024
