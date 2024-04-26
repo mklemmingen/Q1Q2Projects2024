@@ -40,6 +40,12 @@ struct CloseCard
     double Accumulated_Dist;
 };
 
+struct CardDist
+{
+    std::string name;
+    double distance;
+};
+
 std::vector<Card> create_card_list(std::string filename);
 void write_card_list(std::vector<Card> cards, std::string filename);
 int char_quantity_similarity(std::string corrupt_card, std::string reference);
@@ -177,11 +183,11 @@ int main() {
     for (Card& corrupt_card : cards) {
         bool found = false;
         
-        // map of all the close cards with "name : <distance_LS:distance_SA>"
-        std::map<std::string, int> close_cards_LS;
+        // vector of all the close cards with "name : <distance_LS:distance_SA>"
+        std::vector<CardDist> close_cards_LS;
 
-        // SA map of all the close cards with "name : distance_SA"
-        std::map<std::string, int> close_cards_SA;
+        // vector of all the close cards with "name : distance_SA"
+        std::vector<CardDist> close_cards_SA;
 
         // close cards final
         // the final close cards is a vector of structs with: name, LS_Dist, SA_Dist, Accumulated_Dist
@@ -202,40 +208,25 @@ int main() {
             int found_dist_LS = calc_dist_int(corrupt_card.name, reference_card.name, false, unknown_chars, use_transposition, transposition_cost, 
                                                 insertion_weight, deletion_weight, substitution_weight);
 
-            // ------- SHORTCUT
-
-            // if the distance is 0, we can be sure that the card is the same and we can skip the rest of the loop
-            // if the distance is under the percentage (by length of word) we automatically assign it aswell
-
-            if(found_dist_LS == 0){
-                corrupt_card.name = reference_card.name;
-                shoutout(algo_abrev, reference_card.name, corrupt_card.name, found_dist_LS, 0, 0);
-                break;
-            } else if(found_dist_LS < (corrupt_card.name.length() * (percentage/100))){
-                corrupt_card.name = reference_card.name;
-                shoutout(algo_abrev, reference_card.name, corrupt_card.name, found_dist_LS, 0, 0);
-                break;
-            }
-
-            // -------
-
             // checking if distance is new closest distance
             if (found_dist_LS < closest_dist_LS) {
+                // add the card to the vector
                 closest_dist_LS = found_dist_LS;
-                // add the name and distance to the map
-                close_cards_LS[reference_card.name] = found_dist_LS;
-                // remove all cards in map that are above new closest + range
+
+                // create a CardDist object and push it into the vector
+                CardDist card = {reference_card.name, static_cast<double>(found_dist_LS)};
+                close_cards_LS.push_back(card);}
+                // remove all cards in the vector that are above new closest + range
                 for (auto it = close_cards_LS.begin(); it != close_cards_LS.end(); ) {
-                    if (it->second > (closest_dist_LS+range_LS)) {
+                    if (it->distance > (closest_dist_LS+range_LS)) {
                         it = close_cards_LS.erase(it);
                     } else {
                         ++it;
                     }
                 }
-            } else if (found_dist_LS <= (closest_dist_LS+range_LS)) {
-                // add card to list
-                close_cards_LS[reference_card.name] = found_dist_LS;
-            }
+
+                CardDist card = {reference_card.name, static_cast<double>(found_dist_LS)};
+                close_cards_LS.push_back(card);
 
             // using the SA algorithm if allowed --------------------------------------
 
@@ -246,11 +237,12 @@ int main() {
                 // same procedure as in the LS
                 if (distance < closest_dist_SA) {
                     closest_dist_SA = distance;
-                    // add the name and distance to the map
-                    close_cards_SA[reference_card.name] = distance;
-                    // remove all cards in map that are above new closest + range
+                    // create a CardDist object and push it into the vector
+                    CardDist card = {reference_card.name, static_cast<double>(distance)};
+                    close_cards_SA.push_back(card);
+                    // remove all cards in vector that are above new closest + range
                     for (auto it = close_cards_SA.begin(); it != close_cards_SA.end(); ) {
-                        if (it->second > (closest_dist_SA+range_SA)) {
+                        if (it->distance > (closest_dist_SA+range_SA)) {
                             it = close_cards_SA.erase(it);
                         } else {
                             ++it;
@@ -258,7 +250,8 @@ int main() {
                     }
                 } else if (distance <= (closest_dist_SA+range_SA)) {
                     // add card to list
-                    close_cards_SA[reference_card.name] = distance;
+                    CardDist card = {reference_card.name, static_cast<double>(distance)};
+                    close_cards_SA.push_back(card);
                 }
             }
             // next reference card
@@ -266,25 +259,25 @@ int main() {
 
         // ------------------------- SORT -------------------------
 
-        // putting the LS Map into close_cards_final
+        // putting the LS vector of CardDist into vector of CloseCard close_cards_final
         for(auto it = close_cards_LS.begin(); it != close_cards_LS.end(); it++){
-            CloseCard card;
-            card.name = it->first;
-            card.LS_Dist = it->second;
-            card.SA_Dist = 0;
-            close_cards_final.push_back(card);
+            close_cards_final.push_back({it->name, it->distance, 0, 0});
         }
 
         if(use_similarity_algorithm){
-            // putting the SA Map into close_cards_final
+            // putting the SA vector into close_cards_final
 
             for(auto it = close_cards_SA.begin(); it != close_cards_SA.end(); it++){
-                // if the name is already in the LS map, we add the distance to the respective card
-                for(CloseCard& card : close_cards_final){
-                    if(card.name == it->first){
-                        card.SA_Dist = it->second;
-                        card.Accumulated_Dist = card.LS_Dist + card.SA_Dist;
+                // check if the card is already in the vector
+                bool found = false;
+                for(auto it2 = close_cards_final.begin(); it2 != close_cards_final.end(); it2++){
+                    if(it->name == it2->name){
+                        found = true;
+                        it2->SA_Dist = it->distance;	
                     }
+                }
+                if(!found){
+                    close_cards_final.push_back({it->name, 0, it->distance, 0});
                 }
             }
         }
@@ -302,6 +295,8 @@ int main() {
         // depending on if the user wants to decide for themself, we either
         // print out options and let user decide, or choose the first one in the sorted map
 
+        // ------------------------- DECIDE -------------------------
+
         if(!close_cards_final.empty()) {
             // if close cards is empty, we dont have any options and we just keep the corrupt card
             // however, we give out that this is an ERROR
@@ -309,29 +304,37 @@ int main() {
             std::cout << "ERROR: No close cards found for corrupt card: " << corrupt_card.name << std::endl;
         }
         else {
-            if(user_decision_LS){
-                // print out the best options ( all of user_decide )
 
-                // declare that choosing is starting and what the corrupt card is:
-                std::cout << "!- Attention -!" << std::endl;
-                std::cout << "Choosing for corrupt card: " << corrupt_card.name << std::endl;
-
-                CloseCard best_option = user_decide(close_cards_final);
-
-                // shoutout
-                shoutout(algo_abrev, best_option.name, corrupt_card.name, best_option.LS_Dist, best_option.SA_Dist,
-                best_option.Accumulated_Dist);
-
-                // assign the string to the card
-                corrupt_card.name = best_option.name;
-            } else {
-                // choose the one with the lowest distance
-
-                // shoutout
-                shoutout(algo_abrev, close_cards_final[0].name, corrupt_card.name, close_cards_final[0].LS_Dist, close_cards_final[0].SA_Dist, 
-                close_cards_final[0].Accumulated_Dist);
-
+            if(close_cards_final[0].Accumulated_Dist < (corrupt_card.name.length() * (percentage/100))){
                 corrupt_card.name = close_cards_final[0].name;
+                shoutout(algo_abrev, close_cards_final[0].name, corrupt_card.name, 
+                    close_cards_final[0].LS_Dist, close_cards_final[0].SA_Dist, 
+                    close_cards_final[0].Accumulated_Dist);
+            } else {
+                if(user_decision_LS){
+                    // print out the best options ( all of user_decide )
+
+                    // declare that choosing is starting and what the corrupt card is:
+                    std::cout << "!- Attention -!" << std::endl;
+                    std::cout << "Choosing for corrupt card: " << corrupt_card.name << std::endl;
+
+                    CloseCard best_option = user_decide(close_cards_final);
+
+                    // shoutout
+                    shoutout(algo_abrev, best_option.name, corrupt_card.name, best_option.LS_Dist, best_option.SA_Dist,
+                    best_option.Accumulated_Dist);
+
+                    // assign the string to the card
+                    corrupt_card.name = best_option.name;
+                } else {
+                    // choose the one with the lowest distance
+
+                    // shoutout
+                    shoutout(algo_abrev, close_cards_final[0].name, corrupt_card.name, close_cards_final[0].LS_Dist, close_cards_final[0].SA_Dist, 
+                    close_cards_final[0].Accumulated_Dist);
+
+                    corrupt_card.name = close_cards_final[0].name;
+                }
             }
         }
         // next corrupt card
