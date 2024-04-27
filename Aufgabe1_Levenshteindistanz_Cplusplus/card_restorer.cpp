@@ -163,6 +163,10 @@ int main() {
             range_SA = user_choose_int("Enter the range in which cards are still valid to the shortest found distance in the SA: ");
         }
 
+
+    // ask if debug mode should be turned on:
+    bool debug_mode = user_choose("Do you want to turn on debug mode?");
+
     // print: "------------------------------------"
     std::cout << "------------------ START OF RESTORATION ------------------" << std::endl;
 
@@ -259,9 +263,26 @@ int main() {
 
         // ------------------------- SORT -------------------------
 
+        // DEBUG
+
+        if(debug_mode){
+        // sizes of the vectors
+        std::cout << "LS: " << close_cards_LS.size() << " SA: " << close_cards_SA.size() << std::endl;
+        }
+
+        // --------------------------------------------------------
+
         // putting the LS vector of CardDist into vector of CloseCard close_cards_final
         for(auto it = close_cards_LS.begin(); it != close_cards_LS.end(); it++){
+            if(debug_mode){
+                std::cout << "Vector before push at size: " << close_cards_final.size() << std::endl;
+            }
+
             close_cards_final.push_back({it->name, it->distance, 0, 0});
+
+            if(debug_mode){
+                std::cout << "Vector after push at size: " << close_cards_final.size() << std::endl;
+            }
         }
 
         if(use_similarity_algorithm){
@@ -277,9 +298,23 @@ int main() {
                     }
                 }
                 if(!found){
+                    if(debug_mode){
+                        std::cout << "Vector before push at size: " << close_cards_final.size() << std::endl;
+                    }
+
                     close_cards_final.push_back({it->name, 0, it->distance, 0});
+
+                    if(debug_mode){
+                        std::cout << "Vector after push at size: " << close_cards_final.size() << std::endl;
+                    }
                 }
             }
+        }
+
+        // debug how much before adding up
+
+        if(debug_mode){
+            std::cout << "Size before adding up: " << close_cards_final.size() << std::endl;
         }
 
         // we add up the distances of the LS and SA and put them into the Accumulated_Dist
@@ -287,17 +322,32 @@ int main() {
             card.Accumulated_Dist = card.LS_Dist + card.SA_Dist;
         }
 
+        if(debug_mode){}
+
+        // debug: size before sorting
+
+        if(debug_mode){
+            std::cout << "Size before sorting: " << close_cards_final.size() << std::endl;
+        }
+
         // sort the close_cards_final by the Accumulated_Dist
         std::sort(close_cards_final.begin(), close_cards_final.end(), [](CloseCard a, CloseCard b) {
             return a.Accumulated_Dist < b.Accumulated_Dist;
         });
+
+        // debug: size after sorting
+
+        if(debug_mode){
+            std::cout << "Size after sorting: " << close_cards_final.size() << std::endl;
+        }
+
 
         // depending on if the user wants to decide for themself, we either
         // print out options and let user decide, or choose the first one in the sorted map
 
         // ------------------------- DECIDE -------------------------
 
-        if(!close_cards_final.empty()) {
+        if(close_cards_final.empty()) {
             // if close cards is empty, we dont have any options and we just keep the corrupt card
             // however, we give out that this is an ERROR
 
@@ -306,10 +356,10 @@ int main() {
         else {
 
             if(close_cards_final[0].Accumulated_Dist < (corrupt_card.name.length() * (percentage/100))){
-                corrupt_card.name = close_cards_final[0].name;
                 shoutout(algo_abrev, close_cards_final[0].name, corrupt_card.name, 
                     close_cards_final[0].LS_Dist, close_cards_final[0].SA_Dist, 
                     close_cards_final[0].Accumulated_Dist);
+                    corrupt_card.name = close_cards_final[0].name;
             } else {
                 if(user_decision_LS){
                     // print out the best options ( all of user_decide )
@@ -522,6 +572,9 @@ user_decide is a simple method that takes a map of cards with a "string: <int:in
 etc.
 and letting the user choose a value inbetween this. 
 Returns the string that is choosen. 
+
+Only allows for the first 50 to be displayed. Always give a sorted top to bottom list of the cards.
+
 MKL. 2024
 */
 CloseCard user_decide(std::vector<CloseCard> cards){
@@ -529,7 +582,13 @@ CloseCard user_decide(std::vector<CloseCard> cards){
     // prints out options with 
     // number | LS: LS_Dist | SA: SA_Dist | Accumulated_Dist | Name
 
-    for(int i = 0; i < cards.size(); i++){
+    int end = 50;
+
+    if(cards.size() < 50){
+        end = cards.size();
+    }
+
+    for(int i = 0; i < end; i++){
         std::cout << i+1 << " | LS: " << cards[i].LS_Dist << " SA: " << cards[i].SA_Dist << " Accu.Dist: " << cards[i].Accumulated_Dist << " | " << cards[i].name << std::endl;
     }
 
@@ -539,7 +598,7 @@ CloseCard user_decide(std::vector<CloseCard> cards){
     do
     {
         std::cin >> choice;
-    } while (choice < 1 && choice > cards.size());
+    } while (choice < 1 || choice > end+1);
 
     return cards[choice-1];
 }
