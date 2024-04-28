@@ -123,15 +123,14 @@ int main() {
             deletion_weight = user_choose_int("Enter the deletion weight for the levenshtein calculator: ");
             // get: substitution? 
             substitution_weight = user_choose_int("Enter the substitution weight for the levenshtein calculator: ");
+
+            if(use_transposition){
+                // if use_transposition 
+                // get: transposition cost
+                transposition_cost = user_choose_int("Enter the transposition cost for the levenshtein calculator: ");
+                std::cout << "------------------------------------" << std::endl;
+            }
         }
-
-    if(use_transposition){
-        // if use_transposition 
-        // get: transposition cost
-        transposition_cost = user_choose_int("Enter the transposition cost for the levenshtein calculator: ");
-    }
-
-    std::cout << "------------------------------------" << std::endl;
 
     // get: do you want to set unique characters who are universal and who never cost? (ex. "?")
     bool use_unknown_chars = user_choose("Do you want to set unique characters who are universal and who never cost? (ex. '?'): ");
