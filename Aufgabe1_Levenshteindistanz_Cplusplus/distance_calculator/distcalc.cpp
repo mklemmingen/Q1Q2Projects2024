@@ -37,9 +37,9 @@ int calc_dist_int(const std::string word1, const std::string word2, bool print_m
 
             int cost = (word1[j - 1] == word2[i - 1]) ? 0 : substitution_cost;
 
-            matrix[i][j] = std::min({matrix[i - 1][j] + deletion_cost, 
-                                     matrix[i][j - 1] + insertion_cost, 
-                                     matrix[i - 1][j - 1] + cost});
+            matrix[i][j] = std::min({matrix[i - 1][j] + (matrix[i - 1][j] > deletion_cost ? deletion_cost : 0), 
+                         matrix[i][j - 1] + (matrix[i][j - 1] > insertion_cost ? insertion_cost : 0), 
+                         matrix[i - 1][j - 1] + cost});
 
             if (transposition && i > 1 && j > 1 && word1[j - 1] == word2[i - 2] && word1[j - 2] == word2[i - 1]) {
                 matrix[i][j] = std::min(matrix[i][j], matrix[i - 2][j - 2] + transposition_cost);
