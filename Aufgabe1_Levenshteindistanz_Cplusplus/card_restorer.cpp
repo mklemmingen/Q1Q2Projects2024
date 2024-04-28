@@ -95,11 +95,11 @@ int main() {
 
     // declare all the variables that are needed for the user input, so that they are declared even if they end up in a if-statement
 
-    int insertion_weight;
-    int deletion_weight;
-    int substitution_weight;
-    int transposition_cost;
-    int range_SA;        
+    double insertion_weight;
+    double deletion_weight;
+    double substitution_weight;
+    double transposition_cost;
+    double range_SA;        
     std::vector<char> unknown_chars;
 
     // get: percentage needed
@@ -118,22 +118,28 @@ int main() {
         if(change_weights){
             std::cout <<"--------------- WEIGHTS ------------ " << std::endl;
             // get: insertion
-            insertion_weight = user_choose_int("Enter the insertion weight for the levenshtein calculator: ");
+            insertion_weight = user_choose_double("Enter the insertion weight for the levenshtein calculator: ");
             // get: deletion
-            deletion_weight = user_choose_int("Enter the deletion weight for the levenshtein calculator: ");
+            deletion_weight = user_choose_double("Enter the deletion weight for the levenshtein calculator: ");
             // get: substitution? 
-            substitution_weight = user_choose_int("Enter the substitution weight for the levenshtein calculator: ");
+            substitution_weight = user_choose_double("Enter the substitution weight for the levenshtein calculator: ");
 
             if(use_transposition){
                 // if use_transposition 
                 // get: transposition cost
-                transposition_cost = user_choose_int("Enter the transposition cost for the levenshtein calculator: ");
+                transposition_cost = user_choose_double("Enter the transposition cost for the levenshtein calculator: ");
                 std::cout << "------------------------------------" << std::endl;
             }
+        } else {
+            // set all weights to 1
+            insertion_weight = 1;
+            deletion_weight = 1;
+            substitution_weight = 1;
+            transposition_cost = 1;
         }
 
     // get: do you want to set unique characters who are universal and who never cost? (ex. "?")
-    bool use_unknown_chars = user_choose("Do you want to set unique characters who are universal and who never cost? (ex. '?'): ");
+    bool use_unknown_chars = user_choose("Do you want to use wildcard characters? (ex. '?'): ");
 
         if(use_unknown_chars){
 
@@ -148,17 +154,17 @@ int main() {
 
     // get: do you want to decide yourself what the best fit for a corrupted card is in the Levenshtein-Distance-Algorithm?
 
-    bool user_decision_LS = user_choose("Do you want to decide yourself what the best fit for a corrupted card is in the Levenshtein-Distance-Algorithm?: ");
+    bool user_decision_LS = user_choose("Do you want to decide yourself on the best Card?: ");
     
     // get: do you want to use a range in which a reference word is still valid in the Levenshtein-Distance-Algorithm?
 
-    int range_LS = user_choose_int("Enter the range in which a reference word is still valid in the Levenshtein-Distance-Algorithm: ");
+    double range_LS = user_choose_double("Enter the range a card is allowed to be distant from the lowest dist: ");
     
     // print: "------- Similarity Algorithm -------"
 
     // do you want to use a similiarity algorithm to try and improve the result?
 
-    bool use_similarity_algorithm = user_choose("Do you want to use a similiarity algorithm (SA) to try and improve the result?: ");
+    bool use_similarity_algorithm = user_choose("Do you want to use a similiarity algorithm (SA) to improve the result?: ");
 
     // ask if debug mode should be turned on:
     bool debug_mode = user_choose("Do you want to turn on debug mode?");
@@ -210,10 +216,10 @@ int main() {
         std::vector<CloseCard> close_cards_final = {};
 
         // int closest distance for LS
-        int closest_dist_LS = 1000;
+        double closest_dist_LS = 1000;
 
         // int closest distance for SA
-        int closest_dist_SA = 1000;
+        double closest_dist_SA = 1000;
 
         // ------------------------ going over corrupt cards -----------------------
 
@@ -222,9 +228,8 @@ int main() {
 
             // using the Levenshtein distance calculator first -----------------------
             // getting distance between corrupt card and reference card
-            int found_dist_LS = weighted_levenshtein(corrupt_card.name, reference_card.name, false, unknown_chars, use_transposition, transposition_cost, 
+            double found_dist_LS = weighted_levenshtein(corrupt_card.name, reference_card.name, false, unknown_chars, use_transposition, transposition_cost, 
                                                 insertion_weight, deletion_weight, substitution_weight);
-
 
             // if either lower than closest distance or in range ---- which always puts it into the vector of close cards
             if(found_dist_LS <= (closest_dist_LS+range_LS)){
@@ -263,6 +268,13 @@ int main() {
             // next reference card
         }
         // reference cards for this specific corrupt card are done
+
+        // if debug, print out the distance of ls and then wait for any user input to continue
+        if(debug_mode){
+            std::cout << "Closest distance for LS: " << closest_dist_LS << std::endl;
+        // wait for any input including an enter push
+            std::cin.get();
+        }
 
         // ------------------------- SORT -------------------------
 

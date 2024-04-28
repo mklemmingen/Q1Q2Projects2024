@@ -16,56 +16,42 @@ takes an optional list of unkown-characters that always need a distance of 0 add
 
 MKL. 2024
 */
-double weighted_levenshtein(const std::string word1, const std::string word2, bool print_matrix,
-                 std::vector<char> change_special_chars,
-                 bool transposition, int transposition_cost, 
-                 int substitution_cost, int insertion_cost, int deletion_cost) {
+double weighted_levenshtein(const std::string& word1, const std::string& word2, bool print_matrix,
+                            const std::vector<char>& change_special_chars,
+                            bool transposition, double transposition_cost, 
+                            double substitution_cost, double insertion_cost, double deletion_cost) {
 
-    std::vector<std::vector<int>> matrix(word2.size() + 1, std::vector<int>(word1.size() + 1, 0));
+    size_t len1 = word1.size(), len2 = word2.size();
+    std::vector<std::vector<double>> dp(len1 + 1, std::vector<double>(len2 + 1));
 
-    for (size_t i = 0; i <= word1.size(); ++i)
-        matrix[0][i] = i * deletion_cost;
-    for (size_t i = 0; i <= word2.size(); ++i)
-        matrix[i][0] = i * insertion_cost;
+    // Initialize the matrix
+    for (size_t i = 0; i <= len1; i++)
+        dp[i][0] = i * deletion_cost;
+    for (size_t j = 0; j <= len2; j++)
+        dp[0][j] = j * insertion_cost;
 
-    for (size_t i = 1; i <= word2.size(); ++i) {
-        for (size_t j = 1; j <= word1.size(); ++j) {
+    // Fill the matrix
+    for (size_t i = 1; i <= len1; i++) {
+        for (size_t j = 1; j <= len2; j++) {
+            double substitutionCost = (word1[i - 1] == word2[j - 1]) ? 0 : substitution_cost;
+            dp[i][j] = std::min({dp[i - 1][j] + deletion_cost, 
+                                 dp[i][j - 1] + insertion_cost, 
+                                 dp[i - 1][j - 1] + substitutionCost});
 
-            int cost;
-            if (word1[j - 1] == '?' || word2[i - 1] == '?') {
-                cost = substitution_cost/2; 
-            } else {
-                cost = (word1[j - 1] == word2[i - 1]) ? 0 : substitution_cost;
-            }
-
-            int del = matrix[i - 1][j] + deletion_cost;
-            if (del < 0) del = 0;
-
-            int ins = matrix[i][j - 1] + insertion_cost;
-            if (ins < 0) ins = 0;
-
-            int sub = matrix[i - 1][j - 1] + cost;
-            if (sub < 0) sub = 0;
-
-            matrix[i][j] = std::min({del, ins, sub});
-
-            if (transposition && i > 1 && j > 1 && word1[j - 1] == word2[i - 2] && word1[j - 2] == word2[i - 1]) {
-                matrix[i][j] = std::min(matrix[i][j], matrix[i - 2][j - 2] + transposition_cost);
-            }
+            if (transposition && i > 1 && j > 1 && word1[i - 1] == word2[j - 2] && word1[i - 2] == word2[j - 1])
+                dp[i][j] = std::min(dp[i][j], dp[i - 2][j - 2] + transposition_cost); 
         }
     }
 
-    if (print_matrix)
-    {
-        //printing the matrix
-        for (size_t i = 0; i <= word2.size(); ++i) {
-            for (size_t j = 0; j <= word1.size(); ++j) {
-                std::cout << matrix[i][j] << " ";
-            }
-            std::cout << std::endl;
+    // Print the matrix if required
+    if (print_matrix) {
+        for (const auto &row : dp) {
+            for (const auto &cell : row)
+                std::cout << cell << ' ';
+            std::cout << '\n';
         }
     }
 
-    //returning the distance as an int at the end of the matrix
-    return matrix[word2.size()][word1.size()];
+    return dp[len1][len2];
 }
+
