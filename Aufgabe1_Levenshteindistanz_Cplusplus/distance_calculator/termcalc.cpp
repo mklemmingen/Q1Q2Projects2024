@@ -59,6 +59,6 @@ int main() {
 	to_lowercase(&word1);
 	to_lowercase(&word2);
 
-	std::cout << "The Levenhstein distance between " << word1 << " and " << word2 << " is: " << calc_dist_int(word1, word2, print_matrix) << std::endl;
+	std::cout << "The Levenhstein distance between " << word1 << " and " << word2 << " is: " << weighted_levenshtein(word1, word2, print_matrix) << std::endl;
 	return 0;
 }
