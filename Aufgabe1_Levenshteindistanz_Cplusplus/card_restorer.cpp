@@ -40,23 +40,27 @@ struct CloseCard
     double LS_times_SA;
 };
 
-struct CardDist
-{
-    std::string name;
-    double distance;
-};
-
+// card data handling methods ---
 std::vector<Card> create_card_list(std::string filename);
 void write_card_list(std::vector<Card> cards, std::string filename);
-int char_quantity_similarity(std::string corrupt_card, std::string reference);
+
+// distance algorithms ---
+double char_quantity_similarity(std::string corrupt_card, std::string reference);
+// also, see distcalc.cpp for the Levenshtein distance calculator
+
+// quality assurance methods ---
 void check_correctness(std::string corrected_filename, std::string perfect_filename);
+
+// user decision methods ---
 CloseCard user_decide(std::vector<CloseCard> cards);
 bool user_choose(std::string text_to_be_displayed);
 int user_choose_int(std::string text_to_be_displayed);
 double user_choose_double(std::string text_to_be_displayed);
 std::vector<char> user_choose_chars_vector(std::string text_to_be_displayed);
+
+// output methods
 void shoutout(std::string algo_abrev, std::string best_option, std::string corrupt_card_name, 
-                int LS_Dist, int SA_Dist, int Accumulated_Dist);
+                double LS_Dist, double SA_Dist, double Accumulated_Dist);
 
 int main() {
 
@@ -194,7 +198,7 @@ int main() {
         algo_abrev += ":SA";
     }
 
-    // -----------------
+    // ----------------- GO OVER THE CORRUPT CARDS; FOR EACH CORRUPT CARD, GO OVER ALL REFERENCE CARDS -----------------
 
     // loop over all reference cards with every corrupted card
     for (Card& corrupt_card : cards) {
@@ -212,42 +216,49 @@ int main() {
         // int closest distance for SA
         int closest_dist_SA = 1000;
 
-        // ------------------------ PROCESS -----------------------
+        // ------------------------ going over corrupt cards -----------------------
 
         // loop through all reference cards
         for (Card& reference_card : reference) {
 
             // using the Levenshtein distance calculator first -----------------------
             // getting distance between corrupt card and reference card
-            int found_dist_LS = calc_dist_int(corrupt_card.name, reference_card.name, false, unknown_chars, use_transposition, transposition_cost, 
+            int found_dist_LS = weighted_levenshtein(corrupt_card.name, reference_card.name, false, unknown_chars, use_transposition, transposition_cost, 
                                                 insertion_weight, deletion_weight, substitution_weight);
 
-            // checking if distance is new closest distance
-            if (found_dist_LS < closest_dist_LS) {
-                // if it is, we set the new closest distance
-                closest_dist_LS = found_dist_LS;
 
-                // create a CloseCard Object by using the reference card name, the LS distance, and if use_similarity_algorithm is true, the SA distance
-                // and push it into the vector of CloseCard close_cards_LS
-
-                double distance_LS = static_cast<double>(found_dist_LS);
+            // if either lower than closest distance or in range ---- which always puts it into the vector of close cards
+            if(found_dist_LS <= (closest_dist_LS+range_LS)){
+                // if the distance is within the range, we add it to the vector of close cards
+                double distance_LS = found_dist_LS;
                 double distance_SA = 0;
                 CloseCard card;
+
+                // ---- CREATING CARD, OPT: USING SIMILIARITY ALGORITHM ----
                 if(use_similarity_algorithm){
                     distance_SA = char_quantity_similarity(corrupt_card.name, reference_card.name);
                     card = {reference_card.name, distance_LS, distance_SA, distance_LS*distance_SA};
                 } else {
                 card = {reference_card.name, distance_SA, 0, distance_LS};
                 }
+
                 close_cards_final.push_back(card);
 
-                // remove all cards in the vector that are above new closest + range
-                for (auto it = close_cards_final.begin(); it != close_cards_final.end(); ) {
-                    if (it->LS_Dist > (closest_dist_LS+range_LS)) {
-                        it = close_cards_final.erase(it);
-                    } else {
-                        ++it;
+                // checking if distance is new closest distance - if it is, remove all above range cards
+                if (found_dist_LS < closest_dist_LS) {
+
+                    // set the new closest distance
+                    closest_dist_LS = found_dist_LS;
+
+                    // remove all cards in the vector that are above new closest + range
+                    for (auto it = close_cards_final.begin(); it != close_cards_final.end(); ) {
+                        if (it->LS_Dist > (closest_dist_LS+range_LS)) {
+                            it = close_cards_final.erase(it);
+                        } else {
+                            ++it;
+                        }
                     }
+
                 }
             }
             // next reference card
@@ -262,8 +273,6 @@ int main() {
         // sizes of the vectors
         std::cout << "LS: " << close_cards_final.size() << " SA: " << close_cards_final.size() << std::endl;
         }
-
-        // --------------------------------------------------------
 
         // sort the close_cards_final by the Accumulated_Dist
         std::sort(close_cards_final.begin(), close_cards_final.end(), [](CloseCard a, CloseCard b) {
@@ -283,45 +292,39 @@ int main() {
         // ------------------------- DECIDE -------------------------
 
         if(close_cards_final.empty()) {
+
+            // TODO ADD EXCEPTION HANDLING WITH EXTRA CLASS ------------------------------------------------------------------------------------ TODO
+
             // if close cards is empty, we dont have any options and we just keep the corrupt card
             // however, we give out that this is an ERROR
 
-            std::cout << "ERROR: No close cards found for corrupt card: " << corrupt_card.name << std::endl;
+            std::cout << "ERROR: No close cards found for corrupt card, which should be impossible: " << corrupt_card.name << std::endl;
+            return 1;
         }
         else {
+            if(user_decision_LS){
+                // print out the best options ( all of user_decide )
 
-            if(percentage < (corrupt_card.name.length()/close_cards_final[0].name.size()))
-            {
-                shoutout(algo_abrev, close_cards_final[0].name, corrupt_card.name, 
-                    close_cards_final[0].LS_Dist, close_cards_final[0].SA_Dist, 
-                    close_cards_final[0].LS_times_SA);
+                // declare that choosing is starting and what the corrupt card is:
+                std::cout << "!- Attention -!" << std::endl;
+                std::cout << "Choosing for corrupt card: " << corrupt_card.name << std::endl;
 
-                    corrupt_card.name = close_cards_final[0].name;
+                CloseCard best_option = user_decide(close_cards_final);
+
+                // shoutout
+                shoutout(algo_abrev, best_option.name, corrupt_card.name, best_option.LS_Dist, best_option.SA_Dist,
+                best_option.LS_times_SA);
+
+                // assign the string to the card
+                corrupt_card.name = best_option.name;
             } else {
-                if(user_decision_LS){
-                    // print out the best options ( all of user_decide )
+                // choose the one with the lowest distance
 
-                    // declare that choosing is starting and what the corrupt card is:
-                    std::cout << "!- Attention -!" << std::endl;
-                    std::cout << "Choosing for corrupt card: " << corrupt_card.name << std::endl;
+                // shoutout
+                shoutout(algo_abrev, close_cards_final[0].name, corrupt_card.name, close_cards_final[0].LS_Dist, close_cards_final[0].SA_Dist, 
+                close_cards_final[0].LS_times_SA);
 
-                    CloseCard best_option = user_decide(close_cards_final);
-
-                    // shoutout
-                    shoutout(algo_abrev, best_option.name, corrupt_card.name, best_option.LS_Dist, best_option.SA_Dist,
-                    best_option.LS_times_SA);
-
-                    // assign the string to the card
-                    corrupt_card.name = best_option.name;
-                } else {
-                    // choose the one with the lowest distance
-
-                    // shoutout
-                    shoutout(algo_abrev, close_cards_final[0].name, corrupt_card.name, close_cards_final[0].LS_Dist, close_cards_final[0].SA_Dist, 
-                    close_cards_final[0].LS_times_SA);
-
-                    corrupt_card.name = close_cards_final[0].name;
-                }
+                corrupt_card.name = close_cards_final[0].name;
             }
         }
         // next corrupt card
@@ -421,9 +424,9 @@ takes two strings
 
 MKL. 2024
 */
-int char_quantity_similarity(std::string corrupt_card, std::string reference){
+double char_quantity_similarity(std::string corrupt_card, std::string reference){
     // comparing two strings by the number of individual characters and returning distance value
-    int distance = 0;
+    double distance = 0;
 
     // if the strings are the same, return 0
     if(corrupt_card == reference){
@@ -461,6 +464,9 @@ int char_quantity_similarity(std::string corrupt_card, std::string reference){
             distance += it->second;
         }
     }
+
+    // create a value between 0 and 1 by dividing the distance by the length of the reference card
+    distance = distance / reference.size();
 
     return distance;
 }
@@ -592,12 +598,15 @@ double user_choose_double(std::string text_to_be_displayed){
 shoutout correctly and in the same way formats out the shoutout for the user to see.
 MKL. 2024
 */
-void shoutout(std::string algo_abrev, std::string best_option, std::string corrupt_card_name, int LS_Dist, int SA_Dist, int Accumulated_Dist){
+void shoutout(std::string algo_abrev, std::string best_option, std::string corrupt_card_name, double LS_Dist, double SA_Dist, double Accumulated_Dist){
     std::cout << "  ---- Card restored ---  \n"
     "  Algorithm: " << algo_abrev << "\n" <<
     "  Corrupt Card: " << corrupt_card_name << "\n" <<
     "  New Name: " << best_option << "\n" <<
-    "  LS: " << LS_Dist << " | SA: " << SA_Dist << " | Accu.Dist: " << Accumulated_Dist <<
+    // print out only the first 3 after decimal numbers of the double values
+    "  LS_Dist: " << std::fixed << std::setprecision(3) << LS_Dist << " | " <<
+    "  SA_Dist: " << std::fixed << std::setprecision(3) << SA_Dist << " | " <<
+    "  Accumulated_Dist: " << std::fixed << std::setprecision(3) << Accumulated_Dist <<
     "\n-----------------" << std::endl;
 }
 
