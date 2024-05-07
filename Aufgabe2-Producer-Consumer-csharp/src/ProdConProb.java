@@ -1,8 +1,4 @@
-
-import Consumer;
-import Producer;
-import ParkingLot;
-import Car;
+package src;
 
 // GUI
 import java.awt.*;
@@ -13,7 +9,7 @@ import java.awt.image.*;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Main {
+public class ProdConProb {
 
     // Declaring the components of the GUI
     private Frame mainFrame;
@@ -31,7 +27,7 @@ public class Main {
     private static Image statusC;
     private static Image statusP;
 
-    public Main() {
+    public ProdConProb() {
         prepareGUI();
     }
 
@@ -49,16 +45,18 @@ public class Main {
         parkingLot = new ParkingLot(numberQuadrants, capacity);
 
         // create the producer and consumer objects with parkingLot object shared between them
+
         Producer producer = new Producer(parkingLot);
         Consumer consumer = new Consumer(parkingLot);
 
         // create the producer and consumer threads
+
         producer.start();
         consumer.start();
 
         // ----- GUI ------
 
-        Main main = new Main();
+        ProdConProb main = new ProdConProb();
         main.showParkingLot();
 
     }
@@ -229,7 +227,7 @@ public class Main {
             this.numberTXTPanel = new Textpanel(number);
             this.imageCar = carImage;
             this.imageStatus = hasStatus ? statusC : statusP;
-            this.x = (Main.this.numberQuadrants - quadrant)*mainFrame.getWidth()/Main.this.numberQuadrants;
+            this.x = (ProdConProb.this.numberQuadrants - quadrant)*mainFrame.getWidth()/ProdConProb.this.numberQuadrants;
         }
 
         public void paint(Graphics g) {

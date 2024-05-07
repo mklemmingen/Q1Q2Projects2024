@@ -2,6 +2,8 @@
  Buffer as Queue
  */
 
+package src;
+
 import java.util.Queue;
 import java.util.LinkedList;
 
@@ -25,42 +27,11 @@ public class ParkingLot{
         this.capacity = capacity;
     }
 
-    public void produce() throws InterruptedException {
-        int value = 0;
-        while (true) {
-            synchronized (this) {
-                while (parkingLot.size() >= capacity) {
-                    // wait for the consumer
-                    wait();
-                }
+    // ------------------ BUFFER callable METHODS form Producer and Consumer with! ACCESS CONTROLL ------------------
 
-                parking
-                System.out.println("Produced " + value);
+    
 
-                // notify the consumer
-                notify();
-                Thread.sleep(1000);
-            }
-        }
-    }
-
-    public void consume() throws InterruptedException {
-        while (true) {
-            synchronized (this) {
-                while (list.size() == 0) {
-                    // wait for the producer
-                    wait();
-                }
-
-                int value = list.poll();
-                System.out.println("Consumed " + value);
-
-                // notify the producer
-                notify();
-                Thread.sleep(1000);
-            }
-        }
-    }
+    // ------------------ Parking Lot ------------------
 
     public void addCar(Car car) {
         parkingLot.add(car);

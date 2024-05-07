@@ -1,3 +1,5 @@
+package src;
+
 public class Car {
     private String carId;
     private String carType;
@@ -75,5 +77,17 @@ public class Car {
 
     public int getGoalQuadrant() {
         return goalQuadrant;
+    }
+
+    public int createRandomGoalQuadrant(int numberQuadrants) {
+        return (int) (Math.random() * numberQuadrants);
+    }
+
+    public void setStreetQuadrant(int streetQuadrant) {
+        this.streetQuadrant = streetQuadrant;
+    }
+
+    public void setMoving(boolean moving) {
+        this.moving = moving;
     }
 }
