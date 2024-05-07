@@ -1,70 +1,37 @@
 package src;
 
 public class Car {
-    private String carId;
-    private String carType;
+    private int carId;
 
     private int streetQuadrant;
     private int goalQuadrant;
 
-    private boolean moving;
-
     private boolean usedByProducer;
 
-    public Car(String carId, String carType, int goalQuadrant) {
-        this.carId = carId;
-        this.carType = carType;
+    private boolean isMoving = false;
+
+    public Car(int numberOfQudrants) {
+        this.carId = createRandomId();
         this.streetQuadrant = 0;
-        this.moving = true;
         this.usedByProducer = true;
-        this.goalQuadrant = goalQuadrant;
+        this.goalQuadrant = createRandomGoalQuadrant(numberOfQudrants);
     }
 
-    public String getCarId() {
+    public int getCarId() {
         return carId;
     }
 
-    public String getCarType() {
-        return carType;
-    }
-
-    public void setCarId(String carId) {
+    public void setCarId(int carId) {
         this.carId = carId;
     }
 
-    public void setCarType(String carType) {
-        this.carType = carType;
-    }
-
-    @Override
-    public String toString() {
-        return "Car{" +
-                "carId='" + carId + '\'' +
-                ", carType='" + carType + '\'' +
-                '}';
-    }
-
-    public void start() {
-        System.out.println("Car started");
-        moving = true;
-    }
-
-    public void stop() {
-        System.out.println("Car stopped");
-        moving = false;
-    }
-
     public void move() {
-        moving = true;
+        isMoving = true;
         streetQuadrant++;
     }
 
     public int getStreetQuadrant() {
         return streetQuadrant;
-    }
-
-    public boolean getMoving() {
-        return moving;
     }
 
     public boolean isUsedByProducer() {
@@ -75,19 +42,29 @@ public class Car {
         this.usedByProducer = usedByProducer;
     }
 
+    public void stop() {
+        isMoving = false;
+    }
+    
+    public boolean getIsMoving() {
+        return isMoving;
+    }
+
     public int getGoalQuadrant() {
         return goalQuadrant;
     }
 
     public int createRandomGoalQuadrant(int numberQuadrants) {
-        return (int) (Math.random() * numberQuadrants);
+        return (int) (Math.random() * (numberQuadrants-1));
     }
 
     public void setStreetQuadrant(int streetQuadrant) {
         this.streetQuadrant = streetQuadrant;
     }
 
-    public void setMoving(boolean moving) {
-        this.moving = moving;
+    private int createRandomId() {
+        return (int) (Math.random() * 100);
     }
+
+
 }

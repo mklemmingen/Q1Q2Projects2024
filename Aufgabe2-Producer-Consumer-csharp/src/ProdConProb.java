@@ -44,15 +44,9 @@ public class ProdConProb {
 
         parkingLot = new ParkingLot(numberQuadrants, capacity);
 
-        // create the producer and consumer objects with parkingLot object shared between them
+        // start the parking lot. Starts the produce and consume threads of the parking lot.
 
-        Producer producer = new Producer(parkingLot);
-        Consumer consumer = new Consumer(parkingLot);
-
-        // create the producer and consumer threads
-
-        producer.start();
-        consumer.start();
+        parkingLot.start();
 
         // ----- GUI ------
 
