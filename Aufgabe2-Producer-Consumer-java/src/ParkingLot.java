@@ -20,6 +20,9 @@ public class ParkingLot{
 
     private int currentNumberOfCars;
 
+    private Thread producer;
+    private Thread consumer;
+
     public ParkingLot(int numberQuadrants, int capacity) {
 
         // QUEUE
@@ -43,11 +46,11 @@ public class ParkingLot{
 
         public void run() {
             while (true) {
-                if(isCarMoving) {
+                if(isCarMoving && currentCar != null) {
 
                     // if car is moving, move it till its goal
                     currentCar.move();
-                    System.out.println("Car is moving to quadrant " + currentCar.getStreetQuadrant());
+                    System.out.println("PRODUCER: Car " + currentCar.getCarId() + " is moving to quadrant " + currentCar  .getStreetQuadrant());
 
                     // if car is at goal, remove it from parking lot
                     if (currentCar.getStreetQuadrant() == currentCar.getGoalQuadrant()) {
@@ -56,26 +59,95 @@ public class ParkingLot{
                         currentCar.stop();
                         // set the car to not used by producer
                         currentCar.setUsedByProducer(false);
+
+                        // notify the consumer that a car has reached its goal
+                        synchronized (this) {
+                        notify();
+                        }
                     }
 
                 } else {
-                    // if car is not moving (parked or not created yet), create a new car, if possible, and start driving
-                    // if the capacity is not full, create a new car and drive it till its at its goal
-                    if (parkingLot.size() < capacity) {
+                    // ask buffer
+                    try {
+                        currentCar = produce();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    currentCar.start();
+                    currentCar.setUsedByProducer(true);
+                    isCarMoving = true;
+                }
 
-                        // create a new car
-                        Car car = new Car(numberQuadrants);
-                        park(car);
-                        currentCar = car;
-                        System.out.println("Car is parked in quadrant " + car.getStreetQuadrant());
+                // sleep for 1 second
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 
-                        // if no car is moving, get the first car from the parking lot
-                        if (!isCarMoving) {
-                            currentCar = parkingLot.peek();
-                            isCarMoving = true;
+    public Car produce() throws InterruptedException {
+        synchronized (this) {
+            while (currentNumberOfCars >= capacity) {
+                // wait for the consumer
+                wait();
+                System.out.println("Parking lot is full. Producer has to wait.");
+                Thread.sleep(500);
+            }
+    
+            // create a new car
+            Car car = new Car(numberQuadrants);
+            synchronized (car) {
+                park(car);
+                System.out.println("Car " + car.getCarId() + " is parked in quadrant " + car.getStreetQuadrant());
+                car.setUsedByProducer(true);
+            }
+    
+            // notify the consumer
+            notify();
+            Thread.sleep(1000);
+    
+            return car;
+        }
+    }
+
+    class Consumer extends Thread {
+
+        // variable to store the current car thats being moved till its beyond the parking lot
+        private Car currentCar;
+        private boolean isCarMoving = false;
+
+        public void run() {
+            while (true) {
+                if (currentNumberOfCars > 0) {
+
+                    // if no car is moving, get the first car from the parking lot
+                    if (!isCarMoving) {
+
+                        // call consume method to check buffer
+                        try {
+                            currentCar = consume();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
                         }
+                        currentCar.start();
+                        currentCar.setUsedByProducer(false);
+                        isCarMoving = true;
+
                     } else {
-                        System.out.println("Parking lot is full. Producer is waiting.");
+                        // if car is moving, move it till its beyond the parking lot (last quadrant)
+                        currentCar.move();
+                        System.out.println("CONSUMER: Car " + currentCar.getCarId() + " is moving to quadrant " + currentCar.getStreetQuadrant());
+
+                        // if car is at last quadrant or above, remove it from parking lot
+                        if (currentCar.getStreetQuadrant() >= numberQuadrants){
+                            // call removeCar method to remove car from parking lot
+                            currentCar.stop();
+                            removeCar(currentCar);
+                            isCarMoving = false;
+                        }
                     }
                 }
 
@@ -89,69 +161,6 @@ public class ParkingLot{
         }
     }
 
-    public void produce() throws InterruptedException {
-        int value = 0;
-        while (true) {
-            synchronized (this) {
-                while (parkingLot.size() >= capacity) {
-                    // wait for the consumer
-                    wait();
-                }
-
-                parkingLot.add(new Car(numberQuadrants));
-                System.out.println("Produced " + value);
-
-                // notify the consumer
-                notify();
-                Thread.sleep(1000);
-            }
-        }
-    }
-
-    class Consumer extends Thread {
-
-        // variable to store the current car thats being moved till its beyond the parking lot
-        private Car currentCar;
-        private boolean isCarMoving = false;
-
-        public void run() {
-            while (true) {
-                if (parkingLot.size() > 0) {
-
-                    // if no car is moving, get the first car from the parking lot
-                    if (!isCarMoving) {
-
-                        // call consume method to check buffer
-                        try {
-                            currentCar = consume();
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-
-                    } else {
-                        // if car is moving, move it till its beyond the parking lot (last quadrant)
-                        currentCar.move();
-                        System.out.println("Car is moving to quadrant " + currentCar.getStreetQuadrant());
-
-                        // if car is at last quadrant, remove it from parking lot
-                        if (currentCar.getStreetQuadrant() == numberQuadrants) {
-                            // call removeCar method to remove car from parking lot
-                            removeCar(currentCar);
-                            isCarMoving = false;
-                        }
-                    }
-
-                    // sleep for 1 second
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        }
-    }
-
     public Car consume() throws InterruptedException {
         while (true) {
             synchronized (this) {
@@ -159,13 +168,22 @@ public class ParkingLot{
                     // wait for the producer
                     wait();
                 }
+    
+                // go through the queue and check if any car has reached its goal, is not moving and
+                // is not used by the producer
 
-                Car car = parkingLot.poll();
+                for (Car car : parkingLot) {
+                    synchronized(car){
+                        if (car.hasReachedGoal() && !car.getIsMoving() && !car.isUsedByProducer()) {
+                            // notify the producer
+                            notify();
+                            return car;
+                        }
+                    }
+                }
 
-                // notify the producer
-                notify();
-
-                return car;
+                // sleep for 1 second
+                Thread.sleep(1000);
             }
         }
     }
@@ -174,16 +192,14 @@ public class ParkingLot{
 
     public void start() {
 
-        Producer producer = new Producer();
-        Consumer consumer = new Consumer();
-
+        producer = new Producer();
         producer.start();
+
+        consumer = new Consumer();
         consumer.start();
     }
 
     private void park(Car car) {
-
-        // TODO ADD EXCEPTION HANDLING FOR IF ABOVE THE CAPACITY
 
         parkingLot.add(car);
         parkingLotList.add(car);

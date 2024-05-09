@@ -15,6 +15,8 @@ public class Car {
         this.streetQuadrant = 0;
         this.usedByProducer = true;
         this.goalQuadrant = createRandomGoalQuadrant(numberOfQudrants);
+
+        System.out.println("Car " + carId + " created with goal quadrant " + goalQuadrant + " and street quadrant " + streetQuadrant);
     }
 
     public int getCarId() {
@@ -26,7 +28,6 @@ public class Car {
     }
 
     public void move() {
-        isMoving = true;
         streetQuadrant++;
     }
 
@@ -42,8 +43,16 @@ public class Car {
         this.usedByProducer = usedByProducer;
     }
 
+    public void start() {
+        isMoving = true;
+    }
+
     public void stop() {
         isMoving = false;
+    }
+
+    public boolean hasReachedGoal() {
+        return streetQuadrant >= goalQuadrant;
     }
     
     public boolean getIsMoving() {
@@ -55,7 +64,8 @@ public class Car {
     }
 
     public int createRandomGoalQuadrant(int numberQuadrants) {
-        return (int) (Math.random() * (numberQuadrants-1));
+        // above 1 and below numberQuadrants
+        return (int) (Math.random() * (numberQuadrants - 1) + 1);
     }
 
     public void setStreetQuadrant(int streetQuadrant) {
@@ -65,6 +75,5 @@ public class Car {
     private int createRandomId() {
         return (int) (Math.random() * 100);
     }
-
 
 }
