@@ -1,18 +1,14 @@
 package src;
 
-// GUI
-import java.awt.*;
-
 // parking lot list reading
 import java.util.List;
 
-import javax.swing.SwingUtilities;
+import javax.swing.BoxLayout;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 
-import java.util.ArrayList;
 import java.awt.Label;
 import java.awt.Panel;
-import java.awt.Image;
-import java.awt.Toolkit;
 import java.awt.Frame;
 import java.awt.GridLayout;
 import java.awt.event.WindowAdapter;
@@ -21,6 +17,7 @@ import java.awt.Button;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.FlowLayout;
+import java.awt.Image;
 
 public class ProdConProb {
 
@@ -28,7 +25,9 @@ public class ProdConProb {
     private Frame mainFrame;
     private Label headerLabel;
 
-    private WidePanel parkingLotGUI;
+    private static Panel parkingLotGUI;
+
+    private static Panel pufferNumberLot;
 
     private Label statusLabel;
     private Panel controlPanel;
@@ -38,12 +37,9 @@ public class ProdConProb {
     private static int numberQuadrants;
 
     // images
-    private static Image carImage;
-    private static Image statusC;
-    private static Image statusP;
-
-    // threads for the gui
-    private static Thread parkingLotUpdater;
+    private static ImageIcon carImage;
+    private static ImageIcon statusC;
+    private static ImageIcon statusP;
 
     public ProdConProb() {
         prepareGUI();
@@ -57,9 +53,12 @@ public class ProdConProb {
 
         // loading images
         System.out.println("Loading images...");
-        carImage = Toolkit.getDefaultToolkit().getImage("carImage.png");
-        statusC = Toolkit.getDefaultToolkit().getImage("statusC.png");
-        statusP = Toolkit.getDefaultToolkit().getImage("statusP.png");
+        carImage = new ImageIcon("Aufgabe2-Producer-Consumer-java\\src\\carImage.png");
+        carImage.setImage(carImage.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT));
+        statusC = new ImageIcon("Aufgabe2-Producer-Consumer-java\\src\\statusC.png");
+        statusC.setImage(statusC.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT));
+        statusP = new ImageIcon("Aufgabe2-Producer-Consumer-java\\src\\statusP.png");
+        statusP.setImage(statusP.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT));
 
         // system out if the images are null
         if (carImage == null || statusC == null || statusP == null) {
@@ -80,14 +79,50 @@ public class ProdConProb {
         main.showParkingLot();
 
         System.out.println("Starting GUI thread...");
-        parkingLotUpdater.start();
+
+        // for the number of quadrants in the parking lot, draw a quadrant with its number 
+
+        for (int i = 0; i < numberQuadrants; i++) {
+
+            // create a normal Panel with a Label of a number for pufferNumberLot
+            Label number = new Label(Integer.toString(i+1));
+            pufferNumberLot.add(number);
+
+            // creating quadrant panel for parkinglotGUI
+
+            QuadrantPanel quadrant = new QuadrantPanel(new JLabel(carImage), 
+                                                        new JLabel(statusC), 
+                                                        new JLabel(statusP));
+
+            quadrant.setLayout(new BoxLayout(quadrant, BoxLayout.Y_AXIS));
+
+            quadrant.carImageLabel.setVisible(false);
+            quadrant.statusCLabel.setVisible(false);
+            quadrant.statusPLabel.setVisible(false);
+
+            parkingLotGUI.add(quadrant);
+        }
+        
+        // update this GUI every 250ms
+
+        while(true){
+
+            updateParkingLotGUI();
+
+            try {
+                Thread.sleep(50);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+        }
     }
 
     private void prepareGUI() {
         // Creating main frame with size and layout
         mainFrame = new Frame("Parking Lot Simulation");
-        mainFrame.setSize(800, 600);
-        mainFrame.setLayout(new GridLayout(4, 1));
+        mainFrame.setSize(1000, 300);
+        mainFrame.setLayout(new GridLayout(5, 1));
 
         // Adding a window listener to the main frame to close the application when the close button is clicked
         mainFrame.addWindowListener(
@@ -108,16 +143,22 @@ public class ProdConProb {
         // Creating the status label and setting its alignment and size
         statusLabel = new Label();
         statusLabel.setAlignment(Label.CENTER);
-        statusLabel.setSize(350, 100);
+        statusLabel.setSize(1000, 100);
 
         // Creating the control panel and setting its layout
         controlPanel = new Panel();
         controlPanel.setLayout(new FlowLayout());
+        controlPanel.setSize(1000, 100);
 
         // creating parkingLOTGUI
-        parkingLotGUI = new WidePanel();
+        parkingLotGUI = new Panel();
         parkingLotGUI.setLayout(new GridLayout(1, numberQuadrants));
-        parkingLotGUI.setSize(800, 400);
+        parkingLotGUI.setSize(1000, 100);
+
+        // creating pufferNumberLot
+        pufferNumberLot = new Panel();
+        pufferNumberLot.setLayout(new GridLayout(1, numberQuadrants));
+        pufferNumberLot.setSize(1000, 100);
 
         headerLabel.setVisible(true);
         statusLabel.setVisible(true);
@@ -128,6 +169,7 @@ public class ProdConProb {
         mainFrame.add(headerLabel);
 
         mainFrame.add(parkingLotGUI);
+        mainFrame.add(pufferNumberLot);
         mainFrame.add(controlPanel);
         mainFrame.add(statusLabel);
 
@@ -167,157 +209,54 @@ public class ProdConProb {
         controlPanel.add(exitButton);
         // CANCEL BUTTON NOT ADDED, KEPT AS EXAMPLE FOR STATUS LABEL
 
-        // create ParkingLotUpdater object
-        parkingLotUpdater = new ParkingLotUpdater();
-
         // Set the visibility of the main frame to true
         mainFrame.setVisible(true);
     }
 
-    // class that runs in its own thread and updates a GUI component of the parking lot
-    class ParkingLotUpdater extends Thread {
+    private static void updateParkingLotGUI() {
+        // clone the linked list of the parking lot
 
-        public void run() {
+        List<Car> parkingLotList = parkingLot.getParkingLotList();
 
-            while (true) {
+        // iterating over quadrants, setting all labels to invisible, and visible if true
 
-                // clone the linked list of the parking lot
-                List<Car> parkingLotList = parkingLot.getParkingLotList();
+        for (int i = 0; i < numberQuadrants; i++) {
 
-                // clear the parkingLOTGUI, so we can build a new one
-                // using swingutilities to run the code in the event dispatch thread to avoid race conditions
-                SwingUtilities.invokeLater(() -> {
-                    parkingLotGUI.removeAll();
+            // get the quadrant panel
+            QuadrantPanel quadrant = (QuadrantPanel) parkingLotGUI.getComponent(i);
 
-                    // iterate through parking lot quadrants, if card, draw car with image and image statusC->statusConsumer, 
-                    // else draw image statusP->statusProducer
-                    // all the objects that are not parked get a +1 in their streetQuadrant
-                    for (int i = 0; i < numberQuadrants; i++) {
-                        // create a LayeredImagesPanel object
-                        int number = i+1;
-                        boolean hasCar = false;
-                        boolean hasStatus = false;
-                        boolean producerStatus = false;
+            // set all labels to invisible
+            quadrant.obscuro();
 
-                        // iterate over the parking lot list
-                        for (int j = 0; j < parkingLotList.size(); j++) {
+            // iterate over the parking lot list
+            for (int j = 0; j < parkingLotList.size(); j++) {
 
-                            // get the car object
-                            Car car = parkingLotList.get(j);
+                // get the car object
+                Car car = parkingLotList.get(j);
 
-                            // check if the car is parked in the current quadrant
-                            if (car.getStreetQuadrant() == i) {
-                                // draw car with image
-                                hasCar = true;
+                // check if the car is parked in the current quadrant
+                if (car.getStreetQuadrant() == i) {
+                   
+                    quadrant.carImageLabel.setVisible(true);
 
-                                // if car is being controlled by the producer, statusP true, 
-                                // if car is not being controlled by the producer, and is moving, statusP false
-
-                                if (car.isUsedByProducer()) {
-                                    hasStatus = true;
-                                    producerStatus = true;
-                                } else {
-                                    if (car.getIsMoving()) {
-                                        hasStatus = true;
-                                        producerStatus = false;
-                                    }
-                                }
-                            }
-                        }   
-
-                        LayeredImagesPanel layeredImagesPanel = new LayeredImagesPanel(number, hasCar, 
-                                                                    hasStatus, producerStatus, i);
-
-                        // add this to the object of WidePanel
-                        parkingLotGUI.add(layeredImagesPanel);
+                    // if car moving, status should be there, then allowing a status be displayed
+                    if (car.getIsMoving()) {
+                        if (car.isUsedByProducer()) {
+                            quadrant.revilioWcar(true);
+                        } else {
+                            quadrant.revilioWcar(false);
+                        }
+                    } else {
+                        quadrant.revilioOstatus();
                     }
-
-                
-                    parkingLotGUI.revalidate();
-                    parkingLotGUI.repaint();
-
-                });
-                // runs every 0.5 seconds
-                try {
-                    Thread.sleep(250);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
                 }
             }
-        }
-    }
+        };
 
-    class LayeredImagesPanel extends Container {
-        private int x;
-        private Image imageCar;
-        private Image imageStatus;
+        parkingLotGUI.setVisible(true);
 
-        private Textpanel numberTXTPanel;
+        parkingLotGUI.revalidate();
+        parkingLotGUI.repaint();
 
-        public LayeredImagesPanel(int number, boolean hasCar, boolean hasStatus, boolean producerStatus,  int quadrant) {
-            this.numberTXTPanel = new Textpanel(number);
-            if(hasCar){
-                this.imageCar = carImage;
-            }
-            if(hasStatus)
-                this.imageStatus = producerStatus ? statusC : statusP;
-            this.x = (numberQuadrants - quadrant)*mainFrame.getWidth()/numberQuadrants;
-        }
-
-        public void paint(Graphics g) {
-
-            numberTXTPanel.paint(g, x);
-
-            if(imageCar != null){
-                g.drawImage(imageCar, x, 0, this);
-            }
-
-            if(imageStatus != null){
-                g.drawImage(imageStatus, x, 0, this);
-            }
-        }
-    }
-
-    class WidePanel extends Panel {
-        // consists out of numberQuadrants*LayeredImagesPanel
-        // and fills up an entire row of the main frame
-
-        private List<LayeredImagesPanel> layeredImagesPanels = new ArrayList<>();
-
-        public WidePanel() {
-        }
-
-        // clear list
-        public void removeAll() {
-            layeredImagesPanels.clear();
-        }
-
-        // add a LayeredImagesPanel object to the list
-        public void add(LayeredImagesPanel layeredImagesPanel) {
-            layeredImagesPanels.add(layeredImagesPanel);
-        }
-
-        @Override
-        public void paint(Graphics g) {
-            if(layeredImagesPanels.isEmpty()){
-                return;
-            }
-            for (LayeredImagesPanel layeredImagesPanel : layeredImagesPanels) {
-                layeredImagesPanel.paint(g);
-            }
-        }
-    }
-
-    class Textpanel extends Panel {
-        // just a text inside the layeredImagesPanel that displays the number of the quadrant
-        private String numberString;
-
-        public Textpanel(int number) {
-            this.numberString = Integer.toString(number);
-        }
-
-        public void paint(Graphics g, int x) {
-            g.drawString(numberString, x, 0);
-        }
     }
 }

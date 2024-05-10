@@ -80,7 +80,7 @@ public class ParkingLot{
 
                 // sleep for 1 second
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -107,7 +107,7 @@ public class ParkingLot{
     
             // notify the consumer
             notify();
-            Thread.sleep(1000);
+            Thread.sleep(175);
     
             return car;
         }
@@ -153,7 +153,7 @@ public class ParkingLot{
 
                 // sleep for 1 second
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -183,7 +183,7 @@ public class ParkingLot{
                 }
 
                 // sleep for 1 second
-                Thread.sleep(1000);
+                Thread.sleep(175);
             }
         }
     }
