@@ -78,7 +78,7 @@ public class ProdConProb {
         ProdConProb main = new ProdConProb();
         main.showParkingLot();
 
-        System.out.println("Starting GUI thread...");
+        System.out.println("Hitting of GUI with Initialisation...");
 
         // for the number of quadrants in the parking lot, draw a quadrant with its number 
 
@@ -104,6 +104,8 @@ public class ProdConProb {
         }
         
         // update this GUI every 250ms
+
+        System.out.println("Starting GUI main-thread update loop...");
 
         while(true){
 

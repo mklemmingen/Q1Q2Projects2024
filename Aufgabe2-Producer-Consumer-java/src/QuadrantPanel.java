@@ -2,7 +2,6 @@ package src;
 
 import java.awt.Panel;
 import javax.swing.JLabel;
-import java.awt.Label;
 import javax.swing.BoxLayout; 
 
 class QuadrantPanel extends Panel {
@@ -11,7 +10,6 @@ class QuadrantPanel extends Panel {
     public JLabel statusCLabel;
     public JLabel statusPLabel;
 
-    private Label number;
     public QuadrantPanel(JLabel carImage, JLabel statusC, JLabel statusP) {
 
         this.carImageLabel = carImage;
