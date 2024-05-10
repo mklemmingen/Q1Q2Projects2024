@@ -1,0 +1,1 @@
+In most IDEs, for the Aufgabe to be build, open as a project not in the repository-root, but as the Aufgabe2 folder as your source.
