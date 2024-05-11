@@ -6,6 +6,7 @@ package src;
 
 import java.util.Queue;
 import java.util.LinkedList;
+import java.util.ArrayList;
 
 import java.util.List;
 
@@ -20,16 +21,36 @@ public class ParkingLot{
 
     private int currentNumberOfCars;
 
-    private Thread producer;
-    private Thread consumer;
+    // list of producer Threads
+    private ArrayList<Thread> producerThreads;
 
-    public ParkingLot(int numberQuadrants, int capacity) {
+    // list of consumer Threads
+    private ArrayList<Thread> consumerThreads;
+
+
+    public ParkingLot(int numberQuadrants, int capacity, int numberOfProducers, int numberOfConsumers) {
 
         // QUEUE
         parkingLot = new LinkedList<Car>();
 
         // LIST
         parkingLotList = new LinkedList<Car>();
+
+        // create the producer and consumer ArrayList Threads of the given size
+        producerThreads = new ArrayList<Thread>(numberOfProducers);
+
+        // for each member of the producerThreads arraylist, create a new producer thread
+        for (int i = 0; i < numberOfProducers; i++) {
+            producerThreads.add(new Producer());
+        }
+
+
+        consumerThreads = new ArrayList<Thread>(numberOfConsumers);
+
+        // for each member of the consumerThreads arraylist, create a new consumer thread
+        for (int i = 0; i < numberOfConsumers; i++) {
+            consumerThreads.add(new Consumer());
+        }
 
         this.numberQuadrants = numberQuadrants;
 
@@ -192,11 +213,20 @@ public class ParkingLot{
 
     public void start() {
 
-        producer = new Producer();
-        producer.start();
+        // for each member of the thread arraylists, start the thread
 
-        consumer = new Consumer();
-        consumer.start();
+        System.out.println("Starting parking lot threads");
+
+        for (Thread producerThread : producerThreads) {
+            producerThread.start();
+            System.out.println(" started a producer thread ");;
+        }
+
+        for (Thread consumerThread : consumerThreads) {
+            consumerThread.start();
+            System.out.println(" started a consumer thread ");
+        }
+
     }
 
     private void park(Car car) {

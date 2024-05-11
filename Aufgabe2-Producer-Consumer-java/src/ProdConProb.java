@@ -18,6 +18,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.FlowLayout;
 import java.awt.Image;
+import java.awt.TextField;
 
 public class ProdConProb {
 
@@ -41,6 +42,15 @@ public class ProdConProb {
     private static ImageIcon statusC;
     private static ImageIcon statusP;
 
+    private static int numberOfConsumers;
+    private static int numberOfProducers;
+
+    private static int capacity;
+
+    // boolean values
+
+    private static boolean parkingLotIsOpen = false;
+
     public ProdConProb() {
         prepareGUI();
     }
@@ -49,7 +59,7 @@ public class ProdConProb {
 
         // parking lot size (influences layout of the GUI)
         numberQuadrants = 10;
-        int capacity = numberQuadrants/2;
+        capacity = numberQuadrants/2;
 
         // loading images
         System.out.println("Loading images...");
@@ -67,15 +77,8 @@ public class ProdConProb {
             System.out.println("Images are not null. Images loaded.");
         }
 
-        parkingLot = new ParkingLot(numberQuadrants, capacity);
-
-        // start the parking lot. Starts the produce and consume threads of the parking lot.
-
-        parkingLot.start();
-
-        // ----- GUI ------
-
         ProdConProb main = new ProdConProb();
+        
         main.showParkingLot();
 
         System.out.println("Hitting of GUI with Initialisation...");
@@ -109,7 +112,10 @@ public class ProdConProb {
 
         while(true){
 
-            updateParkingLotGUI();
+            // if parkinglot has started
+            if(parkingLotIsOpen) {
+                updateParkingLotGUI();
+            }
 
             try {
                 Thread.sleep(50);
@@ -123,7 +129,7 @@ public class ProdConProb {
     private void prepareGUI() {
         // Creating main frame with size and layout
         mainFrame = new Frame("Parking Lot Simulation");
-        mainFrame.setSize(1000, 300);
+        mainFrame.setSize(1000, 400);
         mainFrame.setLayout(new GridLayout(5, 1));
 
         // Adding a window listener to the main frame to close the application when the close button is clicked
@@ -145,17 +151,75 @@ public class ProdConProb {
         // Creating the status label and setting its alignment and size
         statusLabel = new Label();
         statusLabel.setAlignment(Label.CENTER);
-        statusLabel.setSize(1000, 100);
+        statusLabel.setSize(1000, 50);
 
         // Creating the control panel and setting its layout
         controlPanel = new Panel();
         controlPanel.setLayout(new FlowLayout());
-        controlPanel.setSize(1000, 100);
+        controlPanel.setSize(1000, 50);
 
+        // control panel has two input boxes for int values and a START button
+        // the START button will create the parking lot with the given values
+
+        // input box for number of producers
+        Label producersLabel = new Label("INT: Producers: ");
+        controlPanel.add(producersLabel);
+        final TextField producersText = new TextField(5);
+        // if text is not a number, set the text to 0, else parse the text to an int and give it to the numberOfProducers if change has happened
+        producersText.addTextListener(
+            e -> {
+                if (!producersText.getText().matches("[0-9]+")) {
+                    producersText.setText("0");
+                } else {
+                    numberOfProducers = Integer.parseInt(producersText.getText());
+                }
+            }
+        );
+        controlPanel.add(producersText);
+
+        // input box for number of consumers
+        Label consumersLabel = new Label("INT: Consumers: ");
+        controlPanel.add(consumersLabel);
+        final TextField consumersText = new TextField(5);
+        // if text is not a number, set the text to 0, else parse the text to an int and give it to the numberOfProducers if change has happened
+        consumersText.addTextListener(
+            e -> {
+                if (!consumersText.getText().matches("[0-9]+")) {
+                    consumersText.setText("0");
+                } else {
+                    numberOfConsumers = Integer.parseInt(consumersText.getText());
+                }
+            }
+        );
+        controlPanel.add(consumersText);
+                
+        // button for starting the parking lot 
+        Button startButton = new Button("START");
+        startButton.addActionListener(
+            new ActionListener() {
+
+                public void actionPerformed(ActionEvent e) {
+                    // -------- create parkingLot when the START button of the GUI is pressed with the numberOf... that is in the fields...
+
+                    // set false in case a paint or update thread was to (unlikely) update the GUI while not fully initalised
+                    parkingLotIsOpen = false;
+
+                    parkingLot = new ParkingLot(numberQuadrants, capacity, numberOfProducers, numberOfConsumers);
+
+                    // start the parking lot. Starts the produce and consume threads of the parking lot.
+
+                    parkingLot.start();
+
+                    parkingLotIsOpen = true;
+                }
+            }
+        );
+        controlPanel.add(startButton);
+        
         // creating parkingLOTGUI
         parkingLotGUI = new Panel();
         parkingLotGUI.setLayout(new GridLayout(1, numberQuadrants));
-        parkingLotGUI.setSize(1000, 100);
+        parkingLotGUI.setSize(1000, 200);
 
         // creating pufferNumberLot
         pufferNumberLot = new Panel();
@@ -196,18 +260,7 @@ public class ProdConProb {
             }
         );
 
-        Button cancelButton = new Button("Cancel");
-
-        cancelButton.addActionListener(
-            new ActionListener() {
-
-                public void actionPerformed(ActionEvent e) {
-                    // Set the text of the status label when the Cancel button is clicked
-                    statusLabel.setText("Cancel Button clicked.");
-                }
-            }
-        );
-        // Add buttons to the control panel
+        // Add button to the control panel
         controlPanel.add(exitButton);
         // CANCEL BUTTON NOT ADDED, KEPT AS EXAMPLE FOR STATUS LABEL
 
@@ -230,6 +283,9 @@ public class ProdConProb {
             // set all labels to invisible
             quadrant.obscuro();
 
+            // numberOfCars in Quadrant at once
+            int numberOfCars = 0;
+
             // iterate over the parking lot list
             for (int j = 0; j < parkingLotList.size(); j++) {
 
@@ -238,6 +294,8 @@ public class ProdConProb {
 
                 // check if the car is parked in the current quadrant
                 if (car.getStreetQuadrant() == i) {
+
+                    numberOfCars++;
                    
                     quadrant.carImageLabel.setVisible(true);
 
@@ -252,6 +310,12 @@ public class ProdConProb {
                         quadrant.revilioOstatus();
                     }
                 }
+            }
+
+            // if numberofcars is greater than 1, set this number to the quadrant numberOfCars label and make it visible
+            if (numberOfCars > 1) {
+                quadrant.numberOfCarsLabel.setText(Integer.toString(numberOfCars));
+                quadrant.numberOfCarsLabel.setVisible(true);
             }
         };
 

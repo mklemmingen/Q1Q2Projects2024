@@ -9,6 +9,7 @@ class QuadrantPanel extends Panel {
     public JLabel carImageLabel;
     public JLabel statusCLabel;
     public JLabel statusPLabel;
+    public JLabel numberOfCarsLabel;
 
     public QuadrantPanel(JLabel carImage, JLabel statusC, JLabel statusP) {
 
@@ -27,6 +28,15 @@ class QuadrantPanel extends Panel {
         this.add(this.statusCLabel);
         this.add(this.statusPLabel);
         this.add(this.carImageLabel);
+
+        // create a JLabel numberOfCars
+        this.numberOfCarsLabel = new JLabel("0");
+        // make it red, make it right-aligned, put it on top of the panel, and invisible
+        this.numberOfCarsLabel.setForeground(java.awt.Color.RED);
+        this.numberOfCarsLabel.setHorizontalAlignment(JLabel.RIGHT);
+        this.numberOfCarsLabel.setVerticalAlignment(JLabel.TOP);
+        this.numberOfCarsLabel.setVisible(false);
+        this.add(this.numberOfCarsLabel);
     }
 
     public void revilioWcar(boolean producerinsteadofconsumer) {
@@ -46,6 +56,6 @@ class QuadrantPanel extends Panel {
         this.carImageLabel.setVisible(false);
         this.statusPLabel.setVisible(false);
         this.statusCLabel.setVisible(false);
-        
+        this.numberOfCarsLabel.setVisible(false);
     }
 }
