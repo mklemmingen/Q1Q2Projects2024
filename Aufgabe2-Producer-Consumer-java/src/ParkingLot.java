@@ -2,8 +2,6 @@
  Buffer as Queue
  */
 
-package src;
-
 import java.util.Queue;
 import java.util.LinkedList;
 import java.util.ArrayList;

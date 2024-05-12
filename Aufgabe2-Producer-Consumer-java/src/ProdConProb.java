@@ -1,5 +1,3 @@
-package src;
-
 // parking lot list reading
 import java.util.List;
 
@@ -63,11 +61,11 @@ public class ProdConProb {
 
         // loading images
         System.out.println("Loading images...");
-        carImage = new ImageIcon("Aufgabe2-Producer-Consumer-java\\src\\carImage.png");
+        carImage = new ImageIcon("src\\carImage.png");
         carImage.setImage(carImage.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT));
-        statusC = new ImageIcon("Aufgabe2-Producer-Consumer-java\\src\\statusC.png");
+        statusC = new ImageIcon("src\\statusC.png");
         statusC.setImage(statusC.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT));
-        statusP = new ImageIcon("Aufgabe2-Producer-Consumer-java\\src\\statusP.png");
+        statusP = new ImageIcon("src\\statusP.png");
         statusP.setImage(statusP.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT));
 
         // system out if the images are null

@@ -18,23 +18,23 @@ Lifetap | {U}{U} | 2 |  | 0
 Lightning Bolt | {R} | 1 |  | 0
 Word of Blasting | {U}{U} | 2 |  | 0
 Safe Passage | {1}{W} | 2 |  | 0
-Goblin Warrens | {R} | 1 |  | 0
-Bant Panorama | {U}{U} | 2 |  | 0
+Gonti's Machinations | {R} | 1 |  | 0
+Phalanx Formation | {U}{U} | 2 |  | 0
 Raise Dead | {B} | 1 |  | 0
 Sacrifice | {B} | 1 |  | 0
 Stone Rain | {2}{R}{R} | 4 |  | 0
 Stream of Life | {X}{G} | 1 |  | 0
 Terror | {1}{B} | 2 |  | 0
 Time Vault | {2} | 2 |  | 0
-Cultural Exchange | {1}{G}{G} | 3 |  | 0
-Retreat to Hagra | {3}{W}{W} | 5 |  | 0
+Verdant Succession | {1}{G}{G} | 3 |  | 0
+Submerged Boneyard | {3}{W}{W} | 5 |  | 0
 Copy Artifact | {B}{B} | 2 |  | 0
-Brave the Elements | {3}{U}{U} | 5 |  | 0
+Natural Emergence | {3}{U}{U} | 5 |  | 0
 Weakstone | {B} | 1 |  | 0
-Arc Blade | {R} | 1 |  | 0
+Aura Blast | {R} | 1 |  | 0
 Bazaar of Baghdad | 1 | 1 |  | 0
 Crumbling Ashes | {B}{B} | 2 |  | 0
-Flesh Allergy | {1}{U} | 2 |  | 0
+Festering Evil | {1}{U} | 2 |  | 0
 Merchant Scroll | {U} | 1 |  | 0
 Dawn of the Dead | {1}{U}{U} | 3 |  | 0
 Piety | {2}{W} | 3 |  | 0
@@ -43,7 +43,7 @@ Overwhelming Denial | {B} | 1 |  | 0
 Shield Wall | {1}{G} | 2 |  | 0
 Dwarven Landslide | {1}{R} | 2 |  | 0
 Phyrexian Lens | {2}{B} | 3 |  | 0
-Trickbind | {6} | 6 |  | 0
+Telekinesis | {6} | 6 |  | 0
 Necrogen Mists | {1}{B}{B} | 3 |  | 0
 Rude Awakening | {B}{R}{G} | 3 |  | 0
 Aether Barrier | {2}{R}{R}{R} | 5 |  | 0
@@ -52,25 +52,25 @@ Black Mana Battery | {4} | 4 |  | 0
 Blue Mana Battery | {4} | 4 |  | 0
 Chains of Mephistopheles | {1}{B} | 2 |  | 0
 Coercion | {G} | 1 |  | 0
-Caves of Koilos | {0} | 0 |  | 0
+Keldon Necropolis | {0} | 0 |  | 0
 Equipoise | {W} | 1 |  | 0
-Hymn of Rebirth | {1}{R}{R} | 3 |  | 0
+Hematite Talisman | {1}{R}{R} | 3 |  | 0
 Juxtapose | {3}{U} | 4 |  | 0
-Lost in the Woods | {4}{W}{U} | 6 |  | 0
-Wandering Stream | {1}{R} | 2 |  | 0
+Hymn of the Wilds | {4}{W}{U} | 6 |  | 0
+Smoldering Crater | {1}{R} | 2 |  | 0
 Land Tax | {W} | 1 |  | 0
 Brutal Expulsion | {3}{R}{R}{G} | 6 |  | 0
-Mass Mutiny | {3}{G}{G} | 5 |  | 0
+Mystic Monastery | {3}{G}{G} | 5 |  | 0
 North Star | {4} | 4 |  | 0
 Nova Pentacle | {4} | 4 |  | 0
-Mind Peel | {2}{G}{G} | 4 |  | 0
+Divine Presence | {2}{G}{G} | 4 |  | 0
 Psychic Purge | {U} | 1 |  | 0
 Rage Reflection | {3}{U}{B}{B} | 6 |  | 0
 Reverberation | {2}{U}{U} | 4 |  | 0
 Ring of Immortals | {5} | 5 |  | 0
 Seafarer's Quay | 1 | 1 |  | 0
 Shield Wall | {1}{W} | 2 |  | 0
-Spinal Embrace | {2}{R} | 3 |  | 0
+Spatial Binding | {2}{R} | 3 |  | 0
 Tangleroot | {2}{B}{B} | 4 |  | 0
 Keep Watch | {3}{B}{B} | 5 |  | 0
 Time Reversal | {2}{U} | 3 |  | 0
@@ -78,11 +78,11 @@ Trade Routes | {W} | 1 |  | 0
 Undertow | {2}{U} | 3 |  | 0
 Untamed Wilds | {2}{G} | 3 |  | 0
 White Mana Battery | {4} | 4 |  | 0
-Wand of Denial | {3}{G} | 4 |  | 0
+Red Elemental Blast | {3}{G} | 4 |  | 0
 Excise | {W}{W} | 2 |  | 0
 Goblin Cannon | {1}{R}{R} | 3 |  | 0
 Goblin War Cry | {2}{R}{R} | 4 |  | 0
-Harsh Mercy | {3}{G} | 4 |  | 0
+Urza's Miter | {3}{G} | 4 |  | 0
 Uba Mask | {2}{B}{B} | 4 |  | 0
 Sorrow's Path | 1 | 1 |  | 0
 Spitting Image | {1}{G}{G} | 3 |  | 0
@@ -93,18 +93,18 @@ Breeding Pit | {3}{B} | 4 |  | 0
 Delif's Cone | {0} | 0 |  | 0
 Persecute Artist | {1}{W}{W} | 3 |  | 0
 Hymn to Tourach | {B}{B} | 2 |  | 0
-Flames of the Blood Hand | {B} | 1 |  | 0
+Dictate of the Twin Gods | {B} | 1 |  | 0
 Ring of Renewal | {5} | 5 |  | 0
 Sand Silos | 1 | 1 |  | 0
 Arena | 1 | 1 |  | 0
-Oversold Cemetery | {1}{U} | 2 |  | 0
-Arena | {2}{W} | 3 |  | 0
+Painful Memories | {1}{U} | 2 |  | 0
+Firestorm | {2}{W} | 3 |  | 0
 Consume Spirit | {X}{1}{B} | 2 |  | 0
 Dragonrage | {1}{B}{G} | 3 |  | 0
-Strangling Soot | {1}{G} | 2 |  | 0
+Scalding Tongs | {1}{G} | 2 |  | 0
 Migratory Route | {4}{W}{B} | 6 |  | 0
-Angelic Shield | {4}{W}{W} | 6 |  | 0
-Rakdos Carnarium | {2}{B}{G}{U} | 5 |  | 0
+Ancient Stirrings | {4}{W}{W} | 6 |  | 0
+Rakshasa's Disdain | {2}{B}{G}{U} | 5 |  | 0
 Dragonscale Boon | {3}{W} | 4 |  | 0
 Orim's Thunder | {4}{R} | 5 |  | 0
 Alhammarret's Archive | {5}{U}{U} | 7 |  | 0
@@ -139,10 +139,10 @@ Mudslide | {2}{R} | 3 |  | 0
 Quicksand | {2}{U} | 3 |  | 0
 Nacre Talisman | {2} | 2 |  | 0
 Orcish Oriflamme | {1}{R} | 2 |  | 0
-Planar Gate | {8}{U}{U}{U} | 11 |  | 0
+Planar Void | {8}{U}{U}{U} | 11 |  | 0
 Pox | {B}{B}{B} | 3 |  | 0
 Ray of Command | {3}{U} | 4 |  | 0
-Geosurge | {1}{B} | 2 |  | 0
+Supersize | {1}{B} | 2 |  | 0
 Elven Fortress | {5} | 5 |  | 0
 Soul Rend | {2}{W} | 3 |  | 0
 Staff of the Ages | {3} | 3 |  | 0
@@ -160,13 +160,13 @@ Didgeridoo | {1} | 1 |  | 0
 Drudge Spell | {B}{B} | 2 |  | 0
 Dry Spell | {1}{B} | 2 |  | 0
 Feroz's Ban | {6} | 6 |  | 0
-Obelisk of Alara | {G} | 1 |  | 0
+An-Havva Inn | {G} | 1 |  | 0
 Koskun Falls | {2}{B}{B} | 4 |  | 0
-Desolation | {1}{W} | 2 |  | 0
+False Dawn | {1}{W} | 2 |  | 0
 Strip Mine | {1}{R}{R} | 3 |  | 0
 Primal Order | {2}{G}{G} | 4 |  | 0
 Repeal | {2}{G} | 3 |  | 0
-Drake Haven | {W} | 1 |  | 0
+Graven Cairns | {W} | 1 |  | 0
 Balduvian Rage | {3}{B} | 4 |  | 0
 Shivan Harvest | {2}{R}{R} | 4 |  | 0
 Contagion | {3}{B}{B} | 5 |  | 0
@@ -203,12 +203,12 @@ Cursed Totem | {2} | 2 |  | 0
 Kirtar's Wrath | {3}{B} | 4 |  | 0
 Energy Vortex | {3}{U}{U} | 5 |  | 0
 Final Fortune | {R}{R} | 2 |  | 0
-Hint of Insanity | {1}{R} | 2 |  | 0
+Enter the Infinite | {1}{R} | 2 |  | 0
 Lure of Prey | {2}{G}{G} | 4 |  | 0
-Karoo | {2}{G}{G} | 4 |  | 0
+Carom | {2}{G}{G} | 4 |  | 0
 Needle Spires | {3}{W}{W} | 5 |  | 0
-Past in Flames | {4} | 4 |  | 0
-Preordain | {4}{W}{W} | 6 |  | 0
+Magmatic Core | {4} | 4 |  | 0
+Dragonrage | {4}{W}{W} | 6 |  | 0
 Prismatic Boon | {X}{W}{U} | 2 |  | 0
 Restless Dreams | {1}{B} | 2 |  | 0
 Shadowblood Egg | {B} | 1 |  | 0
@@ -217,8 +217,8 @@ Superior Numbers | {G}{G} | 2 |  | 0
 Tranquil Domain | {2}{R}{R} | 4 |  | 0
 Teferi's Care | {2}{U} | 3 |  | 0
 Telim'Tor's Edict | {R} | 1 |  | 0
-Urborg Justice | {2}{B} | 3 |  | 0
-Dread of Night | {W}{W} | 2 |  | 0
+Drawn Together | {2}{B} | 3 |  | 0
+Strands of Night | {W}{W} | 2 |  | 0
 Profane Command | {2}{W} | 3 |  | 0
 Pyromancy | {2}{U} | 3 |  | 0
 Blanket of Night | {1}{B}{B} | 3 |  | 0
@@ -228,7 +228,7 @@ Gossamer Chains | {W}{W} | 2 |  | 0
 Infernal Harvest | {1}{B} | 2 |  | 0
 Juju Bubble | {1} | 1 |  | 0
 Magma Mine | {1} | 1 |  | 0
-Soul Reap | {1}{W} | 2 |  | 0
+Cold Snap | {1}{W} | 2 |  | 0
 Sultai Banner | {2}{R} | 3 |  | 0
 Three Wishes | {1}{U}{U} | 3 |  | 0
 Triangle of War | {1} | 1 |  | 0
@@ -243,7 +243,7 @@ Howling Gale | {1}{R} | 2 |  | 0
 Jungle Basin | {G} | 1 |  | 0
 Natural Spring | {3}{G}{G} | 5 |  | 0
 Echoing Courage | {2}{R} | 3 |  | 0
-Wildest Dreams | {G} | 1 |  | 0
+Hallowed Burial | {G} | 1 |  | 0
 Goblin Warchief Avatar | 1 | 1 |  | 0
 Lyzolda, the Blood Witch Avatar | 1 | 1 |  | 0
 Master of the Wild Hunt Avatar | 1 | 1 |  | 0
@@ -255,8 +255,8 @@ Stalking Tiger Avatar | 1 | 1 |  | 0
 Abolish | {4}{G}{G} | 6 |  | 0
 Angelic Renewal | {1}{W} | 2 |  | 0
 Arboria | {3}{U} | 4 |  | 0
-Haunting Misery | {W} | 1 |  | 0
-Encircling Fissure | {B} | 1 |  | 0
+Vanish into Memory | {W} | 1 |  | 0
+Crumbling Vestige | {B} | 1 |  | 0
 Desperate Gambit | {R} | 1 |  | 0
 Downdraft | {2}{G} | 3 |  | 0
 Fatal Blow | {B} | 1 |  | 0
@@ -264,18 +264,18 @@ Heat Stroke | {2}{R} | 3 |  | 0
 Hidden Herd | {1}{B}{B} | 3 |  | 0
 Lava Tubes | {2}{R}{R} | 4 |  | 0
 March of Souls | {4}{R}{R} | 6 |  | 0
-Peace Talks | {2}{W} | 3 |  | 0
+Peacekeeper Avatar | {2}{W} | 3 |  | 0
 Serenity | {1}{W} | 2 |  | 0
 Tolaria West | {5}{U}{U} | 7 |  | 0
-Renounce | {4}{B} | 5 |  | 0
-Lurking Predators | {5}{R} | 6 |  | 0
+Repentance | {4}{B} | 5 |  | 0
+Breath of Dreams | {5}{R} | 6 |  | 0
 Silent Departure | {4}{B}{B} | 6 |  | 0
 Lotus Bloom | 1 | 1 |  | 0
 Sea God's Revenge | {B/R}{B/R}{B/R}{B/R}{B/R} | 5 |  | 0
 Word of Blasting | {3}{B}{B} | 5 |  | 0
-Captive Flame | {4}{B}{R} | 6 |  | 0
+Sandsteppe Citadel | {4}{B}{R} | 6 |  | 0
 Treasure Trove | {4}{W}{B} | 6 |  | 0
-Everlasting Torment | {3}{B}{B} | 5 |  | 0
+Neverending Torment | {3}{B}{B} | 5 |  | 0
 Helm of Awakening | {W} | 1 |  | 0
 Sheltering Word | {3}{B}{G}{U} | 6 |  | 0
 Enlightened Tutor | {3}{U}{R}{W} | 6 |  | 0
@@ -284,14 +284,14 @@ Trail of Mystery | {1}{G} | 2 |  | 0
 Brute Force | {3}{B} | 4 |  | 0
 Ojutai Monument | {5}{W}{U} | 7 |  | 0
 Rally the Ancestors | {X}{W}{W} | 2 |  | 0
-Annihilating Fire | {W}{W} | 2 |  | 0
+Terrain Generator | {W}{W} | 2 |  | 0
 Scorched Ruins | {3}{W}{W} | 5 |  | 0
 Fanatical Fever | {1}{B}{B} | 3 |  | 0
 Mizzium Mortars | {2}{U} | 3 |  | 0
 Talent of the Telepath | {2}{U}{U} | 4 |  | 0
 Tragic Arrogance | {3}{W}{W} | 5 |  | 0
 Akoum Refuge | {4}{R}{R} | 6 |  | 0
-Blighted Fen | {5} | 5 |  | 0
+Blighted Gorge | {5} | 5 |  | 0
 Canopy Claws | 1 | 1 |  | 0
 Mikokoro, Center of the Sea | {2}{G}{U} | 4 |  | 0
 Altar of Dementia | {2} | 2 |  | 0
@@ -299,7 +299,7 @@ Bloodscent | {B} | 1 |  | 0
 Broken Fall | {2}{G} | 3 |  | 0
 Caldera Lake | 1 | 1 |  | 0
 Cone of Flame | {R} | 1 |  | 0
-Misty Rainforest | {3}{B} | 4 |  | 0
+Stain the Mind | {3}{B} | 4 |  | 0
 Eladamri | {1}{U}{U} | 3 |  | 0
 Gerrard's Battle Cry | {W} | 1 |  | 0
 Helm of Possession | {4} | 4 |  | 0
@@ -309,14 +309,14 @@ Light of Day | {3}{W} | 4 |  | 0
 Marble Diamond | {3}{W} | 4 |  | 0
 Nature's Revolt | {3}{G}{G} | 5 |  | 0
 Phyrexian Grimoire | {3} | 3 |  | 0
-Psychic Battle | {2}{G} | 3 |  | 0
+Butcher's Glee | {2}{G} | 3 |  | 0
 Precognition | {4}{U} | 5 |  | 0
 Propaganda | {2}{U} | 3 |  | 0
 Reality Anchor | {1}{G} | 2 |  | 0
 Reanimate | {B} | 1 |  | 0
 Recycle | {4}{G}{G} | 6 |  | 0
 Rootwater Depths | {U} | 1 |  | 0
-Scrounge | {4}{G} | 5 |  | 0
+Stranglehold | {4}{G} | 5 |  | 0
 Enshrouding Mist | {G} | 1 |  | 0
 Cathars' Crusade | {2}{W} | 3 |  | 0
 Sway of Illusion | {1}{R} | 2 |  | 0
@@ -348,7 +348,7 @@ Explore | {1}{U} | 2 |  | 0
 Vindicate | {1}{W}{B} | 3 |  | 0
 Mind's Desire | {4}{U}{U} | 6 |  | 0
 Goblinslide | {R} | 1 |  | 0
-Erhnam Djinn Avatar | {1}{W}{U} | 3 |  | 0
+Enigma Sphinx Avatar | {1}{W}{U} | 3 |  | 0
 Rush of Adrenaline | {5}{W}{W} | 7 |  | 0
 Duelist's Heritage | {1}{R}{R} | 3 |  | 0
 Equilibrium | {1}{U}{U} | 3 |  | 0
@@ -365,7 +365,7 @@ Spreading Flames | {2}{R} | 3 |  | 0
 Elven Palisade | {G} | 1 |  | 0
 Skyshroud Forest | {1}{G} | 2 |  | 0
 Biomass Mutation | {4} | 4 |  | 0
-Worship | {6} | 6 |  | 0
+Thermokarst | {6} | 6 |  | 0
 Deliver | {3}{W} | 4 |  | 0
 Sex Appeal | {W} | 1 |  | 0
 Cloudform | {2}{U} | 3 |  | 0
@@ -382,7 +382,7 @@ Catalog | {2}{U} | 3 |  | 0
 Hibernation | {2}{U} | 3 |  | 0
 Lyna | {1}{U} | 2 |  | 0
 Lilting Refrain | {1}{U} | 2 |  | 0
-Pendrell Mists | {3}{U} | 4 |  | 0
+Pilfered Plans | {3}{U} | 4 |  | 0
 Telepathy | {U} | 1 |  | 0
 Veiled Serpent | {2}{U} | 3 |  | 0
 Artisan's Sorrow | {4}{B}{B} | 6 |  | 0
@@ -414,7 +414,7 @@ Noetic Scales | {4} | 4 |  | 0
 Phyrexian Processor | {7} | 7 |  | 0
 Purging Scythe | {5} | 5 |  | 0
 Burst of Energy | {W} | 1 |  | 0
-Devouring Light | {W} | 1 |  | 0
+Bountiful Harvest | {W} | 1 |  | 0
 Hope and Glory | {1}{W} | 2 |  | 0
 Planar Collapse | {1}{W} | 2 |  | 0
 Aura Flux | {2}{U} | 3 |  | 0
@@ -424,21 +424,21 @@ Damping Engine | {4} | 4 |  | 0
 Ring of Gix | {3} | 3 |  | 0
 Treetop Village | 1 | 1 |  | 0
 Eightfold Maze | {2}{W} | 3 |  | 0
-Scout the Borders | {2}{W} | 3 |  | 0
+Shoulder to Shoulder | {2}{W} | 3 |  | 0
 Quest for Renewal | {3}{U}{U} | 5 |  | 0
 Chatter of the Squirrel | {3}{U}{U} | 5 |  | 0
 Worship | {2}{U} | 3 |  | 0
 Acorn Catapult | {4}{B} | 5 |  | 0
-Wing Snare | {1}{B} | 2 |  | 0
+Web of Inertia | {1}{B} | 2 |  | 0
 Midnight Recovery | {2}{B}{B} | 4 |  | 0
-Wound Reflection | {1}{B} | 2 |  | 0
+Roiling Waters | {1}{B} | 2 |  | 0
 Change of Heart | {4}{B}{B} | 6 |  | 0
 Burning Fields | {4}{R} | 5 |  | 0
 Control of the Court | {1}{R} | 2 |  | 0
 Day of the Dragons | {4}{R} | 5 |  | 0
-Logic Knot | {R} | 1 |  | 0
+Icatian Town | {R} | 1 |  | 0
 Spoils of Victory | {2}{G} | 3 |  | 0
-Acid Rain | {G} | 1 |  | 0
+Rabid Bite | {G} | 1 |  | 0
 Flying Carpet | {U} | 1 |  | 0
 Rally the Ancestors | {2}{U} | 3 |  | 0
 Scent of Brine | {1}{U} | 2 |  | 0
@@ -450,33 +450,33 @@ Soul Feast | {3}{B}{B} | 5 |  | 0
 Aether Sting | {3}{R} | 4 |  | 0
 Flame Jet | {1}{R} | 2 |  | 0
 Reckless Abandon | {R} | 1 |  | 0
-Elvish Fury | {G} | 1 |  | 0
+Lotus Bloom | {G} | 1 |  | 0
 Multani's Decree | {3}{G} | 4 |  | 0
 Caltrops | {3} | 3 |  | 0
 Massacre | {4} | 4 |  | 0
 Scrying Glass | {2} | 2 |  | 0
 Thran Dynamo | {4} | 4 |  | 0
-Fatal Blow | {1}{W} | 2 |  | 0
+Fungal Bloom | {1}{W} | 2 |  | 0
 Peace of Mind | {3}{G}{G} | 5 |  | 0
 Charmed Pendant | {W} | 1 |  | 0
-Dawnglow Infusion | {1}{W} | 2 |  | 0
+Rootborn Defenses | {1}{W} | 2 |  | 0
 Thawing Glaciers | {2}{W} | 3 |  | 0
 Profane Command | {2}{W}{W} | 4 |  | 0
 Zendikar Resurgent | {W} | 1 |  | 0
 Soothing Balm | {1}{W} | 2 |  | 0
 Cowardice | {3}{U}{U} | 5 |  | 0
 Desertion | {3}{U} | 4 |  | 0
-Personal Tutor | {1}{U} | 2 |  | 0
+Isochron Scepter | {1}{U} | 2 |  | 0
 Trade Routes | {1}{U} | 2 |  | 0
-Close Quarters | {1}{B}{B} | 3 |  | 0
+Allied Strategies | {1}{B}{B} | 3 |  | 0
 Cateran Summons | {B} | 1 |  | 0
 Graveyard Shovel | {4}{B} | 5 |  | 0
 Memory Lapse | {2}{B} | 3 |  | 0
 Rouse | {1}{B} | 2 |  | 0
-Lurking Skirge | {2}{B} | 3 |  | 0
+Crippling Fatigue | {2}{B} | 3 |  | 0
 Blood Feud | {2}{R} | 3 |  | 0
 Blood Oath | {3}{R} | 4 |  | 0
-Carnage Altar | {2}{R} | 3 |  | 0
+Cradle to Grave | {2}{R} | 3 |  | 0
 Kyren Archive | {1}{R} | 2 |  | 0
 Uphill Battle | {2}{R} | 3 |  | 0
 Clear the Land | {2}{G} | 3 |  | 0
@@ -487,7 +487,7 @@ Rushwood Grove | {1}{G} | 2 |  | 0
 Spontaneous Generation | {3}{G} | 4 |  | 0
 Horn of Plenty | {6} | 6 |  | 0
 Hickory Woodlot | 1 | 1 |  | 0
-Vindicate | {2}{B} | 3 |  | 0
+Fault Line | {2}{B} | 3 |  | 0
 Kyren Archive | {2}{G} | 3 |  | 0
 Terminate | {B}{R} | 2 |  | 0
 Goblin Lore | {R}{W} | 2 |  | 0
@@ -496,7 +496,7 @@ Pillar of Flame | {R} | 1 |  | 0
 Encroaching Wastes | 1 | 1 |  | 0
 Roast | {1}{R} | 2 |  | 0
 Nissa's Pilgrimage | {2}{G} | 3 |  | 0
-Bitter Ordeal | {W} | 1 |  | 0
+Fervent Denial | {W} | 1 |  | 0
 Sivvi's Valor | {2}{W} | 3 |  | 0
 Touch of Vitae | {3}{W} | 4 |  | 0
 Parallax Tide | {2}{U}{U} | 4 |  | 0
@@ -506,11 +506,11 @@ Mogg Alarm | {1}{R} | 2 |  | 0
 Misers' Cage | {G} | 1 |  | 0
 Saproling Cluster | {1}{G} | 2 |  | 0
 Skyshroud Blessing | {2}{G} | 3 |  | 0
-Stir the Grave | {G} | 1 |  | 0
+Shattered Dreams | {G} | 1 |  | 0
 Belbe's Armor | {3} | 3 |  | 0
 Belbe's Portal | {5} | 5 |  | 0
 Rejuvenation Chamber | {3} | 3 |  | 0
-Lay of the Land | {3}{W}{W} | 5 |  | 0
+Pact of the Titan | {3}{W}{W} | 5 |  | 0
 Zephyr Charge | {3}{U}{U} | 5 |  | 0
 Mana Vapors | {1}{U} | 2 |  | 0
 Dryad's Caress | {1}{B} | 2 |  | 0
@@ -526,28 +526,28 @@ Grim Discovery | {1}{W} | 2 |  | 0
 Protective Sphere | {2}{W} | 3 |  | 0
 Rout | {3}{W}{W} | 5 |  | 0
 Samite Ministration | {1}{W} | 2 |  | 0
-Beckon Apparition | {W} | 1 |  | 0
+Multani's Presence | {W} | 1 |  | 0
 Crystal Spray | {2}{U} | 3 |  | 0
 Dream Twist | {1}{U} | 2 |  | 0
 Master Warcraft | {2}{U}{U} | 4 |  | 0
-Hit | {U} | 1 |  | 0
+Opt | {U} | 1 |  | 0
 Rainbow Vale | {3}{U} | 4 |  | 0
-Serve | {1}{U} | 2 |  | 0
+Swerve | {1}{U} | 2 |  | 0
 Annihilate | {3}{B}{B} | 5 |  | 0
 Desperate Research | {1}{B} | 2 |  | 0
 Do or Die | {1}{B} | 2 |  | 0
-Nourish | {1}{B} | 2 |  | 0
+Burgeoning | {1}{B} | 2 |  | 0
 Tainted Isle | {2}{B} | 3 |  | 0
 Lightning Dart | {1}{R} | 2 |  | 0
 Obliterate | {6}{R}{R} | 8 |  | 0
 Aggressive Urge | {1}{G} | 2 |  | 0
 Llanowar Wastes | {G} | 1 |  | 0
-Mighty Leap | {1}{G} | 2 |  | 0
+High Market | {1}{G} | 2 |  | 0
 Restock | {3}{G}{G} | 5 |  | 0
 Scouting Trek | {1}{G} | 2 |  | 0
-Fervent Denial | {4}{G} | 5 |  | 0
+Creeping Dread | {4}{G} | 5 |  | 0
 Stabbing Pain | {1}{U}{B} | 3 |  | 0
-Halcyon Glaze | {6} | 6 |  | 0
+Ghostly Flame | {6} | 6 |  | 0
 Phyrexian Altar | {3} | 3 |  | 0
 Phyrexian Lens | {3} | 3 |  | 0
 Seashell Cameo | {3} | 3 |  | 0
@@ -558,7 +558,7 @@ Pollen Remedy | {W} | 1 |  | 0
 Surprise Deployment | {3}{W} | 4 |  | 0
 Shifting Sky | {2}{U} | 3 |  | 0
 Death Bomb | {3}{B} | 4 |  | 0
-Night Dealings | {2}{B} | 3 |  | 0
+Hanweir Battlements | {2}{B} | 3 |  | 0
 Noxious Vapors | {1}{B}{B} | 3 |  | 0
 Phyrexian Vault | {3}{B} | 4 |  | 0
 Planeswalker's Fury | {2}{R} | 3 |  | 0
@@ -578,7 +578,7 @@ Last Caress | {2}{B} | 3 |  | 0
 Isolation Zone | {2}{R}{R} | 4 |  | 0
 Rakalite | {2}{R} | 3 |  | 0
 Mental Discipline | {G} | 1 |  | 0
-Iron Star | {4}{G} | 5 |  | 0
+Boomerang | {4}{G} | 5 |  | 0
 Dual Nature | {4}{G}{G} | 6 |  | 0
 Urborg | {1}{G} | 2 |  | 0
 Consume Strength | {1}{B}{G} | 3 |  | 0
@@ -586,7 +586,7 @@ Last Stand | {W}{U}{B}{R}{G} | 5 |  | 0
 Prophetic Bolt | {3}{U}{R} | 5 |  | 0
 Spirit Mirror | {W}{B} | 2 |  | 0
 Quicksilver Geyser | {1}{U}{R} | 3 |  | 0
-Ember Gale | {2} | 2 |  | 0
+Whalebone Glider | {2} | 2 |  | 0
 Caves of Koilos | 1 | 1 |  | 0
 Cease-Fire | {2}{W} | 3 |  | 0
 Kirtar's Wrath | {4}{W}{W} | 6 |  | 0
@@ -615,7 +615,7 @@ Thermal Blast | {4}{R} | 5 |  | 0
 Tumble | {1}{R} | 2 |  | 0
 Morbid Curiosity | {G} | 1 |  | 0
 Elephant Ambush | {2}{G}{G} | 4 |  | 0
-Opal Titan | {3}{G}{G} | 5 |  | 0
+Tidal Flats | {3}{G}{G} | 5 |  | 0
 Krosan Verge | {3}{G} | 4 |  | 0
 Nantuko Monastery | {2}{G} | 3 |  | 0
 Darkwater Egg | {1} | 1 |  | 0
@@ -630,24 +630,24 @@ Gods Willing | {1}{U} | 2 |  | 0
 Angel's Feather | {2}{B}{B} | 4 |  | 0
 Tome Scour | {4}{B} | 5 |  | 0
 Cackling Flames | {R} | 1 |  | 0
-Garbage Fire | {5}{R}{R} | 7 |  | 0
+Sacred Nectar | {5}{R}{R} | 7 |  | 0
 Flaming Gambit | {X}{R} | 1 |  | 0
 Pinion Feast | {2}{R} | 3 |  | 0
 Overmaster | {R} | 1 |  | 0
 Nantuko Shrine | {2}{G} | 3 |  | 0
 Tainted Field | 1 | 1 |  | 0
-Castigate | {1}{W} | 2 |  | 0
-Command Tower | {2}{W} | 3 |  | 0
+Camouflage | {1}{W} | 2 |  | 0
+Shred Memory | {2}{W} | 3 |  | 0
 Prismatic Strands | {2}{W} | 3 |  | 0
 Spirit Cairn | {2}{W} | 3 |  | 0
 Mystical Teachings | {2}{R} | 3 |  | 0
-Ferocious Charge | {1}{R} | 2 |  | 0
+Desecration Plague | {1}{R} | 2 |  | 0
 Swelter | {3}{R} | 4 |  | 0
 Swirling Sandstorm | {3}{R} | 4 |  | 0
 Epic Struggle | {2}{G}{G} | 4 |  | 0
 Grizzly Fate | {3}{G}{G} | 5 |  | 0
 Krosan Reclamation | {1}{G} | 2 |  | 0
-Krosan Verge | {G} | 1 |  | 0
+Profane Prayers | {G} | 1 |  | 0
 Hunting Grounds | {G}{W} | 2 |  | 0
 Krosan Verge | 1 | 1 |  | 0
 Aurification | {2}{W}{W} | 4 |  | 0
@@ -658,15 +658,15 @@ Necrologia | {W} | 1 |  | 0
 Unified Strike | {W} | 1 |  | 0
 Master Warcraft | {W} | 1 |  | 0
 Choking Tethers | {3}{U} | 4 |  | 0
-Disrupting Scepter | {2}{U} | 3 |  | 0
+Destructive Tampering | {2}{U} | 3 |  | 0
 Idyllic Tutor | {3}{U}{U} | 5 |  | 0
 Peer Pressure | {3}{U} | 4 |  | 0
-Rakdos Signet | {1}{U} | 2 |  | 0
+Exquisite Blood | {1}{U} | 2 |  | 0
 Cover of Darkness | {1}{B} | 2 |  | 0
 Cruel Revival | {4}{B} | 5 |  | 0
 Death Match | {3}{B} | 4 |  | 0
 Dirge of Dread | {2}{B} | 3 |  | 0
-Bronze Tablet | {2}{B} | 3 |  | 0
+Stone Calendar | {2}{B} | 3 |  | 0
 Frightful Delusion | {2}{B} | 3 |  | 0
 Head Games | {3}{B}{B} | 5 |  | 0
 Oversold Cemetery | {1}{B} | 2 |  | 0
@@ -674,33 +674,33 @@ Fleeting Distraction | {2}{B} | 3 |  | 0
 Withering Gaze | {B} | 1 |  | 0
 Aether Burst | {1}{B} | 2 |  | 0
 Brightstone Ritual | {R} | 1 |  | 0
-Butcher's Glee | {4}{R}{R}{R} | 7 |  | 0
+Burnt Offering | {4}{R}{R}{R} | 7 |  | 0
 Commando Raid | {2}{R} | 3 |  | 0
-Armageddon | {3}{R} | 4 |  | 0
+Silumgar Monument | {3}{R} | 4 |  | 0
 Goblin Grenade | {R} | 1 |  | 0
 Mana Echoes | {2}{R}{R} | 4 |  | 0
 Pinpoint Avalanche | {3}{R}{R} | 5 |  | 0
 Dark Prophecy | {R} | 1 |  | 0
-Sivvi's Valor | {6}{R} | 7 |  | 0
+Shifting Loyalties | {6}{R} | 7 |  | 0
 Scoured Barrens | {G} | 1 |  | 0
 Evil Presents | {3}{G} | 4 |  | 0
 Explosive Vegetation | {3}{G} | 4 |  | 0
-Krosan Grip | {4}{G}{G}{G} | 7 |  | 0
-Feral Contest | {2}{G} | 3 |  | 0
+Mishra's Groundbreaker | {4}{G}{G}{G} | 7 |  | 0
+Steady Progress | {2}{G} | 3 |  | 0
 Wand of the Elements | {3}{G}{G}{G} | 6 |  | 0
-Scalding Tarn | {2}{G}{G} | 4 |  | 0
+Unerring Sling | {2}{G}{G} | 4 |  | 0
 Soothing Balm | {6}{G}{G} | 8 |  | 0
 Secluded Steppe | 1 | 1 |  | 0
 Elven Lyre | {U} | 1 |  | 0
 Demolish | {2}{U} | 3 |  | 0
-Castle Sengir | {1}{U} | 2 |  | 0
+Riptide Replicator | {1}{U} | 2 |  | 0
 Feral Incarnation | {2}{R} | 3 |  | 0
 Goblin Lyre | {1}{R} | 2 |  | 0
-Spell Counter | {3}{G}{G} | 5 |  | 0
+Zealous Strike | {3}{G}{G} | 5 |  | 0
 Buried Alive | {1}{G} | 2 |  | 0
 Acorn Harvest | {1}{W} | 2 |  | 0
 Wipe Clean | {1}{W} | 2 |  | 0
-Dragonshift | {1}{U} | 2 |  | 0
+Tolarian Winds | {1}{U} | 2 |  | 0
 Death's Caress | {1}{B}{B} | 3 |  | 0
 Enrage | {X}{R} | 1 |  | 0
 Spark Spray | {R} | 1 |  | 0
@@ -710,21 +710,21 @@ Divergent Growth | {G} | 1 |  | 0
 Tome Scour | {G} | 1 |  | 0
 Wildwood Rebirth | {G} | 1 |  | 0
 Floodwaters | {5}{G} | 6 |  | 0
-Ghost Quarter | {2}{R} | 3 |  | 0
-Aura of Silence | {1}{W} | 2 |  | 0
+Last-Ditch Effort | {2}{R} | 3 |  | 0
+Stoke the Flames | {1}{W} | 2 |  | 0
 Psychic Transfer | {W} | 1 |  | 0
 Resounding Thunder | {W}{W} | 2 |  | 0
-Goblin Trenches | {3}{W} | 4 |  | 0
+Foreboding Ruins | {3}{W} | 4 |  | 0
 Brainstorm | {8}{U}{U} | 10 |  | 0
-Crooked Scales | {3}{B} | 4 |  | 0
+Cover of Darkness | {3}{B} | 4 |  | 0
 Spoils of the Vault | {B} | 1 |  | 0
 Forge Armor | {4}{R} | 5 |  | 0
 Grab the Reins | {3}{R} | 4 |  | 0
 Mass Hysteria | {R} | 1 |  | 0
-Peat Bog | {4}{R}{R} | 6 |  | 0
+Negate | {4}{R}{R} | 6 |  | 0
 Whirlermaker | {3} | 3 |  | 0
 Lifespark Spellbomb | {1} | 1 |  | 0
-Volcanic Hammer | {3} | 3 |  | 0
+Woodland Stream | {3} | 3 |  | 0
 Malachite Talisman | {6} | 6 |  | 0
 Corrosive Gale | {1} | 1 |  | 0
 Psychogenic Probe | {2} | 2 |  | 0
@@ -751,39 +751,39 @@ Spawning Pit | {2} | 2 |  | 0
 Grisly Salvage | {3}{W} | 4 |  | 0
 Retaliate | {2}{W}{W} | 4 |  | 0
 Disrupting Scepter | {2}{U} | 3 |  | 0
-Fevered Strength | {6}{U}{U} | 8 |  | 0
+Hoarder's Greed | {6}{U}{U} | 8 |  | 0
 Spectral Shift | {1}{U} | 2 |  | 0
 Morbid Hunger | {2}{B} | 3 |  | 0
-Krosan Verge | {3}{R}{R} | 5 |  | 0
+Vedalken Orrery | {3}{R}{R} | 5 |  | 0
 Rain of Rust | {3}{R}{R} | 5 |  | 0
-Sigil of the New Dawn | {7}{G}{G} | 9 |  | 0
+Wielding the Green Dragon | {7}{G}{G} | 9 |  | 0
 Tel-Jilad Justice | {1}{G} | 2 |  | 0
 Verdant Touch | {3}{G} | 4 |  | 0
 Blasting Station | {3} | 3 |  | 0
 Door to Nothingness | {5} | 5 |  | 0
 Consume Spirit | {3} | 3 |  | 0
 Grinding Station | {2} | 2 |  | 0
-Deserter's Quarters | {2} | 2 |  | 0
+Hoarder's Greed | {2} | 2 |  | 0
 Scrounge | {9} | 9 |  | 0
-Shivan Meteor | {W} | 1 |  | 0
+Burst of Strength | {W} | 1 |  | 0
 Call to Glory | {1}{W} | 2 |  | 0
 Tainted Aether | {W} | 1 |  | 0
 Hold the Line | {1}{W}{W} | 3 |  | 0
-Inexorable Tide | {1}{W} | 2 |  | 0
+Isolation Cell | {1}{W} | 2 |  | 0
 Pyramid of the Pantheon | {4}{W} | 5 |  | 0
 Leonin Bladetrap | {2}{W} | 3 |  | 0
 Spinal Embrace | {4}{W}{W} | 6 |  | 0
 Cut the Tethers | {2}{U}{U} | 4 |  | 0
 Hisoka's Defiance | {1}{U} | 2 |  | 0
-Test of Faith | {4}{U} | 5 |  | 0
+Flash of Insight | {4}{U} | 5 |  | 0
 Release | {5}{U} | 6 |  | 0
 Eye of the Storm | {4}{U}{U} | 6 |  | 0
 Fire Covenant | {1}{B} | 2 |  | 0
 Nantuko Shrine | {1}{B} | 2 |  | 0
-Energy Chamber | {1}{R} | 2 |  | 0
+Ethereal Ambush | {1}{R} | 2 |  | 0
 Hearth Charm | {1}{R} | 2 |  | 0
 Shrine of Burning Rage | {2}{R} | 3 |  | 0
-Unstable Frontier | {2}{R}{R} | 4 |  | 0
+Ancestral Knowledge | {2}{R}{R} | 4 |  | 0
 Burden of Greed | {1}{G} | 2 |  | 0
 Lashknife Barrier | {3}{G}{G} | 5 |  | 0
 Hair-Strung Koto | {6} | 6 |  | 0
@@ -793,14 +793,14 @@ Long-Forgotten Gohei | {3} | 3 |  | 0
 Descent of the Dragons | {6} | 6 |  | 0
 Sea God's Revenge | {3} | 3 |  | 0
 Minamo, School at Water's Edge | 1 | 1 |  | 0
-Mental Agony | {5}{W} | 6 |  | 0
+Flying Carpet | {5}{W} | 6 |  | 0
 Execute | {2}{W} | 3 |  | 0
-Battle Cry | {hw} | 0 | .5 | 0
+Still Life | {hw} | 0 | .5 | 0
 Artful Dodge | {2}{U} | 3 |  | 0
 Cankerous Thirst | {1}{U} | 2 |  | 0
 Bad Moon | {2}{B}{B} | 4 |  | 0
 Farewell to Arms | {1}{B}{B} | 3 |  | 0
-Lurking Skirge | {1}{B} | 2 |  | 0
+Soaring Seacliff | {1}{B} | 2 |  | 0
 Ambush | {2}{R} | 3 |  | 0
 Rare-B-Gone | {1}{G} | 2 |  | 0
 Last Kiss | {4}{G} | 5 |  | 0
@@ -812,16 +812,16 @@ Why | {1}{G} | 2 |  | 0
 Urza's Hot Tub | {2} | 2 |  | 0
 Split Decision | {1}{W} | 2 |  | 0
 Culling Dais | {1}{U}{U} | 3 |  | 0
-Twinning Glass | {4}{U}{U} | 6 |  | 0
+Mental Misstep | {4}{U}{U} | 6 |  | 0
 Minamo's Meddling | {2}{U}{U} | 4 |  | 0
 Hero's Demise | {1}{B} | 2 |  | 0
-Ooze Garden | {1}{B}{B} | 3 |  | 0
+Spire Barrage | {1}{B}{B} | 3 |  | 0
 Decaying Soil | {X}{B}{B} | 2 |  | 0
 Rapid Fire | {1}{R} | 2 |  | 0
 Burning Sands | {1}{R}{R} | 3 |  | 0
 Arcum's Weathervane | {1}{R}{R} | 3 |  | 0
 Flowstone Flood | {2}{R}{R} | 4 |  | 0
-Psychic Intrusion | {1}{R} | 2 |  | 0
+Vitu-Ghazi, the City-Tree | {1}{R} | 2 |  | 0
 Heartbeat of Spring | {4}{G} | 5 |  | 0
 Curtain of Light | {1}{W} | 2 |  | 0
 Think Tank | {2}{W} | 3 |  | 0
@@ -830,9 +830,9 @@ Recuperate | {3}{U} | 4 |  | 0
 Death Wind | {X}{B}{B} | 2 |  | 0
 Staff of the Mind Magus | {4}{B} | 5 |  | 0
 Exile into Darkness | {4}{B} | 5 |  | 0
-Horn of Plenty | {B}{B} | 2 |  | 0
+Lens of Clarity | {B}{B} | 2 |  | 0
 Temur Ascendancy | {B}{B}{B} | 3 |  | 0
-Boros Garrison | {R} | 1 |  | 0
+Glorious Charge | {R} | 1 |  | 0
 Inner Fire | {3}{R} | 4 |  | 0
 Dense Canopy | {1}{G} | 2 |  | 0
 Sultai Ascendancy | {1}{G}{G} | 3 |  | 0
@@ -841,7 +841,7 @@ Shrine of Limitless Power | {1}{G} | 2 |  | 0
 Shattering Spree | {2}{G}{G} | 4 |  | 0
 Wine of Blood and Iron | {3} | 3 |  | 0
 Mikokoro, Center of the Sea | 1 | 1 |  | 0
-Hurricane | {1}{W} | 2 |  | 0
+Soul Barrier | {1}{W} | 2 |  | 0
 Primal Order | {4}{W} | 5 |  | 0
 Leave No Trace | {1}{W} | 2 |  | 0
 Three Dreams | {4}{W} | 5 |  | 0
@@ -851,7 +851,7 @@ Hellfire | {3}{B}{B}{B} | 6 |  | 0
 Last Gasp | {1}{B} | 2 |  | 0
 Geist Snatch | {4}{R}{R} | 6 |  | 0
 Mindmoil | {4}{R} | 5 |  | 0
-Gate to the Aether | {1}{R}{R} | 3 |  | 0
+Call to the Grave | {1}{R}{R} | 3 |  | 0
 Warrior's Honor | {R} | 1 |  | 0
 Gather Courage | {G} | 1 |  | 0
 Clutch of the Undercity | {1}{U}{U}{B} | 4 |  | 0
@@ -859,7 +859,7 @@ Dimir Charm | {1}{U}{B} | 3 |  | 0
 Pendrell Mists | {5}{U}{B}{B} | 8 |  | 0
 Rally the Righteous | {1}{R}{W} | 3 |  | 0
 Bloodletter Quill | {3} | 3 |  | 0
-Endless Swarm | {5} | 5 |  | 0
+Ghostly Flame | {5} | 5 |  | 0
 Spectral Searchlight | {3} | 3 |  | 0
 Terrarion | {1} | 1 |  | 0
 Glaciers | {2}{W}{W} | 4 |  | 0
@@ -874,12 +874,12 @@ Worldly Counsel | {3}{R} | 4 |  | 0
 Organ Harvest | {4}{R} | 5 |  | 0
 Predatory Focus | {3}{G}{G} | 5 |  | 0
 Conjurer's Ban | {W}{B} | 2 |  | 0
-Hunger of the Nim | {B}{R}{G}{W} | 4 |  | 0
+Keldon Necropolis | {B}{R}{G}{W} | 4 |  | 0
 Galestrike | {1}{U}{R} | 3 |  | 0
-Intruder Alarm | {R}{G}{W}{U} | 4 |  | 0
+Inspired Charge | {R}{G}{W}{U} | 4 |  | 0
 Leap of Flame | {U}{R} | 2 |  | 0
 Orzhov Basilica | {W/B}{W/B} | 2 |  | 0
-Purgatory | {3}{U/R} | 4 |  | 0
+Primal Growth | {3}{U/R} | 4 |  | 0
 Mizzium Transreliquat | {3} | 3 |  | 0
 Serra Aviary | {W}{W} | 2 |  | 0
 Steeling Stance | {1}{W}{W} | 3 |  | 0
@@ -888,8 +888,8 @@ Opal Champion | {3}{B} | 4 |  | 0
 Wreak Havoc | {1}{B} | 2 |  | 0
 Eternal Dominion | {3}{B} | 4 |  | 0
 Ignorant Bliss | {1}{R} | 2 |  | 0
-Expedition Map | {2}{G}{G}{U}{U} | 6 |  | 0
-Unburial Rites | {B}{R} | 2 |  | 0
+Earthen Arms | {2}{G}{G}{U}{U} | 6 |  | 0
+Blossoming Wreath | {B}{R} | 2 |  | 0
 Overrule | {X}{W}{U} | 2 |  | 0
 Rakdos Keyrune | {B}{B}{R} | 3 |  | 0
 Skyshaper | {3}{W}{U} | 5 |  | 0
@@ -899,32 +899,32 @@ Bound | {3}{B}{G} | 5 |  | 0
 Crime | {3}{W}{B} | 5 |  | 0
 Supply | {X}{G}{W} | 2 |  | 0
 Rakdos Signet | {2} | 2 |  | 0
-Blood Lust | 1 | 1 |  | 0
+Bloodscent | 1 | 1 |  | 0
 Hallowed Ground | 1 | 1 |  | 0
 Adriana's Valor | {4}{W}{W} | 6 |  | 0
 Attune with Aether | {2}{W} | 3 |  | 0
 Sun's Bounty | {1}{W} | 2 |  | 0
 Adarkar Wastes | {4}{U} | 5 |  | 0
 Raise the Alarm | {5}{U}{U} | 7 |  | 0
-Second Chance | {3}{U} | 4 |  | 0
+Fire and Brimstone | {3}{U} | 4 |  | 0
 Vexing Arcanix | {1}{U}{U} | 3 |  | 0
 Grasp of Phantoms | {1}{B}{B} | 3 |  | 0
 Karplusan Forest | {2}{R}{R} | 4 |  | 0
 Brood Birthing | {2}{G}{G} | 4 |  | 0
 Karplusan Forest | {3}{G} | 4 |  | 0
 Boreal Shelf | 1 | 1 |  | 0
-Might of the Nephilim | {W}{W} | 2 |  | 0
-Surging Aether | {2}{W} | 3 |  | 0
+Throne of the High City | {W}{W} | 2 |  | 0
+Lurking Predators | {2}{W} | 3 |  | 0
 Centaur Glade | {2}{W}{W}{W} | 5 |  | 0
 Temporal Distortion | {1}{W} | 2 |  | 0
-Waterwhirl | {3}{W} | 4 |  | 0
+Waterveil Cavern | {3}{W} | 4 |  | 0
 Bewilder | {2}{U} | 3 |  | 0
 Dream Salvage | {1}{U} | 2 |  | 0
 Parallax Tide | {2}{U} | 3 |  | 0
 Lightning Cloud | {3}{U}{U} | 5 |  | 0
 Scorching Spear | {U} | 1 |  | 0
 Think Twice | {1}{U} | 2 |  | 0
-Bad River | {2}{B} | 3 |  | 0
+Lava Blister | {2}{B} | 3 |  | 0
 Demonic Collusion | {3}{B}{B} | 5 |  | 0
 Change of Heart | {3}{B}{B} | 5 |  | 0
 Smite the Monstrous | {3}{B}{B} | 5 |  | 0
@@ -933,16 +933,16 @@ Sudden Spoiling | {1}{B}{B} | 3 |  | 0
 Tendrils of Corruption | {3}{B} | 4 |  | 0
 Barbed Foliage | {6}{R}{R} | 8 |  | 0
 Ignite Memories | {4}{R} | 5 |  | 0
-Marble Diamond | {4}{R}{R} | 6 |  | 0
+Planar Bridge | {4}{R}{R} | 6 |  | 0
 Secret Salvage | {2}{R} | 3 |  | 0
 Last Gasp | {1}{G}{G} | 3 |  | 0
 Molder | {X}{G} | 1 |  | 0
 Primal Rage | {2}{G} | 3 |  | 0
-Scrap Mastery | {1}{G} | 2 |  | 0
-Spear of Heliod | {G}{G} | 2 |  | 0
-Svyelunite Temple | {3}{G} | 4 |  | 0
+Screaming Fury | {1}{G} | 2 |  | 0
+Temple of Abandon | {G}{G} | 2 |  | 0
+Ignite Memories | {3}{G} | 4 |  | 0
 Mana Geyser | {G}{G}{G} | 3 |  | 0
-Tower of Fortunes | {3}{R}{G} | 5 |  | 0
+Solidarity of Heroes | {3}{R}{G} | 5 |  | 0
 Aspect of Hydra | {5} | 5 |  | 0
 Hivestone | {2} | 2 |  | 0
 Gemstone Caverns | 1 | 1 |  | 0
@@ -959,11 +959,11 @@ Graveyard Shovel | {B}{G} | 2 |  | 0
 Marshaling Cry | {1}{W}{W} | 3 |  | 0
 Shattered Dreams | {W} | 1 |  | 0
 Double Stroke | {W}{W} | 2 |  | 0
-Countermand | {3}{W}{W} | 5 |  | 0
+Life and Limb | {3}{W}{W} | 5 |  | 0
 Live Fast | {2}{U} | 3 |  | 0
-Molten Rain | {7}{U} | 8 |  | 0
+Momentary Blink | {7}{U} | 8 |  | 0
 Pact of Negation | {0} | 0 |  | 0
-Prism Ring | {1}{U} | 2 |  | 0
+Turn Against | {1}{U} | 2 |  | 0
 Sarcomancy | {1}{U} | 2 |  | 0
 Sarcomancy | {2}{U} | 3 |  | 0
 Festering March | {3}{B}{B} | 5 |  | 0
@@ -974,42 +974,42 @@ Arc Blade | {3}{R}{R} | 5 |  | 0
 Vines of the Recluse | {6}{R}{R} | 8 |  | 0
 Raging River | {1}{G}{G} | 3 |  | 0
 Sprout Swarm | {1}{G} | 2 |  | 0
-Logic Knot | {G} | 1 |  | 0
-Pulse of Murasa | {3}{G}{G} | 5 |  | 0
+Panoptic Mirror | {G} | 1 |  | 0
+Bolt of Keranos | {3}{G}{G} | 5 |  | 0
 Centaur Garden | {3}{G} | 4 |  | 0
 Muraganda Petroglyphs | {3}{G} | 4 |  | 0
-Necrogen Censer | {2}{G} | 3 |  | 0
+Treasure Cruise | {2}{G} | 3 |  | 0
 Sliver Hive | {W}{U}{B}{R}{G} | 5 |  | 0
-Urza's Armor | 1 | 1 |  | 0
+Dwarven Armory | 1 | 1 |  | 0
 Graven Cairns | 1 | 1 |  | 0
 Terminate | {0} | 0 |  | 0
-Dirge of Dread | {B} | 1 |  | 0
+Springleaf Drum | {B} | 1 |  | 0
 Killing Wave | {X}{B} | 1 |  | 0
 Flamekin Village | {G}{U} | 2 |  | 0
-Scrying Sheets | {2}{B}{B} | 4 |  | 0
+Healing Leaves | {2}{B}{B} | 4 |  | 0
 Dictate of Kruphix | {1}{U}{U} | 3 |  | 0
-Rolling Thunder | {1}{U}{R} | 3 |  | 0
+Meandering River | {1}{U}{R} | 3 |  | 0
 Metallic Mastery | {2}{W} | 3 |  | 0
 Trigon of Thought | {1}{W} | 2 |  | 0
-Necrobite | {6}{U} | 7 |  | 0
+Deception | {6}{U} | 7 |  | 0
 Inkmoth Nexus | {3}{U}{U} | 5 |  | 0
-Alluring Scent | {1}{U} | 2 |  | 0
+Splintering Wind | {1}{U} | 2 |  | 0
 Soldevi Digger | {1}{U} | 2 |  | 0
-Vines of Vastwood | {1}{U} | 2 |  | 0
+Vines of the Recluse | {1}{U} | 2 |  | 0
 Far Wanderings | {4}{B} | 5 |  | 0
 Final Revels | {4}{B} | 5 |  | 0
 Keep Watch | {B} | 1 |  | 0
 Pulse of the Forge | {1}{B} | 2 |  | 0
-Collapsing Borders | {3}{B} | 4 |  | 0
+Saproling Burst | {3}{B} | 4 |  | 0
 Glare of Heresy | {4}{B} | 5 |  | 0
 Incendiary Command | {3}{R}{R} | 5 |  | 0
 Needle Drop | {R} | 1 |  | 0
 Stormbind | {1}{R} | 2 |  | 0
 Barrin | {3}{G} | 4 |  | 0
-Shriveling Rot | {4}{G} | 5 |  | 0
+Cloven Casting | {4}{G} | 5 |  | 0
 Elven Palisade | {3}{G} | 4 |  | 0
 Sylvan Echoes | {G} | 1 |  | 0
-Powder Keg | {G}{W} | 2 |  | 0
+Dead Reckoning | {G}{W} | 2 |  | 0
 Miren, the Moaning Well | {2}{U}{B} | 4 |  | 0
 Rings of Brighthearth | {3} | 3 |  | 0
 Wanderer's Twig | {1} | 1 |  | 0
@@ -1017,28 +1017,28 @@ Secluded Glen | 1 | 1 |  | 0
 Windbrisk Heights | 1 | 1 |  | 0
 Staff of Nin | {6} | 6 |  | 0
 Dictate of the Twin Gods | {3}{R}{R} | 5 |  | 0
-Creeping Tar Pit | {2}{W} | 3 |  | 0
+Pedantic Learning | {2}{W} | 3 |  | 0
 Stonewood Invocation | {2}{W} | 3 |  | 0
 Righteous Confluence | {1}{W} | 2 |  | 0
 Dissolve | {1}{U} | 2 |  | 0
 Inspired Charge | {3}{U} | 4 |  | 0
 Glorious Charge | {3}{U} | 4 |  | 0
-Dromoka Monument | {1}{U} | 2 |  | 0
+Solitary Confinement | {1}{U} | 2 |  | 0
 Thieves' Auction | {2}{U} | 3 |  | 0
 Persecute | {1}{B} | 2 |  | 0
 Morgue Theft | {2}{B}{B} | 4 |  | 0
 Gather Specimens | {4}{B} | 5 |  | 0
 Primal Boost | {B} | 1 |  | 0
-Release the Gremlins | {3}{B} | 4 |  | 0
+Govern the Guildless | {3}{B} | 4 |  | 0
 Zur's Weirding | {1}{B} | 2 |  | 0
 Land Grant | {5}{R} | 6 |  | 0
 Rivals' Duel | {3}{R} | 4 |  | 0
 Vengeful Rebirth | {3}{R} | 4 |  | 0
 Spring Cleaning | {3}{R} | 4 |  | 0
-Jund Panorama | {3}{G} | 4 |  | 0
+Rakdos Charm | {3}{G} | 4 |  | 0
 Haunting Wind | {3}{G} | 4 |  | 0
 Dismal Backwater | {2}{G} | 3 |  | 0
-Rise from the Tides | {3}{G} | 4 |  | 0
+Vines of the Recluse | {3}{G} | 4 |  | 0
 Llanowar Reborn | {2}{G} | 3 |  | 0
 Rain of Daggers | {2} | 2 |  | 0
 Reverent Mantra | {4}{W} | 5 |  | 0
@@ -1046,7 +1046,7 @@ Strip Bare | {W} | 1 |  | 0
 Twilight Mire | {3}{W}{W}{W} | 6 |  | 0
 Powerleech | {5}{W} | 6 |  | 0
 Choking Tethers | {4}{U} | 5 |  | 0
-Black Vise | {3}{U} | 4 |  | 0
+Blackcleave Cliffs | {3}{U} | 4 |  | 0
 Words of Wind | {3}{B} | 4 |  | 0
 Midnight Charm | {3}{B}{B}{B} | 6 |  | 0
 Rite of Consumption | {1}{B} | 2 |  | 0
@@ -1060,30 +1060,30 @@ Bloodfell Caves | {5}{G}{G}{G} | 8 |  | 0
 Thirst for Knowledge | {1}{W/U}{W/U}{W/U} | 4 |  | 0
 Dream Salvage | {U/B} | 1 |  | 0
 Oona's Grace | {U/B} | 1 |  | 0
-Sure Strike | {1}{B/R} | 2 |  | 0
-Mardu Banner | {B/R} | 1 |  | 0
-Medicine Bag | {1}{G/W} | 2 |  | 0
+Subtle Strike | {1}{B/R} | 2 |  | 0
+Paradox Engine | {B/R} | 1 |  | 0
+Meandering River | {1}{G/W} | 2 |  | 0
 Reknit | {1}{G/W} | 2 |  | 0
 Seal of Doom | {3}{G/W} | 4 |  | 0
 Seek the Wilds | {G/W} | 1 |  | 0
 Cauldron of Souls | {5} | 5 |  | 0
 Dead Drop | {1} | 1 |  | 0
 Trip Noose | {2} | 2 |  | 0
-Ignorant Bliss | {2}{W} | 3 |  | 0
-Rapid Fire | {1}{U} | 2 |  | 0
+Ancient Runes | {2}{W} | 3 |  | 0
+Braid of Fire | {1}{U} | 2 |  | 0
 Sanity Grinding | {U}{U}{U} | 3 |  | 0
 Crumbling Ashes | {1}{B} | 2 |  | 0
 Flame Jab | {R} | 1 |  | 0
 Dismal Failure | {5}{G}{G} | 7 |  | 0
-Mercadian Lift | {3}{G}{G} | 5 |  | 0
+Lashknife Barrier | {3}{G}{G} | 5 |  | 0
 Royal Decree | {4}{G}{G}{G} | 7 |  | 0
 Silverstrike | {3}{W/B}{W/B} | 5 |  | 0
 Noxious Revival | {3}{B/G} | 4 |  | 0
 Rise of the Hobgoblins | {R/W}{R/W} | 2 |  | 0
-Mercadian Lift | {2}{G/U}{G/U}{G/U} | 5 |  | 0
+Lurking Skirge | {2}{G/U}{G/U}{G/U} | 5 |  | 0
 Heartstone | {3} | 3 |  | 0
-Merciless Eviction | {2}{R/W}{G} | 4 |  | 0
-Naya Panorama | {2}{R}{G}{W} | 5 |  | 0
+Nahiri's Machinations | {2}{R/W}{G} | 4 |  | 0
+Ray of Erasure | {2}{R}{G}{W} | 5 |  | 0
 Golem's Heart | {2} | 2 |  | 0
 Invincible Hymn | {6}{W}{W} | 8 |  | 0
 Sight of the Scalelords | {1}{W} | 2 |  | 0
@@ -1091,52 +1091,52 @@ Chaotic Aether | {U} | 1 |  | 0
 Mindlock Orb | {3}{U} | 4 |  | 0
 Protomatter Powder | {2}{U} | 3 |  | 0
 Desperate Gambit | {1}{B} | 2 |  | 0
-Storm Seeker | {2}{B} | 3 |  | 0
+Sheer Drop | {2}{B} | 3 |  | 0
 Skeletal Scrying | {4}{B} | 5 |  | 0
 Crucible of Fire | {3}{R} | 4 |  | 0
 Transgress the Mind | {3}{R} | 4 |  | 0
 Branching Bolt | {1}{R}{G} | 3 |  | 0
 Azorius Charm | {2}{B}{R}{G} | 5 |  | 0
 Clarion Ultimatum | {G}{G}{W}{W}{W}{U}{U} | 7 |  | 0
-Life Burst | {W}{U} | 2 |  | 0
+Swift Justice | {W}{U} | 2 |  | 0
 Grixis Charm | {U}{B}{R} | 3 |  | 0
 Searing Spear | {U}{B}{R} | 3 |  | 0
 Necrogen Mists | {4}{W} | 5 |  | 0
 Scepter of Dominance | {1}{W}{W} | 3 |  | 0
 Wave of Indifference | {3}{W} | 4 |  | 0
-Frontier Siege | {2}{U} | 3 |  | 0
+Steeling Stance | {2}{U} | 3 |  | 0
 Corrupted Resolve | {B} | 1 |  | 0
 Drag Down | {2}{B} | 3 |  | 0
 Grixis Panorama | {5}{B} | 6 |  | 0
-Flame Slash | {1}{B} | 2 |  | 0
+Savage Alliance | {1}{B} | 2 |  | 0
 Bloodfell Caves | {R} | 1 |  | 0
 Contamination | {3}{R} | 4 |  | 0
 Ferocious Charge | {3}{R}{R} | 5 |  | 0
-Flowstone Slide | {2}{G} | 3 |  | 0
-Sacred Armory | {2}{G} | 3 |  | 0
+Glorious Anthem | {2}{G} | 3 |  | 0
+Saheeli's Artistry | {2}{G} | 3 |  | 0
 Spore Burst | {3}{G} | 4 |  | 0
 Aspect of Hydra | {X}{R}{G} | 2 |  | 0
 Booby Trap | {4}{U}{B}{R} | 7 |  | 0
-Opal Avenger | {G}{W}{U} | 3 |  | 0
+Quicksilver Geyser | {G}{W}{U} | 3 |  | 0
 Skywhaler's Shot | {3}{G}{W}{U} | 6 |  | 0
 Armillary Sphere | {2} | 2 |  | 0
 Omen | 1 | 1 |  | 0
 Etherwrought Page | {1}{W}{U} | 3 |  | 0
 Mistvein Borderpost | {1}{U}{B} | 3 |  | 0
 Razortip Whip | {B}{R} | 2 |  | 0
-Death Bomb | {1}{B}{R} | 3 |  | 0
-Rootbound Crag | {3}{B}{R} | 5 |  | 0
+Path of Bravery | {1}{B}{R} | 3 |  | 0
+Morbid Curiosity | {3}{B}{R} | 5 |  | 0
 Obelisk of Jund | {1}{R}{G} | 3 |  | 0
 Deny Reality | {4}{R}{G} | 6 |  | 0
 Violent Outburst | {1}{R}{G} | 3 |  | 0
 Polluted Mire | {4}{G}{W} | 6 |  | 0
 Khalni Garden | {G}{W} | 2 |  | 0
 Living Armor | {2}{G}{W} | 4 |  | 0
-Scroll Rack | {3}{U}{R} | 5 |  | 0
+Sick and Tired | {3}{U}{R} | 5 |  | 0
 Pulling Teeth | {B}{G} | 2 |  | 0
-Unstable Footing | {U}{B}{B}{R} | 4 |  | 0
-Trail of Evidence | {R/W}{G} | 2 |  | 0
-Verdant Succession | {2}{W} | 3 |  | 0
+Unyaro Bee Sting | {U}{B}{B}{R} | 4 |  | 0
+Test of Endurance | {R/W}{G} | 2 |  | 0
+Desert Sandstorm | {2}{W} | 3 |  | 0
 Disorient | {3}{U} | 4 |  | 0
 Sleep | {2}{U}{U} | 4 |  | 0
 Acolyte's Reward | {B} | 1 |  | 0
@@ -1150,24 +1150,24 @@ Rootbound Crag | 1 | 1 |  | 0
 Tower of Eons | 1 | 1 |  | 0
 The Hive | 1 | 1 |  | 0
 Rites of Refusal | 1 | 1 |  | 0
-Land Cap | 1 | 1 |  | 0
+Downpour | 1 | 1 |  | 0
 Raven's Crime | 1 | 1 |  | 0
-Aether Vial | 1 | 1 |  | 0
+Teferi's Veil | 1 | 1 |  | 0
 Desolate Lighthouse | {W}{W}{W} | 3 |  | 0
-Retreat to Emeria | {6}{W}{W}{W} | 9 |  | 0
+Cathedral of Serra | {6}{W}{W}{W} | 9 |  | 0
 Kor Haven | {2}{W} | 3 |  | 0
 Seed the Land | {W} | 1 |  | 0
 Gleeful Sabotage | {3}{U} | 4 |  | 0
-Sphere of the Suns | {3}{U}{U} | 5 |  | 0
+Smite the Monstrous | {3}{U}{U} | 5 |  | 0
 Hidden Herd | {3}{U} | 4 |  | 0
-Shadows of the Past | {5}{B}{B} | 7 |  | 0
+Flames of the Blood Hand | {5}{B}{B} | 7 |  | 0
 Sadistic Sacrament | {B}{B}{B} | 3 |  | 0
 Cauldron Haze | {4}{R}{R} | 6 |  | 0
 Goblin Charbelcher | {1}{R} | 2 |  | 0
 Cabal Therapy | {6}{R}{R} | 8 |  | 0
 Molten Frame | {2}{R} | 3 |  | 0
 Exquisite Firecraft | {1}{R}{R}{R} | 4 |  | 0
-Sunfire Balm | {4}{R}{R} | 6 |  | 0
+Funeral Pyre | {4}{R}{R} | 6 |  | 0
 Seismic Shudder | {1}{R} | 2 |  | 0
 Lightform | {3}{G}{G} | 5 |  | 0
 Timber Gorge | {3}{G} | 4 |  | 0
@@ -1196,8 +1196,8 @@ Head Games | {W} | 1 |  | 0
 Moonlit Wake | {2}{W} | 3 |  | 0
 Mortal Combat | {4}{W} | 5 |  | 0
 Near-Death Experience | {2}{W}{W}{W} | 5 |  | 0
-Champion's Victory | {1}{U} | 2 |  | 0
-Drag Under | {4}{U} | 5 |  | 0
+Thespian's Stage | {1}{U} | 2 |  | 0
+Dark Temper | {4}{U} | 5 |  | 0
 Guardian Idol | {2}{U} | 3 |  | 0
 Lay Bare | {2}{U}{U} | 4 |  | 0
 Righteous Confluence | {1}{U} | 2 |  | 0
@@ -1233,7 +1233,7 @@ Redirect | {U}{U} | 2 |  | 0
 Night Terrors | {3}{B} | 4 |  | 0
 Barrin's Spite | {2}{R} | 3 |  | 0
 Crystal Rod | {1}{R}{R}{R} | 4 |  | 0
-Aura Shards | {1}{G} | 2 |  | 0
+Mana Short | {1}{G} | 2 |  | 0
 Shape Anew | {3}{U} | 4 |  | 0
 Antagonism | {2}{B} | 3 |  | 0
 Garbage Fire | {3}{R}{R} | 5 |  | 0
@@ -1244,7 +1244,7 @@ Blunt the Assault | {3}{G} | 4 |  | 0
 Genesis Wave | {X}{G}{G}{G} | 3 |  | 0
 Viridian Revel | {1}{G}{G} | 3 |  | 0
 Withstand Death | {G} | 1 |  | 0
-Reforge the Soul | {3}{W}{U} | 5 |  | 0
+Scout the Borders | {3}{W}{U} | 5 |  | 0
 Corpse Churn | {4} | 4 |  | 0
 Darksteel Citadel | {6} | 6 |  | 0
 Golden Urn | {1} | 1 |  | 0
@@ -1252,25 +1252,25 @@ Horizon Spellbomb | {1} | 1 |  | 0
 Mystical Tutor | {4} | 4 |  | 0
 New Benalia | {2} | 2 |  | 0
 Prototype Portal | {4} | 4 |  | 0
-Resounding Thunder | {7} | 7 |  | 0
-Rusted Relic | {3} | 3 |  | 0
+Razorverge Thicket | {7} | 7 |  | 0
+Ichor Wellspring | {3} | 3 |  | 0
 Seachrome Coast | 1 | 1 |  | 0
 Fuel for the Cause | {2}{U}{U} | 4 |  | 0
 Veiled Serpent | {4}{U} | 5 |  | 0
 Morbid Plunder | {1}{B}{B} | 3 |  | 0
 Phyrexian Furnace | {1}{B}{B} | 3 |  | 0
 Granulate | {4}{R}{R} | 6 |  | 0
-Jungle Basin | {2}{G}{G} | 4 |  | 0
+Turn Against | {2}{G}{G} | 4 |  | 0
 Myr Turbine | {5} | 5 |  | 0
 Precise Strike | {4} | 4 |  | 0
 Spine of Ish Sah | {7} | 7 |  | 0
 Titan Forge | {3} | 3 |  | 0
 War Report | {3}{W} | 4 |  | 0
-Mire's Toll | {3}{B} | 4 |  | 0
+Boros Signet | {3}{B} | 4 |  | 0
 Sylvan Paradise | {3}{R}{R} | 5 |  | 0
 Rage Extractor | {4}{R/P} | 5 |  | 0
 Whipflare | {1}{R} | 2 |  | 0
-Memory Sluice | {1}{G} | 2 |  | 0
+Natural Selection | {1}{G} | 2 |  | 0
 Gremlin Mine | {1} | 1 |  | 0
 Shrine of Boundless Growth | {3} | 3 |  | 0
 Shrine of Piercing Vision | {2} | 2 |  | 0
@@ -1278,32 +1278,32 @@ Spellshift | {2} | 2 |  | 0
 Phyrexia's Core | 1 | 1 |  | 0
 Crescendo of War | {3}{W} | 4 |  | 0
 Tribute to the Wild | {1}{G} | 2 |  | 0
-Sins of the Past | {U}{R} | 2 |  | 0
+Paliano, the High City | {U}{R} | 2 |  | 0
 Alabaster Potion | {1}{W} | 2 |  | 0
 Guardians' Pledge | {1}{W}{W} | 3 |  | 0
 Dark Deal | {4}{U} | 5 |  | 0
-Bloodstained Mire | {2}{B} | 3 |  | 0
+Invigorated Rampage | {2}{B} | 3 |  | 0
 Drifting Meadow | {3}{B} | 4 |  | 0
 Taste of Blood | {B} | 1 |  | 0
 Forsaken City | {4}{R}{R}{R} | 7 |  | 0
 Moratorium Stone | {2}{R}{R} | 4 |  | 0
-Well of Ideas | {1}{R} | 2 |  | 0
+Well of Discovery | {1}{R} | 2 |  | 0
 Coercive Portal | {G} | 1 |  | 0
 Helm of Possession | {2}{W} | 3 |  | 0
 Rebuke | {2}{W} | 3 |  | 0
 Shattering Pulse | {4}{U} | 5 |  | 0
-Fertile Imagination | 1 | 1 |  | 0
+Infinite Obliteration | 1 | 1 |  | 0
 Searing Meditation | {U} | 1 |  | 0
 Corpse Lunge | {2}{B} | 3 |  | 0
 Caves of Koilos | {3}{B} | 4 |  | 0
-Wild Might | {B} | 1 |  | 0
+Death Wind | {B} | 1 |  | 0
 Gruesome Discovery | {B} | 1 |  | 0
 Morgue Burst | {3}{B}{B} | 5 |  | 0
 Hypochondria | {B} | 1 |  | 0
 Unburial Rites | {4}{B} | 5 |  | 0
-Calming Verse | {1}{B} | 2 |  | 0
+Welding Sparks | {1}{B} | 2 |  | 0
 Flood Plain | 1 | 4 |  | 0
-Tower of Murmurs | 1 | 3 |  | 0
+Price of Progress | 1 | 3 |  | 0
 High Seas | {2}{R} | 3 |  | 0
 Homeward Path | {3}{R} | 4 |  | 0
 Unnatural Predation | 1 | 3 |  | 0
@@ -1312,32 +1312,32 @@ Bonds of Mortality | {4}{G}{G}{G} | 7 |  | 0
 Spider Spawning | {4}{G} | 5 |  | 0
 Travel Preparations | {1}{G} | 2 |  | 0
 Woodland Stream | {3}{G} | 4 |  | 0
-Misty Rainforest | {1}{W}{U} | 3 |  | 0
+Mist of Stagnation | {1}{W}{U} | 3 |  | 0
 Cellar Door | {2} | 2 |  | 0
-Leonin Bladetrap | {4} | 4 |  | 0
-Soulcatchers' Aerie | {6} | 6 |  | 0
+Volcanic Hammer | {4} | 4 |  | 0
+Lifecrafter's Gift | {6} | 6 |  | 0
 Ghoulcaller's Bell | {1} | 1 |  | 0
 Shattering Pulse | {2} | 2 |  | 0
 Traveler's Amulet | {1} | 1 |  | 0
 Isolated Chapel | 1 | 1 |  | 0
 Moorland Haunt | 1 | 1 |  | 0
 Woodland Cemetery | 1 | 1 |  | 0
-Ana Sanctuary | {W} | 1 |  | 0
+Ceta Sanctuary | {W} | 1 |  | 0
 The Iron Guardian Stirs | {1}{W} | 2 |  | 0
 Necrogen Mists | {2}{U}{U} | 4 |  | 0
 Gravepurge | {2}{B} | 3 |  | 0
-Suicidal Charge | {1}{B} | 2 |  | 0
+Searing Rays | {1}{B} | 2 |  | 0
 Undying Evil | {B} | 1 |  | 0
 Restore Balance | 1 | 1 |  | 0
 Blood Feud | {4}{R}{R} | 6 |  | 0
 Burning Fields | {2}{R} | 3 |  | 0
-Boon Reflection | {3}{R}{R}{R} | 6 |  | 0
+Moonring Mirror | {3}{R}{R}{R} | 6 |  | 0
 Wrack with Madness | {3}{R} | 4 |  | 0
 Lost in the Woods | {3}{G}{G} | 5 |  | 0
 Monstrous Growth | 1 | 1 |  | 0
 Wild Hunger | {2}{G} | 3 |  | 0
 Cloven Casting | {G} | 1 |  | 0
-Pulse of the Fields | 1 | 1 |  | 0
+Feast on the Fallen | 1 | 1 |  | 0
 Restrain | {2}{U}{U} | 4 |  | 0
 Stolen Goods | {3}{U} | 4 |  | 0
 Death Wind | {X}{B} | 1 |  | 0
@@ -1349,7 +1349,7 @@ Mirror Strike | {2}{R}{R} | 4 |  | 0
 Scroll of Griselbrand | {2}{R}{R} | 4 |  | 0
 Rebound | {1}{G} | 2 |  | 0
 Natural End | {2}{G} | 3 |  | 0
-Gonti's Aether Heart | {3}{G}{G} | 5 |  | 0
+Shivan Meteor | {3}{G}{G} | 5 |  | 0
 Angel's Tomb | {3} | 3 |  | 0
 Opal Guardian | {2} | 2 |  | 0
 Eternal Dominion | 1 | 1 |  | 0
@@ -1371,7 +1371,7 @@ Essence Backlash | {2}{U}{R} | 4 |  | 0
 Jarad's Orders | {2}{B}{G} | 4 |  | 0
 Rix Maadi, Dungeon Palace | {B}{R} | 2 |  | 0
 Slaughter Games | {2}{B}{R} | 4 |  | 0
-Savage Alliance | {U/R} | 1 |  | 0
+Natural Selection | {U/R} | 1 |  | 0
 Chromatic Lantern | {3} | 3 |  | 0
 Azorius Signet | 1 | 1 |  | 0
 Rakdos Signet | 1 | 1 |  | 0
@@ -1379,13 +1379,13 @@ Dutiful Return | {W} | 1 |  | 0
 Knight Watch | {4}{W} | 5 |  | 0
 Seal of Primordium | {5}{U}{U} | 7 |  | 0
 Rapid Hybridization | {U} | 1 |  | 0
-Hunger of the Nim | {4}{B} | 5 |  | 0
+Honor of the Pure | {4}{B} | 5 |  | 0
 Seal of Primordium | {5}{B}{B} | 7 |  | 0
 Terra Eternal | {4}{B}{B} | 6 |  | 0
 Crackling Perimeter | {1}{R} | 2 |  | 0
 Riptide Replicator | {4}{R}{R} | 6 |  | 0
 Animate Land | {4}{G} | 5 |  | 0
-Assert Authority | {1}{G} | 2 |  | 0
+Act of Authority | {1}{G} | 2 |  | 0
 Ooze Flux | {3}{G} | 4 |  | 0
 Executioner's Swing | {W}{B} | 2 |  | 0
 Ground Assault | {R}{G} | 2 |  | 0
@@ -1394,10 +1394,10 @@ Mind Grind | {X}{U}{B} | 2 |  | 0
 Paranoid Delusions | {U}{B} | 2 |  | 0
 Arrows of Justice | {2}{R/W} | 3 |  | 0
 Metal Fatigue | {1}{U/B}{U/B} | 3 |  | 0
-Sacred Armory | {3} | 3 |  | 0
+Predator's Rapport | {3} | 3 |  | 0
 Gruul Keyrune | {3} | 3 |  | 0
-Sunpetal Grove | {3}{W} | 4 |  | 0
-Blue Elemental Blast | {1}{B} | 2 |  | 0
+Serpent Generator | {3}{W} | 4 |  | 0
+Blue Mana Battery | {1}{B} | 2 |  | 0
 Crypt Incursion | {2}{B} | 3 |  | 0
 Mine Excavation | {5}{B} | 6 |  | 0
 Advent of the Wurm | {1}{G}{G}{W} | 4 |  | 0
@@ -1406,7 +1406,7 @@ Drown in Filth | {B}{G} | 2 |  | 0
 Gruul War Chant | {2}{R}{G} | 4 |  | 0
 Obzedat's Aid | {3}{W}{B} | 5 |  | 0
 Restore the Peace | {1}{W}{U} | 3 |  | 0
-Snake Basket | {B}{R} | 2 |  | 0
+Savage Twister | {B}{R} | 2 |  | 0
 Dirty | {2}{G} | 3 |  | 0
 Trouble | {2}{R} | 3 |  | 0
 Golgari Cluestone | {3} | 3 |  | 0
@@ -1416,41 +1416,41 @@ Devout Invocation | {6}{W} | 7 |  | 0
 Dismiss into Dream | {6}{U} | 7 |  | 0
 Illusionary Terrain | {4}{U} | 5 |  | 0
 Jace's Erasure | {4}{U}{U} | 6 |  | 0
-Misguided Rage | {U}{U} | 2 |  | 0
+Timberline Ridge | {U}{U} | 2 |  | 0
 Corpse Churn | {1}{B} | 2 |  | 0
 Dark Prophecy | {B}{B}{B} | 3 |  | 0
 Burning Earth | {3}{R} | 4 |  | 0
 Cyclopean Tomb | {5}{R} | 6 |  | 0
 Sungrass Egg | {2}{R} | 3 |  | 0
-Trumpet Blast | {5}{R}{R} | 7 |  | 0
+Ghoul's Feast | {5}{R}{R} | 7 |  | 0
 Savage Summoning | {G} | 1 |  | 0
 Spore Cloud | {3}{G}{G} | 5 |  | 0
 Virtuous Charge | {1}{G} | 2 |  | 0
-Sword of the Ages | {7} | 7 |  | 0
-Decree of Pain | {4}{W} | 5 |  | 0
+Spatula of the Ages | {7} | 7 |  | 0
+Concerted Effort | {4}{W} | 5 |  | 0
 Change of Heart | {4}{W}{W} | 6 |  | 0
 Altar of Shadows | {2}{W} | 3 |  | 0
-Argent Mutation | {3}{W}{W} | 5 |  | 0
+Turn Against | {3}{W}{W} | 5 |  | 0
 Scorching Spear | {3}{U} | 4 |  | 0
 Dark Betrayal | {B} | 1 |  | 0
 Forbidden Ritual | {2}{B} | 3 |  | 0
 Read the Bones | {2}{B} | 3 |  | 0
 Spring of Eternal Peace | {5}{R} | 6 |  | 0
-Staying Power | {2}{G} | 3 |  | 0
+Strip Bare | {2}{G} | 3 |  | 0
 Dream Fracture | {3}{B}{R} | 5 |  | 0
 Pharika's Cure | {3}{B}{G} | 5 |  | 0
 Relic Crush | {2}{R}{G} | 4 |  | 0
-Seashell Cameo | {1}{U}{R} | 3 |  | 0
+Sapphire Charm | {1}{U}{R} | 3 |  | 0
 Steam Augury | {2}{U}{R} | 4 |  | 0
 Temple of Silence | 1 | 1 |  | 0
-Rend Spirit | {4}{U} | 5 |  | 0
+Hive Stirrings | {4}{U} | 5 |  | 0
 Illusionist's Gambit | {2}{U}{U} | 4 |  | 0
 Toxic Deluge | {2}{B} | 3 |  | 0
 Sudden Demise | {X}{R} | 1 |  | 0
 Grimoire of the Dead | {1}{W}{W} | 3 |  | 0
-Faithless Looting | {1}{U} | 2 |  | 0
+Electrostatic Bolt | {1}{U} | 2 |  | 0
 Flooded Shoreline | {4}{U} | 5 |  | 0
-Demonic Attorney | {1}{U} | 2 |  | 0
+Etherium Astrolabe | {1}{U} | 2 |  | 0
 Molten Vortex | {U} | 1 |  | 0
 Forsaken Wastes | {3}{B} | 4 |  | 0
 Act of Aggression | {1}{R}{R} | 3 |  | 0
@@ -1465,9 +1465,9 @@ Font of Vigor | {1}{W} | 2 |  | 0
 Nameless Race | {1}{W} | 2 |  | 0
 Culling Scales | {2}{U} | 3 |  | 0
 Searing Wind | {2}{U} | 3 |  | 0
-Pearl Shard | {B} | 1 |  | 0
+Granite Shard | {B} | 1 |  | 0
 Ritual of the Returned | {3}{B} | 4 |  | 0
-Rise from the Grave | {R}{R} | 2 |  | 0
+Ritual of the Returned | {R}{R} | 2 |  | 0
 Wildfield Borderpost | {4}{R} | 5 |  | 0
 Desecration Plague | {3}{G} | 4 |  | 0
 Gideon's Reproach | {3}{G} | 4 |  | 0
@@ -1479,11 +1479,11 @@ Mishra's Factory | {3}{U} | 4 |  | 0
 Plea for Power | {3}{U} | 4 |  | 0
 Drake Haven | {1}{U}{R} | 3 |  | 0
 Wand of the Elements | {4}{G}{W} | 6 |  | 0
-Cower in Fear | {4} | 4 |  | 0
+Golgari Germination | {4} | 4 |  | 0
 Dauntless Escort Avatar | {1}{W} | 2 |  | 0
-Might of the Masses | {5}{W}{W} | 7 |  | 0
+Grasp of Darkness | {5}{W}{W} | 7 |  | 0
 Soul Barrier | {2}{U} | 3 |  | 0
-Rushing River | {1}{U} | 2 |  | 0
+Distortion Strike | {1}{U} | 2 |  | 0
 Polymorphist's Jest | {1}{U}{U} | 3 |  | 0
 Endless Obedience | {4}{B}{B} | 6 |  | 0
 Leeching Bite | {1}{B} | 2 |  | 0
@@ -1492,7 +1492,7 @@ Witch's Mist | {2}{B} | 3 |  | 0
 Reverent Silence | {2}{R} | 3 |  | 0
 Boros Keyrune | {3}{R} | 4 |  | 0
 Burning Oil | {4}{R} | 5 |  | 0
-Pick the Brain | {3}{R} | 4 |  | 0
+Lilting Refrain | {3}{R} | 4 |  | 0
 Feral Incarnation | {8}{G} | 9 |  | 0
 Hunter's Ambush | {2}{G} | 3 |  | 0
 Defeat | {G} | 1 |  | 0
@@ -1504,17 +1504,17 @@ End Hostilities | {3}{W}{W} | 5 |  | 0
 Feat of Resistance | {1}{W} | 2 |  | 0
 Kill Shot | {2}{W} | 3 |  | 0
 Statecraft | {3}{W} | 4 |  | 0
-Rites of Spring | {U} | 1 |  | 0
-Final Strike | {5}{U} | 6 |  | 0
+Looming Spires | {U} | 1 |  | 0
+Glacial Fortress | {5}{U} | 6 |  | 0
 Sivvi's Ruse | {3}{B} | 4 |  | 0
 Burn Away | {4}{R} | 5 |  | 0
 Flaying Tendrils | {5}{G} | 6 |  | 0
-Slaughter | {4}{G} | 5 |  | 0
+Swarm Surge | {4}{G} | 5 |  | 0
 Gravebind | {3}{W}{B}{G} | 6 |  | 0
 Opal Champion | {2}{G}{U}{R} | 5 |  | 0
 Temur Charm | {G}{U}{R} | 3 |  | 0
-Final Judgment | {2}{W}{W} | 4 |  | 0
-Scoured Barrens | {3}{U}{U} | 5 |  | 0
+Cauldron Haze | {2}{W}{W} | 4 |  | 0
+Smoldering Crater | {3}{U}{U} | 5 |  | 0
 Ghoulcaller's Chant | {3}{B}{B} | 5 |  | 0
 Infernal Offering | {4}{B} | 5 |  | 0
 Spoils of Blood | {B} | 1 |  | 0
@@ -1522,7 +1522,7 @@ Songs of the Damned | {2}{G} | 3 |  | 0
 Wolfcaller's Howl | {3}{G} | 4 |  | 0
 Reality Shift | {1}{U} | 2 |  | 0
 Write into Being | {2}{U} | 3 |  | 0
-Search Warrant | {5}{G}{G} | 7 |  | 0
+Brave the Sands | {5}{G}{G} | 7 |  | 0
 Monastery Siege | {2}{U} | 3 |  | 0
 Will of the Naga | {4}{U}{U} | 6 |  | 0
 Scattershot | {3}{B} | 4 |  | 0
@@ -1532,7 +1532,7 @@ Flamebreak | {3}{R} | 4 |  | 0
 Battle of Wits | {4}{G} | 5 |  | 0
 Profound Journey | {5}{W}{W} | 7 |  | 0
 Sanctified Charge | {4}{W} | 5 |  | 0
-Mana Flair | {1}{U} | 2 |  | 0
+Parallax Tide | {1}{U} | 2 |  | 0
 Taigam's Strike | {3}{U} | 4 |  | 0
 Sands of Delirium | {1}{B} | 2 |  | 0
 Citadel of Pain | {2}{B} | 3 |  | 0
@@ -1547,7 +1547,7 @@ Enduring Ideal | {4}{G}{W} | 6 |  | 0
 Heat Shimmer | {3} | 3 |  | 0
 Tower of Champions | {W} | 1 |  | 0
 Shrine of the Forsaken Gods | {1}{W} | 2 |  | 0
-Bontu's Monument | {W}{W} | 2 |  | 0
+Consulate Turret | {W}{W} | 2 |  | 0
 Enshrouding Mist | {W} | 1 |  | 0
 Avenging Arrow | {3}{U} | 4 |  | 0
 Deadbridge Chant | {2}{B} | 3 |  | 0
@@ -1563,23 +1563,23 @@ Retreat to Kazandu | {2}{G} | 3 |  | 0
 Eldrazi Temple | 1 | 1 |  | 0
 Rain of Blades | {7} | 7 |  | 0
 Coastal Discovery | {3}{U} | 4 |  | 0
-Intruder Alarm | {3}{U}{U} | 5 |  | 0
+Hinterland Harbor | {3}{U}{U} | 5 |  | 0
 Virulent Swipe | {3}{B} | 4 |  | 0
 Demon's Grasp | {4}{B} | 5 |  | 0
 Turn Against | {4}{R} | 5 |  | 0
-Fragmentize | {2}{R} | 3 |  | 0
+Molten Frame | {2}{R} | 3 |  | 0
 Reckless Charge | {1}{R} | 2 |  | 0
-Dragonskull Summit | {3}{R}{R} | 5 |  | 0
+Skull Fracture | {3}{R}{R} | 5 |  | 0
 Volcanic Upheaval | {3}{R} | 4 |  | 0
 Call the Scions | {2}{G} | 3 |  | 0
-False Cure | {4}{G}{G}{G} | 7 |  | 0
-Suspension Field | {1}{G} | 2 |  | 0
-Restore Balance | {3}{R}{W} | 5 |  | 0
+Cathars' Crusade | {4}{G}{G}{G} | 7 |  | 0
+Sapphire Medallion | {1}{G} | 2 |  | 0
+Coldsteel Heart | {3}{R}{W} | 5 |  | 0
 Safe Haven | {2} | 2 |  | 0
 Blighted Cataract | 1 | 1 |  | 0
 Blighted Steppe | 1 | 1 |  | 0
 Shielded Passage | {1}{W}{W} | 3 |  | 0
-Slagstorm | {3}{U} | 4 |  | 0
+Eiganjo Castle | {3}{U} | 4 |  | 0
 Corpse Churn | {3}{B} | 4 |  | 0
 Wretched Confluence | {3}{B}{B} | 5 |  | 0
 Awaken the Sky Tyrant | {3}{R} | 4 |  | 0
@@ -1587,7 +1587,7 @@ Skull Rend | {2}{G} | 3 |  | 0
 Sandstone Needle | {7} | 7 |  | 0
 Decree of Pain | {6}{C} | 7 |  | 0
 Entering | {5}{C} | 6 |  | 0
-Wielding the Green Dragon | {8}{C}{C} | 10 |  | 0
+Eliminate the Competition | {8}{C}{C} | 10 |  | 0
 Scroll of the Masters | {4}{C} | 5 |  | 0
 Eldrazi Temple | {2}{W} | 3 |  | 0
 Call the Gatewatch | {2}{W} | 3 |  | 0
@@ -1608,7 +1608,7 @@ Declaration in Stone | {1}{W} | 2 |  | 0
 Kiss of the Amesha | {4}{W} | 5 |  | 0
 Ethereal Guidance | {2}{W} | 3 |  | 0
 Celestial Colonnade | 1 | 2 |  | 0
-Abandon Hope | {2}{W} | 3 |  | 0
+Copperline Gorge | {2}{W} | 3 |  | 0
 Inquisitor's Snare | {3}{W} | 4 |  | 0
 Nephalia Drownyard | {5}{U}{U} | 7 |  | 0
 Violent Outburst | {3}{U} | 4 |  | 0
@@ -1619,12 +1619,12 @@ Seismic Shudder | 1 | 1 |  | 0
 Kjeldoran Outpost | {3}{R} | 4 |  | 0
 Autumnal Gloom | {2}{G} | 3 |  | 0
 Clip Wings | {1}{G} | 2 |  | 0
-Rally the Horde | 1 | 2 |  | 0
+Trial of Knowledge | 1 | 2 |  | 0
 Codex Shredder | 1 | 2 |  | 0
 Quest for Ancient Secrets | 1 | 5 |  | 0
 Second Harvest | {2}{G}{G} | 4 |  | 0
 Traverse the Ulvenwald | {G} | 1 |  | 0
-Meteor Crater | {1}{G} | 2 |  | 0
+Certain Death | {1}{G} | 2 |  | 0
 Decimator Web | {4}{G} | 5 |  | 0
 Astral Slide | 1 | 1 |  | 0
 Opal Gargoyle | {1} | 1 |  | 0
@@ -1634,7 +1634,7 @@ Forsaken Sanctuary | 1 | 1 |  | 0
 Stone Quarry | 1 | 1 |  | 0
 Courier's Capsule | {3}{W} | 4 |  | 0
 Iron Star | {2}{W} | 3 |  | 0
-Nature's Spiral | {1}{W} | 2 |  | 0
+Spellshift | {1}{W} | 2 |  | 0
 Sigarda's Aid | {W} | 1 |  | 0
 Spectral Reserves | {3}{W} | 4 |  | 0
 Furious Assault | {1}{U} | 2 |  | 0
@@ -1644,7 +1644,7 @@ Scour the Laboratory | {4}{U}{U} | 6 |  | 0
 Tainted Peak | {3}{B} | 4 |  | 0
 Prying Questions | {2}{B} | 3 |  | 0
 Ruthless Disposal | {4}{B} | 5 |  | 0
-Coat of Arms | {2}{R} | 3 |  | 0
+Torrent of Souls | {2}{R} | 3 |  | 0
 Galvanic Bombardment | {R} | 1 |  | 0
 Unstable Frontier | {2}{R}{R} | 4 |  | 0
 Otherworldly Outburst | {R} | 1 |  | 0
@@ -1665,37 +1665,37 @@ Miming Slime | {3}{G}{G} | 5 |  | 0
 Whir of Invention | {3}{W}{W} | 5 |  | 0
 Arcane Denial | {1}{W} | 2 |  | 0
 Crypt Incursion | {1}{W} | 2 |  | 0
-Ignite Memories | {U} | 1 |  | 0
+Artificer's Intuition | {U} | 1 |  | 0
 Vedalken Shackles | {2}{U} | 3 |  | 0
 Drake Haven | {5}{B} | 6 |  | 0
-Sphere of Purity | {3}{B} | 4 |  | 0
+Soratami Cloud Chariot | {3}{B} | 4 |  | 0
 Tidy Conclusion | {3}{B}{B} | 5 |  | 0
-Season of the Witch | {2}{B} | 3 |  | 0
+Encroaching Wastes | {2}{B} | 3 |  | 0
 Flash of Defiance | {2}{R}{R} | 4 |  | 0
 Compulsive Research | {4}{R}{R} | 6 |  | 0
 Grisly Spectacle | {1}{R} | 2 |  | 0
 Ranger's Guile | {R} | 1 |  | 0
-Ritual of the Returned | {2}{G} | 3 |  | 0
+Advice from the Fae | {2}{G} | 3 |  | 0
 Blossoming Defense | {G} | 1 |  | 0
 Angel's Trumpet | {2}{G} | 3 |  | 0
 Take Down | {G} | 1 |  | 0
 Cloud Key | {3}{W}{U} | 5 |  | 0
 Aetherflux Reservoir | {4} | 4 |  | 0
 Aetherworks Marvel | {4} | 4 |  | 0
-Basalt Monolith | {5} | 5 |  | 0
+Biomass Mutation | {5} | 5 |  | 0
 Electrostatic Bolt | {3} | 3 |  | 0
-Flame Fusillade | {3} | 3 |  | 0
+Five-Alarm Fire | {3} | 3 |  | 0
 Ghirapur Orrery | {4} | 4 |  | 0
 Pyromancer's Goggles | {1} | 1 |  | 0
-Renewed Faith | {3} | 3 |  | 0
+Fevered Strength | {3} | 3 |  | 0
 Inspiring Vantage | 1 | 1 |  | 0
 Terra Eternal | {1}{G} | 2 |  | 0
 Fate Transfer | {3}{U} | 4 |  | 0
-Primeval Bounty | {10}{G} | 11 |  | 0
-Stonewood Invocation | {7}{G} | 8 |  | 0
-Mine, Mine, Mine! | {R}{W} | 2 |  | 0
+Price of Progress | {10}{G} | 11 |  | 0
+Staff of Domination | {7}{G} | 8 |  | 0
+Unerring Sling | {R}{W} | 2 |  | 0
 Triumph of the Hordes | {2}{R}{W} | 4 |  | 0
-Stain the Mind | {B}{R}{G}{W} | 4 |  | 0
+Anguished Unmaking | {B}{R}{G}{W} | 4 |  | 0
 Sylvan Reclamation | {3}{G}{W} | 5 |  | 0
 Ash Barrens | 1 | 1 |  | 0
 Aether Tradewinds | {1}{W} | 2 |  | 0
@@ -1706,26 +1706,26 @@ Whir of Invention | {X}{U}{U}{U} | 3 |  | 0
 Fatal Push | {B} | 1 |  | 0
 Vengeful Rebirth | {2}{B} | 3 |  | 0
 Aether Charge | {1}{R} | 2 |  | 0
-Final Revels | {2}{R} | 3 |  | 0
+Incite Rebellion | {2}{R} | 3 |  | 0
 Kari Zev's Expertise | {1}{R}{R} | 3 |  | 0
-Opal Champion | {3}{R} | 4 |  | 0
+Sapphire Medallion | {3}{R} | 4 |  | 0
 Aether Tide | {3}{G} | 4 |  | 0
-Lifecraft Awakening | {4}{G} | 5 |  | 0
+Lifecrafter's Bestiary | {4}{G} | 5 |  | 0
 Renegade Tactics | {1}{G}{W} | 3 |  | 0
 Crackdown | {4} | 4 |  | 0
-Smoldering Crater | {3} | 3 |  | 0
+Planewide Disaster | {3} | 3 |  | 0
 Implement of Malice | {2} | 2 |  | 0
-Break Asunder | {4} | 4 |  | 0
+Inspired Charge | {4} | 4 |  | 0
 Magnetic Mine | {2} | 2 |  | 0
 Universal Solvent | {1} | 1 |  | 0
 Artifact Mutation | {3} | 3 |  | 0
 Spire of Industry | 1 | 1 |  | 0
-Tezzeret's Betrayal | {4}{U}{B} | 6 |  | 0
+Tower of the Magistrate | {4}{U}{B} | 6 |  | 0
 Gideon's Intervention | {2}{W}{W} | 4 |  | 0
 Opal Palace | {3}{W}{W} | 5 |  | 0
 Annihilate | {3}{U} | 4 |  | 0
 Censor | {1}{U} | 2 |  | 0
-Cryptic Gateway | {5}{U}{U} | 7 |  | 0
+Despotic Scepter | {5}{U}{U} | 7 |  | 0
 Galestrike | {2}{U} | 3 |  | 0
 Barbarian Ring | {1}{U} | 2 |  | 0
 Scepter of Insight | {1}{U} | 2 |  | 0
@@ -1743,7 +1743,7 @@ Trial of Strength | {2}{G} | 3 |  | 0
 Decimator Web | {3}{B}{G} | 5 |  | 0
 Clutch of Currents | {1}{G}{U} | 3 |  | 0
 Bontu's Monument | {3} | 3 |  | 0
-Jinxed Choker | {1} | 1 |  | 0
+Wooden Sphere | {1} | 1 |  | 0
 Scorched Ruins | 1 | 1 |  | 0
-Confusion in the Ranks | {2}{W} | 3 |  | 0
-Din of the Fireherd | {5}{B}{B} | 7 |  | 0
+Counsel of the Soratami | {2}{W} | 3 |  | 0
+Drain the Well | {5}{B}{B} | 7 |  | 0
