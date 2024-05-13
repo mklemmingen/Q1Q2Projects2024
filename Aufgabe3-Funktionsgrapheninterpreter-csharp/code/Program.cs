@@ -1,4 +1,6 @@
-﻿using System;
+// UI using .NET MAUI (Multi-platform App UI)
+
+using System;
 
 namespace FunctionGraphInterpreter
 {
