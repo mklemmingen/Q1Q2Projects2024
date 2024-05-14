@@ -1,21 +1,60 @@
 
 # Marty (as researched on microsoft.com and Bing Copilot (provided by Hochschule))
 
+## For FuGAIn_folder with VS
+
+
+
+## For FuGAIn_folder with VSCODE
+
 You can install .NET MAUI by downloading and installing the latest .NET SDK from the .NET website.
 
-For Visual Studio Code, you can add .NET support by installing the C# DEV kit extension.
-<https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit>
+https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 
-Also install the MAUI extension.
+We should use 6.0 instead of the new 8.0, since android and mac development is not able to be done with the current MAUI on any version above 6.0
+Fucked around and found out on that one. 
+Make sure you are signed in into vscode to use the needed extensions for c#
 
-VIDEO-GUIDE: https://learn.microsoft.com/en-us/shows/visual-studio-toolbox/getting-started-with-maui-in-visual-studio-code#time=04m30s
+---------- install workloads
 
----------------------------------------------------------------------------------------------------------------------------
+dotnet workload install maui
+dotnet workload install maui-android
+dotnet workload install maui-ios
 
-If you download the extensions separately, ensure that you also have the .NET SDK on your local environment. The .NET SDK is a software development environment used for developing .NET applications.
-<https://aka.ms/vscDocs/dotnet/download>
+---------- install android-sdk
+
+Install Command line tools only 
+https://developer.android.com/studio#command-tools
+
+
+Build & Run the app by entering the following command in the command shell:
+
+---------- cd into project folder
+
+dotnet build
+dotnet run
 
 -----------------------------------------------------
+
+remmember to add all files to .gitignore that include personal computer file paths
+
+------------------------------------------------------
+
+For Debugging Error codes:
+https://learn.microsoft.com/en-us/dotnet/core/tools/sdk-errors/
+
+## For .NET Project overall
+
+CMD/STRG+shift+P
+
+    install .NET global ... then version 6
+
+
+
+-----------------------------------------------------
+-----------------------------------------------------
+
+# Old Research:
 
 You’ll also need to install the MAUI templates by running the following command in your terminal:
 
@@ -25,9 +64,7 @@ Once you’ve installed .NET MAUI, you can create a new MAUI project by running:
 
 dotnet new maui -n FunctionGraphInterpreter
 
-Run the app by entering the following command in the command shell:
-
-To run your .NET MAUI application, you can use Visual Studio 2022 or the .NET CLI12. Here are the steps for both methods:
+or:
 
 Visual Studio 2022:
 
@@ -47,6 +84,7 @@ Visual Studio 2022:
 
     Run your project with the command: dotnet run --project ./FunctionGraphInterpreter.csproj
 
------------------------------------------------------
 
-remmember to add all files to .gitignore that include personal computer file paths
+
+
+
