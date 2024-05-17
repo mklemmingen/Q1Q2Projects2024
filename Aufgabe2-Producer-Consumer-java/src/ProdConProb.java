@@ -23,7 +23,7 @@ public class ProdConProb {
 
         // ask user for one or two: one being awt, two being javafx
 
-        /* TODO: ADD HERE IF BUILDING JAVAFX FRONTEND. BEST IF USING PARKINGLOT CREATION HERE AND INTERFACING WITH ITS LIST OF CARS
+        /* TODO: ADD HERE IF BUILDING JAVAFX FRONTEND
         System.out.println("Please enter 1 for AWT or 2 for JavaFX: ");
         int frontend;
         while (true) {

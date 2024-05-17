@@ -117,7 +117,7 @@ public class ParkingLot{
             }
     
             // create a new car
-            Car car = new Car(numberQuadrants);
+            Car car = new Car(numberQuadrants, parkingLot);
             synchronized (car) {
                 park(car);
                 System.out.println("Car " + car.getCarId() + " is parked in quadrant " + car.getStreetQuadrant());
@@ -180,7 +180,7 @@ public class ParkingLot{
         }
     }
 
-    public Car consume() throws InterruptedException {
+    public Car consume() throws InterruptedException { 
         while (true) {
             synchronized (this) {
                 while (parkingLot.size() == 0){

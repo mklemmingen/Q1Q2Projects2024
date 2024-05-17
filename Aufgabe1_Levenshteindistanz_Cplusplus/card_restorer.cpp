@@ -237,7 +237,7 @@ int main() {
                 found = true;
                 shoutout(algo_abrev, reference_card.name, corrupt_card.name, found_dist_LS, 0, found_dist_LS);
                 break;
-            }
+            } 
 
             // if either lower than closest distance or in range ---- which always puts it into the vector of close cards
             if(found_dist_LS <= (closest_dist_LS+range_LS)){

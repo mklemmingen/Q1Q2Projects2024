@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Queue;
+
 public class Car {
     private int carId;
 
@@ -8,11 +12,16 @@ public class Car {
 
     private boolean isMoving = false;
 
-    public Car(int numberOfQudrants) {
+    public Car(int numberOfQudrants, Queue<Car> carsInParkingLot) {
         this.carId = createRandomId();
         this.streetQuadrant = 0;
         this.usedByProducer = true;
-        this.goalQuadrant = createRandomGoalQuadrant(numberOfQudrants);
+        try {
+            this.goalQuadrant = createGoalQuadrant(numberOfQudrants, carsInParkingLot);
+        } catch (IllegalStateException e) {
+            System.out.println("No available quadrants to create a goal. Setting to 0.");
+            this.goalQuadrant = 0;
+        }
 
         System.out.println("Car " + carId + " created with goal quadrant " + goalQuadrant + " and street quadrant " + streetQuadrant);
     }
@@ -61,9 +70,25 @@ public class Car {
         return goalQuadrant;
     }
 
-    public int createRandomGoalQuadrant(int numberQuadrants) {
-        // above 1 and below numberQuadrants
-        return (int) (Math.random() * (numberQuadrants - 1) + 1);
+    public int createGoalQuadrant(int numberQuadrants, Queue<Car> cars) {
+        // create a list of numbers from 1 to numberQuadrants
+        List<Integer> list = new ArrayList<>();
+        for (int i = 1; i < numberQuadrants; i++) {
+            list.add(i);
+        }
+    
+        // loop through Queue. The goal of each car (number) gets taken out of the set.
+        for (Car car : cars) {
+            list.remove(Integer.valueOf(car.getGoalQuadrant()));
+        }
+    
+        // check if the list is empty
+        if (list.isEmpty()) {
+            throw new IllegalStateException("No available quadrants.");
+        }
+    
+        // choose one of the remaining numbers randomly
+        return list.get((int) (Math.random() * list.size()));
     }
 
     public void setStreetQuadrant(int streetQuadrant) {
