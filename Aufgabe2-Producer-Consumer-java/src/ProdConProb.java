@@ -190,6 +190,24 @@ public class ProdConProb {
             }
         );
         controlPanel.add(consumersText);
+
+        /* 
+        // input box for capacity
+        Label capacityLabel = new Label("INT < 10: Capacity");
+        controlPanel.add(capacityLabel);
+        final TextField capacityText = new TextField(5);
+        capacityText.addTextListener(
+            e -> {
+                if (!capacityText.getText().matches("[0-9]+")) {
+                    capacityText.setText("0");
+                    capacity = 0;
+                } else {
+                    capacity = Integer.parseInt(consumersText.getText());
+                }
+            }
+        );
+        controlPanel.add(capacityText);
+        */
                 
         // button for starting the parking lot 
         Button startButton = new Button("START");

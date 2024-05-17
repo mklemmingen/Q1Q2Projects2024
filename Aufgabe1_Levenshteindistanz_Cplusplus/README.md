@@ -1,4 +1,8 @@
  (this readme is in german, as following documentation guidelines - see root folder of this repo)
+
+Marty is git usernames: Martin Lauterbach, Marty, mklemmingen
+
+ ------------------
  
  - Die Levenshtein-Distanz (auch Editierdistanz) zwischen zwei Zeichenketten ist die minimale Anzahl einfügender, löschender und ersetzender Operationen, um die erste Zeichenkette in die zweite umzuwandeln. (wikipedia-artikel, 13.04)
 

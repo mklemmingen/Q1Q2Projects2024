@@ -231,6 +231,14 @@ int main() {
             double found_dist_LS = weighted_levenshtein(corrupt_card.name, reference_card.name, false, unknown_chars, use_transposition, transposition_cost, 
                                                 insertion_weight, deletion_weight, substitution_weight);
 
+            // assign reference card if levenshtein distance is smaller than size_of_reference_card * percentage
+            if (found_dist_LS <= (reference_card.name.size() * (percentage/100))) {
+                corrupt_card.name = reference_card.name;
+                found = true;
+                shoutout(algo_abrev, reference_card.name, corrupt_card.name, found_dist_LS, 0, found_dist_LS);
+                break;
+            }
+
             // if either lower than closest distance or in range ---- which always puts it into the vector of close cards
             if(found_dist_LS <= (closest_dist_LS+range_LS)){
                 // if the distance is within the range, we add it to the vector of close cards
@@ -276,7 +284,9 @@ int main() {
             std::cin.get();
         }
 
-        // ------------------------- SORT -------------------------
+        // ------------------------- SORT ------------------------- IF PERCENTAGE NOT APPLICABLE
+
+        if(!found){
 
         // DEBUG
 
@@ -337,6 +347,7 @@ int main() {
 
                 corrupt_card.name = close_cards_final[0].name;
             }
+        }
         }
         // next corrupt card
     }
