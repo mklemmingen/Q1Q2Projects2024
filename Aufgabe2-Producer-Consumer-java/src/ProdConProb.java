@@ -191,7 +191,7 @@ public class ProdConProb {
         );
         controlPanel.add(consumersText);
 
-        /* 
+        /*  TODO CAPACITY BUTTON
         // input box for capacity
         Label capacityLabel = new Label("INT < 10: Capacity");
         controlPanel.add(capacityLabel);
