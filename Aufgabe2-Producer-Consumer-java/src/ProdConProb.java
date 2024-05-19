@@ -39,57 +39,108 @@ public class ProdConProb {
         AwtGUI.load(numberQuadrants);
     }
 
+    // ------------------ Parking Lot ------------------
+
+    /**
+     * Creates a parking lot with the current class variables: 
+     * number of quadrants, capacity, number of producers, and number of consumers.
+     */
     public static void createParkingLot() {
         // creating the parking lot
         parkingLot = new ParkingLot(numberQuadrants, capacity, numberOfProducers, numberOfConsumers);
     }
 
+    /**
+     * Starts the parking lot.
+     */
     public static void startParkingLot() {
         // starting the parking lot
         parkingLot.start();
     }
 
-    // getter
+    // getter ------------------------------------------
 
+    /**
+     * Returns the parking lot.
+     * 
+     * @return the parking lot
+     */
     public static ParkingLot getParkingLot() {
         return parkingLot;
     }
 
+    
+    /**
+     * Returns the number of quadrants.
+     *
+     * @return the number of quadrants
+     */
     public static int getNumberQuadrants() {
         return numberQuadrants;
     }
 
+    /**
+     * Returns the currently set capacity of the parkingLot (buffer size)
+     *
+     * @return the capacity of the parkingLot
+     */
     public static int getCapacity() {
         return capacity;
     }
 
+    /**
+     * Returns the number of consumers.
+     *
+     * @return the number of consumers
+     */
     public static int getNumberOfConsumers() {
         return numberOfConsumers;
     }
 
+    // setter ------------------------------------------
+
+    /**
+     * Sets the parking lot for the producer-consumer problem.
+     * 
+     * @param parkingLot the parking lot to be set
+     */
     public static void setParkingLot(ParkingLot parkingLot) {
         ProdConProb.parkingLot = parkingLot;
     }
 
+    /**
+     * Sets the number of quadrants.
+     *
+     * @param numberQuadrants the number of quadrants to set
+     */
     public static void setNumberQuadrants(int numberQuadrants) {
         ProdConProb.numberQuadrants = numberQuadrants;
     }
 
+    /**
+     * Sets the capacity of the producer-consumer problem.
+     * 
+     * @param capacity the new capacity value
+     */
     public static void setCapacity(int capacity) {
         ProdConProb.capacity = capacity;
     }
 
+    /**
+     * Sets the number of consumers for the producer-consumer problem.
+     *
+     * @param numberOfConsumers the number of consumers to set
+     */
     public static void setNumberOfConsumers(int numberOfConsumers) {
         ProdConProb.numberOfConsumers = numberOfConsumers;
     }
 
+    /**
+     * Sets the number of producers.
+     *
+     * @param numberOfProducers the number of producers to set
+     */
     public static void setNumberOfProducers(int numberOfProducers) {
         ProdConProb.numberOfProducers = numberOfProducers;
     }
-
-    // ------------------ Parking Lot ------------------
-
-
-
-
 }

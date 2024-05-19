@@ -107,7 +107,7 @@ public class ParkingLot{
         }
     }
 
-    public Car produce() throws InterruptedException {
+    public Car produce() throws InterruptedException { // "push" method
         synchronized (this) {
             while (currentNumberOfCars >= capacity) {
                 // wait for the consumer
@@ -180,7 +180,7 @@ public class ParkingLot{
         }
     }
 
-    public Car consume() throws InterruptedException { 
+    public Car consume() throws InterruptedException { // "pop" method
         while (true) {
             synchronized (this) {
                 while (parkingLot.size() == 0){
