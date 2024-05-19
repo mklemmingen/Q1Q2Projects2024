@@ -3,24 +3,24 @@ import java.util.List;
 import java.util.Queue;
 
 public class Car {
-    private int carId;
+    private int carId; // identifier for outputs
 
-    private int streetQuadrant;
-    private int goalQuadrant;
+    private int streetQuadrant; // currently occuping quadrant from 0 (1) to n (n+1)
+    private int goalQuadrant; // quadrant to reach as goal of producer, before stop, and then takeover of consumer
 
-    private boolean usedByProducer;
+    private boolean usedByProducer; // for setting the symbol, differentiating between producer and consumer
 
-    private boolean isMoving = false;
+    private boolean isMoving = false; // for the movement of the car to see if a status symbol is needed
 
-    public Car(int numberOfQudrants, Queue<Car> carsInParkingLot) {
+    public Car(int numberOfQudrants, Queue<Car> carsInParkingLot) { 
         this.carId = createRandomId();
-        this.streetQuadrant = 0;
-        this.usedByProducer = true;
+        this.streetQuadrant = 0; // starting at beginning of the parking Lot
+        this.usedByProducer = true; // is always used by producer at creation
         try {
             this.goalQuadrant = createGoalQuadrant(numberOfQudrants, carsInParkingLot);
         } catch (IllegalStateException e) {
             System.out.println("No available quadrants to create a goal. Setting to 0.");
-            this.goalQuadrant = 0;
+            this.goalQuadrant = 0; 
         }
 
         System.out.println("Car " + carId + " created with goal quadrant " + goalQuadrant + " and street quadrant " + streetQuadrant);

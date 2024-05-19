@@ -2,18 +2,19 @@ public class ProdConProb {
 
     // declaring the parking lot
     protected static ParkingLot parkingLot;
-    protected static int numberQuadrants;
 
-    protected static int numberOfConsumers;
-    protected static int numberOfProducers;
-
-    protected static int capacity;
+    // variables needed for the creation of the parkingLot
+    // which are changed by frontends before create and start
+    protected static int numberQuadrants; // size of the parking lot
+    protected static int numberOfConsumers; // number of consumers threads
+    protected static int numberOfProducers; // number of producer threads
+    protected static int capacity; // capacity of the parking lot in cars it can hold
 
     public static void main(String[] args) {
 
         // parking lot size (influences layout of the GUI)
         numberQuadrants = 10; // keep hardcoded for awtFrontend
-        capacity = numberQuadrants/2;
+        capacity = numberQuadrants/2; // declared for a standard creation, changed by frontends
 
         // ------ frontend start
 
