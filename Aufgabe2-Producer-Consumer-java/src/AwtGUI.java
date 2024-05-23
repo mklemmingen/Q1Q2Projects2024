@@ -201,6 +201,10 @@ public class AwtGUI extends ProdConProb {
             new ActionListener() {
 
                 public void actionPerformed(ActionEvent e) {
+
+                    // turn puffer visible
+                    pufferNumberLot.setVisible(true);
+
                     // -------- create parkingLot when the START button of the GUI is pressed with the numberOf... that is in the fields...
 
                     // set false in case a paint or update thread was to (unlikely) update the GUI while not fully initalised
@@ -228,7 +232,8 @@ public class AwtGUI extends ProdConProb {
         // creating pufferNumberLot
         pufferNumberLot = new Panel();
         pufferNumberLot.setLayout(new GridLayout(1, super.getNumberQuadrants()));
-        pufferNumberLot.setSize(1000, 100);
+        pufferNumberLot.setSize(1000, 200);
+        pufferNumberLot.setVisible(false);
 
         headerLabel.setVisible(true);
         statusLabel.setVisible(true);
