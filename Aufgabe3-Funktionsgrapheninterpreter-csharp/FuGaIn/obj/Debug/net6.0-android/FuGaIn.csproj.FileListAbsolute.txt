@@ -1,4 +1,0 @@
-C:\Users\Forge\REPOS\INF§\aufgaben-repo-inf3-sose14\Aufgabe3-Funktionsgrapheninterpreter-csharp\FuGaIn\obj\Debug\net6.0-android\FuGaIn.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Forge\REPOS\INF§\aufgaben-repo-inf3-sose14\Aufgabe3-Funktionsgrapheninterpreter-csharp\FuGaIn\obj\Debug\net6.0-android\FuGaIn.AssemblyInfoInputs.cache
-C:\Users\Forge\REPOS\INF§\aufgaben-repo-inf3-sose14\Aufgabe3-Funktionsgrapheninterpreter-csharp\FuGaIn\obj\Debug\net6.0-android\FuGaIn.AssemblyInfo.cs
-C:\Users\Forge\REPOS\INF§\aufgaben-repo-inf3-sose14\Aufgabe3-Funktionsgrapheninterpreter-csharp\FuGaIn\obj\Debug\net6.0-android\FuGaIn.csproj.CoreCompileInputs.cache

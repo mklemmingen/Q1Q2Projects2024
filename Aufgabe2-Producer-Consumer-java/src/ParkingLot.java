@@ -88,7 +88,7 @@ public class ParkingLot{
                 } else {
                     // ask buffer
                     try {
-                        currentCar = produce();
+                        currentCar = push();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -107,7 +107,7 @@ public class ParkingLot{
         }
     }
 
-    public Car produce() throws InterruptedException { // "push" method
+    public Car push() throws InterruptedException { // "push" method
         synchronized (this) {
             while (currentNumberOfCars >= capacity) {
                 // wait for the consumer
@@ -147,7 +147,7 @@ public class ParkingLot{
 
                         // call consume method to check buffer
                         try {
-                            currentCar = consume();
+                            currentCar = pop();
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
@@ -180,7 +180,7 @@ public class ParkingLot{
         }
     }
 
-    public Car consume() throws InterruptedException { // "pop" method
+    public Car pop() throws InterruptedException { // "pop" method
         while (true) {
             synchronized (this) {
                 while (parkingLot.size() == 0){

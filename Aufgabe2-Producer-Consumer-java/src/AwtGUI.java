@@ -178,8 +178,7 @@ public class AwtGUI extends ProdConProb {
             }
         );
         controlPanel.add(consumersText);
-
-        /*  TODO CAPACITY BUTTON
+        
         // input box for capacity
         Label capacityLabel = new Label("INT < 10: Capacity");
         controlPanel.add(capacityLabel);
@@ -190,12 +189,11 @@ public class AwtGUI extends ProdConProb {
                     capacityText.setText("0");
                     capacity = 0;
                 } else {
-                    capacity = Integer.parseInt(consumersText.getText());
+                    capacity = Integer.parseInt(capacityText.getText());
                 }
             }
         );
         controlPanel.add(capacityText);
-        */
                 
         // button for starting the parking lot 
         Button startButton = new Button("START");
