@@ -1,4 +1,4 @@
-public class ProdConProb {
+public class Main {
 
     // declaring the parking lot
     protected static ParkingLot parkingLot;
@@ -105,7 +105,7 @@ public class ProdConProb {
      * @param parkingLot the parking lot to be set
      */
     public static void setParkingLot(ParkingLot parkingLot) {
-        ProdConProb.parkingLot = parkingLot;
+        Main.parkingLot = parkingLot;
     }
 
     /**
@@ -114,7 +114,7 @@ public class ProdConProb {
      * @param numberQuadrants the number of quadrants to set
      */
     public static void setNumberQuadrants(int numberQuadrants) {
-        ProdConProb.numberQuadrants = numberQuadrants;
+        Main.numberQuadrants = numberQuadrants;
     }
 
     /**
@@ -123,7 +123,7 @@ public class ProdConProb {
      * @param capacity the new capacity value
      */
     public static void setCapacity(int capacity) {
-        ProdConProb.capacity = capacity;
+        Main.capacity = capacity;
     }
 
     /**
@@ -132,7 +132,7 @@ public class ProdConProb {
      * @param numberOfConsumers the number of consumers to set
      */
     public static void setNumberOfConsumers(int numberOfConsumers) {
-        ProdConProb.numberOfConsumers = numberOfConsumers;
+        Main.numberOfConsumers = numberOfConsumers;
     }
 
     /**
@@ -141,6 +141,6 @@ public class ProdConProb {
      * @param numberOfProducers the number of producers to set
      */
     public static void setNumberOfProducers(int numberOfProducers) {
-        ProdConProb.numberOfProducers = numberOfProducers;
+        Main.numberOfProducers = numberOfProducers;
     }
 }

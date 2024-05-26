@@ -15,7 +15,7 @@ import java.awt.Image;
 import java.awt.TextField;
 import java.awt.Label;
 
-public class AwtGUI extends ProdConProb {
+public class AwtGUI extends Main {
 
     // Declaring the components of the GUI
     private Frame mainFrame;
