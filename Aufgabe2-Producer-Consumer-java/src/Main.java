@@ -11,6 +11,9 @@ public class Main {
     protected static int capacity; // capacity of the parking lot in cars it can hold
 
     public static void main(String[] args) {
+        // Initialize producer and consumer counts with default values
+        numberOfProducers = 2; // Set default value
+        numberOfConsumers = 2; // Set default value
 
         // parking lot size (influences layout of the GUI)
         numberQuadrants = 10; // keep hardcoded for awtFrontend
