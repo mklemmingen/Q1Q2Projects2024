@@ -145,11 +145,10 @@ public class AwtGUI extends Main {
         // control panel has two input boxes for int values and a START button
         // the START button will create the parking lot with the given values
 
-         // input box for number of producers
+        // input box for number of producers
         Label producersLabel = new Label("INT: Producers: ");
         controlPanel.add(producersLabel);
         final TextField producersText = new TextField(5);
-        producersText.setText(Integer.toString(Main.numberOfProducers)); // Set default value in text field
         // if text is not a number, set the text to 0, else parse the text to an int and give it to the numberOfProducers if change has happened
         producersText.addTextListener(
             e -> {
@@ -167,7 +166,6 @@ public class AwtGUI extends Main {
         Label consumersLabel = new Label("INT: Consumers: ");
         controlPanel.add(consumersLabel);
         final TextField consumersText = new TextField(5);
-        consumersText.setText(Integer.toString(Main.numberOfConsumers)); // Set default value in text field
         // if text is not a number, set the text to 0, else parse the text to an int and give it to the numberOfProducers if change has happened
         consumersText.addTextListener(
             e -> {
@@ -185,7 +183,6 @@ public class AwtGUI extends Main {
         Label capacityLabel = new Label("INT < 10: Capacity");
         controlPanel.add(capacityLabel);
         final TextField capacityText = new TextField(5);
-        capacityText.setText(Integer.toString(Main.capacity)); // Set default value in text field
         capacityText.addTextListener(
             e -> {
                 if (!capacityText.getText().matches("[0-9]+")) {
