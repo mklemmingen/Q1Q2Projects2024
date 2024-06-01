@@ -12,12 +12,14 @@ public class Car {
 
     private boolean isMoving = false; // for the movement of the car to see if a status symbol is needed
 
-    public Car(int numberOfQudrants, Queue<Car> carsInParkingLot) { 
-        this.carId = createRandomId();
+    private static int carCounter = 0; // counter for the car ID
+
+    public Car(int numberOfQuadrants, Queue<Car> carsInParkingLot) { 
+        this.carId = createRandomId(); 
         this.streetQuadrant = 0; // starting at beginning of the parking Lot
         this.usedByProducer = true; // is always used by producer at creation
         try {
-            this.goalQuadrant = createGoalQuadrant(numberOfQudrants, carsInParkingLot);
+            this.goalQuadrant = createGoalQuadrant(numberOfQuadrants, carsInParkingLot);
         } catch (IllegalStateException e) {
             System.out.println("No available quadrants to create a goal. Setting to 0.");
             this.goalQuadrant = 0; 
@@ -96,7 +98,7 @@ public class Car {
     }
 
     private int createRandomId() {
-        return (int) (Math.random() * 100);
+        return (int) carCounter++;
     }
 
 }
