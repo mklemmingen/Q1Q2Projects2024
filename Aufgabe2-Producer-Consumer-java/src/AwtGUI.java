@@ -27,7 +27,13 @@ public class AwtGUI extends Main {
 
     private static Panel pufferNumberLot;
 
-    private Label statusLabel;
+    private Panel statusPanel;
+    private static Label numberCarsLabel;
+    private static Label numberPCarsLabel;
+    private static Label numberCCarsLabel;
+    private static Label numberParkedCarsLabel;
+    
+
     private Panel controlPanel;
 
     // images
@@ -114,9 +120,9 @@ public class AwtGUI extends Main {
     private void prepareGUI() {
 
         // Creating main frame with size and layout
-        mainFrame = new Frame("Parking Lot Simulation");
-        mainFrame.setSize(1000, 400);
-        mainFrame.setLayout(new GridLayout(5, 1));
+        mainFrame = new Frame("Multi-Threaded Valet-Parking");
+        mainFrame.setSize(1000, 500);
+        mainFrame.setLayout(new GridLayout(6, 1));
 
         // Adding a window listener to the main frame to close the application when the close button is clicked
         mainFrame.addWindowListener(
@@ -134,10 +140,10 @@ public class AwtGUI extends Main {
         headerLabel = new Label();
         headerLabel.setAlignment(Label.CENTER);
 
-        // Creating the status label and setting its alignment and size
-        statusLabel = new Label();
-        statusLabel.setAlignment(Label.CENTER);
-        statusLabel.setSize(1000, 50);
+        // Creating the status Panel and setting its alignment and size
+        statusPanel = new Panel();
+        statusPanel.setLayout(new FlowLayout());
+        statusPanel.setSize(1000, 20);
 
         // Creating the control panel and setting its layout
         controlPanel = new Panel();
@@ -246,8 +252,19 @@ public class AwtGUI extends Main {
         pufferNumberLot.setSize(1000, 200);
         pufferNumberLot.setVisible(false);
 
+        // status Panel contains all the information about the parking lot: number of cars, cars with producers, cars with consumers, cars parked
+        numberCCarsLabel = new Label("Cars: ");
+        numberPCarsLabel = new Label("Cars with Producers: ");
+        numberParkedCarsLabel = new Label("Cars Parked: ");
+        numberCarsLabel = new Label("Cars with Consumers: ");
+        statusPanel.add(numberCCarsLabel);
+        statusPanel.add(numberPCarsLabel);
+        statusPanel.add(numberCarsLabel);
+        statusPanel.add(numberParkedCarsLabel);
+
+
         headerLabel.setVisible(true);
-        statusLabel.setVisible(true);
+        statusPanel.setVisible(true);
         controlPanel.setVisible(true);
         parkingLotGUI.setVisible(true);
 
@@ -257,7 +274,7 @@ public class AwtGUI extends Main {
         mainFrame.add(parkingLotGUI);
         mainFrame.add(pufferNumberLot);
         mainFrame.add(controlPanel);
-        mainFrame.add(statusLabel);
+        mainFrame.add(statusPanel);
 
         // Making the main frame visible
         mainFrame.setVisible(true);
@@ -304,6 +321,31 @@ public class AwtGUI extends Main {
 
         List<Car> parkingLotList = getParkingLot().getParkingLotList();
 
+        // count and set the number of: cars, cars with producers, cars with consumers, parked cars
+        int numberOfCarsForGUI = parkingLotList.size();
+        int numberOfCarsWithProducers = 0;
+        int numberOfCarsWithConsumers = 0;
+        int numberOfParkedCars = 0;
+
+        for (int i = 0; i < parkingLotList.size(); i++) {
+            Car car = parkingLotList.get(i);
+            if (car.isUsedByProducer()) {
+                numberOfCarsWithProducers++;
+            }
+            if (!car.isUsedByProducer()&& car.getIsMoving()) {
+                numberOfCarsWithConsumers++;
+            }
+            if (car.hasReachedGoal()&& !car.getIsMoving()) {
+                numberOfParkedCars++;
+            }
+        }
+
+        // set the labels of the status panel to the values of the variables
+        numberCCarsLabel.setText("Cars: " + numberOfCarsForGUI);
+        numberPCarsLabel.setText("Cars with Producers: " + numberOfCarsWithProducers);
+        numberCarsLabel.setText("Cars with Consumers: " + numberOfCarsWithConsumers);
+        numberParkedCarsLabel.setText("Cars Parked: " + numberOfParkedCars);
+        
         // iterating over quadrants, setting all labels to invisible, and visible if true
 
         for (int i = 0; i < getNumberQuadrants(); i++) {
