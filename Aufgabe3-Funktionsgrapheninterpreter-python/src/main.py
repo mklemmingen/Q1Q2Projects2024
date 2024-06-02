@@ -584,4 +584,6 @@ canvas.create_text(
     font=("Inter SemiBold", 15 * -1)
 )
 window.resizable(False, False)
+window.title("QuickPlot - graphs made a little easier")
+window.iconbitmap("resources/build/assets/frame0/icon.ico")
 window.mainloop()
