@@ -4,6 +4,8 @@
 
 import os
 from pathlib import Path
+import numpy as np
+import matplotlib.pyplot as plt
 
 # from tkinter import *
 # Explicit imports to satisfy Flake8
@@ -20,6 +22,65 @@ ASSETS_PATH = relative_path
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
+y_upper = 10
+y_lower = -10
+y_ticks = 10
+x_upper = 10
+x_lower = -10
+x_ticks = 10
+function = lambda x: x
+
+
+def create_plot(function, y_upper, y_lower, y_ticks, x_upper, x_lower, x_ticks):
+    # Generate x values
+    x = np.linspace(x_lower, x_upper, x_ticks)
+    
+    # Calculate y values
+    y = function(x)
+
+    fig, ax = plt.subplots()
+
+    # Plot the function
+    ax.plot(x, y)
+
+    # Set y-axis limits and ticks
+    ax.set_ylim(y_lower, y_upper)
+    ax.set_yticks(np.linspace(y_lower, y_upper, y_ticks))
+
+    # Set x-axis limits and ticks
+    ax.set_xlim(x_lower, x_upper)
+    ax.set_xticks(np.linspace(x_lower, x_upper, x_ticks))
+
+    plt.show()
+
+def get_extrema(function):
+    return 3
+
+def get_intercepts(function):
+    return 2
+
+def get_integral(function):
+    return 2
+
+def plotItOut():
+    function = lambda x: eval(entry_1.get())
+    y_upper = int(entry_2.get())
+    y_lower = int(entry_6.get())
+    y_ticks = int(entry_4.get())
+    x_upper = int(entry_7.get())
+    x_lower = int(entry_5.get())
+    x_ticks = int(entry_3.get())
+    create_plot(function, y_upper, y_lower, y_ticks, x_upper, x_lower, x_ticks)
+    extrema_text = get_extrema(function)
+    intercepts_text = get_intercepts(function)
+    integral_text = get_integral(function)
+    canvas.itemconfig(2, text=integral_text)    
+    canvas.itemconfig(4, text=extrema_text)
+    canvas.itemconfig(6, text=intercepts_text)
+
+integral_text = ""
+extrema_text = ""
+intercepts_text = ""
 
 window = Tk()
 
@@ -42,7 +103,7 @@ canvas.create_text(
     714.0,
     321.0,
     anchor="nw",
-    text="",
+    text=integral_text,
     fill="#383838",
     font=("Inter SemiBold", 15 * -1)
 )
@@ -60,7 +121,7 @@ canvas.create_text( # Extrema text
     508.0,
     321.0,
     anchor="nw",
-    text="",
+    text=extrema_text,
     fill="#383838",
     font=("Inter SemiBold", 15 * -1)
 )
@@ -78,7 +139,7 @@ canvas.create_text( # Intercepts text
     278.0,
     321.0,
     anchor="nw",
-    text="",
+    text=intercepts_text,
     fill="#383838",
     font=("Inter SemiBold", 15 * -1)
 )
@@ -107,7 +168,7 @@ button_1 = Button(
     image=button_image_1,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_1 clicked"),
+    command= plotItOut,
     relief="flat"
 )
 button_1.place(
