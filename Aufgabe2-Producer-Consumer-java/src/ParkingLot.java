@@ -8,6 +8,8 @@ import java.util.ArrayList;
 
 import java.util.List;
 
+import java.util.UUID;
+
 public class ParkingLot{
     private Queue<Car> parkingLot;
 
@@ -63,14 +65,21 @@ public class ParkingLot{
         private Car currentCar;
         private boolean isCarMoving = false;
 
+        // unique identifier for each Producer instance
+        private UUID producerId;
+
+        public Producer() {
+            this.producerId = UUID.randomUUID();
+        }
+
         public void run() {
             while (true) {
                 if(isCarMoving && currentCar != null) {
 
                     // if car is moving, move it till its goal
                     currentCar.move();
-                    System.out.println("PRODUCER: Car " + currentCar.getCarId() + " is moving to quadrant " + currentCar  .getStreetQuadrant());
-
+                    System.out.println("PRODUCER " + producerId + ": Car " + currentCar.getCarId() + 
+                    " is moving to quadrant " + currentCar.getStreetQuadrant());
                     // if car is at goal, remove it from parking lot
                     if (currentCar.getStreetQuadrant() == currentCar.getGoalQuadrant()) {
                         isCarMoving = false;
@@ -88,7 +97,7 @@ public class ParkingLot{
                 } else {
                     // ask buffer
                     try {
-                        currentCar = push();
+                        currentCar = push(producerId);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -107,15 +116,17 @@ public class ParkingLot{
         }
     }
 
-    public Car push() throws InterruptedException { // "push" method
+    public Car push(UUID producerId) throws InterruptedException { // "push" method
+        System.out.println("PRODUCER" + producerId + ": Entry section"); // ENTRY SECTION. MKL, EVP 1
         synchronized (this) {
-            while (currentNumberOfCars >= capacity) {
+            System.out.println("PRODUCER" + producerId + ": Critical section start"); // CRITICAL SECTION. MKL, EVP 2
+            while (isFull()) {
                 // wait for the consumer
                 wait();
-                System.out.println("Parking lot is full. Producer has to wait.");
+                System.out.println("Parking lot is full. Producer " + producerId + " has to wait.");
                 Thread.sleep(500);
             }
-    
+
             // create a new car
             Car car = new Car(numberQuadrants, parkingLot);
             synchronized (car) {
@@ -123,14 +134,18 @@ public class ParkingLot{
                 System.out.println("Car " + car.getCarId() + " is parked in quadrant " + car.getStreetQuadrant());
                 car.setUsedByProducer(true);
             }
-    
+
             // notify the consumer
             notify();
             Thread.sleep(175);
-    
+
+            System.out.println("PRODUCER" + producerId + ": Critical section end"); // CRITICAL SECTION. MKL, EVP 2.2
             return car;
         }
+        // This print statement is currently unreachable due to the infinite loop
+        // System.out.println("PRODUCER" + producerId + ": Exit section"); // EXIT SECTION. MKL, EVP 3. Keep unreachable for exception handling
     }
+
 
     class Consumer extends Thread {
 
@@ -138,16 +153,23 @@ public class ParkingLot{
         private Car currentCar;
         private boolean isCarMoving = false;
 
+        // unique identifier consumern this time
+        private UUID consumerId;
+
+        public Consumer() {
+            this.consumerId = UUID.randomUUID();
+        }
+
         public void run() {
             while (true) {
-                if (currentNumberOfCars > 0) {
+                if (!isEmpty()) {
 
                     // if no car is moving, get the first car from the parking lot
                     if (!isCarMoving) {
 
                         // call consume method to check buffer
                         try {
-                            currentCar = pop();
+                            currentCar = pop(consumerId);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
@@ -158,7 +180,7 @@ public class ParkingLot{
                     } else {
                         // if car is moving, move it till its beyond the parking lot (last quadrant)
                         currentCar.move();
-                        System.out.println("CONSUMER: Car " + currentCar.getCarId() + " is moving to quadrant " + currentCar.getStreetQuadrant());
+                        System.out.println("CONSUMER" + consumerId + ": Car " + currentCar.getCarId() + " is moving to quadrant " + currentCar.getStreetQuadrant());
 
                         // if car is at last quadrant or above, remove it from parking lot
                         if (currentCar.getStreetQuadrant() >= numberQuadrants){
@@ -180,31 +202,51 @@ public class ParkingLot{
         }
     }
 
-    public Car pop() throws InterruptedException { // "pop" method
-        while (true) {
-            synchronized (this) {
-                while (parkingLot.size() == 0){
-                    // wait for the producer
-                    wait();
-                }
-    
-                // go through the queue and check if any car has reached its goal, is not moving and
-                // is not used by the producer
+    public Car pop(UUID consumerId) throws InterruptedException { // "pop" method
+    System.out.println("CONSUMER" + consumerId + ": Entry section"); // ENTRY SECTION MKL, EVP 1
+    while (true) {
+        synchronized (this) {
+            System.out.println("CONSUMER" + consumerId + ": Critical section start"); // CRITICAL SECTION MKL, EVP 2
+            while (isEmpty()){
+                // wait for the producer
+                System.out.println("Parking lot is empty. Consumer " + consumerId + " has to wait."); 
+                wait();
+                Thread.sleep(500);
+            }
 
-                for (Car car : parkingLot) {
-                    synchronized(car){
-                        if (car.hasReachedGoal() && !car.getIsMoving() && !car.isUsedByProducer()) {
-                            // notify the producer
-                            notify();
-                            return car;
-                        }
+            // go through the queue and check if any car has reached its goal, is not moving and
+            // is not used by the producer
+            for (Car car : parkingLot) {
+                synchronized(car){
+                    if (car.hasReachedGoal() && !car.getIsMoving() && !car.isUsedByProducer()) {
+                        // notify the producer
+                        System.out.println("Car " + car.getCarId() + " has reached its goal. Notifying producer.");
+                        notify();
+                        System.out.println("CONSUMER " + consumerId + ": Critical section end"); // CRITICAL SECTION MKL, EVP 2.2
+                        return car;
                     }
                 }
-
-                // sleep for 1 second
-                Thread.sleep(175);
             }
+
+            // sleep for 1 second
+            Thread.sleep(175);
         }
+    }
+    // This print statement is currently unreachable due to the infinite loop
+    // System.out.println("CONSUMER" + consumerId + ": Exit section");
+}
+
+
+    // ------------------ task requested methods ------------------
+
+    // full
+    public boolean isFull() {
+        return currentNumberOfCars >= capacity;
+    }
+
+    // empty
+    public boolean isEmpty() {
+        return parkingLot.size() == 0;
     }
 
     // ------------------ Parking Lot ------------------
