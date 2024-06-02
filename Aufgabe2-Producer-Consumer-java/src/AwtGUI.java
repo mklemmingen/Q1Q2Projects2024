@@ -210,6 +210,9 @@ public class AwtGUI extends Main {
 
                 public void actionPerformed(ActionEvent e) {
 
+                    // set text of the header label
+                    headerLabel.setText("Parking Lot Simulation is running...");
+
                     // turn puffer visible
                     pufferNumberLot.setVisible(true);
 
@@ -262,7 +265,7 @@ public class AwtGUI extends Main {
 
     private void showParkingLot() {
         // Set the text of the header label
-        headerLabel.setText("Parking Lot Simulation Ongoing...");
+        headerLabel.setText("Waiting for the start of the Parking Lot Simulation...");
 
         // Create the buttons and add action listeners to them
         Button exitButton = new Button("EXIT");
@@ -271,6 +274,17 @@ public class AwtGUI extends Main {
             new ActionListener() {
 
                 public void actionPerformed(ActionEvent e) {
+
+                    // set header to "closing the simulation..."
+                    headerLabel.setText("Closing the Parking Lot Simulation...");
+
+                    // wait for 1 seconds
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException ex) {
+                        ex.printStackTrace();
+                    }
+
                     // Close the application when the EXIT button is clicked
                     System.exit(0);
                 }
