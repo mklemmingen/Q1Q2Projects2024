@@ -6,6 +6,8 @@ import os
 from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy.integrate import quad
+from scipy.optimize import fsolve, minimize_scalar
 
 # from tkinter import *
 # Explicit imports to satisfy Flake8
@@ -31,11 +33,11 @@ x_ticks = 10
 function = lambda x: x
 
 
-def create_plot(function, y_upper, y_lower, y_ticks, x_upper, x_lower, x_ticks):
+def create_plot(function, y_upper, y_lower, y_ticks, x_upper, x_lower, x_ticks, num_points=1000):
     # Generate x values
-    x = np.linspace(x_lower, x_upper, x_ticks)
+    x = np.linspace(x_lower, x_upper, num_points)
     
-    # Calculate y values
+    # Calculate y values, check for SyntaxError, set textbox to red if error and return
     y = function(x)
 
     fig, ax = plt.subplots()
@@ -51,32 +53,122 @@ def create_plot(function, y_upper, y_lower, y_ticks, x_upper, x_lower, x_ticks):
     ax.set_xlim(x_lower, x_upper)
     ax.set_xticks(np.linspace(x_lower, x_upper, x_ticks))
 
+    # Add a grid
+    ax.grid(True)
+
+    # Move left y-axis and bottom x-axis to centre, passing through (0,0)
+    ax.spines['left'].set_position('zero')
+    ax.spines['bottom'].set_position('zero')
+
+    # Eliminate upper and right axes
+    ax.spines['right'].set_color('none')
+    ax.spines['top'].set_color('none')
+
+    # Show ticks in the left and lower axes only
+    ax.xaxis.set_ticks_position('bottom')
+    ax.yaxis.set_ticks_position('left')
+
     plt.show()
 
-def get_extrema(function):
-    return 3
+def get_extrema(func, interval):
+    # Find the minimum
+    res_min = minimize_scalar(func, bounds=interval, method='bounded')
+    min_point = (res_min.x, res_min.fun)
+
+    # Find the maximum by minimizing the negative of the function
+    res_max = minimize_scalar(lambda x: -func(x), bounds=interval, method='bounded')
+    max_point = (res_max.x, -res_max.fun)
+
+    return f"min: {min_point}, max: {max_point}"
+
+def find_x_intercepts(func, x0):
+    return fsolve(func, x0)
+
+def find_y_intercept(func):
+    return func(0)
 
 def get_intercepts(function):
-    return 2
+    y_intercepts = find_y_intercept(function)
+    x_intercepts = find_x_intercepts(function, 0)
+    return f"y: {y_intercepts}, x: {x_intercepts}"
 
-def get_integral(function):
-    return 2
+def get_integral(function, lowerX, upperX):
+    result = quad(function, lowerX, upperX)
+    return result
 
 def plotItOut():
-    function = lambda x: eval(entry_1.get())
-    y_upper = int(entry_2.get())
-    y_lower = int(entry_6.get())
-    y_ticks = int(entry_4.get())
-    x_upper = int(entry_7.get())
-    x_lower = int(entry_5.get())
-    x_ticks = int(entry_3.get())
+
+    # for each of the entry gets, catch for errors and if caught, turn the entry box red
+
+    error_occured = False
+
+    try:
+        function = lambda x: eval(entry_1.get())
+        entry_1.config(bg="#FFFFFF")
+        # additonallly trying if the data we got is not usable for a function 
+        try:
+            y = function(x)
+        except SyntaxError as e:
+            entry_1.config(bg="#FF0000")
+    except Exception as e:
+        entry_1.config(bg="#FF0000")
+        error_occured = True
+    
+    try:
+        y_upper = int(entry_7.get())
+        entry_2.config(bg="#FFFFFF")
+    except Exception as e:
+        entry_2.config(bg="#FF0000")
+        error_occured = True
+    
+    try:
+        y_lower = int(entry_6.get())
+        entry_6.config(bg="#FFFFFF")
+    except Exception as e:
+        entry_6.config(bg="#FF0000")
+        error_occured = True
+    
+    try:
+        y_ticks = int(entry_4.get())
+        entry_4.config(bg="#FFFFFF")
+    except Exception as e:
+        entry_4.config(bg="#FF0000")
+        error_occured = True
+    
+    try:
+        x_upper = int(entry_2.get())
+        entry_7.config(bg="#FFFFFF")
+    except Exception as e:
+        entry_7.config(bg="#FF0000")
+        error_occured = True
+    
+    try:
+        x_lower = int(entry_5.get())
+        entry_5.config(bg="#FFFFFF")
+    except Exception as e:
+        entry_5.config(bg="#FF0000")
+        error_occured = True
+    
+    try:
+        x_ticks = int(entry_3.get())
+        entry_3.config(bg="#FFFFFF")
+    except Exception as e:
+        entry_3.config(bg="#FF0000")
+        error_occured = True
+
+    if error_occured:
+        return
+
     create_plot(function, y_upper, y_lower, y_ticks, x_upper, x_lower, x_ticks)
-    extrema_text = get_extrema(function)
+    extrema_text = get_extrema(function, (x_lower, x_upper))
     intercepts_text = get_intercepts(function)
     integral_text = get_integral(function)
-    canvas.itemconfig(2, text=integral_text)    
-    canvas.itemconfig(4, text=extrema_text)
-    canvas.itemconfig(6, text=intercepts_text)
+
+    # set correct canvas textboxes to include their text
+    canvas.itemconfigure(extrema_text, text=extrema_text)
+    canvas.itemconfigure(intercepts_text, text=intercepts_text)
+    canvas.itemconfigure(integral_text, text=integral_text)
+
 
 integral_text = ""
 extrema_text = ""
