@@ -25,7 +25,7 @@ public class Car {
             this.goalQuadrant = 0; 
         }
 
-        System.out.println("Car " + carId + " created with goal quadrant " + goalQuadrant + " and street quadrant " + streetQuadrant);
+        System.out.println("Car " + carId + " created with goal quadrant " + goalQuadrant);
     }
 
     public int getCarId() {
