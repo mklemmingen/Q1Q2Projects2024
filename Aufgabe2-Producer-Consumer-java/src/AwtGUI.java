@@ -7,6 +7,7 @@ import java.awt.Frame;
 import java.awt.GridLayout;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.io.File;
 import java.awt.Button;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -14,6 +15,7 @@ import java.awt.FlowLayout;
 import java.awt.Image;
 import java.awt.TextField;
 import java.awt.Label;
+import java.io.File;
 
 public class AwtGUI extends Main {
 
@@ -45,12 +47,12 @@ public class AwtGUI extends Main {
 
         // loading images
         System.out.println("Loading images...");
-        carImage = new ImageIcon("src\\awtFrontend\\carImage.png");
+        carImage = new ImageIcon("src" + File.separator + "fxFrontend" + File.separator + "car.png");
         carImage.setImage(carImage.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT));
-        statusC = new ImageIcon("src\\awtFrontend\\statusC.png");
+        statusC = new ImageIcon("src" + File.separator + "awtFrontend" + File.separator + "statusC.png");
         statusC.setImage(statusC.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT));
-        statusP = new ImageIcon("src\\awtFrontend\\statusP.png");
-        statusP.setImage(statusP.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT));
+        statusP = new ImageIcon("src" + File.separator + "awtFrontend" + File.separator + "statusP.png");
+        statusP.setImage(statusP.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT));    
     
 
         // system out if the images are null
@@ -149,6 +151,8 @@ public class AwtGUI extends Main {
         Label producersLabel = new Label("INT: Producers: ");
         controlPanel.add(producersLabel);
         final TextField producersText = new TextField(5);
+        super.setNumberOfProducers(3);
+        producersText.setText("3");
         // if text is not a number, set the text to 0, else parse the text to an int and give it to the numberOfProducers if change has happened
         producersText.addTextListener(
             e -> {
@@ -165,7 +169,9 @@ public class AwtGUI extends Main {
         // input box for number of consumers
         Label consumersLabel = new Label("INT: Consumers: ");
         controlPanel.add(consumersLabel);
-        final TextField consumersText = new TextField(5);
+        final TextField consumersText = new TextField(5); 
+        super.setNumberOfConsumers(2);
+        consumersText.setText("2");
         // if text is not a number, set the text to 0, else parse the text to an int and give it to the numberOfProducers if change has happened
         consumersText.addTextListener(
             e -> {
@@ -183,6 +189,8 @@ public class AwtGUI extends Main {
         Label capacityLabel = new Label("INT < 10: Capacity");
         controlPanel.add(capacityLabel);
         final TextField capacityText = new TextField(5);
+        capacity = 7;
+        capacityText.setText("7");
         capacityText.addTextListener(
             e -> {
                 if (!capacityText.getText().matches("[0-9]+")) {
