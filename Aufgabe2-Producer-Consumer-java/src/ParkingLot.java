@@ -117,9 +117,9 @@ public class ParkingLot{
     }
 
     public Car push(UUID producerId) throws InterruptedException { // "push" method
-        System.out.println("PRODUCER" + producerId + ": Entry section"); // ENTRY SECTION. MKL, EVP 1
+        System.out.println("PRODUCER " + producerId + ": Entry section"); // ENTRY SECTION. MKL, EVP 1
         synchronized (this) {
-            System.out.println("PRODUCER" + producerId + ": Critical section start"); // CRITICAL SECTION. MKL, EVP 2
+            System.out.println("PRODUCER " + producerId + ": Critical section start"); // CRITICAL SECTION. MKL, EVP 2
             while (isFull()) {
                 // wait for the consumer
                 wait();
@@ -139,7 +139,7 @@ public class ParkingLot{
             notify();
             Thread.sleep(175);
 
-            System.out.println("PRODUCER" + producerId + ": Critical section end"); // CRITICAL SECTION. MKL, EVP 2.2
+            System.out.println("PRODUCER " + producerId + ": Critical section end"); // CRITICAL SECTION. MKL, EVP 2.2
             return car;
         }
         // This print statement is currently unreachable due to the infinite loop
@@ -180,7 +180,7 @@ public class ParkingLot{
                     } else {
                         // if car is moving, move it till its beyond the parking lot (last quadrant)
                         currentCar.move();
-                        System.out.println("CONSUMER" + consumerId + ": Car " + currentCar.getCarId() + " is moving to quadrant " + currentCar.getStreetQuadrant());
+                        System.out.println("CONSUMER " + consumerId + ": Car " + currentCar.getCarId() + " is moving to quadrant " + currentCar.getStreetQuadrant());
 
                         // if car is at last quadrant or above, remove it from parking lot
                         if (currentCar.getStreetQuadrant() >= numberQuadrants){
@@ -203,10 +203,10 @@ public class ParkingLot{
     }
 
     public Car pop(UUID consumerId) throws InterruptedException { // "pop" method
-    System.out.println("CONSUMER" + consumerId + ": Entry section"); // ENTRY SECTION MKL, EVP 1
+    System.out.println("CONSUMER " + consumerId + ": Entry section"); // ENTRY SECTION MKL, EVP 1
     while (true) {
         synchronized (this) {
-            System.out.println("CONSUMER" + consumerId + ": Critical section start"); // CRITICAL SECTION MKL, EVP 2
+            System.out.println("CONSUMER " + consumerId + ": Critical section start"); // CRITICAL SECTION MKL, EVP 2
             while (isEmpty()){
                 // wait for the producer
                 System.out.println("Parking lot is empty. Consumer " + consumerId + " has to wait."); 
