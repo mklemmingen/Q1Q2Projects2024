@@ -178,7 +178,8 @@ public class ParkingLot{
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
-                        System.out.println("CONSUMER " + consumerId + ": IN_THREAD : Critical section end"); // CRITICAL SECTION. MKL, EVP 2.2
+                        System.out.println("CONSUMER " + consumerId + ": IN_THREAD : Critical section end");
+                        // CRITICAL SECTION. MKL, EVP 2.2
                         currentCar.start();
                         currentCar.setUsedByProducer(false);
                         isCarMoving = true;

@@ -45,11 +45,11 @@ public class AwtGUI extends Main {
 
         // loading images
         System.out.println("Loading images...");
-        carImage = new ImageIcon("src\\awtFrontend\\carImage.png");
+        carImage = new ImageIcon("src/awtFrontend/carImage.png");
         carImage.setImage(carImage.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT));
-        statusC = new ImageIcon("src\\awtFrontend\\statusC.png");
+        statusC = new ImageIcon("src/awtFrontend/statusC.png");
         statusC.setImage(statusC.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT));
-        statusP = new ImageIcon("src\\awtFrontend\\statusP.png");
+        statusP = new ImageIcon("src/awtFrontend/statusP.png");
         statusP.setImage(statusP.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT));
     
 
