@@ -7,6 +7,7 @@ import java.awt.Frame;
 import java.awt.GridLayout;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.io.File;
 import java.awt.Button;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -14,6 +15,7 @@ import java.awt.FlowLayout;
 import java.awt.Image;
 import java.awt.TextField;
 import java.awt.Label;
+import java.io.File;
 
 public class AwtGUI extends Main {
 
@@ -25,7 +27,13 @@ public class AwtGUI extends Main {
 
     private static Panel pufferNumberLot;
 
-    private Label statusLabel;
+    private Panel statusPanel;
+    private static Label numberCarsLabel;
+    private static Label numberPCarsLabel;
+    private static Label numberCCarsLabel;
+    private static Label numberParkedCarsLabel;
+    
+
     private Panel controlPanel;
 
     // images
@@ -45,12 +53,12 @@ public class AwtGUI extends Main {
 
         // loading images
         System.out.println("Loading images...");
-        carImage = new ImageIcon("src\\awtFrontend\\carImage.png");
+        carImage = new ImageIcon("src" + File.separator + "fxFrontend" + File.separator + "car.png");
         carImage.setImage(carImage.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT));
-        statusC = new ImageIcon("src\\awtFrontend\\statusC.png");
+        statusC = new ImageIcon("src" + File.separator + "awtFrontend" + File.separator + "statusC.png");
         statusC.setImage(statusC.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT));
-        statusP = new ImageIcon("src\\awtFrontend\\statusP.png");
-        statusP.setImage(statusP.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT));
+        statusP = new ImageIcon("src" + File.separator + "awtFrontend" + File.separator + "statusP.png");
+        statusP.setImage(statusP.getImage().getScaledInstance(25, 25, Image.SCALE_DEFAULT));    
     
 
         // system out if the images are null
@@ -112,9 +120,9 @@ public class AwtGUI extends Main {
     private void prepareGUI() {
 
         // Creating main frame with size and layout
-        mainFrame = new Frame("Parking Lot Simulation");
-        mainFrame.setSize(1000, 400);
-        mainFrame.setLayout(new GridLayout(5, 1));
+        mainFrame = new Frame("Multi-Threaded Valet-Parking");
+        mainFrame.setSize(1000, 500);
+        mainFrame.setLayout(new GridLayout(6, 1));
 
         // Adding a window listener to the main frame to close the application when the close button is clicked
         mainFrame.addWindowListener(
@@ -132,10 +140,10 @@ public class AwtGUI extends Main {
         headerLabel = new Label();
         headerLabel.setAlignment(Label.CENTER);
 
-        // Creating the status label and setting its alignment and size
-        statusLabel = new Label();
-        statusLabel.setAlignment(Label.CENTER);
-        statusLabel.setSize(1000, 50);
+        // Creating the status Panel and setting its alignment and size
+        statusPanel = new Panel();
+        statusPanel.setLayout(new FlowLayout());
+        statusPanel.setSize(1000, 20);
 
         // Creating the control panel and setting its layout
         controlPanel = new Panel();
@@ -149,6 +157,8 @@ public class AwtGUI extends Main {
         Label producersLabel = new Label("INT: Producers: ");
         controlPanel.add(producersLabel);
         final TextField producersText = new TextField(5);
+        super.setNumberOfProducers(3);
+        producersText.setText("3");
         // if text is not a number, set the text to 0, else parse the text to an int and give it to the numberOfProducers if change has happened
         producersText.addTextListener(
             e -> {
@@ -165,7 +175,9 @@ public class AwtGUI extends Main {
         // input box for number of consumers
         Label consumersLabel = new Label("INT: Consumers: ");
         controlPanel.add(consumersLabel);
-        final TextField consumersText = new TextField(5);
+        final TextField consumersText = new TextField(5); 
+        super.setNumberOfConsumers(2);
+        consumersText.setText("2");
         // if text is not a number, set the text to 0, else parse the text to an int and give it to the numberOfProducers if change has happened
         consumersText.addTextListener(
             e -> {
@@ -183,6 +195,8 @@ public class AwtGUI extends Main {
         Label capacityLabel = new Label("INT < 10: Capacity");
         controlPanel.add(capacityLabel);
         final TextField capacityText = new TextField(5);
+        capacity = 7;
+        capacityText.setText("7");
         capacityText.addTextListener(
             e -> {
                 if (!capacityText.getText().matches("[0-9]+")) {
@@ -201,6 +215,9 @@ public class AwtGUI extends Main {
             new ActionListener() {
 
                 public void actionPerformed(ActionEvent e) {
+
+                    // set text of the header label
+                    headerLabel.setText("Parking Lot Simulation is running...");
 
                     // turn puffer visible
                     pufferNumberLot.setVisible(true);
@@ -235,8 +252,19 @@ public class AwtGUI extends Main {
         pufferNumberLot.setSize(1000, 200);
         pufferNumberLot.setVisible(false);
 
+        // status Panel contains all the information about the parking lot: number of cars, cars with producers, cars with consumers, cars parked
+        numberCCarsLabel = new Label("Cars: ");
+        numberPCarsLabel = new Label("Cars with Producers: ");
+        numberParkedCarsLabel = new Label("Cars Parked: ");
+        numberCarsLabel = new Label("Cars with Consumers: ");
+        statusPanel.add(numberCCarsLabel);
+        statusPanel.add(numberPCarsLabel);
+        statusPanel.add(numberCarsLabel);
+        statusPanel.add(numberParkedCarsLabel);
+
+
         headerLabel.setVisible(true);
-        statusLabel.setVisible(true);
+        statusPanel.setVisible(true);
         controlPanel.setVisible(true);
         parkingLotGUI.setVisible(true);
 
@@ -246,7 +274,7 @@ public class AwtGUI extends Main {
         mainFrame.add(parkingLotGUI);
         mainFrame.add(pufferNumberLot);
         mainFrame.add(controlPanel);
-        mainFrame.add(statusLabel);
+        mainFrame.add(statusPanel);
 
         // Making the main frame visible
         mainFrame.setVisible(true);
@@ -254,7 +282,7 @@ public class AwtGUI extends Main {
 
     private void showParkingLot() {
         // Set the text of the header label
-        headerLabel.setText("Parking Lot Simulation Ongoing...");
+        headerLabel.setText("Waiting for the start of the Parking Lot Simulation...");
 
         // Create the buttons and add action listeners to them
         Button exitButton = new Button("EXIT");
@@ -263,6 +291,17 @@ public class AwtGUI extends Main {
             new ActionListener() {
 
                 public void actionPerformed(ActionEvent e) {
+
+                    // set header to "closing the simulation..."
+                    headerLabel.setText("Closing the Parking Lot Simulation...");
+
+                    // wait for 1 seconds
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException ex) {
+                        ex.printStackTrace();
+                    }
+
                     // Close the application when the EXIT button is clicked
                     System.exit(0);
                 }
@@ -282,6 +321,31 @@ public class AwtGUI extends Main {
 
         List<Car> parkingLotList = getParkingLot().getParkingLotList();
 
+        // count and set the number of: cars, cars with producers, cars with consumers, parked cars
+        int numberOfCarsForGUI = parkingLotList.size();
+        int numberOfCarsWithProducers = 0;
+        int numberOfCarsWithConsumers = 0;
+        int numberOfParkedCars = 0;
+
+        for (int i = 0; i < parkingLotList.size(); i++) {
+            Car car = parkingLotList.get(i);
+            if (car.isUsedByProducer()) {
+                numberOfCarsWithProducers++;
+            }
+            if (!car.isUsedByProducer()&& car.getIsMoving()) {
+                numberOfCarsWithConsumers++;
+            }
+            if (car.hasReachedGoal()&& !car.getIsMoving()) {
+                numberOfParkedCars++;
+            }
+        }
+
+        // set the labels of the status panel to the values of the variables
+        numberCCarsLabel.setText("Cars: " + numberOfCarsForGUI);
+        numberPCarsLabel.setText("Cars with Producers: " + numberOfCarsWithProducers);
+        numberCarsLabel.setText("Cars with Consumers: " + numberOfCarsWithConsumers);
+        numberParkedCarsLabel.setText("Cars Parked: " + numberOfParkedCars);
+        
         // iterating over quadrants, setting all labels to invisible, and visible if true
 
         for (int i = 0; i < getNumberQuadrants(); i++) {
