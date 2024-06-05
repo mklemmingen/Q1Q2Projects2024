@@ -1,0 +1,4 @@
+C:\REPOS\aufgaben-repo-inf3-sose14\Aufgabe3-Bildfaltung-C#\Bildfaltung\obj\Debug\net8.0\Bildfaltung.GeneratedMSBuildEditorConfig.editorconfig
+C:\REPOS\aufgaben-repo-inf3-sose14\Aufgabe3-Bildfaltung-C#\Bildfaltung\obj\Debug\net8.0\Bildfaltung.AssemblyInfoInputs.cache
+C:\REPOS\aufgaben-repo-inf3-sose14\Aufgabe3-Bildfaltung-C#\Bildfaltung\obj\Debug\net8.0\Bildfaltung.AssemblyInfo.cs
+C:\REPOS\aufgaben-repo-inf3-sose14\Aufgabe3-Bildfaltung-C#\Bildfaltung\obj\Debug\net8.0\Bildfaltung.csproj.CoreCompileInputs.cache

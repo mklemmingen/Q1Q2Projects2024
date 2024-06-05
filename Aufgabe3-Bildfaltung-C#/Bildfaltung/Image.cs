@@ -1,3 +1,5 @@
+using System.Text;
+
 public class Image
 {
     // --- Research Information about PMG -----
@@ -20,7 +22,7 @@ public class Image
     // and then read the pixel values
     // --------------------------------------
 
-    private int[,] imageArray;
+    private int[,] imageArray = new int[0, 0];
 
     public void ReadFromFile(string filename)
     {
@@ -110,5 +112,31 @@ public class Image
         }
 
         return result;
+    }
+
+    private int ConvolvePixel(int i, int j, Kernel kernel, BorderBehavior borderBehavior)
+    {
+        // logic to apply the kernel to a single pixel
+        // and return the resulting value
+
+        int sum = 0;
+
+        // Iterate over the kernel and apply it to the pixel at (i, j)
+        for (int k = 0; k < kernel.Size; k++)
+        {
+            for (int l = 0; l < kernel.Size; l++)
+            {
+                int x = i + k - kernel.Size / 2;
+                int y = j + l - kernel.Size / 2;
+
+                // Apply the border behavior to handle out-of-bounds pixels
+                int pixelValue = borderBehavior.GetPixelValue(x, y, this);
+
+                // Multiply the pixel value by the kernel value and add it to the sum
+                sum += pixelValue * kernel.Values[k, l];
+            }
+        }
+
+        return sum;
     }
 }
