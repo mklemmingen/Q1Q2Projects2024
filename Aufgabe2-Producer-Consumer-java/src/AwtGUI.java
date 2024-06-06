@@ -15,7 +15,6 @@ import java.awt.FlowLayout;
 import java.awt.Image;
 import java.awt.TextField;
 import java.awt.Label;
-import java.io.File;
 import java.awt.Graphics;
 import java.awt.Canvas;
 import java.awt.Dimension;
