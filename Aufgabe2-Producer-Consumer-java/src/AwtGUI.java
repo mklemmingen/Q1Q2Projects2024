@@ -16,6 +16,10 @@ import java.awt.Image;
 import java.awt.TextField;
 import java.awt.Label;
 import java.io.File;
+import java.awt.Graphics;
+import java.awt.Canvas;
+import java.awt.Dimension;
+import java.awt.Container;
 
 public class AwtGUI extends Main {
 
@@ -32,6 +36,24 @@ public class AwtGUI extends Main {
     private static Label numberPCarsLabel;
     private static Label numberCCarsLabel;
     private static Label numberParkedCarsLabel;
+
+    private static Panel graphs;
+
+    private static LineGraph graphNumCar;
+    // data for numCar
+    private static int[] dataNumCar = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    private static int currentIndexNumCar = 0;
+
+    private static LineGraph graphProduc;
+    // data for produc
+    private static int[] dataProduc = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    private static int currentIndexProduc = 0;
+
+
+    private static LineGraph graphConsum;
+    // data for consum
+    private static int[] dataConsum = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    private static int currentIndexConsum = 0;
     
 
     private Panel controlPanel;
@@ -121,8 +143,8 @@ public class AwtGUI extends Main {
 
         // Creating main frame with size and layout
         mainFrame = new Frame("Multi-Threaded Valet-Parking");
-        mainFrame.setSize(1000, 500);
-        mainFrame.setLayout(new GridLayout(6, 1));
+        mainFrame.setSize(1000, 800);
+        mainFrame.setLayout(new GridLayout(7, 1));
 
         // Adding a window listener to the main frame to close the application when the close button is clicked
         mainFrame.addWindowListener(
@@ -164,9 +186,12 @@ public class AwtGUI extends Main {
             e -> {
                 if (!producersText.getText().matches("[0-9]+")) {
                     producersText.setText("0");
+                    graphProduc.setInterval(0);
                 } else {
                     // super numberOfProducers
                     super.setNumberOfProducers(Integer.parseInt(producersText.getText()));
+                    // set interval of producer graph to the number of producers
+                    graphProduc.setInterval(Integer.parseInt(producersText.getText()));
                 }
             }
         );
@@ -183,9 +208,13 @@ public class AwtGUI extends Main {
             e -> {
                 if (!consumersText.getText().matches("[0-9]+")) {
                     consumersText.setText("0");
+                    // set interval of consumer graph to 0
+                    graphConsum.setInterval(0);
                 } else {
                     // super numberOfConsumers
                     super.setNumberOfConsumers(Integer.parseInt(consumersText.getText()));
+                    // set interval of consumer graph to the number of consumers
+                    graphConsum.setInterval(Integer.parseInt(consumersText.getText()));
                 }
             }
         );
@@ -202,8 +231,10 @@ public class AwtGUI extends Main {
                 if (!capacityText.getText().matches("[0-9]+")) {
                     capacityText.setText("0");
                     capacity = 0;
+                    graphNumCar.setInterval(0);
                 } else {
                     capacity = Integer.parseInt(capacityText.getText());
+                    graphNumCar.setInterval(capacity+1);
                 }
             }
         );
@@ -262,19 +293,39 @@ public class AwtGUI extends Main {
         statusPanel.add(numberCarsLabel);
         statusPanel.add(numberParkedCarsLabel);
 
+        // Panel with 3 LineGraphs (which extend Frame and are added to the Panel)
+        // 1. number of cars in the parking lot
+        // 2. number of cars with producers
+        // 3. number of cars with consumers
 
+        // creating the graphs panel
+        graphs = new Panel();
+        graphs.setLayout(new GridLayout(1, 3, 30, 30));
+
+        // three lineGraphs
+        graphNumCar = new LineGraph();
+        graphProduc = new LineGraph();
+        graphConsum = new LineGraph();
+
+        // adding the images to the Panel
+        graphs.add(graphNumCar);
+        graphs.add(graphProduc);
+        graphs.add(graphConsum);
+
+        // setting visibility to true
         headerLabel.setVisible(true);
         statusPanel.setVisible(true);
         controlPanel.setVisible(true);
         parkingLotGUI.setVisible(true);
+        graphs.setVisible(true);
 
         // Adding the header label, control panel, and status label to the main frame
         mainFrame.add(headerLabel);
-
         mainFrame.add(parkingLotGUI);
         mainFrame.add(pufferNumberLot);
         mainFrame.add(controlPanel);
         mainFrame.add(statusPanel);
+        mainFrame.add(graphs);
 
         // Making the main frame visible
         mainFrame.setVisible(true);
@@ -392,10 +443,101 @@ public class AwtGUI extends Main {
             }
         };
 
-        parkingLotGUI.setVisible(true);
+        // graphs
 
+        // if currentIndex at the end of the data size, setting it to 0
+        if (currentIndexNumCar == dataNumCar.length - 1) {
+            currentIndexNumCar = 0;
+        } else {
+            currentIndexNumCar++;
+        }
+        graphNumCar.setLiveViewIndex(currentIndexNumCar);
+
+        if (currentIndexProduc == dataProduc.length - 1) {
+            currentIndexProduc = 0;
+        } else {
+            currentIndexProduc++;
+        }
+        graphProduc.setLiveViewIndex(currentIndexProduc);
+
+        if (currentIndexConsum == dataConsum.length - 1) {
+            currentIndexConsum = 0;
+        } else {
+            currentIndexConsum++;
+        }
+        graphConsum.setLiveViewIndex(currentIndexConsum);
+
+        // updating the data by using the currentIndex and the found variables
+        dataNumCar[currentIndexNumCar] = numberOfCarsForGUI;
+        dataProduc[currentIndexProduc] = numberOfCarsWithProducers;
+        dataConsum[currentIndexConsum] = numberOfCarsWithConsumers;
+
+        // setting that data to be the current data of the graphs
+        graphNumCar.setData(dataNumCar);
+        graphProduc.setData(dataProduc);
+        graphConsum.setData(dataConsum);
+
+        graphs.setVisible(parkingLotIsOpen);
+
+        parkingLotGUI.setVisible(true);
         parkingLotGUI.revalidate();
         parkingLotGUI.repaint();
 
     }
+
+    public class LineGraph extends Canvas {
+
+        private int[] data = {};
+        private int interval = 10; // Default interval is 10
+
+        private int liveViewIndex = 0;
+    
+        public LineGraph() {
+        }
+    
+        public void setData(int[] data) {
+            this.data = data;
+            revalidate();
+            repaint();
+        }
+    
+        // Method to set the interval
+        public void setInterval(int interval) {
+            this.interval = interval;
+        }
+
+        public void setLiveViewIndex(int index) {
+            this.liveViewIndex = index;
+        }
+    
+        @Override
+        public Dimension getPreferredSize() {
+            // Return a size based on the parent container's size
+            Container parent = getParent();
+            if (parent != null) {
+                return parent.getSize();
+            } else {
+                return super.getPreferredSize();
+            }
+        }
+    
+        public void paint(Graphics g) {
+            int h = getHeight();
+            int w = getWidth();
+            for (int i = 0; i < data.length - 1; i++) {
+                int x1 = i * w / (data.length - 1);
+                int x2 = (i + 1) * w / (data.length - 1);
+                int y1 = h - data[i] * h / interval; 
+                int y2 = h - data[i + 1] * h / interval; 
+
+                if(i == liveViewIndex) {
+                    g.setColor(java.awt.Color.RED);
+                } else {
+                    g.setColor(java.awt.Color.BLACK);
+                }
+                g.drawLine(x1, y1, x2, y2);
+            }
+        }
+    }
+    
 }
