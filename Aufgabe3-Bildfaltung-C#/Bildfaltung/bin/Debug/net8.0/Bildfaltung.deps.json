@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Bildfaltung/1.0.0": {
+        "dependencies": {
+          "Eto.Forms": "2.8.3"
+        },
+        "runtime": {
+          "Bildfaltung.dll": {}
+        }
+      },
+      "Eto.Forms/2.8.3": {
+        "runtime": {
+          "lib/net6.0/Eto.dll": {
+            "assemblyVersion": "2.8.0.0",
+            "fileVersion": "2.8.8836.26883"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bildfaltung/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Eto.Forms/2.8.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JlYqTXM9quui0/35H73R4r55ZtDfUA3sOZZuhvkNgzDTXp59DDvXDxZ7lRD6fge+GTumA+5AscmF9SWwgK5FUg==",
+      "path": "eto.forms/2.8.3",
+      "hashPath": "eto.forms.2.8.3.nupkg.sha512"
+    }
+  }
+}

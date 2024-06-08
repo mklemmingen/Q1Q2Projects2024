@@ -15,4 +15,19 @@ TO-DO:
 - KernelFactory
 - ZeroPaddingBorderBehavior
 
-----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+
+REQUIREMENTS:
+
+https://github.com/picoe/Eto/wiki/Quick-Start
+
+Install the Eto.Forms NuGet package: You can do this by right-clicking on your project in the Solution Explorer, selecting “Manage NuGet Packages…”, searching for “Eto.Forms”, and then clicking “Install”.
+
+in vscode:
+
+dotnet add package Eto.Forms
+dotnet add package Eto.Platform.Wpf 
+dotnet add package Eto.Platform.Gtk 
+dotnet add package Eto.Platform.Mac64 
+

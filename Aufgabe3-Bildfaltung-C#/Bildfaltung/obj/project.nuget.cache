@@ -1,8 +1,26 @@
 {
   "version": 2,
-  "dgSpecHash": "soufy4Pb9kMKQWpOJeHVLIDXrGyWSroslkQxKzqmSwwIiMGIE4H/0K3tThM9+DHXEzffgkUcgUmmfG4X7lfLww==",
+  "dgSpecHash": "saIc22WB6MQ=",
   "success": true,
-  "projectFilePath": "C:\\REPOS\\aufgaben-repo-inf3-sose14\\Aufgabe3-Bildfaltung-C#\\Bildfaltung\\Bildfaltung.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Laute\\Desktop\\REPO_Aufgabe3\\aufgaben-repo-inf3-sose14\\Aufgabe3-Bildfaltung-C#\\Bildfaltung\\Bildfaltung.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Laute\\.nuget\\packages\\atksharp\\3.24.24.95\\atksharp.3.24.24.95.nupkg.sha512",
+    "C:\\Users\\Laute\\.nuget\\packages\\cairosharp\\3.24.24.95\\cairosharp.3.24.24.95.nupkg.sha512",
+    "C:\\Users\\Laute\\.nuget\\packages\\eto.forms\\2.8.3\\eto.forms.2.8.3.nupkg.sha512",
+    "C:\\Users\\Laute\\.nuget\\packages\\eto.platform.gtk\\2.8.3\\eto.platform.gtk.2.8.3.nupkg.sha512",
+    "C:\\Users\\Laute\\.nuget\\packages\\eto.platform.mac64\\2.8.3\\eto.platform.mac64.2.8.3.nupkg.sha512",
+    "C:\\Users\\Laute\\.nuget\\packages\\eto.platform.wpf\\2.8.3\\eto.platform.wpf.2.8.3.nupkg.sha512",
+    "C:\\Users\\Laute\\.nuget\\packages\\extended.wpf.toolkit\\3.6.0\\extended.wpf.toolkit.3.6.0.nupkg.sha512",
+    "C:\\Users\\Laute\\.nuget\\packages\\gdksharp\\3.24.24.95\\gdksharp.3.24.24.95.nupkg.sha512",
+    "C:\\Users\\Laute\\.nuget\\packages\\giosharp\\3.24.24.95\\giosharp.3.24.24.95.nupkg.sha512",
+    "C:\\Users\\Laute\\.nuget\\packages\\glibsharp\\3.24.24.95\\glibsharp.3.24.24.95.nupkg.sha512",
+    "C:\\Users\\Laute\\.nuget\\packages\\gtksharp\\3.24.24.95\\gtksharp.3.24.24.95.nupkg.sha512",
+    "C:\\Users\\Laute\\.nuget\\packages\\microsoft-windowsapicodepack-core\\1.1.4\\microsoft-windowsapicodepack-core.1.1.4.nupkg.sha512",
+    "C:\\Users\\Laute\\.nuget\\packages\\microsoft-windowsapicodepack-shell\\1.1.4\\microsoft-windowsapicodepack-shell.1.1.4.nupkg.sha512",
+    "C:\\Users\\Laute\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Laute\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net48\\1.0.3\\microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512",
+    "C:\\Users\\Laute\\.nuget\\packages\\pangosharp\\3.24.24.95\\pangosharp.3.24.24.95.nupkg.sha512",
+    "C:\\Users\\Laute\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

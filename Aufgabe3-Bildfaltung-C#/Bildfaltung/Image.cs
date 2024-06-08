@@ -24,66 +24,77 @@ public class Image
 
     private int[,] imageArray = new int[0, 0];
 
+    public int width;
+    public int height;
+    private string magicNumber = "";
+    public int maxValue = 0;
+
     public void ReadFromFile(string filename)
     {
-        // logic to read a pgm image into a 2D int array
-        // and store it in the imageArray field
-
         // Read the file
         string[] lines = File.ReadAllLines(filename);
-        
+
         // Parse the header
-        string header = lines[0];
-        string[] dimensions = lines[1].Split(' ');
-        int width = int.Parse(dimensions[0]);
-        int height = int.Parse(dimensions[1]);
-        int maxValue = int.Parse(lines[2]);
+        magicNumber = lines[0];
+        if (magicNumber != "P2" && magicNumber != "P5")
+        {
+            throw new Exception($"Invalid PGM file. Expected magic number 'P2' or 'P5', but got '{magicNumber}'");
+        }
+
+        string[] dimensions = lines[1].Split(null);
+        width = int.Parse(dimensions[0]);
+        height = int.Parse(dimensions[1]);
+        maxValue = int.Parse(lines[2]);
 
         // Initialize the image array
         imageArray = new int[height, width];
 
         // Read the pixel values
+        int lineIndex = 3; // Start reading pixel values from the 4th line
         for (int i = 0; i < height; i++)
         {
-            string[] pixelValues = lines[i + 3].Split(' ');
             for (int j = 0; j < width; j++)
             {
-                imageArray[i, j] = int.Parse(pixelValues[j]);
+                if (lineIndex >= lines.Length)
+                {
+                    throw new Exception($"Insufficient data in lines for column {j} at row {i}");
+                }
+
+                int pixelValue;
+                if (!int.TryParse(lines[lineIndex], out pixelValue))
+                {
+                    throw new Exception($"Invalid pixel value '{lines[lineIndex]}' at column {j} row {i}");
+                }
+
+                imageArray[i, j] = pixelValue;
+                lineIndex++; // Move to the next line for the next pixel value
             }
         }
-
-        // The imageArray now contains the pixel values of the image
     }
+
+
 
     public void WriteToFile(string filename)
     {
-        // logic to write a 2D int array into a pgm image
-
         // Create a list to store the lines of the image
         List<string> lines = new List<string>();
 
         // Add the header
-        lines.Add("P2");
+        lines.Add(magicNumber);
 
         // Add the dimensions
         lines.Add($"{imageArray.GetLength(1)} {imageArray.GetLength(0)}");
 
         // Add the maximum value
-        lines.Add("255");
+        lines.Add(maxValue.ToString());
         
         // Add the pixel values
         for (int i = 0; i < imageArray.GetLength(0); i++)
         {
-            StringBuilder line = new StringBuilder();
             for (int j = 0; j < imageArray.GetLength(1); j++)
             {
-                line.Append(imageArray[i, j]);
-                if (j < imageArray.GetLength(1) - 1)
-                {
-                    line.Append(" ");
-                }
+                lines.Add(imageArray[i, j].ToString());
             }
-            lines.Add(line.ToString());
         }
 
         // Write the lines to the file
@@ -101,15 +112,31 @@ public class Image
         // Initialize the imageArray for the result
         result.imageArray = new int[imageArray.GetLength(0), imageArray.GetLength(1)];
 
+        // console print of the current percentage of the image processed
+        int totalPixels = imageArray.GetLength(0) * imageArray.GetLength(1);
+        int processedPixels = 0;
+        Console.WriteLine("Convolve: Processing image...");
+
+        Console.WriteLine("Completion: ");
+
         // Iterate over the imageArray and apply the kernel
         for (int i = 0; i < imageArray.GetLength(0); i++)
         {
             for (int j = 0; j < imageArray.GetLength(1); j++)
             {
+                // Print the percentage of the image processed
+                processedPixels++;
                 // Apply the kernel to the pixel at (i, j)
                 result.imageArray[i, j] = ConvolvePixel(i, j, kernel, borderBehavior);
             }
+            // every 10 percent of the pixels processed, print an "*" without a newline
+            if (processedPixels % (100) == 0)
+            {
+                Console.Write("*");
+            }
         }
+
+        Console.WriteLine(" ");
 
         return result;
     }
@@ -136,7 +163,12 @@ public class Image
                 sum += pixelValue * kernel.Values[k, l];
             }
         }
-
         return sum;
+    }
+
+    // getter for the array
+    public int[,] GetImageArray()
+    {
+        return imageArray;
     }
 }

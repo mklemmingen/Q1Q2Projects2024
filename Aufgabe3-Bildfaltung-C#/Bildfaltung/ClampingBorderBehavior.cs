@@ -2,6 +2,12 @@ public class ClampingBorderBehavior : BorderBehavior
 {
     public override int GetPixelValue(int i, int j, Image image)
     {
-        // logic to return the value of the nearest edge pixel for (i, j) outside of the image
+        int width = image.width;
+        int height = image.height;
+
+        int clampedI = Math.Max(0, Math.Min(i, width - 1));
+        int clampedJ = Math.Max(0, Math.Min(j, height - 1));
+
+        return image.GetImageArray()[clampedI, clampedJ];
     }
 }
