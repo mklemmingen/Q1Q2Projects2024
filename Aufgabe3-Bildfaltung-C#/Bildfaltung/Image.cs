@@ -130,7 +130,7 @@ public class Image
                 result.imageArray[i, j] = ConvolvePixel(i, j, kernel, borderBehavior);
             }
             // every 10 percent of the pixels processed, print an "*" without a newline
-            if (processedPixels % (100) == 0)
+            if (processedPixels % (totalPixels/10) == 0)
             {
                 Console.Write("*");
             }
@@ -163,7 +163,7 @@ public class Image
                 sum += pixelValue * kernel.Values[k, l];
             }
         }
-        return sum;
+        return Normalize(sum, 0, 250); // Add this line
     }
 
     // getter for the array
@@ -171,4 +171,20 @@ public class Image
     {
         return imageArray;
     }
+
+    private int Normalize(int value, int min, int max)
+{
+    if (value < min)
+    {
+        return min;
+    }
+    else if (value > max)
+    {
+        return max;
+    }
+    else
+    {
+        return value;
+    }
+}
 }

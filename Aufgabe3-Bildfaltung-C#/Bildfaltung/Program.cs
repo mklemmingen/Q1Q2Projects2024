@@ -30,12 +30,11 @@ string Ergebnis2_27Path = "Ergebnis2-27.pgm";
 // directory
 string ProjectFolder = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), @"..\..\..\"));
 String ZeroPaddedFolder = "ZeroPadded";
-string ClampedFolder = "Clamped";
 string DummiesFolder = "Dummies";
 
 // images
-string Bild1Path = "Bild1.pgm";
-string Bild2Path = "Bild2.pgm";
+string Bild1Path = "Bild3.pgm";
+string Bild2Path = "Bild4.pgm";
 
 // 1. Load the given images (Bild1.pgm and Bild2.pgm)
 
@@ -147,6 +146,43 @@ else
     throw new NotSupportedException("Unsupported platform");
 }
 
+bool displayImagesAlone = true;
+
+if(displayImagesAlone)
+{
+    // Display the loaded images
+    Console.WriteLine("Displaying Bild1 images: Prewitt Filters: ...");
+    // printArray(Bild1.GetImageArray());
+    Console.Write("Bild1: ");
+    ImageView imageView1 = new ImageView("Bild1", Bild1);
+    imageView1.Show();
+    // printArray(Ergebnis1Horizontal.GetImageArray());
+    Console.Write("Ergebnis1-horizontal: ");
+    ImageView imageView1horizont = new ImageView("Ergebnis1-horizontal", Ergebnis1Horizontal);
+    imageView1horizont.Show();
+    // printArray(Ergebnis1Vertical.GetImageArray());
+    Console.WriteLine("Ergebnis1-vertical: ");
+    ImageView imageView1vertical = new ImageView("Ergebnis1-vertical", Ergebnis1Vertical);
+    imageView1vertical.Show();
+
+    Console.WriteLine("Displaying Bild2 images: Box Filters: ...");
+    // printArray(Bild2.GetImageArray());
+    Console.Write("Bild2: ");
+    ImageView imageView2 = new ImageView("Bild2", Bild2);
+    imageView2.Show();
+    // printArray(Ergebnis2_3.GetImageArray());
+    Console.Write("Ergebnis2-3: ");
+    ImageView imageView2_3 = new ImageView("Ergebnis2-3", Ergebnis2_3);
+    imageView2_3.Show();
+    // printArray(Ergebnis2_11.GetImageArray());
+    Console.Write("Ergebnis2-11: ");
+    ImageView imageView2_11 = new ImageView("Ergebnis2-11", Ergebnis2_11);
+    imageView2_11.Show();
+    // printArray(Ergebnis2_27.GetImageArray());
+    Console.Write("Ergebnis2-27: ");
+    ImageView imageView2_27 = new ImageView("Ergebnis2-27", Ergebnis2_27);
+    imageView2_27.Show();
+} else {
 // 9. Display the loaded images and all the results of the convolutions on the screen   
 // Bild1:
 Console.WriteLine("Displaying Bild1...");
@@ -159,9 +195,22 @@ Console.WriteLine("Displaying Bild2...");
 // create ImageViewFour
 ImageViewFour imageViewFour = new ImageViewFour("Bild2", Bild2, "Ergebnis2-3", Ergebnis2_3, "Ergebnis2-11", Ergebnis2_11, "Ergebnis2-27", Ergebnis2_27);
 imageViewFour.Show();
+}
 
 app.Run();
 });
 thread.SetApartmentState(ApartmentState.STA); // Set the thread to STA
 thread.Start();
 thread.Join(); 
+
+void printArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j] + " ");
+        }
+        Console.WriteLine();
+    }
+}
