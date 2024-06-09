@@ -45,6 +45,7 @@ public class Image
         width = int.Parse(dimensions[0]);
         height = int.Parse(dimensions[1]);
         maxValue = int.Parse(lines[2]);
+        Console.WriteLine("Image Read with: " + width + "x" + height + " pixels");
 
         // Initialize the image array
         imageArray = new int[height, width];
