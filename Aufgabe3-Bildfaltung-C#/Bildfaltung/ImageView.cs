@@ -41,6 +41,9 @@ public class ImageView : Form
             int width = image.width;
 
             int[,] values = image.GetImageArray();
+            
+            // console print out to tell how many entries are in the array
+            Console.Write(PictureName1 + "->Array size: " + values.Length + "\n");
 
             for (int y = 0; y < height; y++)
             {
@@ -48,7 +51,7 @@ public class ImageView : Form
                 for (int x = 0; x < width; x++)
                 {
                     pixelsDrawn++;
-                    int value = values[x, y]; // Get the pixel value from the image array
+                    int value = values[y, x]; // Get the pixel value from the image array
                     // 0 value is white, maxValue is black
                     int colorValue = 255 - (int)(255.0 * value / image.maxValue);
                     Color color = Color.FromArgb(colorValue, colorValue, colorValue);

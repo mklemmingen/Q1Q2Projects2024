@@ -39,33 +39,33 @@ Bild2.ReadFromFile(Path.Combine(ProjectFolder, DummiesFolder, Bild2Path));
 
 // using Bild1 for first part of the task
 
-Image Ergebnis1HorizontalZeroPad = Bild1;
+Image Ergebnis1HorizontalZeroPad;
 string Ergebnis1HorizontalZeroPadPath = "Ergebnis1-horizontal-ZeroPad";
-Image Ergebnis1VerticalZeroPad = Bild1;
+Image Ergebnis1VerticalZeroPad;
 string Ergebnis1VerticalZeroPadPath = "Ergebnis1-vertical-ZeroPad";
 
-Image Ergebnis1HorizontalClamp = Bild1;
+Image Ergebnis1HorizontalClamp;
 string Ergebnis1HorizontalClampPath = "Ergebnis1-horizontal-Clamp";
-Image Ergebnis1VerticalClamp = Bild1;
+Image Ergebnis1VerticalClamp;
 string Ergebnis1VerticalClampPath = "Ergebnis1-vertical-Clamp";
 
 
 // using Bild2 for second part of the task
 
-Image Ergebnis2_3_Zero = Bild2;
+Image Ergebnis2_3_Zero;
 string Ergebnis2_3_Zero_Path = "Ergebnis2-3-Zero";
-Image Ergebnis2_3_Clamp = Bild2;
+Image Ergebnis2_3_Clamp;
 string Ergebnis2_3_Clamp_Path = "Ergebnis2-3-Clamp";
 
-Image Ergebnis2_11_Zero = Bild2;
+Image Ergebnis2_11_Zero;
 string Ergebnis2_11_Zero_Path = "Ergebnis2-11-Zero";
-Image Ergebnis2_11_Clamp = Bild2;
+Image Ergebnis2_11_Clamp;
 string Ergebnis2_11_ClampPath = "Ergebnis2-11-Clamp";
 
 
-Image Ergebnis2_27_Zero = Bild2;
+Image Ergebnis2_27_Zero;
 string Ergebnis2_27_Zero_Path = "Ergebnis2-27-Zero";
-Image Ergebnis2_27_Clamp = Bild2;
+Image Ergebnis2_27_Clamp;
 string Ergebnis2_27_ClampPath = "Ergebnis2-27-Clamp";
 
 
@@ -243,6 +243,7 @@ if(displayImagesAlone)
     // printArray(Ergebnis2_27.GetImageArray());
     ImageView imageView2_27_Clamp = new ImageView("Ergebnis2-27-Clamp", Ergebnis2_27_Clamp);
     imageView2_27_Clamp.Show();
+    
 } else {
 // 9. Display the loaded images and all the results of the convolutions on the screen   
 // Bild1:

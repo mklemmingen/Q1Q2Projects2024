@@ -14,9 +14,9 @@ public class Image
     // P2
     // 3 3
     // 255
-    // 0 0 0
-    // 0 255 0
-    // 0 0 0
+    // 0
+    // 3
+    // 0 
 
     // We need to read the file, parse the header, 
     // and then read the pixel values
@@ -140,6 +140,11 @@ public class Image
 
         Console.WriteLine("\n" + "Total Pixels after Convolve: " + processedPixels);
 
+        // Set the width, height, and maxValue of the result image
+        result.width = imageArray.GetLength(1);
+        result.height = imageArray.GetLength(0);
+        result.maxValue = maxValue;
+
         return result;
     }
 
@@ -165,7 +170,7 @@ public class Image
                 sum += pixelValue * kernel.Values[k, l];
             }
         }
-        return Normalize(sum, 0, 250); // Add this line
+        return Normalize(sum, 0, 255); // Add this line
     }
 
     // getter for the array
