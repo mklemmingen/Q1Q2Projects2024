@@ -1,8 +1,8 @@
 public class Kernel {
     public int Size { get; }
-    public int[,] Values { get; }
+    public double[,] Values { get; }
 
-    public Kernel(int size, int[,] values) {
+    public Kernel(int size, double[,] values) {
         Size = size;
         Values = values;
     }
