@@ -72,21 +72,6 @@ Console.WriteLine("Convolving Bild1 with Prewitt filters...");
 Ergebnis1Horizontal = Bild1.Convolve(prewittHorizontal, zeroPadding);
 Ergebnis1Vertical = Bild1.Convolve(prewittVertical, zeroPadding);
 
-// 5. Save the results of the convolutions as pgm images in the ZeroPadded and Clamped folders
-// save the images with a timestamp to avoid overwriting the previous results
-// Note: We might want to consider using a naming convention that includes the filter 
-// and border behavior used
-
-Console.WriteLine("Saving Ergebnis1 horizontal as pgm images...");
-Ergebnis1HorizontalPath = Path.Combine(ProjectFolder, ZeroPaddedFolder, Ergebnis1HorizontalPath + 
-DateTime.Now.ToString("yyyyMMddHHmmss") + ".pgm");
-Ergebnis1Horizontal.WriteToFile(Ergebnis1HorizontalPath);
-
-Console.WriteLine("Saving Ergebnis1 vertical as pgm images...");
-Ergebnis1VerticalPath = Path.Combine(ProjectFolder, ZeroPaddedFolder, Ergebnis1VerticalPath +
-DateTime.Now.ToString("yyyyMMddHHmmss") + ".pgm");
-Ergebnis1Vertical.WriteToFile(Ergebnis1VerticalPath);
-
 // ------------ BILD 2 ------------
 
 // 6. Create instances of the Box filters of sizes 3, 11, and 27 using KernelFactory
@@ -154,33 +139,26 @@ if(displayImagesAlone)
     // Display the loaded images
     Console.WriteLine("Displaying Bild1 images: Prewitt Filters: ...");
     // printArray(Bild1.GetImageArray());
-    Console.Write("Bild1: ");
     ImageView imageView1 = new ImageView("Bild1", Bild1);
     imageView1.Show();
     // printArray(Ergebnis1Horizontal.GetImageArray());
-    Console.Write("Ergebnis1-horizontal: ");
     ImageView imageView1horizont = new ImageView("Ergebnis1-horizontal", Ergebnis1Horizontal);
     imageView1horizont.Show();
     // printArray(Ergebnis1Vertical.GetImageArray());
-    Console.WriteLine("Ergebnis1-vertical: ");
     ImageView imageView1vertical = new ImageView("Ergebnis1-vertical", Ergebnis1Vertical);
     imageView1vertical.Show();
 
     Console.WriteLine("Displaying Bild2 images: Box Filters: ...");
     // printArray(Bild2.GetImageArray());
-    Console.Write("Bild2: ");
     ImageView imageView2 = new ImageView("Bild2", Bild2);
     imageView2.Show();
     // printArray(Ergebnis2_3.GetImageArray());
-    Console.Write("Ergebnis2-3: ");
     ImageView imageView2_3 = new ImageView("Ergebnis2-3", Ergebnis2_3);
     imageView2_3.Show();
     // printArray(Ergebnis2_11.GetImageArray());
-    Console.Write("Ergebnis2-11: ");
     ImageView imageView2_11 = new ImageView("Ergebnis2-11", Ergebnis2_11);
     imageView2_11.Show();
     // printArray(Ergebnis2_27.GetImageArray());
-    Console.Write("Ergebnis2-27: ");
     ImageView imageView2_27 = new ImageView("Ergebnis2-27", Ergebnis2_27);
     imageView2_27.Show();
 } else {
@@ -203,6 +181,39 @@ app.Run();
 thread.SetApartmentState(ApartmentState.STA); // Set the thread to STA
 thread.Start();
 thread.Join(); 
+
+// 5. Save the results of the convolutions as pgm images in the ZeroPadded and Clamped folders
+// save the images with a timestamp to avoid overwriting the previous results
+// Note: We might want to consider using a naming convention that includes the filter 
+// and border behavior used
+
+Console.WriteLine("Saving Ergebnis1 horizontal as pgm images...");
+Ergebnis1HorizontalPath = Path.Combine(ProjectFolder, ZeroPaddedFolder, Ergebnis1HorizontalPath + 
+DateTime.Now.ToString("yyyyMMddHHmmss") + ".pgm");
+Ergebnis1Horizontal.WriteToFile(Ergebnis1HorizontalPath);
+
+Console.WriteLine("Saving Ergebnis1 vertical as pgm images...");
+Ergebnis1VerticalPath = Path.Combine(ProjectFolder, ZeroPaddedFolder, Ergebnis1VerticalPath +
+DateTime.Now.ToString("yyyyMMddHHmmss") + ".pgm");
+Ergebnis1Vertical.WriteToFile(Ergebnis1VerticalPath);
+
+// 8. Save the results of the convolutions as pgm images in the ZeroPadded and Clamped folders
+// save the images with a timestamp to avoid overwriting the previous results
+
+Console.WriteLine("Saving Ergebnis2_3 as pgm image...");
+Ergebnis2_3Path = Path.Combine(ProjectFolder, ZeroPaddedFolder, Ergebnis2_3Path +
+DateTime.Now.ToString("yyyyMMddHHmmss") + ".pgm");
+Ergebnis2_3.WriteToFile(Ergebnis2_3Path);
+
+Console.WriteLine("Saving Ergebnis2_11 as pgm image...");
+Ergebnis2_11Path = Path.Combine(ProjectFolder, ZeroPaddedFolder, Ergebnis2_11Path +
+DateTime.Now.ToString("yyyyMMddHHmmss") + ".pgm");
+Ergebnis2_11.WriteToFile(Ergebnis2_11Path);
+
+Console.WriteLine("Saving Ergebnis2_27 as pgm image...");
+Ergebnis2_27Path = Path.Combine(ProjectFolder, ZeroPaddedFolder, Ergebnis2_27Path +
+DateTime.Now.ToString("yyyyMMddHHmmss") + ".pgm");
+Ergebnis2_27.WriteToFile(Ergebnis2_27Path);
 
 void printArray(int[,] array)
 {

@@ -47,7 +47,7 @@ public class ImageView : Form
                     e.Graphics.FillRectangle(color, x, y, 1, 1);
                 }
             }
-            Console.WriteLine(PictureName1 + "->Pixels drawn:" + pixelsDrawn +"|");
+            Console.WriteLine(PictureName1 + "->Pixels drawn:" + pixelsDrawn);
         };
 
         return drawable;

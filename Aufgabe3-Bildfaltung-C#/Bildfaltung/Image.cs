@@ -114,6 +114,7 @@ public class Image
 
         // console print of the current percentage of the image processed
         int totalPixels = imageArray.GetLength(0) * imageArray.GetLength(1);
+        Console.WriteLine("Total Pixels before Convolve: " + totalPixels);
         int processedPixels = 0;
         Console.WriteLine("Convolve: Processing image...");
 
@@ -136,7 +137,7 @@ public class Image
             }
         }
 
-        Console.WriteLine(" ");
+        Console.WriteLine("\n" + "Total Pixels after Convolve: " + processedPixels);
 
         return result;
     }
