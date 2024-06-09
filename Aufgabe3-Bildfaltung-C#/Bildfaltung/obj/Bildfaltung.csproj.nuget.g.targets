@@ -1,2 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" />
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.netframework.referenceassemblies.net48\1.0.3\build\Microsoft.NETFramework.ReferenceAssemblies.net48.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.netframework.referenceassemblies.net48\1.0.3\build\Microsoft.NETFramework.ReferenceAssemblies.net48.targets')" />
+    <Import Project="$(NuGetPackageRoot)eto.forms\2.8.3\build\Eto.Forms.targets" Condition="Exists('$(NuGetPackageRoot)eto.forms\2.8.3\build\Eto.Forms.targets')" />
+    <Import Project="$(NuGetPackageRoot)eto.platform.mac64\2.8.3\build\Eto.Platform.Mac64.targets" Condition="Exists('$(NuGetPackageRoot)eto.platform.mac64\2.8.3\build\Eto.Platform.Mac64.targets')" />
+  </ImportGroup>
+</Project>
