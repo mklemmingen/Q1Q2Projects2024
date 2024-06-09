@@ -14,34 +14,6 @@ Console.WriteLine("Setup is starting...");
 Image Bild1 = new Image();
 Image Bild2 = new Image();
 
-Image Ergebnis1HorizontalZeroPad = new Image();
-string Ergebnis1HorizontalZeroPadPath = "Ergebnis1-horizontal-ZeroPad";
-Image Ergebnis1VerticalZeroPad = new Image();
-string Ergebnis1VerticalZeroPadPath = "Ergebnis1-vertical-ZeroPad";
-
-Image Ergebnis1HorizontalClamp = new Image();
-string Ergebnis1HorizontalClampPath = "Ergebnis1-horizontal-Clamp";
-Image Ergebnis1VerticalClamp = new Image();
-string Ergebnis1VerticalClampPath = "Ergebnis1-vertical-Clamp";
-
-Image Ergebnis2_3_Zero = new Image();
-string Ergebnis2_3_Zero_Path = "Ergebnis2-3-Zero";
-Image Ergebnis2_3_Clamp = new Image();
-string Ergebnis2_3_Clamp_Path = "Ergebnis2-3-Clamp";
-
-Image Ergebnis2_11_Zero = new Image();
-string Ergebnis2_11_Zero_Path = "Ergebnis2-11-Zero";
-Image Ergebnis2_11_Clamp = new Image();
-string Ergebnis2_11_ClampPath = "Ergebnis2-11-Clamp";
-
-
-Image Ergebnis2_27_Zero = new Image();
-string Ergebnis2_27_Zero_Path = "Ergebnis2-27-Zero";
-Image Ergebnis2_27 = new Image();
-string Ergebnis2_27Path = "Ergebnis2-27";
-Image Ergebnis2_27_Clamp = new Image();
-string Ergebnis2_27_ClampPath = "Ergebnis2-27-Clamp";
-
 // Paths
 // directory
 string ProjectFolder = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), @"..\..\..\"));
@@ -64,6 +36,37 @@ Bild1.ReadFromFile(Path.Combine(ProjectFolder, DummiesFolder, Bild1Path));
 // save as Ergebnis 2-3.pgm, Ergebnis 2-11.pgm and Ergebnis 2-27.pgm later on
 Console.WriteLine("Loading Bild2.pgm...");
 Bild2.ReadFromFile(Path.Combine(ProjectFolder, DummiesFolder, Bild2Path));
+
+// using Bild1 for first part of the task
+
+Image Ergebnis1HorizontalZeroPad = Bild1;
+string Ergebnis1HorizontalZeroPadPath = "Ergebnis1-horizontal-ZeroPad";
+Image Ergebnis1VerticalZeroPad = Bild1;
+string Ergebnis1VerticalZeroPadPath = "Ergebnis1-vertical-ZeroPad";
+
+Image Ergebnis1HorizontalClamp = Bild1;
+string Ergebnis1HorizontalClampPath = "Ergebnis1-horizontal-Clamp";
+Image Ergebnis1VerticalClamp = Bild1;
+string Ergebnis1VerticalClampPath = "Ergebnis1-vertical-Clamp";
+
+
+// using Bild2 for second part of the task
+
+Image Ergebnis2_3_Zero = Bild2;
+string Ergebnis2_3_Zero_Path = "Ergebnis2-3-Zero";
+Image Ergebnis2_3_Clamp = Bild2;
+string Ergebnis2_3_Clamp_Path = "Ergebnis2-3-Clamp";
+
+Image Ergebnis2_11_Zero = Bild2;
+string Ergebnis2_11_Zero_Path = "Ergebnis2-11-Zero";
+Image Ergebnis2_11_Clamp = Bild2;
+string Ergebnis2_11_ClampPath = "Ergebnis2-11-Clamp";
+
+
+Image Ergebnis2_27_Zero = Bild2;
+string Ergebnis2_27_Zero_Path = "Ergebnis2-27-Zero";
+Image Ergebnis2_27_Clamp = Bild2;
+string Ergebnis2_27_ClampPath = "Ergebnis2-27-Clamp";
 
 
 // ------------ BILD 1 ------------
@@ -167,6 +170,9 @@ Console.WriteLine("Saving Ergebnis2_27 as pgm image...");
 Ergebnis2_27_Zero_Path = Path.Combine(ProjectFolder, ZeroPaddedFolder, Ergebnis2_27_Zero_Path +
 DateTime.Now.ToString("yyyyMMddHHmmss") + ".pgm");
 Ergebnis2_27_Zero.WriteToFile(Ergebnis2_27_Zero_Path);
+Ergebnis2_27_ClampPath = Path.Combine(ProjectFolder, ClampFolder, Ergebnis2_27_ClampPath +
+DateTime.Now.ToString("yyyyMMddHHmmss") + ".pgm");
+Ergebnis2_27_Clamp.WriteToFile(Ergebnis2_27_ClampPath);
 
 // ------------ DISPLAY ------------
 
@@ -220,13 +226,13 @@ if(displayImagesAlone)
     ImageView imageView2 = new ImageView("Bild2", Bild2);
     imageView2.Show();
     // printArray(Ergebnis2_3.GetImageArray());
-    ImageView imageView2_3 = new ImageView("Ergebnis2-3", Ergebnis2_3_Zero);
+    ImageView imageView2_3 = new ImageView("Ergebnis2-3-Zero", Ergebnis2_3_Zero);
     imageView2_3.Show();
     // printArray(Ergebnis2_11.GetImageArray());
-    ImageView imageView2_11 = new ImageView("Ergebnis2-11", Ergebnis2_11_Zero);
+    ImageView imageView2_11 = new ImageView("Ergebnis2-11-Zero", Ergebnis2_11_Zero);
     imageView2_11.Show();
     // printArray(Ergebnis2_27.GetImageArray());
-    ImageView imageView2_27 = new ImageView("Ergebnis2-27", Ergebnis2_27_Zero);
+    ImageView imageView2_27 = new ImageView("Ergebnis2-27-Zero", Ergebnis2_27_Zero);
     imageView2_27.Show();
     // printArray(Ergebnis2_3.GetImageArray());
     ImageView imageView2_3_Clamp = new ImageView("Ergebnis2-3-Clamp", Ergebnis2_3_Clamp);
