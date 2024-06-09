@@ -17,13 +17,13 @@ public class ImageView : Form
                     new TableCell(new Label { Text = PictureName1 }, true)
                 ),
                 new TableRow(
-                    CreateDrawable(image1)
+                    CreateDrawable(image1, PictureName1)
                 )
             }
         };
     }
 
-    private Drawable CreateDrawable(Image image)
+    private Drawable CreateDrawable(Image image, string PictureName1)
     {
         var drawable = new Drawable
         {
@@ -47,7 +47,7 @@ public class ImageView : Form
                     e.Graphics.FillRectangle(color, x, y, 1, 1);
                 }
             }
-            Console.Write("->Pixels drawn:" + pixelsDrawn +"|");
+            Console.WriteLine(PictureName1 + "->Pixels drawn:" + pixelsDrawn +"|");
         };
 
         return drawable;

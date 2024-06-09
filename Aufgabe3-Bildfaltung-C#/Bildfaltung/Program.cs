@@ -146,6 +146,7 @@ else
     throw new NotSupportedException("Unsupported platform");
 }
 
+// displaying Images Alone is used for debugging, since pixel drawn counter is used
 bool displayImagesAlone = true;
 
 if(displayImagesAlone)

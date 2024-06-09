@@ -19,37 +19,40 @@ public class ImageViewThree : Form
                     new Label { Text = PictureName3 }
                 ),
                 new TableRow(
-                    CreateDrawable(image1),
-                    CreateDrawable(image2),
-                    CreateDrawable(image3)
+                    CreateDrawable(image1, PictureName1),
+                    CreateDrawable(image2, PictureName2),
+                    CreateDrawable(image3, PictureName3)
                 ),
                 new TableRow { ScaleHeight = true }
             }
         };
     }
 
-    private Drawable CreateDrawable(Image image)
+    private Drawable CreateDrawable(Image image, string PictureName1)
     {
         var drawable = new Drawable
         {
-            Size = new Size(400, 400),
+            Size = new Size(image.width, image.height),
             BackgroundColor = Colors.White,
         };
 
         drawable.Paint += (sender, e) =>
         {
+            int pixelsDrawn = 0;
             int[,] values = image.GetImageArray();
             for (int y = 0; y < image.height; y++)
             {
                 for (int x = 0; x < image.width; x++)
                 {
+                    pixelsDrawn++;
                     int value = values[x, y]; // Get the pixel value from the image array
                     // 0 value is white, maxValue is black
                     int colorValue = 255 - (int)(255.0 * value / image.maxValue);
                     Color color = Color.FromArgb(colorValue, colorValue, colorValue);
-                    e.Graphics.FillRectangle(color, x * 2, y * 2, 2, 2);
+                    e.Graphics.FillRectangle(color, x, y, 1, 1);
                 }
             }
+            Console.WriteLine(PictureName1 + "->Pixels drawn:" + pixelsDrawn +"|");
         };
 
         return drawable;
