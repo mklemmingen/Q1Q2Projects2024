@@ -5,7 +5,7 @@ public class ImageViewFour : Form
     public ImageViewFour(string PictureName1, Image image1, string PictureName2, Image image2, string PictureName3, Image image3, string PictureName4, Image image4)
     {
         Title = "ImageViewer";
-        ClientSize = new Size(1200, 800);
+        ClientSize = new Size(image1.width*3, image1.height);
 
         Content = new TableLayout
         {

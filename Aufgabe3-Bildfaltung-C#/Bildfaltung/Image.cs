@@ -129,7 +129,7 @@ public class Image
                 // Print the percentage of the image processed
                 processedPixels++;
                 // Apply the kernel to the pixel at (i, j)
-                result.imageArray[i, j] = ConvolvePixel(i, j, kernel, borderBehavior);
+                result.imageArray[i, j] = (int)ConvolvePixel(i, j, kernel, borderBehavior);
             }
             // every 10 percent of the pixels processed, print an "*" without a newline
             if (processedPixels % (totalPixels/10) == 0)
@@ -148,12 +148,12 @@ public class Image
         return result;
     }
 
-    private int ConvolvePixel(int i, int j, Kernel kernel, BorderBehavior borderBehavior)
+    private double ConvolvePixel(int i, int j, Kernel kernel, BorderBehavior borderBehavior)
     {
         // logic to apply the kernel to a single pixel
         // and return the resulting value
 
-        int sum = 0;
+        double sum = 0;
 
         // Iterate over the kernel and apply it to the pixel at (i, j)
         for (int k = 0; k < kernel.Size; k++)
@@ -164,7 +164,7 @@ public class Image
                 int y = j + l - kernel.Size / 2;
 
                 // Apply the border behavior to handle out-of-bounds pixels
-                int pixelValue = borderBehavior.GetPixelValue(x, y, this);
+                double pixelValue = borderBehavior.GetPixelValue(x, y, this);
 
                 // Multiply the pixel value by the kernel value and add it to the sum
                 sum += pixelValue * kernel.Values[k, l];
@@ -179,7 +179,7 @@ public class Image
         return imageArray;
     }
 
-    private int Normalize(int value, int min, int max)
+    private double Normalize(double value, int min, int max)
 {
     if (value < min)
     {
