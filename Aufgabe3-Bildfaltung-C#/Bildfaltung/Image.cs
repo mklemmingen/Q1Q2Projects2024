@@ -36,22 +36,34 @@ public class Image
 
         // Parse the header
         magicNumber = lines[0];
-        if (magicNumber != "P2" && magicNumber != "P5")
+        if (magicNumber != "P2")
         {
-            throw new Exception($"Invalid PGM file. Expected magic number 'P2' or 'P5', but got '{magicNumber}'");
+            throw new Exception($"Invalid PGM file. Expected magic number 'P2', but got '{magicNumber}'");
         }
 
-        string[] dimensions = lines[1].Split(null);
-        width = int.Parse(dimensions[0]);
-        height = int.Parse(dimensions[1]);
-        maxValue = int.Parse(lines[2]);
+        // check if there is a # in line 2
+        string[] dimensions;
+        int lineIndex;
+        if (lines[1].Contains("#"))
+        {
+            dimensions = lines[1].Split(null);
+            width = int.Parse(dimensions[0]);
+            height = int.Parse(dimensions[1]);
+            maxValue = int.Parse(lines[2]);
+            lineIndex = 4; // Start reading pixel values from the 5th line
+        } else {
+            dimensions = lines[2].Split(null);
+            width = int.Parse(dimensions[0]);
+            height = int.Parse(dimensions[1]);
+            maxValue = int.Parse(lines[3]);
+            lineIndex = 3; // Start reading pixel values from the 4th line
+        }
         Console.WriteLine("Image Read with: " + width + "x" + height + " pixels");
 
         // Initialize the image array
         imageArray = new int[height, width];
 
         // Read the pixel values
-        int lineIndex = 3; // Start reading pixel values from the 4th line
         for (int i = 0; i < height; i++)
         {
             for (int j = 0; j < width; j++)

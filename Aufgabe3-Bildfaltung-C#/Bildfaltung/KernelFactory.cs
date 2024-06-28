@@ -26,6 +26,11 @@ public class KernelFactory
 
     public static Kernel CreateBox(int size)
     {
+        // check to make sure the size is odd
+        if (size % 2 == 0)
+        {
+            throw new ArgumentException("Size must be odd");
+        }
         // Square Box filter of the given size
         double[,] values = new double[size, size];
         double filterValue = 1.0 / (size * size);

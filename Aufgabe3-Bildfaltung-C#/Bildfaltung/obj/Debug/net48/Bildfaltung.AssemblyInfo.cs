@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bildfaltung")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31be2c3b3aa4e682372c2514dd904fd2631535c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+299cf05f0bfd45c19526f1bd94cbc27f386bd4e7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bildfaltung")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bildfaltung")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
