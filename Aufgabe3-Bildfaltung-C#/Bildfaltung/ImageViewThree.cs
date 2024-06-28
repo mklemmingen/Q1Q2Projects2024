@@ -4,7 +4,7 @@ public class ImageViewThree : Form
 {
     public ImageViewThree(string PictureName1, Image image1, string PictureName2, Image image2, string PictureName3, Image image3)
     {
-        Title = "ImageViewer";
+        Title = "PGM Image Viewer by MKL";
         ClientSize = new Size(image1.width*3, image1.height);
 
         Content = new TableLayout
