@@ -31,7 +31,7 @@ public class Image
 
     public void ReadFromFile(string filename)
     {
-        // Read the file
+        // Read the file, allow for comments in the header
         string[] lines = File.ReadAllLines(filename);
 
         // Parse the header
@@ -46,17 +46,17 @@ public class Image
         int lineIndex;
         if (lines[1].Contains("#"))
         {
-            dimensions = lines[1].Split(null);
-            width = int.Parse(dimensions[0]);
-            height = int.Parse(dimensions[1]);
-            maxValue = int.Parse(lines[2]);
-            lineIndex = 4; // Start reading pixel values from the 5th line
-        } else {
             dimensions = lines[2].Split(null);
             width = int.Parse(dimensions[0]);
             height = int.Parse(dimensions[1]);
             maxValue = int.Parse(lines[3]);
-            lineIndex = 3; // Start reading pixel values from the 4th line
+            lineIndex = 3; // Start reading pixel values from the 5th line
+        } else {
+            dimensions = lines[1].Split(null);
+            width = int.Parse(dimensions[0]);
+            height = int.Parse(dimensions[1]);
+            maxValue = int.Parse(lines[2]);
+            lineIndex = 4; // Start reading pixel values from the 4th line
         }
         Console.WriteLine("Image Read with: " + width + "x" + height + " pixels");
 
