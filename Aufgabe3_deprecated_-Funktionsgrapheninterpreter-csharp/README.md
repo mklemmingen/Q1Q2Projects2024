@@ -1,5 +1,5 @@
 
-# Marty (as researched on microsoft.com and Bing Copilot (provided by Hochschule))
+# Marty:
 
 ## For FuGAIn_folder with VS
 
